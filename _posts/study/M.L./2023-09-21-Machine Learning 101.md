@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Machine Learning 101"
-categories: M.L.
+categories: ML
 tag: [ML, AI]
 toc: true
 author_profile: false
