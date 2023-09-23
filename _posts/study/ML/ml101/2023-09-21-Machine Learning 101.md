@@ -118,7 +118,7 @@ redirect_from:
 - Improve Loocv’s drawback
 - Validate by dividing into ‘K’ part
 
-  ![kfold](https://github.com/woo-kyu/CapstoneProject2023/assets/102133610/2933315a-dce2-4ad6-808a-5f0126d14483){: .align-center}
+  ![kfold]({{site.url}}/images/post_source/ML/kfold.png){: .align-center}
     
 
 Lower Documents
