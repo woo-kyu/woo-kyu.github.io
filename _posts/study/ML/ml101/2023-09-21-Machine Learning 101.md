@@ -110,7 +110,7 @@ redirect_from:
 - Select and Verify each every single data where in training data-sets
 - If data-sets are very enormous, that give rise to highly cost of calculate
   
-    ![Untitled]({{site.url}}/study/ML/ml101/loocv.png){: .align-center}
+    ![Untitled]({{site.url}}/_posts/study/ML/ml101/loocv.png){: .align-center}
     
 
 ## K-fold
