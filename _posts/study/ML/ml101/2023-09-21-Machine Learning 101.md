@@ -7,6 +7,7 @@ author_profile: false
 search: true
 redirect_from:
   - /machinelearning101
+use_tex: true
 ---
 
 
