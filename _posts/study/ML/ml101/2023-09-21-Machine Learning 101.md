@@ -21,7 +21,7 @@ redirect_from:
 - Unsupervised Learning
 - [Reinforcement Learning](https://www.notion.so/Reinforcement-Learning-db77c17aa27f469bb78819690688cee6?pvs=21)
 
-![a]({{site.url}}_posts/study/ML/ml101/ml101.png)
+![a]({{site.url}}/_posts/study/ML/ml101/ml101.png)
 
 # Supervised Learning
 
@@ -118,7 +118,7 @@ redirect_from:
 - Improve Loocv’s drawback
 - Validate by dividing into ‘K’ part
   
-    ![Untitled]({{site.url}}_posts/study/ML/ml101/kfold.png)
+    ![Untitled]({{site.url}}/_posts/study/ML/ml101/kfold.png)
     
 
 Lower Documents
