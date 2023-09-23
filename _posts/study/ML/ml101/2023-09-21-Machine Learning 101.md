@@ -22,7 +22,8 @@ use_tex: true
 - Unsupervised Learning
 - [Reinforcement Learning](https://www.notion.so/Reinforcement-Learning-db77c17aa27f469bb78819690688cee6?pvs=21)
 
-  ![kfold]({{site.url}}/images/post_source/ML/ml101.png){: .align-center}
+  <img width="746" alt="ml101" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/88db6bbf-59d2-4af4-b252-6c2b2da3c01f">{: .align-center}
+
 
 # Supervised Learning
 
@@ -119,7 +120,7 @@ use_tex: true
 - Improve Loocv’s drawback
 - Validate by dividing into ‘K’ part
 
-  ![kfold]({{site.url}}/images/post_source/ML/kfold.png){: .align-center}
+  ![kfold](https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/4cea453a-6d92-4ed6-92af-cf1b970f1218){: .align-center}
     
 
 Lower Documents
