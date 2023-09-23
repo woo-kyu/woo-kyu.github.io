@@ -11,7 +11,6 @@ use_tex: true
 ---
 
 
-# Machine Learning
 
 > Machine Learning 은, 데이터를 통해 패턴을 학습하여 일부의 데이터만으로도 예측이 가능한 알고리즘의 집합
 > 
@@ -22,7 +21,8 @@ use_tex: true
 - Unsupervised Learning
 - Reinforcement Learning
 
-  <img width="746" alt="ml101" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/88db6bbf-59d2-4af4-b252-6c2b2da3c01f">
+  <img width="746" alt="ml101" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/88db6bbf-59d2-4af4-b252-6c2b2da3c01f">{: .align-center}
+
 
 
 # Supervised Learning
@@ -61,6 +61,8 @@ use_tex: true
     - Binary classification (이진 분류) : Sigmoid function
     - Multiple Classification (다중 분류) : Soft-max function
 
+
+
 # Unsupervised Learning
 
 ## [Dimension Reduction](https://www.notion.so/Dimension-Reduction-45abe195f9f447bfb4c4982c613ef4fa?pvs=21) (차원 축소; Data pre-processing)
@@ -87,6 +89,8 @@ use_tex: true
 
 ### [Hierarchial Clustering](https://www.notion.so/Hierarchial-Clustering-0297536f98824b8e8ed209fafe05fae9?pvs=21)
 
+
+
 # Parameter vs. Hyper-parameter
 
 ## Parameter ( ; weight)
@@ -99,10 +103,14 @@ use_tex: true
 - adjust by administer
 - ex) Learning rate, Disposition size(배치 크기)
 
+
+
 # Data structure
 
 - Feature (attribute) : information = X
 - Label : results = y (predict : y_hat)
+
+
 
 # Use verified data-sets
 
@@ -122,6 +130,10 @@ use_tex: true
 
   ![kfold](https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/4cea453a-6d92-4ed6-92af-cf1b970f1218){: .align-center}
   
+
+
+
+
 
 Lower Documents
 
