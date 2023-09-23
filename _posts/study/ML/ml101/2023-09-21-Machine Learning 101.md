@@ -12,7 +12,7 @@ redirect_from:
 
 # Machine Learning
 
-> Machine Learning 은, 정제된 데이터를 통계적 방법을 이용해 데이터를 가장 잘 표현할 수 있는 모델을 구축하는 것. 경험을 통해 자동으로 개선하는 컴퓨터 알고리즘의 연구 분야.
+> Machine Learning 은, 데이터를 통해 패턴을 학습하여 일부의 데이터만으로도 예측이 가능한 알고리즘의 집합
 > 
 
 # Kind of Machine Learning Decided by Data
@@ -21,7 +21,7 @@ redirect_from:
 - Unsupervised Learning
 - [Reinforcement Learning](https://www.notion.so/Reinforcement-Learning-db77c17aa27f469bb78819690688cee6?pvs=21)
 
-<img width="746" alt="ml101" src="https://github.com/woo-kyu/CapstoneProject2023/assets/102133610/641a3275-5e13-426c-8ab7-8ceac20e7d57">{: .align-center}
+<img width="746" alt="ml101" src="https://github.com/woo-kyu/CapstoneProject2023/assets/102133610/6639310f-7ada-4c9e-afa5-2c07abfb26ca">{: .align-center}
 
 # Supervised Learning
 
@@ -110,8 +110,7 @@ redirect_from:
 - Select and Verify each every single data where in training data-sets
 - If data-sets are very enormous, that give rise to highly cost of calculate
 
-  <img alt="Untitled" src="https://github.com/woo-kyu/woo-kyu.github.io/blob/f2544d3e32c8c679038738c4d18d7db29dd819fc/_posts/study/ML/ml101/kfold.png"/>
-  {: .align-center} 
+![loocv](https://github.com/woo-kyu/CapstoneProject2023/assets/102133610/0a2d739b-41b8-44b9-87eb-a89884a43694){: .align-center} 
     
 
 ## K-fold
@@ -119,7 +118,7 @@ redirect_from:
 - Improve Loocv’s drawback
 - Validate by dividing into ‘K’ part
 
-  <img alt="Untitled" src="{{site.url}}_posts/study/ML/ml101/kfold.png"/>{: .align-center}
+  ![kfold](https://github.com/woo-kyu/CapstoneProject2023/assets/102133610/2933315a-dce2-4ad6-808a-5f0126d14483){: .align-center}
     
 
 Lower Documents
