@@ -11,6 +11,14 @@ main:
   - title: "Daily-Blog"
     url: https://woo-kyu.github.io
 
+docs:
+  - title: "Outline"
+    children:
+      - title: "Category"
+        url: /categories/
+      - title: "Tag"
+        url: /tags/
+
 counts:
   - title: "Category"
     use: true

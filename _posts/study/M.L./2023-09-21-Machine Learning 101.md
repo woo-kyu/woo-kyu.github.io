@@ -5,6 +5,8 @@ categories: M.L.
 tag: [ML, AI]
 toc: true
 author_profile: false
+sidebar:
+    nav: "docs"
 ---
 
 # Machine Learning
