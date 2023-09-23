@@ -21,7 +21,7 @@ redirect_from:
 - Unsupervised Learning
 - [Reinforcement Learning](https://www.notion.so/Reinforcement-Learning-db77c17aa27f469bb78819690688cee6?pvs=21)
 
-<img width="746" alt="ml101" src="https://github.com/woo-kyu/CapstoneProject2023/assets/102133610/6639310f-7ada-4c9e-afa5-2c07abfb26ca">{: .align-center}
+  ![kfold]({{site.url}}/images/post_source/ML/ml101.png){: .align-center}
 
 # Supervised Learning
 
@@ -110,7 +110,7 @@ redirect_from:
 - Select and Verify each every single data where in training data-sets
 - If data-sets are very enormous, that give rise to highly cost of calculate
 
-![loocv](https://github.com/woo-kyu/CapstoneProject2023/assets/102133610/0a2d739b-41b8-44b9-87eb-a89884a43694){: .align-center} 
+  ![loocv](https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/be731ec5-4675-4113-8b4d-dc23ad19742c){: .align-center} 
     
 
 ## K-fold
