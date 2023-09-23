@@ -22,7 +22,6 @@ redirect_from:
 - [Reinforcement Learning](https://www.notion.so/Reinforcement-Learning-db77c17aa27f469bb78819690688cee6?pvs=21)
 
 ![a]({https://github.com/woo-kyu/woo-kyu.github.io/blob/f2544d3e32c8c679038738c4d18d7db29dd819fc/_posts/study/ML/ml101/ml101.png){: .align-center}
-Format: ![Alt Text](url)
 
 # Supervised Learning
 
