@@ -4,6 +4,7 @@ title: "Machine Learning 101"
 categories: M.L.
 tag: [ML, AI]
 toc: true
+author_profile: false
 ---
 
 # Machine Learning
