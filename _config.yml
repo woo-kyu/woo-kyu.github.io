@@ -21,7 +21,7 @@ title_separator          :  "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "woo-kyu"
 description              : "for Workbook"
-url                      : "https://wookyu.github.io"
+url                      : "https://wo_okyu.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : "/assets/images/IMG_1501.JPG"
