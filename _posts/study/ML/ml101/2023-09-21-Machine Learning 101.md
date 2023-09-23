@@ -5,6 +5,8 @@ categories: ML
 tag: [ML, AI]
 author_profile: false
 search: true
+redirect_from:
+  - /machinelearning101
 ---
 
 
