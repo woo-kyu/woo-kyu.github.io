@@ -13,7 +13,7 @@ use_tex: true
 
 
 > Machine Learning 은, 데이터를 통해 패턴을 학습하여 일부의 데이터만으로도 예측이 가능한 알고리즘의 집합
-> 
+
 
 # Kind of Machine Learning Decided by Data
 
