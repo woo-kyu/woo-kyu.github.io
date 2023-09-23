@@ -20,9 +20,9 @@ use_tex: true
 
 - Supervised Learning
 - Unsupervised Learning
-- [Reinforcement Learning](https://www.notion.so/Reinforcement-Learning-db77c17aa27f469bb78819690688cee6?pvs=21)
+- Reinforcement Learning
 
-  <img width="746" alt="ml101" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/88db6bbf-59d2-4af4-b252-6c2b2da3c01f">{: .align-center}
+  <img width="746" alt="ml101" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/88db6bbf-59d2-4af4-b252-6c2b2da3c01f">
 
 
 # Supervised Learning
@@ -113,7 +113,7 @@ use_tex: true
 - If data-sets are very enormous, that give rise to highly cost of calculate
 
   ![loocv](https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/be731ec5-4675-4113-8b4d-dc23ad19742c){: .align-center} 
-    
+  
 
 ## K-fold
 
@@ -121,7 +121,7 @@ use_tex: true
 - Validate by dividing into ‘K’ part
 
   ![kfold](https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/4cea453a-6d92-4ed6-92af-cf1b970f1218){: .align-center}
-    
+  
 
 Lower Documents
 
