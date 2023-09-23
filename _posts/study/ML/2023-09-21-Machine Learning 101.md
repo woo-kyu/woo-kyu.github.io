@@ -3,10 +3,6 @@ layout: single
 title: "Machine Learning 101"
 categories: ML
 tag: [ML, AI]
-toc: true
-toc_sticky: true
-toc_label:  Outline
-
 author_profile: false
 search: true
 ---
