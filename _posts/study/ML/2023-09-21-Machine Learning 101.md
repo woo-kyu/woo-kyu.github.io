@@ -19,7 +19,7 @@ search: true
 - Unsupervised Learning
 - [Reinforcement Learning](https://www.notion.so/Reinforcement-Learning-db77c17aa27f469bb78819690688cee6?pvs=21)
 
-![a]({{site.url}}/images/2023-09-21-Machine Learning 101/ml101.png)
+![a]({{site.url}}/_posts/study/ML/images/2023-09-21-Machine Learning 101/ml101.png)
 
 # Supervised Learning
 
@@ -108,7 +108,7 @@ search: true
 - Select and Verify each every single data where in training data-sets
 - If data-sets are very enormous, that give rise to highly cost of calculate
   
-    ![Untitled]({{site.url}}/images/2023-09-21-Machine Learning 101/loocv.png)
+    ![Untitled]({{site.url}}/_posts/study/ML/images/2023-09-21-Machine Learning 101/loocv.png)
     
 
 ## K-fold
@@ -116,7 +116,7 @@ search: true
 - Improve Loocv’s drawback
 - Validate by dividing into ‘K’ part
   
-    ![Untitled]({{site.url}}/images/2023-09-21-Machine Learning 101/kfold 1.png)
+    ![Untitled]({{site.url}}_posts/study/ML/images/2023-09-21-Machine Learning 101/ml101.png)
     
 
 Lower Documents
