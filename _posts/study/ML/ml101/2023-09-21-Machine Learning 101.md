@@ -21,8 +21,7 @@ redirect_from:
 - Unsupervised Learning
 - [Reinforcement Learning](https://www.notion.so/Reinforcement-Learning-db77c17aa27f469bb78819690688cee6?pvs=21)
 
-<img alt="a" src="{https://github.com/woo-kyu/woo-kyu.github.io/blob/f2544d3e32c8c679038738c4d18d7db29dd819fc/_posts/study/ML/ml101/ml101.png"/>
-{: .align-center}
+<img width="746" alt="ml101" src="https://github.com/woo-kyu/CapstoneProject2023/assets/102133610/641a3275-5e13-426c-8ab7-8ceac20e7d57">{: .align-center}
 
 # Supervised Learning
 
