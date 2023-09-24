@@ -66,11 +66,9 @@ Because the fundamental problem of overloading has given the model too much free
 
 So, we can apply regularization that punishes as much as the complexity of the model.
 
-Optimize 대상인, error function 을 다음과 같이 regularization 이 적용된 새로운 function 으로 바꾼다. 이 때 추가되는 term, $\blue{p}$ 을 penalty term 이라고 한다.
+Optimize 대상인, error function 을 다음과 같이 regularization 이 적용된 새로운 function 으로 바꾼다. 이 때 추가되는 term, $ {p} $ 을 penalty term 이라고 한다.
 
-$$
-E^r(w)=E(w)+\blue{p}
-$$
+$ E^r(w)=E(w)+\blue{p} $
 
 Now, the model works for reducting error and penalty term.
 
@@ -133,7 +131,7 @@ You can change that input data’s feature or, higher model’s complexity then 
 
 <br><br>
 
-# Regularized loss function
+# Regularized loss functionㄴ
 
 - more higher models complexity is following to increaseing models parameters
 - If models complexity is higher, that will be lead to results that over-fitting
@@ -152,7 +150,7 @@ Scarcity of parameter : Lasso (L1) > Ridge (L2)
 
 ## Lasso (L1) Regression
 
-- $L = \sum_{i=1}^{n}(y_{i}-(\beta _{0}+\sum_{j=1}^{D}\beta _{j}x_{ij}))^2+{\color{Orange} \lambda\sum_{j=1}^{D}\left|\beta _{j} \right|}$
+- $ L = \sum_{i=1}^{n}(y_{i}-(\beta _{0}+\sum_{j=1}^{D}\beta _{j}x_{ij}))^2+{\color{Orange} \lambda\sum_{j=1}^{D}\left|\beta _{j} \right|} $
 - MSE Loss를 줄이지 못하면, Term of penalty의 loss value가 더 크게 작용함
 - $\lambda$(Lambda) is part of parameter that controls the effects of regularization. (like loss function, $w$)
 - Regularized expression is expressed by sum of the absolute values
