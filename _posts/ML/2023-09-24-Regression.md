@@ -7,6 +7,7 @@ author_profile: false
 search: true
 use_tex: true
 ---
+
 <br><br>
 
 # Linear vs. Non-linear Regression
