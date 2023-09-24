@@ -8,7 +8,7 @@ search: true
 use_tex: true
 ---
 
-![Optima ; Local minimum trap에 빠진 상태](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0fdadad6-67ea-4256-a2e5-d4ce14ecd9d4/Untitled.png)
+<img width="327" alt="Optima ; Local minimum trap에 빠진 상태" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/3d66b904-ad48-4b6d-94d8-b8b160641bc5">{: .align-center}
 
 Optima ; Local minimum trap에 빠진 상태
 
@@ -26,9 +26,10 @@ global optimum solution에 도달하기 전에 local minimum을 global optimum s
 
 그리고 그 high dimensional space 에서 모든 축의 방향으로 오목한 형태가 형성될 확률은 거의 0에 가깝기 때문이라는 것이 그 요지이다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a561a788-752f-4069-876c-7e02252b1c6c/Untitled.png)
+<img width="327" alt="img" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/4c02a9fc-3f92-44c5-9ba9-50019b694e94">
 
 풀어 말하자면, 실제 사용되는 deep learning model에는 w가 수도 없이 많으며, 그 수많은 w가 모두 local optima trap에 갇혀야 learning이 종료되는 것이며, 이는 실제 모델에서 발생 하기에는 매우 희박한 확률을 가지고 있기 때문이다.
+<br>
 
 그럼에도 불구하고 optimization을 하는 이유는,
 
@@ -41,7 +42,7 @@ global optimum solution에 도달하기 전에 local minimum을 global optimum s
   이 구간을 빠져나오는 데 garbage연산이 무수히 많이 필요 하는, 그러한 상태에 빠지는 것을 말한다.
 
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a65b484e-9755-4f35-a150-dcb7c24d6994/Untitled.png)
+<img width="327" alt="img" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/31ca125e-e088-4f47-a93d-82b66aaab800">
 
 - Oscillation (Zig-zag)
 
@@ -52,15 +53,15 @@ global optimum solution에 도달하기 전에 local minimum을 global optimum s
   이 현상에서 최대한 빠르게 빠져나올 수 있게 조절해 주어야 한다.
 
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1d5f8ae5-abc8-4769-9c5b-328c25ac77c7/Untitled.jpeg)
+<img width="327" alt="img" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/931d57a6-2e47-4bfb-8b96-52544707fe82">
 
 위 두 현상이 multi dimensional space에서 local minima 현상 보다 발생 빈도가 현저히 높으며, 이를 극복하기 위해서 optimization을 하는 것이다.
 
 Optimization의 종류는 간략하게 아래와 같이 나타낼 수 있다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/df9a793a-fc1e-49cd-8ebb-076a0d286420/Untitled.png)
+<img width="450" alt="img" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/088d8cca-47cd-4c39-8fb5-e0b37c1ee919">
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8f8536d1-745b-4557-9f9d-b80341f489ca/Untitled.png)
+<img width="400" alt="img" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/9f4b54e4-e4ee-434b-932e-3187ef1c0f23">
 
 위 diagram과 같이 optimizer에는 다양한 type이 있으며,
 
@@ -73,7 +74,8 @@ Optimization의 종류는 간략하게 아래와 같이 나타낼 수 있다.
   - Go straight !
   - Slowly but, skewed한 state에서도 Oscillation 없이 목표로 향한다.
 
-![Screenshot 2023-01-14 at 6.55.24 PM.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/66c27a0f-b215-4820-8b2c-6074c9aabeb0/Screenshot_2023-01-14_at_6.55.24_PM.png)
+<img width="327" alt="img" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/71de09f0-93ff-4b37-909e-17a753a4dc1b">
+<br><br>
 
 # Types of optimizer
 

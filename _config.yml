@@ -26,7 +26,7 @@ baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : "/assets/images/IMG_1501.JPG"
 logo                     : "/assets/images/logo.jpeg"
-masthead_title           : "kyu note"
+masthead_title           : #
 breadcrumbs              : true # false (default)
 words_per_minute         : 200
 comments:
@@ -58,7 +58,7 @@ reCaptcha:
   secret                 :
 atom_feed:
   path                   : # blank (default) uses feed.xml
-  hide                   : true # true, false (default)
+  hide                   : # true, false (default)
 search                   : # true, false (default)
 search_full_content      : # true, false (default)
 search_provider          : # lunr (default), algolia, google
