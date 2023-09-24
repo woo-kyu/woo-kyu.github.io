@@ -156,8 +156,7 @@ Scarcity of parameter : Lasso (L1) > Ridge (L2)
 - $\lambda$(Lambda) is part of parameter that controls the effects of regularization. (like loss function, $w$)
 - Regularized expression is expressed by sum of the absolute values
 
-![Bata_hat (optimum) value → replace (0,0)](https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/1086e0ee-ef37-4a51-9efa-4459619e91ee)
-
+<img width="400" alt="Bata_hat (optimum) value → replace (0,0)" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/1086e0ee-ef37-4a51-9efa-4459619e91ee">
 
 Bata_hat (optimum) value → replace (0,0)
 
@@ -170,7 +169,7 @@ Bata_hat (optimum) value → replace (0,0)
 - $\lambda$(Lambda) is part of parameter that controls the effects of regularization. (like loss function, $w$)
 - Regularized expression is expressed by sum of squares
 
-![Bata_hat (optimum) value → replace (0,0)](https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/6c930dd4-bc26-4e76-a76c-95b2d0a4432a)
+<img width="400" alt="Bata_hat (optimum) value → replace (0,0)" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/6c930dd4-bc26-4e76-a76c-95b2d0a4432a">
 
 Bata_hat (optimum) value → replace (0,0)
 

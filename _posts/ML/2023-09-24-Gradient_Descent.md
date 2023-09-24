@@ -27,13 +27,6 @@ optimum solution(최적해)에 맞닿는 point의 gradient(기울기)는 0이다
 
 Loss function에 대한 differentiate value가 0이 되는 방향으로 parameter의  update 방향 결정
 
-$$
-⁍
-$$
-
-$$
-⁍
-$$
 
 ## Instantaneous rate of change (순간 변화율)
 

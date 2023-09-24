@@ -122,15 +122,16 @@ use_tex: true
 - Select and Verify each every single data where in training data-sets
 - If data-sets are very enormous, that give rise to highly cost of calculate
 
-  ![loocv](https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/be731ec5-4675-4113-8b4d-dc23ad19742c){: .align-center} 
-  
+<img width="746" alt="ml101" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/be731ec5-4675-4113-8b4d-dc23ad19742c">
+
+<br>
 
 ## K-fold
 
 - Improve Loocv’s drawback
 - Validate by dividing into ‘K’ part
 
-  ![kfold](https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/4cea453a-6d92-4ed6-92af-cf1b970f1218){: .align-center}
+<img width="746" alt="ml101" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/4cea453a-6d92-4ed6-92af-cf1b970f1218">
 
 
 
