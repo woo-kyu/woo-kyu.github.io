@@ -26,6 +26,7 @@ optimum solution(최적해, o.s.)에 맞닿는 point의 gradient(기울기)는 0
 
 Loss function에 대한 differentiate value가 0이 되는 방향으로 parameter의  update 방향 결정
 
+<br>
 $ \theta_{i+1} = \theta_{i} -  learning~rate * sign~of~gradient $ {: .align-center}
 
 $ w :=W-\alpha \frac{\partial }{\partial W}cost(W) $ {: .align-center}
