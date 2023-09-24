@@ -134,10 +134,10 @@ Optimization의 종류는 간략하게 아래와 같이 나타낼 수 있다.
 
 ## AdaGrad (Adaptive)
 
-$
+<span style="color:skyblue">$
 h\leftarrow h+\frac{\partial L}{\partial W}\odot \frac{\partial L}{\partial W} \\
 W \leftarrow  W-\eta \frac{1}{\sqrt{h}}\odot \frac{\partial L}{\partial W}
-$
+$</span>
 <br>
 
 <img width="900" alt="img" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/7e14439b-d3dc-4a07-85d2-3d36bb38453a">{: .align-center}
@@ -150,9 +150,9 @@ $
 
 ## RMSProp
 
-$
+<span style="color:skyblue">$
 h_{i}\leftarrow \rho h_{i-1} +(1-\rho )\frac{\partial L_{i}}{\partial W}\odot \frac{\partial L_{i}}{\partial W}
-$
+$</span>
 <br>
 
 <img width="900" alt="img" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/ae2c3b6f-d841-4fc9-a893-e90e48737e63">{: .align-center}
@@ -166,16 +166,16 @@ $
 
 ## Adam(Adaptive Moment Estimation)
 
-$
+<span style="color:skyblue">$
 m_1\leftarrow \beta _{1}m_{0}+(1-\beta_{1})g_{1}\\
 \widehat{m1} \leftarrow \frac{m_{1}}{1- \beta_{1}^{1}} +\frac{(1-\beta_{1})g_{1}}{1- \beta_{1}^{1} }\\
 = 0 + g_{1}(\because m_{0}=0)
-$
+$</span>
 <br>
 
-$
+<span style="color:skyblue">$
 \theta_{t}\leftarrow  \theta _{t-1}-\frac{\alpha \widehat{m_{t}}}{\sqrt{\widehat{v_{t}}+\varepsilon }}
-$
+$</span>
 <br>
 
 <img width="950" alt="img" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/535368db-0c13-4568-857d-5a57383010f6">{: .align-center}
