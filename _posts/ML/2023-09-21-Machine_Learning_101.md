@@ -20,6 +20,8 @@ use_tex: true
 - Unsupervised Learning
 - Reinforcement Learning
 
+
+
   <img width="746" alt="ml101" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/88db6bbf-59d2-4af4-b252-6c2b2da3c01f">{: .align-center}
 
 
@@ -44,6 +46,7 @@ use_tex: true
 - [Bagging](https://www.notion.so/Bagging-d31aa1187e00477e89f464254e6f8993?pvs=21)
 - [Boosting](https://www.notion.so/Boosting-884046b371f34e9f936f54d5f5e507f8?pvs=21)
 
+<br><br>
 ## Regression vs. Classification
 
 ### Regression (회귀)
@@ -61,7 +64,7 @@ use_tex: true
     - Multiple Classification (다중 분류) : Soft-max function
 
 
-
+<br><br>
 # Unsupervised Learning
 
 ## [Dimension Reduction](https://www.notion.so/Dimension-Reduction-45abe195f9f447bfb4c4982c613ef4fa?pvs=21) (차원 축소; Data pre-processing)
@@ -88,7 +91,7 @@ use_tex: true
 
 ### [Hierarchial Clustering](https://www.notion.so/Hierarchial-Clustering-0297536f98824b8e8ed209fafe05fae9?pvs=21)
 
-
+<br><br>
 
 # Parameter vs. Hyper-parameter
 
@@ -103,14 +106,14 @@ use_tex: true
 - ex) Learning rate, Disposition size(배치 크기)
 
 
-
+<br><br>
 # Data structure
 
 - Feature (attribute) : information = X
 - Label : results = y (predict : y_hat)
 
 
-
+<br><br>
 # Use verified data-sets
 
 ## LOOCV
@@ -128,12 +131,12 @@ use_tex: true
 - Validate by dividing into ‘K’ part
 
   ![kfold](https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/4cea453a-6d92-4ed6-92af-cf1b970f1218){: .align-center}
-  
 
 
 
 
 
+<br><br>
 Lower Documents
 
 [Gradient Descent](https://www.notion.so/Gradient-Descent-aa1c49bfa7ce43f18b02c3040d7ba050?pvs=21)
