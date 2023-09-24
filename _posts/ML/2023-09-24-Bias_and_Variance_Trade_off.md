@@ -20,7 +20,7 @@ use_tex: true
     - 학습 데이터가 부족할 때 : Over-fitting (과적합)
 
   <br><br>
-# Over / Underfitting
+# What is different to Over / Underfitting?
 
 ![Overfitted classification and regression models memorize the training data too well in comparision with correctly fitted models.](https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/3f7d5785-d0b8-44bd-b2fe-e62b35622a4f)
 
@@ -29,17 +29,20 @@ Overfitted classification and regression models memorize the training data too w
 
 <br>
 
-## Overfitting
+# Overfitting
 
 > Overfitting is a machine learning behavior that occurs when the model is so closely aligened to the training data that it does not know how to respond to new data.
-> 
+>
+<br>
 
-### Because,
+## Because,
 
 - The machine learning model is too complex; It memorizes very subtle patterns in the training data that don’t generalize well.
 - The training data size is too small for the model complexity and/or contains large amounts of irrelevant information.
 
-### So,
+<br>
+
+## So,
 
 You can prevent overfitting by managing model complexity and improving the training data set.
 
@@ -51,9 +54,11 @@ When only looking at the computed error of a machine learning model for the trai
 |   Test    | <span style="color:red>High</span> |    Low     |     High      |
 - Computed error of overfitted models for tarining data is low, whereas the error is high for test data.
 
-![Screenshot 2023-03-16 at 11.19.37 AM.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/cc94fd85-9ad6-4441-9bf6-e0a0fd9710ff/Screenshot_2023-03-16_at_11.19.37_AM.png)
+<img width="564" alt="untitle" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/0573ec34-12aa-4e62-a310-22dc3f950a49">
 
-### And, How do i do ?
+<br>
+
+## And, How do i do ?
 
 Because the fundamental problem of overloading has given the model too much freedom.
 
@@ -69,7 +74,9 @@ Now, the model works for reducting error and penalty term.
 
 penalty term 으로 어느 것을 사용하는 가에 따라서 regulraization 의 특성도 달라진다.
 
-### In machinlearning,
+<br>
+
+## In machinlearning,
 
 Regularization 은 parameter 가 지나치게 큰 값을 갖지 못하게 한다.
 
@@ -77,18 +84,24 @@ Regularization 은 parameter 가 지나치게 큰 값을 갖지 못하게 한다
     - Lasso (Least Absolute Shrinkage and Selection Operator)
     - Ridge regression
 
-## Underfitting
+<br><br>
 
-### Because,
+# Underfitting
+
+
+## Because,
 
 - Model’s coplexity is very low.
 - Trained with garbage data.
+<br>
 
-### So,
+## So,
 
 You can change that input data’s feature or, higher model’s complexity then before.
 
 ![Screenshot 2023-03-16 at 11.20.29 AM.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d6c1692b-bbc7-46b6-8d37-d11ba8a75e38/Screenshot_2023-03-16_at_11.20.29_AM.png)
+
+<br><br>
 
 # Inductive learning
 
