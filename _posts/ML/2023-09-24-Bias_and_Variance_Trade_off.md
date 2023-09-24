@@ -23,7 +23,8 @@ use_tex: true
   <br><br>
 # What is different to Over / Underfitting?
 
-![Overfitted classification and regression models memorize the training data too well in comparision with correctly fitted models.](https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/3f7d5785-d0b8-44bd-b2fe-e62b35622a4f)
+![Overfitted classification and regression models memorize the training data too well in comparision with correctly fitted models.](https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/3f7d5785-d0b8-44bd-b2fe-e62b35622a4f){: .align-center}
+
 
 
 Overfitted classification and regression models memorize the training data too well in comparision with correctly fitted models.
@@ -39,7 +40,7 @@ Overfitted classification and regression models memorize the training data too w
 ## Because,
 
 - <span style='color:orange'>The machine learning model is too complex;</span> It memorizes very subtle patterns in the training data that don’t generalize well.
-- The training data size is too small for the model complexity and/or contains large amounts of irrelevant information.
+- <span style="color:orange">The training data size is too small</span> for the model complexity and/or contains large amounts of irrelevant information.
 
 <br>
 
@@ -47,7 +48,7 @@ Overfitted classification and regression models memorize the training data too w
 
 You can prevent overfitting by managing model complexity and improving the training data set.
 
-When only looking at the computed error of a machine learning model for the training data, overfitting is harder to detect than underfitting. So, to avoid overfitting, it is important to validate a machine learning model before using it on test data.
+When only looking at the computed error of a machine learning model for the training data, overfitting is <span style="color:orange">harder to detect</span> than underfitting. So, to avoid overfitting, it is important to validate a machine learning model before using it on test data.
 <br><br>
 
 |   Error   | Overfitting | Right Fit  | Underfitting  |
@@ -59,7 +60,8 @@ When only looking at the computed error of a machine learning model for the trai
 Computed error of overfitted models for training data is low, whereas the error is high for test data.
 
 
-<img width="564" alt="untitle" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/0573ec34-12aa-4e62-a310-22dc3f950a49">
+<img width="900" alt="untitle" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/0573ec34-12aa-4e62-a310-22dc3f950a49">{: .align-center}
+
 
 <br>
 
@@ -67,11 +69,11 @@ Computed error of overfitted models for training data is low, whereas the error 
 
 Because the fundamental problem of overloading has given the model too much freedom.
 
-So, we can apply regularization that punishes as much as the complexity of the model.
+So, we can apply <span style="color:skyblue">regularization</span> that punishes as much as the complexity of the model.
 
-Optimize 대상인, error function 을 다음과 같이 regularization 이 적용된 새로운 function 으로 바꾼다. 이 때 추가되는 term, $ {p} $ 을 penalty term 이라고 한다.
+Optimize 대상인, <span style="color:orange">error function</span> 을 다음과 같이 regularization 이 적용된 새로운 function 으로 바꾼다. 이 때 추가되는 term, <span style="color:skyblue">$ {p} $</span> 을 <span style="color:skyblue">penalty term</span> 이라고 한다.
 
-$ E^r(w)=E(w)+\blue{p} $
+$ E^r(w)=E(w)+$ <span style="color:skyblue">$ p $</span>
 
 Now, the model works for reducting error and penalty term.
 
@@ -102,13 +104,15 @@ Regularization 은 parameter 가 지나치게 큰 값을 갖지 못하게 한다
 
 You can change that input data’s feature or, higher model’s complexity then before.
 
-<img width="551" alt="untitle" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/2b216f78-533a-416f-819e-2164e38b398b">
+<img width="900" alt="untitle" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/2b216f78-533a-416f-819e-2164e38b398b">{: .align-center}
+
 
 <br><br>
 
 # Inductive learning
 
-<img width="539" alt="Screenshot_2023-03-16_at_12 11 16_PM" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/598db7d8-08bd-47f9-a112-6fc9b0d101c7">
+<img width="600" alt="Screenshot_2023-03-16_at_12 11 16_PM" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/598db7d8-08bd-47f9-a112-6fc9b0d101c7">{: .align-center}
+
 
 <br><br>
 
@@ -117,9 +121,10 @@ You can change that input data’s feature or, higher model’s complexity then 
 - Bias (편향) : relative under-fitting, mean of the models predicted - Real (optimal) parameter = Model Accuracy
 - Variance (분산) :
 
-<img width="600" alt="ml101" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/6e2ed63d-ab20-48ae-ad6f-9a7a27881274">
+<img width="600" alt="ml101" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/6e2ed63d-ab20-48ae-ad6f-9a7a27881274">{: .align-center}
 
-<img width="600" alt="ml101" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/9695f688-afb8-43e6-8e47-24cb59f2057c">
+<img width="600" alt="ml101" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/9695f688-afb8-43e6-8e47-24cb59f2057c">{: .align-center}
+
 
 <br>
 
@@ -157,7 +162,8 @@ Scarcity of parameter : Lasso (L1) > Ridge (L2)
 - $\lambda$(Lambda) is part of parameter that controls the effects of regularization. (like loss function, $w$)
 - Regularized expression is expressed by sum of the absolute values
 
-<img width="400" alt="Bata_hat (optimum) value → replace (0,0)" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/1086e0ee-ef37-4a51-9efa-4459619e91ee">
+<img width="400" alt="Bata_hat (optimum) value → replace (0,0)" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/1086e0ee-ef37-4a51-9efa-4459619e91ee">{: .align-center}
+
 
 Bata_hat (optimum) value → replace (0,0)
 
@@ -170,7 +176,8 @@ Bata_hat (optimum) value → replace (0,0)
 - $\lambda$(Lambda) is part of parameter that controls the effects of regularization. (like loss function, $w$)
 - Regularized expression is expressed by sum of squares
 
-<img width="400" alt="Bata_hat (optimum) value → replace (0,0)" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/6c930dd4-bc26-4e76-a76c-95b2d0a4432a">
+<img width="400" alt="Bata_hat (optimum) value → replace (0,0)" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/6c930dd4-bc26-4e76-a76c-95b2d0a4432a">{: .align-center}
+
 
 Bata_hat (optimum) value → replace (0,0)
 
