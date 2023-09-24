@@ -19,15 +19,16 @@ Determining and proceeding with the update direction of the parameter in the dir
 
 ![gd](https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/4aeda4e5-d857-4d75-a16c-182a70c2bf79){: .align-center}
 
-<br>optimum solution(최적해)에 맞닿는 point의 gradient(기울기)는 0이다.
+<br>
+optimum solution(최적해, o.s.)에 맞닿는 point의 gradient(기울기)는 0이다.
 
 이 gradient가 0에 convergence할 때 까지 parameter를 업데이트 하며 o.s.를 찾는다.
 
 Loss function에 대한 differentiate value가 0이 되는 방향으로 parameter의  update 방향 결정
 
-$ \theta_{i+1} = \theta_{i} -  learning~rate * sign~of~gradient $
+$ \theta_{i+1} = \theta_{i} -  learning~rate * sign~of~gradient $ {: .align-center}
 
-$ w :=W-\alpha \frac{\partial }{\partial W}cost(W) $
+$ w :=W-\alpha \frac{\partial }{\partial W}cost(W) $ {: .align-center}
 
 <br>
 <br>
