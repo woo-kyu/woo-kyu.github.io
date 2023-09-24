@@ -21,7 +21,7 @@ use_tex: true
 - Non-linear function
 - $y = \frac{1}{1 +e^{-x}} where  \ x= net$.
 - Function’s output is always over 0 to under 1. mid value is 0.5
-
+<br>
 
 
 ## Soft-max function
@@ -29,26 +29,26 @@ use_tex: true
 - For Multiple Classification
 - Non-linear function
 - $y_{i} = \frac{e^{Xi}}{\sum_{k=1}^{K}e^{xk}}$ (K = number of Class)
-
+<br><br>
 
 
 # Basement of Logistic Regression
 
 ## Odds
-
 - how many higher probability of success ($y = 1$) than fail ($y=0$)
-- $odds = \frac{p(y=1|x|)}{1-p(y=1|x|)}\\ \because (p(y=0|x|)+p(y=1|x|))=1,~~p(y=0|x)=1-p(y=1|x)$
+- $ odds = \frac{p(y=1|x|)}{1-p(y=1|x|)}\\ \because (p(y=0|x|)+p(y=1|x|))=1,~~p(y=0|x)=1-p(y=1|x) $
+<br>
 
 ## Logit Transformation
-
-- $logit(p) = log(odds)= log\frac{p(y=1|x|)}{1-p(y=1|x|)}$
+- $ logit(p) = log(odds)= log\frac{p(y=1|x|)}{1-p(y=1|x|)} $
 - Input : $p$  = [0 ~ 1], Output : [$-\infty$ ~ $+\infty$]
+<br><br>
 
 # Logistic function
 
 - Reverse function of Logit Transformation
 
-- $logit(p) = log(odds)= log\frac{p(y=1|x|)}{1-p(y=1|x|)} = w_{0}+w_{1}x_{1}+...+w_{D}x_{D}=w^{t}X$
+- $ logit(p) = log(odds)= log\frac{p(y=1|x|)}{1-p(y=1|x|)} = w_{0}+w_{1}x_{1}+...+w_{D}x_{D}=w^{t}X $
 
 - Logistic Function ; $Sigmoid vs. Soft-max function
 
@@ -61,8 +61,9 @@ use_tex: true
     - For Multiple Classification
     - Non-linear function
     - $y_{i} = \frac{e^{Xi}}{\sum_{k=1}^{K}e^{xk}}$ (K = number of Class)
+<br>
 
-  ## Basement of Logistic Regression
+## Basement of Logistic Regression
 
   - Odds
     - how many higher probability of success ($y = 1$) than fail ($y=0$)
@@ -70,18 +71,16 @@ use_tex: true
   - Logit Transformation
     - $logit(p) = log(odds)= log\frac{p(y=1|x|)}{1-p(y=1|x|)}$
     - Input : $p$  = [0 ~ 1], Output : [$-\infty$ ~ $+\infty$]
+    <br><br>
 
-  # Logistic function
+# Logistic function
 
   - Reverse function of Logit Transformation
 
-  - $logit(p) = log(odds)= log\frac{p(y=1|x|)}{1-p(y=1|x|)} = w_{0}+w_{1}x_{1}+...+w_{D}x_{D}=w^{t}X$
-    $$
-    Logistic Function ; \ \ $p(y=1|x)= \frac{e^{w^{T}X}}{1+e^{w^{T}X}} = \frac{1}{e^{-w^{T}X}}$
-$
-
-
-- Logistic function is combine linear regression with sigmoid function (sigmoid $x$ → $w^{T}X$)
+  - $logit(p) = log(odds)= log\frac{p(y=1|x|)}{1-p(y=1|x|)} = w_{0}+w_{1}x_{1}+...+w_{D}x_{D}=w^{t}X$ 
+  - <span style="color:skyblue">$ Logistic Function ; \ \ $p(y=1|x)= \frac{e^{w^{T}X}}{1+e^{w^{T}X}} = \frac{1}{e^{-w^{T}X}}$
+  - Logistic function is combine linear regression with sigmoid function (sigmoid $x$ → $w^{T}X$)
+<br><br>
 
 # Logistic Regression
 
@@ -90,6 +89,7 @@ $
 - Predicted value is depends on the value of $wX$
   - $w^{T}X>0$ : Classify 1
   - $w^{T}X<0$ : Classify 0
+<br><br>
 
 # Bayes’ theorem
 
@@ -99,6 +99,8 @@ $
 - Prior (사전 확률, $P(w)$) : 데이터를 보기 전, 일반적으로 알고 있는 가설의 확률
 - $\therefore$  사전확률 * 우도확률 = 사후확률
 - 위 확률들을 통해 가설 (모델의 파라미터)를 추정하는 방법으로 MLE 와 MAP 두 가지가 있음
+<br><br>
+
 
 # MLE (Maximum Likehood Estimation)
 
@@ -113,7 +115,7 @@ $
   - $Likelihood : \prod_{i}^{n}\frac{1}{\sigma \sqrt{2\pi }}\textbf{e}^{\frac{-1}{2}(\frac{x_{i}-\mu }{\sigma })^2}$
 - pdf = 정규분포를 따르는 데이터 → 정규분포를 표현하기 위한 파라미터 (평균, 분산)을 사용해 임의의 데이터가 나올 수 있는 확률
 - 샘플이 i 부터 n개 까지의 데이터들의 pdf값에 대한 곱 = 전체 데이터가 나올 확률
-
+<br>
 
 
 ## MLE (Maximum Likehood Estimation, 최대 우도 추정법)
@@ -121,7 +123,7 @@ $
 - 현재의 데이터 분포가 나올 확률이 가장 높은 parameter == 우도 확률을 최대로 만드는 parameter
 - $\hat{W} = \underset{w}{arg ~max}~P(X|w|)$
 - Although it is a very simple parameter estimation method, but the values are sensitive to the data.
-
+<br>
 
 
 ## MAP (Maximum A posterior, 최대 사후 확률)
@@ -131,7 +133,7 @@ $
 - Posterior is important to calculate immediately
 - Using the Bayes’ theorem, it express the multiple of prior and likelihood probability
 - accurate of estimate is depends upon accurate of prior probability
-
+<br><br>
 
 
 # MLE for Logistic Regression
@@ -144,7 +146,7 @@ $
 - $P(Y=y_{i})=p^{y_{i}}(1-p)^{1-y_{i}}$  ( $p = p(y=1|x)$ : [0,1] ) → PDF
 - if, $y_{i}=1$ 일때 p, $y_{i}=0$ 일때, 1-p
 - $L=\prod_{i}p^{y_{i}}(1-p)^{1-y_{i}}$ → 모든 데이터 셈플 iid한 베르누이 분포를 가진다고 가정할 때의 우도함수
-
+<br>
 
 
 ### Logistic regression’s likelihood function
@@ -160,7 +162,7 @@ $
   {% endraw %}
 - Log likelihood function을 maximize == - Log likelihood function을 minimize
 - - log likelihood value ($\textbf{ln~L}$)를 minimize → 손실함수를 최소화
-
+<br>
 
 
 ### SGD for MLE
@@ -168,11 +170,12 @@ $
 - Loss function = $-(\textbf{ln~L})$
 - $- (\textbf{ln~L}) = -(\sum_{i}y_{i}w^{T}X_{i} -\textbf{ln}\{1+e^{w^{T}X_{i}}\})$
 
-![Untitled](https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/8b53f34d-bbd2-4714-abda-88a14d134e38)
+<img width="750" alt="img" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/8b53f34d-bbd2-4714-abda-88a14d134e38">{: .align-center}
+
 
 - $0=\frac{\partial \textbf{ln~L}}{\partial w}=\{\sum *{i}y*{i}X{i}\}+\{\sum *{i}-X*{i}\frac{e^{w^{T}X_{i}}}{1+e^{w^{T}X_{i}}}\}\\=\sum *{i}X*{i}(y_{i}-P(y_{i}=1|X_{i};w))$
 - $w_{t+1}=w_{t}-\textrm{lr}\times \frac{\partial \textrm{ln~L}}{\partial w}$
-
+<br><br>
 
 
 # Non-linear Logistic Regression
@@ -181,7 +184,8 @@ $
 - Linear logistic regression에서 $w^{T}X$를 non-linear regression function으로 exchange
 - $P(\hat{y}=1|X) = \frac{1}{1+e^{-w^{T}X}}=\sigma(W_{0}+w_{1}X+w_{2}X^{2}+w_{3}X^{3})$
 
-![Untitled 1](https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/e99c6e9d-1ca9-4154-b799-5d79a110c3b0)
+<img width="900" alt="img" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/e99c6e9d-1ca9-4154-b799-5d79a110c3b0">{: .align-center}
+
 
 
 
@@ -189,7 +193,8 @@ $
 
 ## Confusion matrix (오차 행렬)
 
-![Untitled 2](https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/750511e1-e7c1-4a8d-9f21-34a31b6945d5)
+  <img width="600" alt="img" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/750511e1-e7c1-4a8d-9f21-34a31b6945d5">{: .align-center}
+
 
 
 
@@ -197,7 +202,8 @@ $
 
 - N개의 데이터 샘플 중 예측에 성공한 샘플의 비율 $\frac{TP+TN}{TP+FN+FP+TN}$
 
-  <img width="630" alt="Screenshot_2023-01-22_at_5 19 25_PM" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/6c18ac33-39c1-48aa-b071-af31e8303833">
+  <img width="600" alt="Screenshot_2023-01-22_at_5 19 25_PM" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/6c18ac33-39c1-48aa-b071-af31e8303833">{: .align-center}
+
 
 
 
@@ -205,7 +211,8 @@ $
 
 - 모델이 Positive로 예측한 것 중 실제값 또한 Positive인 비율 $\frac{TP}{TP+FP}$
 
-  <img width="638" alt="Screenshot_2023-01-22_at_5 20 53_PM" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/86cae381-0de7-4b92-a0f7-5a64ffd87dbb">
+  <img width="600" alt="Screenshot_2023-01-22_at_5 20 53_PM" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/86cae381-0de7-4b92-a0f7-5a64ffd87dbb">{: .align-center}
+
 
 
 
@@ -213,7 +220,8 @@ $
 
 - 실제 값이 Positive인 것 중 모델이 Positive로 예측한 비율 $\frac{TP}{TP+FN}$
 
-  <img width="612" alt="Screenshot_2023-01-22_at_5 22 05_PM" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/5474aa82-19aa-4226-bf3d-606ea630fe49">
+  <img width="600" alt="Screenshot_2023-01-22_at_5 22 05_PM" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/5474aa82-19aa-4226-bf3d-606ea630fe49">{: .align-center}
+
 
 
 
@@ -225,13 +233,15 @@ $
   - 기하 평균 : 곱에 대한 평균
   - 조화 평균 : 곱과 합에 대한 평균 ex. $\frac{ab}{a+b}$
 
-  <img width="618" alt="Screenshot_2023-01-22_at_5 26 03_PM" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/a7da3f97-acb2-470a-b621-b2ea38340ff9">
+  <img width="600" alt="Screenshot_2023-01-22_at_5 26 03_PM" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/a7da3f97-acb2-470a-b621-b2ea38340ff9">{: .align-center}
+
 
 
 
 # Multi-class Classification : Soft-max
 
-  <img width="603" alt="Screenshot_2023-01-22_at_6 15 31_PM" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/c10b93d0-7078-4c2e-b0b7-e79879f2cf0b">
+  <img width="700" alt="Screenshot_2023-01-22_at_6 15 31_PM" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/c10b93d0-7078-4c2e-b0b7-e79879f2cf0b">{: .align-center}
+
 
 - Non-linear function for multi-classification problem
 - $y_{i} = \frac{e^{Xi}}{\sum_{k=1}^{K}e^{xk}}$ (K = number of Class)
