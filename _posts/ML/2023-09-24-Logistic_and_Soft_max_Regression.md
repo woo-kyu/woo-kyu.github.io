@@ -1,3 +1,15 @@
+---
+layout: single
+title: "Logistic and Soft-max Regression"
+categories: ML
+tag: [ML, AI]
+author_profile: false
+search: true
+redirect_from:
+- /machinelearning101
+  use_tex: true
+---
+
 # Sigmoid vs. Soft-max function
 
 ## Sigmoid function
