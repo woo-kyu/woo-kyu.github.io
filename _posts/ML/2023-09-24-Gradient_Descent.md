@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Machine Learning 101"
+title: "Gradient Descent"
 categories: ML
 tag: [ML, AI]
 author_profile: false
