@@ -37,7 +37,7 @@ Overfitted classification and regression models memorize the training data too w
 
 ## Because,
 
-- The machine learning model is too complex; It memorizes very subtle patterns in the training data that don’t generalize well.
+- <span style='background-color:#ffdc0'>The machine learning model is too complex;</span> It memorizes very subtle patterns in the training data that don’t generalize well.
 - The training data size is too small for the model complexity and/or contains large amounts of irrelevant information.
 
 <br>
