@@ -119,7 +119,8 @@ Optimization의 종류는 간략하게 아래와 같이 나타낼 수 있다.
 
 ## Momentum
 
-$$v\leftarrow \alpha \nu -\eta \frac{\partial L}{\partial W} \\ m_{t+1}\leftarrow \beta_{1}m_{t}+(1-\beta_{1})\triangledown _{\Theta }L(\Theta )$$
+$v\leftarrow \alpha \nu -\eta \frac{\partial L}{\partial W} \\ m_{t+1}\leftarrow \beta_{1}m_{t}+(1-\beta_{1})\triangledown _{\Theta }L(\Theta )$
+<br>
 
 <img width="850" alt="img" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/c711b4e8-4da7-4e5e-a4e2-daae98ee3799">{: .align-center}
 
@@ -132,10 +133,11 @@ $$v\leftarrow \alpha \nu -\eta \frac{\partial L}{\partial W} \\ m_{t+1}\leftarro
 
 ## AdaGrad (Adaptive)
 
-$$
+$
 h\leftarrow h+\frac{\partial L}{\partial W}\odot \frac{\partial L}{\partial W} \\
 W \leftarrow  W-\eta \frac{1}{\sqrt{h}}\odot \frac{\partial L}{\partial W}
-$$
+$
+<br>
 
 <img width="900" alt="img" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/7e14439b-d3dc-4a07-85d2-3d36bb38453a">{: .align-center}
 
@@ -147,9 +149,10 @@ $$
 
 ## RMSProp
 
-$$
+$
 h_{i}\leftarrow \rho h_{i-1} +(1-\rho )\frac{\partial L_{i}}{\partial W}\odot \frac{\partial L_{i}}{\partial W}
-$$
+$
+<br>
 
 <img width="900" alt="img" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/ae2c3b6f-d841-4fc9-a893-e90e48737e63">{: .align-center}
 
@@ -162,15 +165,17 @@ $$
 
 ## Adam(Adaptive Moment Estimation)
 
-$$
+$
 m_1\leftarrow \beta _{1}m_{0}+(1-\beta_{1})g_{1}\\
 \widehat{m1} \leftarrow \frac{m_{1}}{1- \beta_{1}^{1}} +\frac{(1-\beta_{1})g_{1}}{1- \beta_{1}^{1} }\\
 = 0 + g_{1}(\because m_{0}=0)
-$$
+$
+<br>
 
-$$
+$
 \theta_{t}\leftarrow  \theta _{t-1}-\frac{\alpha \widehat{m_{t}}}{\sqrt{\widehat{v_{t}}+\varepsilon }}
-$$
+$
+<br>
 
 <img width="950" alt="img" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/535368db-0c13-4568-857d-5a57383010f6">{: .align-center}
 
