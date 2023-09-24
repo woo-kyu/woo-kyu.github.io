@@ -47,7 +47,7 @@ Overfitted classification and regression models memorize the training data too w
 You can prevent overfitting by managing model complexity and improving the training data set.
 
 When only looking at the computed error of a machine learning model for the training data, overfitting is harder to detect than underfitting. So, to avoid overfitting, it is important to validate a machine learning model before using it on test data.
-<br>
+<br><br>
 
 |   Error   | Overfitting | Right Fit  | Underfitting  |
 |:---------:|:-----------:|:----------:|:-------------:|
