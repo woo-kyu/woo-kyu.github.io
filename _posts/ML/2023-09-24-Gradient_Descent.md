@@ -8,8 +8,6 @@ search: true
 use_tex: true
 ---
 
-# Gradient Descent
-
 > is a first-order iterative optimization algorithm for finding a local minimum of a differentiable function.
 >
 
