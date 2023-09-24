@@ -36,7 +36,7 @@ use_tex: true
 
 ## Classification
 
-- [Logistic and Soft-max Regression]({{site.url}}/ml/Logistic_and_Soft_max_Regression)
+- [Logistic and Soft-max Regression]({{site.url}}/ml/Logistic_Soft_max)
 - [Support Vector Machine (SVM)](https://www.notion.so/Support-Vector-Machine-SVM-983a2cc660224238aa7e6da3ce42dc41?pvs=21)
 - [Dicison Tree](https://www.notion.so/Dicison-Tree-983f9fac33ac43b98ace686faaf422e0?pvs=21)
 - [Linear Discriminant Analysis (LDA)](https://www.notion.so/Linear-Discriminant-Analysis-LDA-8808104ff8524e09b7d429869c0bb7ad?pvs=21)
