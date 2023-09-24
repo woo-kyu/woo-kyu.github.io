@@ -25,13 +25,9 @@ Determining and proceeding with the update direction of the parameter in the dir
 
 Loss function에 대한 differentiate value가 0이 되는 방향으로 parameter의  update 방향 결정
 
-$$
-\theta_{i+1} = \theta_{i} -  learning~rate * sign~of~gradient
-$$
+$ \theta_{i+1} = \theta_{i} -  learning~rate * sign~of~gradient $
 
-$$
-w :=W-\alpha \frac{\partial }{\partial W}cost(W)
-$$
+$ w :=W-\alpha \frac{\partial }{\partial W}cost(W) $
 
 <br>
 <br>
