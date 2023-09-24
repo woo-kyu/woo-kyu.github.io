@@ -53,7 +53,8 @@ When only looking at the computed error of a machine learning model for the trai
 | Training  |     Low     |    Low     |     High      |
 |   Test    |    High     |    Low     |     High      |
 
-- Computed error of overfitted models for tarining data is low, whereas the error is high for test data.
+Computed error of overfitted models for training data is low, whereas the error is high for test data.
+
 
 <img width="564" alt="untitle" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/0573ec34-12aa-4e62-a310-22dc3f950a49">
 
