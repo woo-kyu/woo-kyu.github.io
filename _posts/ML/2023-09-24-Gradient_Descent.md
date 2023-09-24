@@ -28,11 +28,11 @@ optimum solution(최적해)에 맞닿는 point의 gradient(기울기)는 0이다
 Loss function에 대한 differentiate value가 0이 되는 방향으로 parameter의  update 방향 결정
 
 $$
-⁍
+\theta_{i+1} = \theta_{i} -  learning~rate * sign~of~gradient
 $$
 
 $$
-⁍
+w :=W-\alpha \frac{\partial }{\partial W}cost(W)
 $$
 
 ## Instantaneous rate of change (순간 변화율)
@@ -44,6 +44,7 @@ $$
 - To differentiate a function f(x) means to obtain the instantaneous rate of change of the function (함수 f(x)를 미분한다는 것은 함수 f(x)의 순간 변화율을 구한다는 것)
 - If Function’s value is minimum, differentiate value is 0(Instantaneous rate of change, Gradient)
 
+\n\n
 ## Mean Squared Error, MSE (평균 제곱 오차)
 
 - Typical loss function in a regression problem
