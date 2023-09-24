@@ -12,7 +12,7 @@ use_tex: true
 > Local minima problem 은 알고리즘이 전역 최소값을 찾는 대신 지역 최소값에 갇히는 현상을 나타낸다. 
 > 이 문제는 특히 심층 신경망과 같은 복잡한 머신러닝 모델에서 최적화할 때 발생 가능하다.
 
-<img width="327" alt="Optima ; Local minimum trap에 빠진 상태" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/3d66b904-ad48-4b6d-94d8-b8b160641bc5">{: .align-center}
+<img width="450" alt="Optima ; Local minimum trap에 빠진 상태" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/3d66b904-ad48-4b6d-94d8-b8b160641bc5">{: .align-center}
 
 # Optima: Trapped in local minimum
 
@@ -30,7 +30,7 @@ global optimum solution에 도달하기 전에 local minimum을 global optimum s
 
 그리고 그 high dimensional space 에서 모든 축의 방향으로 오목한 형태가 형성될 확률은 거의 0에 가깝기 때문이라는 것이 그 요지이다.
 
-<img width="327" alt="img" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/4c02a9fc-3f92-44c5-9ba9-50019b694e94">{: .align-center}
+<img width="450" alt="img" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/4c02a9fc-3f92-44c5-9ba9-50019b694e94">{: .align-center}
 
 풀어 말하자면, 실제 사용되는 deep learning model에는 w가 수도 없이 많으며, 그 수많은 w가 모두 local optima trap에 갇혀야 learning이 종료되는 것이며, 이는 실제 모델에서 발생 하기에는 매우 희박한 확률을 가지고 있기 때문이다.
 <br>
@@ -45,7 +45,7 @@ global optimum solution에 도달하기 전에 local minimum을 global optimum s
 
   이 구간을 빠져나오는 데 garbage연산이 무수히 많이 필요 하는, 그러한 상태에 빠지는 것을 말한다.
 
-  <img width="327" alt="img" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/31ca125e-e088-4f47-a93d-82b66aaab800">{: .align-center}
+  <img width="450" alt="img" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/31ca125e-e088-4f47-a93d-82b66aaab800">{: .align-center}
 <br>
 
 - Oscillation (Zig-zag)
@@ -56,15 +56,15 @@ global optimum solution에 도달하기 전에 local minimum을 global optimum s
 
   이 현상에서 최대한 빠르게 빠져나올 수 있게 조절해 주어야 한다.
 
-  <img width="327" alt="img" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/931d57a6-2e47-4bfb-8b96-52544707fe82">{: .align-center}
+  <img width="450" alt="img" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/931d57a6-2e47-4bfb-8b96-52544707fe82">{: .align-center}
 
 위 두 현상이 multi dimensional space에서 local minima 현상 보다 발생 빈도가 현저히 높으며, 이를 극복하기 위해서 optimization을 하는 것이다.
 
 Optimization의 종류는 간략하게 아래와 같이 나타낼 수 있다.
 
-<img width="490" alt="img" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/088d8cca-47cd-4c39-8fb5-e0b37c1ee919">{: .align-center}
+<img width="490" alt="img" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/088d8cca-47cd-4c39-8fb5-e0b37c1ee919">
 
-<img width="400" alt="img" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/9f4b54e4-e4ee-434b-932e-3187ef1c0f23">{: .align-center}
+<img width="400" alt="img" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/9f4b54e4-e4ee-434b-932e-3187ef1c0f23">
 <br>
 
 위 diagram과 같이 optimizer에는 다양한 type이 있으며,
@@ -78,7 +78,7 @@ Optimization의 종류는 간략하게 아래와 같이 나타낼 수 있다.
   - Go straight !
   - Slowly but, skewed한 state에서도 Oscillation 없이 목표로 향한다.
 
-<img width="327" alt="img" src="https://t1.daumcdn.net/cfile/tistory/99B170405B627B471F">{: .align-center}
+<img width="500" alt="img" src="https://t1.daumcdn.net/cfile/tistory/99B170405B627B471F">{: .align-center}
 <br><br>
 
 # Types of optimizer
@@ -91,9 +91,9 @@ Optimization의 종류는 간략하게 아래와 같이 나타낼 수 있다.
 <br>
 
 ## SGD (Stochastic Gradient Descent)
-<img width="350" alt="img" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/0edabbb4-b1c8-4c12-9a4f-5c93a966123d">{: .align-center}
+<img width="450" alt="img" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/0edabbb4-b1c8-4c12-9a4f-5c93a966123d">{: .align-center}
 
-- $W=(X^{T}X)^{-1}X^{T}Y$
+- <span style="color:skyblue">$W=(X^{T}X)^{-1}X^{T}Y$
 - 모든 데이터에 대해 weight 를 조절하는 것이 아닌, 랜덤으로 일부를 추출해서 그에 대해 가중치를 조절하는 방법이다.
 - Better speed than GD, But give rise to ‘shooting’ often due to stochastic
 - Partial differentiation of cost function
@@ -118,8 +118,9 @@ Optimization의 종류는 간략하게 아래와 같이 나타낼 수 있다.
 
 
 ## Momentum
-
-$v\leftarrow \alpha \nu -\eta \frac{\partial L}{\partial W} \\ m_{t+1}\leftarrow \beta_{1}m_{t}+(1-\beta_{1})\triangledown _{\Theta }L(\Theta )$
+<div style="text-align:center">
+  <span style="color:skyblue">$v\leftarrow \alpha \nu -\eta \frac{\partial L}{\partial W} \\ m_{t+1}\leftarrow \beta_{1}m_{t}+(1-\beta_{1})\triangledown _{\Theta }L(\Theta )$
+</span></div>
 <br>
 
 <img width="850" alt="img" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/c711b4e8-4da7-4e5e-a4e2-daae98ee3799">{: .align-center}

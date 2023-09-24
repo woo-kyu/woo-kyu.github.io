@@ -18,7 +18,7 @@ The point at witch the value of loss function is minimized is the moment when th
 
 Determining and proceeding with the update direction of the parameter in the direction that the differential value for the loss function becomes zero.
 
-<img width="327" alt="img" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/4313e257-42b5-452d-94f7-5c353f1eeed6">
+<img width="327" alt="img" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/4313e257-42b5-452d-94f7-5c353f1eeed6">{: .align-center}
 
 optimum solution(최적해)에 맞닿는 point의 gradient(기울기)는 0이다.
 
@@ -29,7 +29,7 @@ Loss function에 대한 differentiate value가 0이 되는 방향으로 paramete
 
 ## Instantaneous rate of change (순간 변화율)
 
-- = differential coefficient(미분 계수)
+- <span style="color:orange">co= differential coefficient(미분 계수)
 - X 의 값이 미세하게 변화 했을 때, y 의 변화율
 - 어느 값 x (=a) 에서의 접선의 기울기
 - $\displaystyle \lim_{\Delta x \to 0} \frac{f(a+\Delta x)-f(a)}{\Delta x}$
@@ -40,7 +40,7 @@ Loss function에 대한 differentiate value가 0이 되는 방향으로 paramete
 
 - Typical loss function in a regression problem
 - Mean of the square of the error
-- $L = \frac{1}{N}\sum_{i=1}^{N}(y_{i}-\hat{y}_{i})^2$
+- <span style="color:orange">$L = \frac{1}{N}\sum_{i=1}^{N}(y_{i}-\hat{y}_{i})^2$
 
 ## Least Square Method (최소 제곱법)
 
@@ -76,13 +76,13 @@ optimum solution 에 도달 하기까지의 step 이 과하게 많이 필요할 
 
 필요한 step 수의 비해 적은양의 계산 반복 횟수(epoch)가 지정 되었을 때에는 optimum solution 에 도달하기도 전에 learning 이 끝날 수 있기 때문에
 
-이 parameter 을 적절하게 지정해 주는 것이 핵심이다.
+이 parameter 을 <span style="color:orange">적절하게</span> 지정해 주는 것이 핵심이다.
 
-<img width="327" alt="img" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/9ee9b64c-ccb8-463f-840d-3bb1c8c963f2">
+<img width="1000" alt="img" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/9ee9b64c-ccb8-463f-840d-3bb1c8c963f2">
 
 Learning rate의 volume 에 따른 진행과정
 
-<img width="327" alt="img" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/57c9a931-d4a4-4577-9076-64e1731a420a">
+<img width="700" alt="img" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/57c9a931-d4a4-4577-9076-64e1731a420a">
 
 ## Learning rate scheduler
 
