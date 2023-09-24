@@ -17,7 +17,7 @@ The point at witch the value of loss function is minimized is the moment when th
 
 Determining and proceeding with the update direction of the parameter in the direction that the differential value for the loss function becomes zero.
 
-![gd](https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/4aeda4e5-d857-4d75-a16c-182a70c2bf79)
+![gd](https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/4aeda4e5-d857-4d75-a16c-182a70c2bf79){: .align-center}
 
 <br>optimum solution(최적해)에 맞닿는 point의 gradient(기울기)는 0이다.
 
@@ -90,9 +90,9 @@ optimum solution 에 도달 하기까지의 step 이 과하게 많이 필요할 
 이 parameter 을 적절하게 지정해 주는 것이 핵심이다.
 
 <b>Learning rate의 volume 에 따른 진행과정</b>
-![Learning rate의 volume 에 따른 진행과정](https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/18497fd4-e1d8-47f2-bd23-d32f9e5133d6)
+![Learning rate의 volume 에 따른 진행과정](https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/18497fd4-e1d8-47f2-bd23-d32f9e5133d6){: .align-center}
 
-![Untitled 2](https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/dd0ec0bd-de85-498f-ac67-494784807a74)
+![Untitled 2](https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/dd0ec0bd-de85-498f-ac67-494784807a74){: .align-center}
 
 ## Learning rate scheduler
 
