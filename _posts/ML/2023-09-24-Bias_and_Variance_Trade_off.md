@@ -48,10 +48,10 @@ You can prevent overfitting by managing model complexity and improving the train
 
 When only looking at the computed error of a machine learning model for the training data, overfitting is harder to detect than underfitting. So, to avoid overfitting, it is important to validate a machine learning model before using it on test data.
 
-|   Error   |            Overfitting             | Right Fit  | Underfitting  |
-|:---------:|:----------------------------------:|:----------:|:-------------:|
-| Training  |                Low                 |    Low     |     High      |
-|   Test    | <span style="color:red>High</span> |    Low     |     High      |
+|   Error   | Overfitting | Right Fit  | Underfitting  |
+|:---------:|:-----------:|:----------:|:-------------:|
+| Training  |     Low     |    Low     |     High      |
+|   Test    |    High     |    Low     |     High      |
 - Computed error of overfitted models for tarining data is low, whereas the error is high for test data.
 
 <img width="564" alt="untitle" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/0573ec34-12aa-4e62-a310-22dc3f950a49">
@@ -99,22 +99,27 @@ Regularization 은 parameter 가 지나치게 큰 값을 갖지 못하게 한다
 
 You can change that input data’s feature or, higher model’s complexity then before.
 
-![Screenshot 2023-03-16 at 11.20.29 AM.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d6c1692b-bbc7-46b6-8d37-d11ba8a75e38/Screenshot_2023-03-16_at_11.20.29_AM.png)
+<img width="551" alt="untitle" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/2b216f78-533a-416f-819e-2164e38b398b">
 
 <br><br>
 
 # Inductive learning
 
-![Screenshot 2023-03-16 at 12.11.16 PM.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6b7497f1-9608-4c99-8e12-184e8c12ef48/Screenshot_2023-03-16_at_12.11.16_PM.png)
+<img width="539" alt="Screenshot_2023-03-16_at_12 11 16_PM" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/598db7d8-08bd-47f9-a112-6fc9b0d101c7">
+
+<br><br>
 
 # Bias and Variance Trade - off
 
 - Bias (편향) : relative under-fitting, mean of the models predicted - Real (optimal) parameter = Model Accuracy
 - Variance (분산) :
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/23093f57-fba5-41ac-b6fa-6e13e82263ad/Untitled.png)
+![Untitled](https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/6e2ed63d-ab20-48ae-ad6f-9a7a27881274)
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e9e8d616-a7fb-49f0-b96e-956345f28d6f/Untitled.jpeg)
+
+![Untitled](https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/9695f688-afb8-43e6-8e47-24cb59f2057c)
+
+<br>
 
 ## How to solve that trade-off?
 
@@ -124,6 +129,8 @@ You can change that input data’s feature or, higher model’s complexity then 
     - K-fold cross validation
     - Normalized loss function
 
+<br><br>
+
 # Regularized loss function
 
 - more higher models complexity is following to increaseing models parameters
@@ -131,11 +138,15 @@ You can change that input data’s feature or, higher model’s complexity then 
 - So, If models complexity is pretty high, do learn significant parameters in the data-sets
 - It means, make 0 what unnecessaries parameter
 
+<br><br>
+
 # Kind of Regularization
 
 Regularization : $\hat{\beta}$ 의 위치를 (0,0)으로 repositioning
 
 Scarcity of parameter : Lasso (L1) > Ridge (L2)
+
+<br>
 
 ## Lasso (L1) Regression
 
@@ -144,9 +155,12 @@ Scarcity of parameter : Lasso (L1) > Ridge (L2)
 - $\lambda$(Lambda) is part of parameter that controls the effects of regularization. (like loss function, $w$)
 - Regularized expression is expressed by sum of the absolute values
 
-![Bata_hat (optimum) value → replace (0,0)](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/adb9b9bf-9009-4599-ab96-c6f39304a5d2/Untitled.png)
+![Bata_hat (optimum) value → replace (0,0)](https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/1086e0ee-ef37-4a51-9efa-4459619e91ee)
+
 
 Bata_hat (optimum) value → replace (0,0)
+
+<br>
 
 ## Ridge (L2) Regression
 
@@ -155,8 +169,7 @@ Bata_hat (optimum) value → replace (0,0)
 - $\lambda$(Lambda) is part of parameter that controls the effects of regularization. (like loss function, $w$)
 - Regularized expression is expressed by sum of squares
 
-![Bata_hat (optimum) value → replace (0,0)](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1812da0b-c446-480e-8b5d-d84169257f06/Untitled.png)
+![Bata_hat (optimum) value → replace (0,0)](https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/6c930dd4-bc26-4e76-a76c-95b2d0a4432a)
 
 Bata_hat (optimum) value → replace (0,0)
 
-Refer
