@@ -2,7 +2,7 @@
 layout: single
 title: "Machine Learning 101"
 categories: ML
-tag: [ML, One-Oh-One]
+tag: [ML, Basic]
 author_profile: false
 search: true
 use_tex: true
