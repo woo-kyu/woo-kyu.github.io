@@ -116,9 +116,9 @@ You can change that input data’s feature or, higher model’s complexity then 
 - Bias (편향) : relative under-fitting, mean of the models predicted - Real (optimal) parameter = Model Accuracy
 - Variance (분산) :
 
-<img width="600" alt="ml101" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/6e2ed63d-ab20-48ae-ad6f-9a7a27881274">{: .align-left}
+<img width="600" alt="ml101" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/6e2ed63d-ab20-48ae-ad6f-9a7a27881274">
 
-<img width="600" alt="ml101" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/9695f688-afb8-43e6-8e47-24cb59f2057c">{: .align-left}
+<img width="600" alt="ml101" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/9695f688-afb8-43e6-8e47-24cb59f2057c">
 
 <br>
 
