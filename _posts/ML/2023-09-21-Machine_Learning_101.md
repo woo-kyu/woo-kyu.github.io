@@ -5,8 +5,6 @@ categories: ML
 tag: [ML, 101]
 author_profile: false
 search: true
-redirect_from:
-  - /machinelearning101
 use_tex: true
 ---
 
@@ -22,7 +20,7 @@ use_tex: true
 
 
 
-  <img width="746" alt="ml101" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/88db6bbf-59d2-4af4-b252-6c2b2da3c01f">{: .align-center}
+  <img width="746" alt="ml" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/88db6bbf-59d2-4af4-b252-6c2b2da3c01f">{: .align-center}
 
 
 
