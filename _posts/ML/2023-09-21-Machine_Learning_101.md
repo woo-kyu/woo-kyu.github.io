@@ -30,13 +30,13 @@ use_tex: true
 
 ## Regression
 
-- [Linear and Non-linear Regression](https://www.notion.so/Linear-and-Non-linear-Regression-ae1a552966a04ff298180bd7ffb0ab84?pvs=21)
-- [Gradient Descent](https://www.notion.so/Gradient-Descent-aa1c49bfa7ce43f18b02c3040d7ba050?pvs=21)
-- [Bias and Variance Trade-off](https://www.notion.so/Bias-and-Variance-Trade-off-d60ef99cf5ad43679a8ede2a08e80943?pvs=21)
+- [Linear and Non-linear Regression]({{site.url}}/ml/Regression/)
+- [Gradient Descent]({{site.url}}/ml/Gradient_Descent/)
+- [Bias and Variance Trade-off]({{site.url}}/ml/Bias_and_Variance_Trade_off/)
 
 ## Classification
 
-- [Logistic and Soft-max Regression](https://www.notion.so/Logistic-and-Soft-max-Regression-3bb3afc3a96c41afb8d483f5ab888a3d?pvs=21)
+- [Logistic and Soft-max Regression]({{site.url}}/ml/Logistic_and_Soft_max_Regression)
 - [Support Vector Machine (SVM)](https://www.notion.so/Support-Vector-Machine-SVM-983a2cc660224238aa7e6da3ce42dc41?pvs=21)
 - [Dicison Tree](https://www.notion.so/Dicison-Tree-983f9fac33ac43b98ace686faaf422e0?pvs=21)
 - [Linear Discriminant Analysis (LDA)](https://www.notion.so/Linear-Discriminant-Analysis-LDA-8808104ff8524e09b7d429869c0bb7ad?pvs=21)
