@@ -14,7 +14,7 @@ use_tex: true
 
 - For Binary classification
 - Non-linear function
-- $y = \frac{1}{1 +e^{-x}}.  \ x= net$.
+- $y = \frac{1}{1 +e^{-x}} where  \ x= net$.
 - Function’s output is always over 0 to under 1. mid value is 0.5
 
 
@@ -150,7 +150,9 @@ $
 - Can be interpreted as a Bernoulli distribution with a parameter value of p ($\sigma (w^{T}X$)
 - $\textbf{L} = \prod_{i}^{}\sigma(w^{T}X_{i})^{y_{i}}(1-\sigma(w^{T}X_{i}))^{1-y_{i}}$ → logistic 분포를 베르누이 분포로 표현
 - Log function는 monotone increasing function (단조 증가 함수) 이므로 L 또는  $\textbf{ln~L}$ 를 최대로 만드는 $w$는 동일함. ($\textbf{ln} = log_{e}$)
-- $\textbf{ln}~L = \sum_{i}y_{i}~\textbf{ln}\{{\sigma(w^{T}X_{i})\}}+\sum_{i}(1-y_{i})~\textbf{ln}\{1-\sigma (w^{T}X_{i})\}$
+  {% raw %}
+  $\textbf{ln}~L = \sum_{i}y_{i}~\textbf{ln}\{\sigma(w^{T}X_{i})\}+\sum_{i}(1-y_{i})~\textbf{ln}\{1-\sigma (w^{T}X_{i})\}$
+  {% endraw %}
 - Log likelihood function을 maximize == - Log likelihood function을 minimize
 - - log likelihood value ($\textbf{ln~L}$)를 minimize → 손실함수를 최소화
 
