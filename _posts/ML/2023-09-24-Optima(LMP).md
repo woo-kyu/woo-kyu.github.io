@@ -62,9 +62,11 @@ global optimum solution에 도달하기 전에 local minimum을 global optimum s
 
 Optimization의 종류는 간략하게 아래와 같이 나타낼 수 있다.
 
-<img width="490" alt="img" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/088d8cca-47cd-4c39-8fb5-e0b37c1ee919">
+<img width="490" alt="img" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/088d8cca-47cd-4c39-8fb5-e0b37c1ee919">{: .align-center}
 
-<img width="400" alt="img" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/9f4b54e4-e4ee-434b-932e-3187ef1c0f23">
+
+<img width="400" alt="img" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/9f4b54e4-e4ee-434b-932e-3187ef1c0f23">{: .align-center}
+
 <br>
 
 위 diagram과 같이 optimizer에는 다양한 type이 있으며,
@@ -166,16 +168,14 @@ $</span>
 
 ## Adam(Adaptive Moment Estimation)
 
-<span style="color:skyblue">$
-m_1\leftarrow \beta _{1}m_{0}+(1-\beta_{1})g_{1}\\
-\widehat{m1} \leftarrow \frac{m_{1}}{1- \beta_{1}^{1}} +\frac{(1-\beta_{1})g_{1}}{1- \beta_{1}^{1} }\\
-= 0 + g_{1}(\because m_{0}=0)
-$</span>
+$m_1 \leftarrow \beta_{1} m_{0} + (1-\beta_{1}) g_{1}$
+$\widehat{m1} \leftarrow \frac{m_{1}}{1- \beta_{1}^{1}} + \frac{(1-\beta_{1}) g_{1}}{1- \beta_{1}^{1}}$
+$= 0 + g_{1} \quad \text{(because } m_{0} = 0\text{)}$
+
+
 <br>
 
-<span style="color:skyblue">$
-\theta_{t}\leftarrow  \theta _{t-1}-\frac{\alpha \widehat{m_{t}}}{\sqrt{\widehat{v_{t}}+\varepsilon }}
-$</span>
+<span style="color:skyblue">$ \theta_{t}\leftarrow  \theta_{t-1}-\frac{\alpha \widehat{m_{t}}}{\sqrt{\widehat{v_{t}}+\varepsilon }} $</span>
 <br>
 
 <img width="950" alt="img" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/535368db-0c13-4568-857d-5a57383010f6">{: .align-center}
