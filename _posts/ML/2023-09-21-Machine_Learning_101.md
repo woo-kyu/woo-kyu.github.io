@@ -2,7 +2,7 @@
 layout: single
 title: "Machine Learning 101"
 categories: ML
-tag: [ML, AI]
+tag: [ML, 101]
 author_profile: false
 search: true
 redirect_from:

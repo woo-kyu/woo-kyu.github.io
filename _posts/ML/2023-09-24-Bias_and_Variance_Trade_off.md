@@ -2,7 +2,7 @@
 layout: single
 title: "Bias and Variance Trade-off"
 categories: ML
-tag: [ML, AI]
+tag: [ML]
 author_profile: false
 search: true
 use_tex: true

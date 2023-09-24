@@ -2,7 +2,7 @@
 layout: single
 title: "Gradient Descent"
 categories: ML
-tag: [ML, AI]
+tag: [ML]
 author_profile: false
 search: true
 use_tex: true

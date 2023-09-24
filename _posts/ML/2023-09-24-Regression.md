@@ -2,7 +2,7 @@
 layout: single
 title: "Linear and Non-linear Regression"
 categories: ML
-tag: [ML, AI]
+tag: [ML]
 author_profile: false
 search: true
 use_tex: true
