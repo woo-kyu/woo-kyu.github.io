@@ -8,10 +8,9 @@ search: true
 use_tex: true
 ---
 
+ 
+> is a first-order iterative optimization algorithm for finding a local minimum of a differentiable function.
 
-> 
-> > is a first-order iterative optimization algorithm for finding a local minimum of a differentiable function.
->
 
 That algorithm to update parameter in a direction that minimizes the value of the loss function.
 
@@ -53,7 +52,7 @@ Loss function에 대한 differentiate value가 0이 되는 방향으로 paramete
 # Learning rate, $\eta$
 
 > is a kind of parameter.
->
+
 
 Gradient Descent ;
 
@@ -89,13 +88,13 @@ Learning rate의 volume 에 따른 진행과정
 
 is a supplement learning rate
 
-[LRS (Learning Rate Scheduler)](https://www.notion.so/LRS-Learning-Rate-Scheduler-2be9e4dc1e11422da41eee7fcaf22aa9?pvs=21)
+[LRS (Learning Rate Scheduler)]({{site.url}}/ml/LRS)
 
 ## Optimizer
 
 for Local minima problem
 
-[Optima (Local minima problem)](https://www.notion.so/Optima-Local-minima-problem-90ceae844ae54ea8acdb27f3958aaa6d?pvs=21)
+[Optima (Local minima problem)]({{site.url}}/ml/Optima(LMP))
 
 ## Pseudo Code
 

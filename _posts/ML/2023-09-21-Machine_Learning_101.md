@@ -9,7 +9,7 @@ use_tex: true
 ---
 
 
-> Machine Learning 은, 데이터를 통해 패턴을 학습하여 일부의 데이터만으로도 예측이 가능한 알고리즘의 집합
+> Machine Learning 은, 데이터를 통해 패턴을 학습하여 일부의 데이터만으로 예측하는 알고리즘의 집합
 
 
 # Kind of Machine Learning Decided by Data
@@ -35,14 +35,14 @@ use_tex: true
 ## Classification
 
 - [Logistic and Soft-max Regression]({{site.url}}/ml/Logistic_Soft_max)
-- [Support Vector Machine (SVM)](https://www.notion.so/Support-Vector-Machine-SVM-983a2cc660224238aa7e6da3ce42dc41?pvs=21)
-- [Dicison Tree](https://www.notion.so/Dicison-Tree-983f9fac33ac43b98ace686faaf422e0?pvs=21)
-- [Linear Discriminant Analysis (LDA)](https://www.notion.so/Linear-Discriminant-Analysis-LDA-8808104ff8524e09b7d429869c0bb7ad?pvs=21)
+- [Support Vector Machine (SVM)]({{site.url}}/ml/SVM)
+- [Dicison Tree]({{site.url}}/ml/Dicison_tree)
+- [Linear Discriminant Analysis (LDA)]({{site.url}}/ml/LDA)
 
-## [Ensemble (Complex)](https://www.notion.so/Ensemble-Complex-f7f9181358a048759159eacb55ee1ea0?pvs=21)
+## [Ensemble (Complex)]({{site.url}}/ml/ensemble)
 
-- [Bagging](https://www.notion.so/Bagging-d31aa1187e00477e89f464254e6f8993?pvs=21)
-- [Boosting](https://www.notion.so/Boosting-884046b371f34e9f936f54d5f5e507f8?pvs=21)
+- [Bagging]({{site.url}}/ml/bagging)
+- [Boosting]({{site.url}}/ml/boosting)
 
 <br><br>
 ## Regression vs. Classification
