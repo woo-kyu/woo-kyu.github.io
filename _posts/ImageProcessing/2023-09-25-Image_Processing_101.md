@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Histogram
-categories: Image Process
+categories: ImageProcess
 tags:
   - CV
   - Basic

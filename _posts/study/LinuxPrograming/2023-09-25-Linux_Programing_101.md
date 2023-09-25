@@ -33,7 +33,7 @@ use_tex: true
 
 5. **표준화**: 시스템 라이브러리는 일관된 API를 제공하여 다양한 애플리케이션에서 동일한 방식으로 시스템 리소스에 접근할 수 있다.
     
-4. **유지보수**: 직접 커널에 접근하는 코드는 유지보수가 어렵다. 반면, 시스템 라이브러리를 사용하면 해당 라이브러리가 업데이트되거나 변경되더라도 애플리케이션 코드는 크게 변경할 필요가 없다.
+4. **유지보수**: 직접 커널에 접근하는 코드는 유지보수가 어렵다. 반면, 시스템 라이브러리를 사용하면 해당 라이브러리가 업데이트 되거나 변경 되더라도 애플리케이션 코드는 크게 변경할 필요가 없다.
     
 5. **호환성**: 다양한 OS 버전이나 다른 플랫폼 간의 호환성을 유지하기 위해 시스템 라이브러리를 사용하는 것이 좋다. 직접 커널에 접근하면 특정 OS나 플랫폼에 종속될 수 있다.
     
@@ -55,3 +55,43 @@ use_tex: true
 	- User-space applications must not be allowed to directly execute kernel code or manipulate kernel data
 - Instead, the kernel with a mechanism by which a user-space application can “==signal==” the kernel that it wishes to ==invoke== a ==system call== (따라서, 유저 어플리케이션은 시스템 콜을 호출하여 커널에 접근한다.)
 	- The application can then trap into the kernel through this well-defined mechanism and exe cute only code that the kernel allows it to execute.
+<br>
+
+### System calls (contd.)
+- Invoking system calls (contd.)
+	- Example of open (but the spirit is the same) 
+		- 5ineax
+		- Using registers ebx, ecx, edx, esi, edi for the first five parameters
+		- int, 0x80 for system calls
+
+- C libraries  
+	- *glibc*, wrappers for system calls, threading support, and basic application facilities  
+
+- C Compiler
+	- gcc, GNU’s version of *cc*, the *C Compiler.*
+
+# APIs and ABIs
+> APIs: Application Programming Interface
+> ABIs: Application Binary Interface> 
+### For portability and interoperability
+<br>
+
+## APIs (Application Programming Interfaces)
+- Source compatibility  
+	- That is, that the user of the API will successfully compile against the implementation of the API
+- Interfaces by which one piece of software communicates with another at the source level
+
+- To provides abstraction by providing a standard set of interfaces
+	- usually functions that one piece of software (typically, although not necessarily, a big her-level piece) can invoke from another piece of software (usually a lower-level piece)
+<br><br>
+
+## ABIs (Application Binary Interfaces) 
+
+- ==binary compatibility==
+	- Guaranteeing that a piece of object code will function on any system with the same ==ABI==, without requiring recompilation (동일환 ABI를 가진 디바이스간 컴파일 없이 실행가능)
+- Concerns about issues such as calling conventions, byte ordering, register use, system call invocation, linking, library behavior, and the binary object format
+	- The calling convention, for example,  
+		- how functions are invoked, how arguments are passed to functions, which registers are preserved and which are mangled, and how the caller retrieves the return value
+
+- Failed but operating systems with their own ABIs
+- Enforced by the toolchain—the compiler, the linker, and so on—and does not typically otherwise surface
