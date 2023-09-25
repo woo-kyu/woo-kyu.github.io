@@ -36,12 +36,12 @@ use_tex: true
 
 ## Odds
 - how many higher probability of success ($y = 1$) than fail ($y=0$)
-- $ odds = \frac{p(y=1|x|)}{1-p(y=1|x|)} $
-- $ \because (p(y=0|x|)+p(y=1|x|))=1,~~p(y=0|x)=1-p(y=1|x) $
+- odds = $\frac{p(y=1|x|)}{1-p(y=1|x|)}$
+- $\because (p(y=0|x|)+p(y=1|x|))=1,~~p(y=0|x)=1-p(y=1|x)$
 <br>
 
 ## Logit Transformation
-- $ logit(p)=log(odds)=log\frac{p(y=1|x|)}{1-p(y=1|x|)} $
+- $logit(p)=log(odds)=log\frac{p(y=1|x|)}{1-p(y=1|x|)}$
 - Input : $p$  = [0 ~ 1], Output : [$-\infty$ ~ $+\infty$]
 <br><br>
 
@@ -49,9 +49,9 @@ use_tex: true
 
 - Reverse function of Logit Transformation
 
-- $ logit(p)~=~log(odds)=~log\frac{p(y=1|x|)}{1-p(y=1|x|)}~=~w_{0}+w_{1}x_{1}+...+w_{D}x_{D}=w^{t}X $
+- $logit(p)~=~log(odds)=~log\frac{p(y=1|x|)}{1-p(y=1|x|)}~=~w_{0}+w_{1}x_{1}+...+w_{D}x_{D}=w^{t}X$
 
-- Logistic Function ; $Sigmoid vs. Soft-max function
+- Logistic Function ; Sigmoid vs. Soft-max function
 
   - Sigmoid function
     - For Binary classification
@@ -79,7 +79,7 @@ use_tex: true
   - Reverse function of Logit Transformation
 
   - $logit(p)~=~log(odds)=~log\frac{p(y=1|x|)}{1-p(y=1|x|)}~=~w_{0}+w_{1}x_{1}+...+w_{D}x_{D}=w^{t}X$ 
-  - <span style="color:skyblue">$ Logistic Function ; $p(y=1|x)=~\frac{e^{w^{T}X}}{1+e^{w^{T}X}}~=~\frac{1}{e^{-w^{T}X}}$
+  - <span style="color:skyblue">Logistic Function : $p(y=1|x)=\frac{e^{w^{T}X}}{1+e^{w^{T}X}}=\frac{1}{e^{-w^{T}X}}$
   - Logistic function is combine linear regression with sigmoid function (sigmoid $x$ → $w^{T}X$)
 <br><br>
 
