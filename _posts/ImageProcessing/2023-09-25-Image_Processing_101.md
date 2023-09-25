@@ -4,6 +4,7 @@ title: Histogram
 categories: ImageProcess
 tags:
   - CV
+  - ImageProcess
   - Basic
 author_profile: false
 search: true
