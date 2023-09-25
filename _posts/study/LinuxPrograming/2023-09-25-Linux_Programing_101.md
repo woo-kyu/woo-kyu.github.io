@@ -51,7 +51,6 @@ use_tex: true
 
 # Cornerstones of System Programming
 
-
 ##  System calls
 
 
