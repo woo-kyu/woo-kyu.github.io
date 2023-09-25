@@ -24,17 +24,19 @@ use_tex: true
 
 ### Why do we learn
 > about system programming
+<br>
 - A trend in application programming away from system-level programming an d toward very high-level development, either through web software (such as J avaScript), or through managed code (such as Java)
 - Despite the trend in application programming, the majority of Unix and Linux code still written at the system level
 
 <br>
 ### Why use the System Library
 > User level 에서 직접 kernel로 접근 하지 않고, system library를 사용하는 이유
+<br>
 1. **보안**: 직접적인 커널 접근을 허용하면 악의적인 코드나 버그로 인해 시스템 전체가 위험에 노출될 수 있다. 시스템 라이브러리를 사용하면, 이러한 접근을 제한하고 안전한 방법으로 리소스에 접근할 수 있다.
 
-3. **추상화**: 시스템 라이브러리는 하드웨어와 OS의 복잡한 세부 사항을 추상화하여 제공한다. 이로 인해 개발자는 특정 하드웨어나 OS의 세부 사항에 의존하지 않고 코드를 작성할 수 있다.    
+2. **추상화**: 시스템 라이브러리는 하드웨어와 OS의 복잡한 세부 사항을 추상화하여 제공한다. 이로 인해 개발자는 특정 하드웨어나 OS의 세부 사항에 의존하지 않고 코드를 작성할 수 있다.    
 
-5. **표준화**: 시스템 라이브러리는 일관된 API를 제공하여 다양한 애플리케이션에서 동일한 방식으로 시스템 리소스에 접근할 수 있다.
+3. **표준화**: 시스템 라이브러리는 일관된 API를 제공하여 다양한 애플리케이션에서 동일한 방식으로 시스템 리소스에 접근할 수 있다.
     
 4. **유지보수**: 직접 커널에 접근하는 코드는 유지보수가 어렵다. 반면, 시스템 라이브러리를 사용하면 해당 라이브러리가 업데이트 되거나 변경 되더라도 애플리케이션 코드는 크게 변경할 필요가 없다.
     
@@ -44,10 +46,13 @@ use_tex: true
     
 7. **간소화**: 대부분의 개발자에게는 커널 수준의 프로그래밍이 필요하지 않다. 시스템 라이브러리를 사용하면 복잡한 커널 프로그래밍 없이도 필요한 기능을 구현할 수 있다.
 <br><br>
-
+<br>
 
 # Cornerstones of System Programming
+
+
 ##  System calls
+
 
 ### Overview
 - Function invocations made from user space - your text editor, favorite game, and so on - into the kernel (the core internals of the system) in order to request some service or resource from the operating system
