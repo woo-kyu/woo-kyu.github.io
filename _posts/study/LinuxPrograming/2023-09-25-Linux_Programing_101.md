@@ -65,10 +65,6 @@ use_tex: true
 	- User-space applications must not be allowed to directly execute kernel code or manipulate kernel data
 - Instead, the kernel with a mechanism by which a <span style="color:orange">user-space</span> application can “signal” the <span style="color:orange">kernel</span> that it wishes to <span style="color:orange">invoke a system call</span> (따라서, 유저 어플리케이션은 시스템 콜을 호출하여 커널에 접근한다.)
 	- The application can then trap into the kernel through this well-defined mechanism and exe cute only code that the kernel allows it to execute.
-<br>
-
-### System calls (contd.)
-- Invoking system calls (contd.)
 	- Example of open (but the spirit is the same) 
 		- 5ineax
 		- Using registers ebx, ecx, edx, esi, edi for the first five parameters
@@ -79,6 +75,7 @@ use_tex: true
 
 - C Compiler
 	- gcc, GNU’s version of *cc*, the *C Compiler.*
+<br>
 
 # APIs and ABIs
 > APIs: Application Programming Interface
@@ -136,7 +133,7 @@ use_tex: true
 - Usually, as bytes in the file are read from or written to, byte-by-byte, the file position increases in kind
 - The file position may also be set manually to a given value, even a value beyond the end of the file
 - Writing a byte to a file position beyond the end of the file will cause the intervening bytes to be padded with zeros.
-- While it is possible to write bytes in this manner to a position beyond the end of the file, it is not possible to write bytes to a position before the beginning of a file. (**NO NEGATIVE lo cation**)
+- While it is possible to write bytes in this manner to a position beyond the end of the file, it is not possible to write bytes to a position before the beginning of a file. (**NO NEGATIVE lo cation**) (파일의 off-set 이전에 기록 불가)
 - Writing a byte to the middle of a file overwrites the byte previously located at that offset.
 - NOT possible to expand a file by writing into the middle of it
 - Most file writing occurs at the end of the file.
