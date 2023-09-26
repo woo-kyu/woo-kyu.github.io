@@ -63,7 +63,7 @@ use_tex: false
   - That is, that the user of the API will successfully compile against the implementation of the API
     - 운영체제 또는 플랫폼 간 호환성 유지: 컴파일
   - Interfaces by which one piece of software communicates with another at the <span style="color:orange">source level</span>
-    - 소스레벨에서의 호환성을 위해서는 APi
+    - 소스레벨에서의 호환성을 위한 API
   - To provides abstraction by providing a standard set of interfaces 
     - 표준 인터페이스 세트를 제공
 
@@ -174,6 +174,10 @@ use_tex: false
   - 파일 디스크립터는 열린 파일의 "핸들" 또는 "참조"로 생각할 수 있다.
 
 <br>
+<br>
+
+## Directories
+
 
 
 
