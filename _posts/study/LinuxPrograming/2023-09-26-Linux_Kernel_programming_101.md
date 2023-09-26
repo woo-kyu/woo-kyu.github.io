@@ -56,4 +56,11 @@ use_tex: true
 
 ## APIs (Application Programming Interface)
 - <span style="color:skyblue">Source compatibility</span>
-  - That is, that the user of the API will successfully compile against the implementation of the API 
+  - That is, that the user of the API will successfully compile against the implementation of the API
+    - 운영체제 또는 플랫폼 간 호환성 유지
+  - Interfaces by which one piece of software communicates with another at the <span style="color:orange">source level</span>
+    - 소스 레벨에서의 지원
+  - To provides abstraction by providing a standard set of interfaces 
+    - 표준 인터페이스 세트를 제공
+
+
