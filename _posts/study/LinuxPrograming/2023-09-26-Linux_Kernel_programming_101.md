@@ -102,6 +102,29 @@ use_tex: true
 <br>
 
 ### Regular files
+> 리눅스의 파일은 Byte stream (바이트 연속) 으로 구성되며, 다른 운영체제와 달리 추가적인 구조나 형식을 가지지 않는다. 
+> 파일 내 위치나 offset 은 파일 내에서의 작업을 수행할 때 중요하며, 파일이 처음 열릴 때는 0의 위치에서 시작된다.
+
+- Contain bytes of data, organized into a linear array called a <span style="color:skyblue">byte stream</span>
+- In Linux, no further organization or formatting for a file
+- At the system level, Linux does not enforce a structure upon files beyond the byte stream
+  - system level 에서는 byte stream 을 사용
+
+<br>
+
+#### Operations
+- Usually, as bytes in the file are read from or written to, byte-by-byte, the file position increases in kind
+  - 파일을 읽거나 쓸 때, 파일의 위치가 byte 단위로 증가한다.
+- Writing a byte to a file position beyond the end of the file will cause the intervening bytes to be padded with zeros.
+  - 파일의 끝을 넘어서 쓰기 가능. 파일 끝과 offset 사이에는 0 으로 채워진다.
+- While it is possible to write bytes in this manner to a position beyond the end of the file, it is not possible to write bytes to a position before the beginning of a file. (NO NEGATIVE lo cation)
+  - 시작점 (file offset 보다) 이전 위치에서는 write 불가능
+- Writing a byte to the middle of a file overwrites the byte previously located at that offset.
+  - 파일 중간에 byte 를 쓰면 덮어쓰기
+- NOT possible to expand a file by writing into the middle of it
+  - 파일 중간에 쓰는 것으로는 파일 확장 불가능
+- Most file writing occurs at the end of the file.
+  - 일반적으로, 파일 쓰기 작업은 파일의 끝에서
 
   
 
