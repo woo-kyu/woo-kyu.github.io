@@ -36,16 +36,24 @@ use_tex: true
 <br>
 <br>
 
-# Cornerstones of System Programing
+# System calls
 
 ---
+>운영 체제는 일부 서비스나 리소스를 요청하기 위해 user space 에서 Kernel (시스템의 핵심 내부)로 수행되는 함수를 호출한다.
 
-## System calls
-- 운영 체제는 일부 서비스나 리소스를 요청하기 위해 user space 에서 Kernel (시스템의 핵심 내부)로 수행되는 함수를 호출한다.
-
-### Invoking system calls
+## Invoking system calls
 - NOT possible to directly link user-space applications with kernel space for reasons of security and reliability.
   - User-space applications <span style="color:orange">must not be allowed to directly execute kernel</span> code or manipulate kernel data
 - Instead, the kernel with a mechanism by which a <span style="color:skyblue">user-space</span> application <span style="color:skyblue">can “signal”</span> the kernel that it wishes to <span style="color:skyblue">invoke a system call</span>
   - The application can then trap into the kernel through this well-defined mechanism and exe cute only code that the kernel allows it to execute.
 
+<br> <br>
+
+# APIs and ABIs
+
+---
+> For portability and interoperability
+
+## APIs (Application Programming Interface)
+- <span style="color:skyblue">Source compatibility</span>
+  - That is, that the user of the API will successfully compile against the implementation of the API 
