@@ -151,11 +151,11 @@ use_tex: false
 
 ### inode (Information Node)
 
-> 메타데이터를 저장하는 데이터 구조
+> 메타 데이터를 저장하는 데이터 구조
 
 - Filenames to access files not directly associated with such names to reference file, assigned integer value <span style="color:skyblue">unique</span> to the <span style="color:skyblue">filesystem</span>
   - 파일 이름은 파일에 직접 연결되지 않는다. 대신, 파일을 참조하기 위해 파일 시스템 내에서 고유한 정수값이 할당되는데 이 값이 inode 이다.
-  - inode 번호는 해당 파일 시스템 내에서는 고유하지만, 전체 시스템에서 고유하지는 않는다.
+  - inode 번호는 해당 파일 시스템 내에서는 고유하지만, <span style="color:skyblue">전체 시스템에서 </span><span style="color:orange">고유</span><span style="color:skyblue">하지는 않는다.</span>
     - 여러 파일 시스템이 동일한 시스템에 존재할 수 있기 때문에, 각 파일 시스템은 독립적으로 inode 번호를 관리하므로 중복될 수 있다.
   - inode 에는 파일의 수정 시간, 소유자, 유형, 길이, 파일 데이터의 위치와 같은 메타데이터가 포함되어 있지만, 파일 이름은 포함되어 있지 않다.
 
@@ -163,7 +163,7 @@ use_tex: false
 
 #### Different to File Descriptor
 
->node는 파일의 실제 데이터와 속성에 대한 정보를 저장하는 반면, 파일 디스크립터는 프로세스가 파일에 접근하기 위한 참조나 핸들입니다.
+> inode 는 파일의 실제 데이터와 속성에 대한 정보를 저장하는 반면, 파일 디스크립터는 프로세스가 파일에 접근하기 위한 참조나 핸들이다.
 
 - inode:
   - 파일의 메타데이터와 데이터 블록의 위치를 저장하는 데이터 구조다. 
@@ -177,6 +177,43 @@ use_tex: false
 <br>
 
 ## Directories
+
+> 디렉토리는 파일 이름과 inode 번호 사이의 매핑을 제공하며, 커널은 이 매핑을 사용하여 파일에 접근한다. 
+> 디렉토리는 다른 디렉토리를 포함할 수 있으며, Dentry 캐시는 이러한 접근을 빠르게 만드는 데 도움을 준다.
+
+- Acting as a mapping of human-readable names to inode numbers 
+  - A file name and inode pair, **link**
+    - Link: 파일 이름과 inode 번호쌍.
+  - 사람이 읽을 수 있는 이름을 <span style="color:skyblue">inode</span> 로 <span style="color:skyblue">매핑</span>하는 역할
+  - inode 는 반드시 시스템 전역에서 unique 할 필요는 없으나, 이러한 <span style="color:skyblue">inode</span> 를 <span style="color:orange">unique</span> 하게 만들어 주는 것이 <span style="color:skyblue">directories</span> 
+  - 동일 디렉토리 안에서는 같은 이름 (inode) 가 존재하지 않는다.
+- The kernel opens the directory containing the filename and searches for the given name
+- From the filename, the kernel obtains the inode number
+  - 커널은 directory name + inode 를 통해 파일을 open 한다.
+  - (review) inode 는 파일의 메타 데이터이다.
+- Dentry cache to speed up the filename resolution
+  - 한 번 연 디렉토리는 다음에 열 가능성이 높다. -> 캐시 데이터
+
+<br>
+
+## Links
+
+### Soft Links (Symbolic)
+
+- An actual link to the original file
+  - Original file 을 가리키는 <span style="color:skyblue">pointer</span>
+  - If you delete the original file, the soft link has no value, because it points to a non-existent file.
+    - 원본 파일을 삭제하면 소프트 링크 값 x
+- can cross the file system, allows to link between directories,
+- has different inode number and file permissions than original file
+  - 원본 파일과 다른 inode 번호와 권한
+- permissions will not be updated
+- has only the path of the original file, not the contents.
+  - 원본 파일의 경로만 포함. 내용 x
+
+
+
+
 
 
 
