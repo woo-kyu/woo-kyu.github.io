@@ -14,7 +14,7 @@ use_tex: true
 
 # System Programing
 - About interfacing primarily with the kernel and system library
-  - System library
+  - **System library** (what is and why use that?)
     - Abstracting away the details of the hardware and operating system.
       - 하드웨어와 운영체제의 세부정보를 추상화 한다.
     - For portability with different systems, compatibility with different versions of those systems.
@@ -29,7 +29,6 @@ use_tex: true
 - 그러한 추세에도 불구하고, 대부분의 리눅스 코드는 여전히 시스템 수준에서 구현되고 있으며
 - 더 높은 수준의 언어로 구현하더라도 이들은 모두 system library 를 이용하여 컴파일된다.
 
-### Why use Sytem Library?
 
 
 <br>
@@ -38,8 +37,11 @@ use_tex: true
 # Cornerstones of System Programing
 
 ## System calls
+- 운영 체제는 일부 서비스나 리소스를 요청하기 위해 user space 에서 Kernel (시스템의 핵심 내부)로 수행되는 함수를 호출한다.
 
-### overview
+### Invoking system calls
+- NOT possible to directly link user-space applications with kernel space for reasons of security and reliability.
+  - User-space applications must not be allowed to directly execute kernel code or manipulate kernel data
 
 
 
