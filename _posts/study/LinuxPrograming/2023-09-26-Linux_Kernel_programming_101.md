@@ -67,4 +67,19 @@ use_tex: true
 
 ## ABIs (Application Binary Interfaces)
 - <span style="color:orange">Binary compatibility</span>
-  - 
+  - Guaranteeing that a piece of object code will function on any system with the same ABI, <span style="color:skyblue">without requiring recompilation</span>
+    - 동일한 ABI 를 가진 디바이스 사이에서는 항상 실행 가능하다. 컴피일 없이
+  - Concerns about issues such as calling conventions, byte ordering, register use, system call invocation, linking, library behavior, and the binary object format
+    - 위 항목들에 대해 동일한 부분을 공유하기 때문
+  - Failed but operating systems with their own ABIs
+    - 운영체제는 각각의 ABI 를 가지고 있다.
+  - Enforced by the toolchain—the compiler, the linker, and so on—and does not typically otherwise surface
+
+<br>
+<br>
+
+# Concepts of Linux Programming
+
+---
+
+
