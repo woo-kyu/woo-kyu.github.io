@@ -13,6 +13,9 @@ use_tex: true
 > 
 
 # System Programing
+
+---
+
 - About interfacing primarily with the kernel and system library
   - **System library** (what is and why use that?)
     - Abstracting away the details of the hardware and operating system.
@@ -34,6 +37,8 @@ use_tex: true
 <br>
 
 # Cornerstones of System Programing
+
+---
 
 ## System calls
 - 운영 체제는 일부 서비스나 리소스를 요청하기 위해 user space 에서 Kernel (시스템의 핵심 내부)로 수행되는 함수를 호출한다.
