@@ -5,7 +5,7 @@ categories: Linux
 tags: [Linux, Basic, InUni]
 author_profile: false
 search: true
-use_tex: true
+use_tex: false
 ---
 
 > Linux Kernel Programing: 컴퓨터 구조 아래 Application 과 O/S 단계 사이에서 Kernel 을 직접 통제하는 System Library 에 대해 학습.
