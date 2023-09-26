@@ -41,7 +41,7 @@ use_tex: true
 
 ### Invoking system calls
 - NOT possible to directly link user-space applications with kernel space for reasons of security and reliability.
-  - User-space applications must not be allowed to directly execute kernel code or manipulate kernel data
+  - User-space applications <span style="color:orange">must not be allowed to directly execute kernel</span> code or manipulate kernel data
 
 
 
