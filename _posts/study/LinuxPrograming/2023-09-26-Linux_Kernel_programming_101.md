@@ -39,6 +39,8 @@ use_tex: true
 # System calls
 
 ---
+
+---
 >운영 체제는 일부 서비스나 리소스를 요청하기 위해 user space 에서 Kernel (시스템의 핵심 내부)로 수행되는 함수를 호출한다.
 
 ## Invoking system calls
@@ -50,6 +52,8 @@ use_tex: true
 <br> <br>
 
 # APIs and ABIs
+
+---
 
 ---
 > For portability and interoperability
@@ -81,11 +85,24 @@ use_tex: true
 # Concepts of Linux Programming
 
 ---
+
+---
 ## File and file system
 
 ### Everything-is-a-File Philosophy
 > 리눅스의 모든 모듈은 논리적으로, File 형태로 이루어져 있다. (e.g., socket file for ethernet)
 
+- An open file referenced via a unique descriptor, a mapping from the metadata associated with the open file back to the specific file itself
+  - 리눅스에서 파일을 열 때 해당 파일에 대한 참조를 위해 고유한 파일 디스크립터를 사용하며, 이 디스크립터와 연관된 메타데이터를 통해 실제 파일을 다시 찾을 수 있다.
+- File descriptors are shared with user space, and are used directly by user programs to access files
+  - 파일 디스크립터는 커널 공간에서 생성되지만, 사용자 공간의 프로그램에서도 접근하고 사용할 수 있다. 
+  - 이를 통해 사용자 프로그램은 파일, 디바이스, 소켓 등의 리소스에 접근하고 작업을 수행할 수 있다.
+- 프로그래밍 과정에서, 시스템 리소스 사용에 대해 단지 System library 만 사용하면 된다. -> 라이브러리 모듈
 
+<br>
+
+### Regular files
+
+  
 
 
