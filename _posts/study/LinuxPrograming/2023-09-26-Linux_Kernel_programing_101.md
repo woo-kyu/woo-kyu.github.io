@@ -16,11 +16,10 @@ use_tex: true
 - About interfacing primarily with the kernel and system library
   - **System library** (what is and why use that?)
     - Abstracting away the details of the hardware and operating system.
-      - 하드웨어와 운영체제의 세부정보를 추상화 한다.
+      - 추상화: 시스템 라이브러리는 하드웨어와 OS의 복잡한 세부사항을 추상화하여 제공. 이로인해 개발자는 특정 하드웨어나 OS의 세부사항에 의존하지 않고 작업 가능
     - For portability with different systems, compatibility with different versions of those systems.
-      - 다양한 시스템 또는 버젼과의 이식성과 호환성을 위해
-    - For the construction of higher-level toolkits that are easier to use, more powerful
-      - 더 사용하기 쉽고(직접 시스템에 접근하는 것 보다) , 더 나은 툴킷 사용을 위해
+      - 호환성과 이식성: 다양한 OS버전이나 다른 플랫폼 간 호환성을 유지하기 위해 시스템 라이브러리를 사용한다. 직접 커널에 접근하는 경우 특정 OS 또는 플랫폼에 종속됙기 때문
+    - 이 외에도 성능 최적화, 보안 등의 부분에서 이점을 얻을 수 있다.
 
 <br>
 
@@ -43,5 +42,5 @@ use_tex: true
 - NOT possible to directly link user-space applications with kernel space for reasons of security and reliability.
   - User-space applications <span style="color:orange">must not be allowed to directly execute kernel</span> code or manipulate kernel data
 - Instead, the kernel with a mechanism by which a <span style="color:skyblue">user-space</span> application <span style="color:skyblue">can “signal”</span> the kernel that it wishes to <span style="color:skyblue">invoke a system call</span>
-
+  - The application can then trap into the kernel through this well-defined mechanism and exe cute only code that the kernel allows it to execute.
 
