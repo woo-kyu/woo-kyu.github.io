@@ -2,12 +2,10 @@
 layout: single
 title: Linux Programing 101
 categories: Linux
-tags:
-- Basic
-- Linux
-  author_profile: false
-  search: true
-  use_tex: true
+tags: [Basic, Linux]
+author_profile: false
+search: true
+use_tex: true
 ---
 
 
