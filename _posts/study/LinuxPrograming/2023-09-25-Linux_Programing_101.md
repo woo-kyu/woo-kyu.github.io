@@ -156,3 +156,7 @@ tags:
 - but not necessarily unique across the whole system – WHY?
 - metadata associated with a file, such as its modification timestamp, owner, type, length, and the location of the file’s data <span style="color:skyblue">but no filename</span>!
 - DIFFERENCE FROM FILE DISCRIPTOR?
+
+# xxdts
+
+- kyu
