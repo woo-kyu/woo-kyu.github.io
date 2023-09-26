@@ -81,5 +81,11 @@ use_tex: true
 # Concepts of Linux Programming
 
 ---
+## File and file system
+
+### Everything-is-a-File Philosophy
+> 리눅스의 모든 모듈은 논리적으로, File 형태로 이루어져 있다. (e.g., socket file for ethernet)
+
+
 
 
