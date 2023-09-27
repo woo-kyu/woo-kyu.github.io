@@ -85,7 +85,7 @@ use_tex: false
 
 #### O_SYNC
 - File open option
-- """linux fd = open (file, O_WRONLY | <span style="color:skyblue">O_SYNC</span>) """
+- '''linux fd = open (file, O_WRONLY | <span style="color:skyblue">O_SYNC</span>) """
   - write 할 때 마다 fsync
   - Implicitly same to fsync() after each write()
 - More overhead than fsync() and fdatasync()
@@ -110,6 +110,9 @@ use_tex: false
 - All I/O will be synchronous; operations will not return until completed
 
 <br>
+<br>
+
+# Closing File
 
 ### close() system call
 - To unmap the file descriptor from the associated file via the close() system call
@@ -118,6 +121,9 @@ use_tex: false
 - 역시 file 을 close 하기 전까지는 ram 내부에 데어터 자원 (dirty, inode 등)을 가지고 있는다 !
 
 <br>
+<br>
+
+# Seeking with lseek
 
 ### lseek() system call (location seek)
 - To set the file position of a file descriptor to a given value
@@ -147,8 +153,19 @@ use_tex: false
 
 # Positional Reads and Writes
 
-### pread() system call 
+### pread system call 
+- Reads up to count bytes into buf from the file descriptor fd at file position po s
+
+### pwrite system call 
+- writes up to count bytes from buf to the file descriptor fd at file position pos
+
+#### Differences between pread()/pwrite() and read()/write()
+- Easier to use, especially when doing a tricky operation such as moving through a file backward or randomly
+- Not to update the file pointer upon completion
+- To avoid any potential races that might occur when using lseek()
 
 <br>
 
 # Truncating Files
+
+### ftruncate() and truncate()
