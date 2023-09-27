@@ -112,7 +112,7 @@ fd = open (file, O_WRONLY | O_SYNC)
   the device, bypassing the page cache
 - All I/O will be synchronous; operations will not return until completed
 
-<br>
+
 
 
 # Close
