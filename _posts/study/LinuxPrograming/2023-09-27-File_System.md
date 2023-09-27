@@ -85,7 +85,7 @@ use_tex: false
 
 #### O_SYNC
 - File open option
-- " fd = open (file, O_WRONLY | <span style="color:skyblue">O_SYNC</span>) "
+- """linux fd = open (file, O_WRONLY | <span style="color:skyblue">O_SYNC</span>) """
   - write 할 때 마다 fsync
   - Implicitly same to fsync() after each write()
 - More overhead than fsync() and fdatasync()
