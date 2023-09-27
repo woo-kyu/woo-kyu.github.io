@@ -166,6 +166,5 @@ fd = open (file, O_WRONLY | <span style="color:skyblue">O_SYNC</span>)
 
 <br>
 
-# Truncating Files
-
-### ftruncate() and truncate()
+### Truncating Files
+- ftruncate() and truncate()
