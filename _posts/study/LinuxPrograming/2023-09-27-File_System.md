@@ -150,7 +150,3 @@ fd = open (file, O_WRONLY | <span style="color:skyblue">O_SYNC</span>)
 - ESPIPE
   - The given file descriptor is associated with an unseekable object, such as a pipe, FIFO, or socket
   - 두 개의 프로세스 사이에 존재하는 pipe file 은 불가능
-
-<br>
-
-
