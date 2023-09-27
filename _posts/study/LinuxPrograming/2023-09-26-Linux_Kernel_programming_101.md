@@ -2,7 +2,7 @@
 layout: single
 title: Low-Level Linux 101
 categories: Linux
-tags: [Linux, Basic, InUni]
+tags: [Linux, Basic, Uni]
 author_profile: false
 search: true
 use_tex: false

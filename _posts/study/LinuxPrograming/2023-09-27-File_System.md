@@ -1,18 +1,22 @@
 ---
 layout: single
-title: Low-Level Linux 101
+title: File System
 categories: Linux
-tags: [Linux, Basic, InUni]
+tags: [Linux, Uni]
 author_profile: false
 search: true
 use_tex: false
 ---
 
-> 동기화
+> File system
 
 # Synchronized I/O
 
-> 여러개의 프로세스가 동시에 문서를 작업할 때
+---
+
+---
+
+> 여러개의 프로세스가 동시에 문서를 작업할 때, File sync 에 대한 system call 
 
 ### Buffering write
 
