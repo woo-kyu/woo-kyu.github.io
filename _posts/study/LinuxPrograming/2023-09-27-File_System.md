@@ -114,7 +114,7 @@ fd = open (file, O_WRONLY | <span style="color:skyblue">O_SYNC</span>)
 <br>
 <br>
 
-# Closing File
+
 
 ### close() system call
 - To unmap the file descriptor from the associated file via the close() system call
@@ -125,7 +125,7 @@ fd = open (file, O_WRONLY | <span style="color:skyblue">O_SYNC</span>)
 <br>
 <br>
 
-# Seeking with lseek
+
 
 ### lseek() system call (location seek)
 - To set the file position of a file descriptor to a given value
@@ -150,3 +150,22 @@ fd = open (file, O_WRONLY | <span style="color:skyblue">O_SYNC</span>)
 - ESPIPE
   - The given file descriptor is associated with an unseekable object, such as a pipe, FIFO, or socket
   - 두 개의 프로세스 사이에 존재하는 pipe file 은 불가능
+
+
+
+### pread system call
+- Reads up to count bytes into buf from the file descriptor fd at file position po s
+
+### pwrite system call
+- writes up to count bytes from buf to the file descriptor fd at file position pos
+
+#### Differences between pread()/pwrite() and read()/write()
+- Easier to use, especially when doing a tricky operation such as moving through a file backward or randomly
+- Not to update the file pointer upon completion
+- To avoid any potential races that might occur when using lseek()
+
+<br>
+
+# Truncating Files
+
+### ftruncate() and truncate()
