@@ -115,10 +115,8 @@ fd = open (file, O_WRONLY | O_SYNC)
 <br>
 <br>
 
----
 
-
-# Close
+## Close
 
 ---
 
