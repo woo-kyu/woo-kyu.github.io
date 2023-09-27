@@ -105,4 +105,3 @@ use_tex: true
 <img width="650" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/3ed7b3ee-7ac6-4f0e-a350-c9ab77cb2a46">{: .align-center}
 <br>
 
-### 
