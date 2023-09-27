@@ -92,5 +92,63 @@ use_tex: false
   - 많은 write 비용을 지불해야 한다. (실무에서는 조심해서 사용! (c 에서의 memory alloc 후 free 와 같이..))
 
 #### O_DSYNC
+- Specifying that only normal data be synchronized after each write operation,
+  not metadata.
 
+#### O_RSYNC
+- Read / Write sync: Specifying the synchronization of read requests as well as write requests.
+- Metadata updates resulting from a read must be written to disk before the call returns
+- In practical terms, this requirement most likely means only that the file access time must be updated in the on-disk copy of the inode before the call to read() returns.
+  - Read 기록? : 마지막으로 읽은 시간과 같은..(메타) 데이터
+    - 다른 프로세스에 의해 rm 과 같은 call 을 수용하지 않도록
 
+#### O_DIRECT
+- 안정성 몰빵
+  - 한 바이트 단위로 디스크 버퍼에 기록
+- When this flag is provided, I/O will initiate directly from user-space buffers to
+  the device, bypassing the page cache
+- All I/O will be synchronous; operations will not return until completed
+
+<br>
+
+### close() system call
+- To unmap the file descriptor from the associated file via the close() system call
+- Does <span style="color:orange">NOT guaranteed to flush</span> the data on the working file onto the disk
+  - Close 하기 전에는 디스크와 Sync 필수당
+- 역시 file 을 close 하기 전까지는 ram 내부에 데어터 자원 (dirty, inode 등)을 가지고 있는다 !
+
+<br>
+
+### lseek() system call (location seek)
+- To set the file position of a file descriptor to a given value
+  - 파일 디스크립터가 가르키는 file 의 offset (loc) 을 기준으로 중간 위치 탐색을 위해
+    - " /# define BEG = 0 " -> 첫 위치
+
+#### The lseek flag
+- SEEK_CUR : 읽는 위치 지정
+  - File position of fd = current value + pos
+- SEEK_END
+  - File position of fd = current length of the file + pos
+  - Using padded value of zero
+
+<br>
+
+### Error valued of lseek()
+- EBADF
+- EINVAL
+  - The value given for origin is not one of SEEK_SET, SEEK_CUR, or SEEK_END, or the resulting file position would be negative.
+- EOVERFLOW
+  - The resulting file offset cannot be represented in an off_t.
+- ESPIPE
+  - The given file descriptor is associated with an unseekable object, such as a pipe, FIFO, or socket
+  - 두 개의 프로세스 사이에 존재하는 pipe file 은 불가능
+
+<br>
+
+# Positional Reads and Writes
+
+### pread() system call 
+
+<br>
+
+# Truncating Files
