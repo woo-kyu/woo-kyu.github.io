@@ -113,14 +113,9 @@ fd = open (file, O_WRONLY | O_SYNC)
 - All I/O will be synchronous; operations will not return until completed
 
 <br>
-<br>
 
 
-## Close
-
----
-
----
+# Close
 
 ## close() system call
 - To unmap the file descriptor from the associated file via the close() system call
