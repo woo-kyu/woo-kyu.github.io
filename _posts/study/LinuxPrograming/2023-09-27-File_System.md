@@ -81,12 +81,16 @@ use_tex: false
 
 <br>
 
-### The O_SYNC flag
+### The O flag
+
+#### O_SYNC
 - File open option
-  - " fd = open (file, O_WRONLY | <span style="color:skyblue">O_SYNC</span>) "
+- " fd = open (file, O_WRONLY | <span style="color:skyblue">O_SYNC</span>) "
   - write 할 때 마다 fsync
-    - Implicitly same to fsync() after each write()
-  - More overhead than fsync() and fdatasync()
-    - 많은 write 비용을 지불해야 한다. (실무에서는 조심해서 사용!)
+  - Implicitly same to fsync() after each write()
+- More overhead than fsync() and fdatasync()
+  - 많은 write 비용을 지불해야 한다. (실무에서는 조심해서 사용! (c 에서의 memory alloc 후 free 와 같이..))
+
+#### O_DSYNC
 
 
