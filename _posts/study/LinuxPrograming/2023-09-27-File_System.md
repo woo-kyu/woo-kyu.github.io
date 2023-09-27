@@ -10,7 +10,9 @@ use_tex: false
 
 > File system
 
-# Synchronized I/O
+# I/O Library
+
+## Synchronized I/O
 
 ---
 
@@ -116,7 +118,7 @@ fd = open (file, O_WRONLY | <span style="color:skyblue">O_SYNC</span>)
 
 
 
-### close() system call
+## close() system call
 - To unmap the file descriptor from the associated file via the close() system call
 - Does <span style="color:orange">NOT guaranteed to flush</span> the data on the working file onto the disk
   - Close 하기 전에는 디스크와 Sync 필수당
@@ -127,7 +129,7 @@ fd = open (file, O_WRONLY | <span style="color:skyblue">O_SYNC</span>)
 
 
 
-### lseek() system call (location seek)
+## lseek() system call (location seek)
 - To set the file position of a file descriptor to a given value
   - 파일 디스크립터가 가르키는 file 의 offset (loc) 을 기준으로 중간 위치 탐색을 위해
     - " /# define BEG = 0 " -> 첫 위치
@@ -151,7 +153,9 @@ fd = open (file, O_WRONLY | <span style="color:skyblue">O_SYNC</span>)
   - The given file descriptor is associated with an unseekable object, such as a pipe, FIFO, or socket
   - 두 개의 프로세스 사이에 존재하는 pipe file 은 불가능
 
+<br>
 
+## positional Read and Write
 
 ### pread system call
 - Reads up to count bytes into buf from the file descriptor fd at file position po s
@@ -166,5 +170,6 @@ fd = open (file, O_WRONLY | <span style="color:skyblue">O_SYNC</span>)
 
 <br>
 
-### Truncating Files
-- ftruncate() and truncate()
+## Truncating Files
+
+###ftruncate() and truncate()
