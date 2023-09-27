@@ -33,6 +33,13 @@ use_tex: false
 - 디스크에도 버퍼를 둠: 프로세스 wanna write -> buffer -> Disk buffer -> disk real write (hit the disk)
   - 버퍼에서 실제로 데이터를 쓰는 시점은 알 수 없음
 
+```Linux
+#include <unistd.h>
+
+int fsync (int fd);
+if(ret == -1)
+  /* error */
+```
 
 - <span style="color:orange">Writing back both data and metadata, such as creation timestamps and other attributes contained in the inode</span>
   - 추가된 데이터와 메타데이터(예: 생성 타임스탬프 및 inode 에 포함된 기타 속성) 모두 다시 쓰기
@@ -43,11 +50,25 @@ use_tex: false
 
 ### fdatasync() system call
 
+```Linux
+#include <unistd.h>
+
+int fdatasync (int fd);
+```
+```Linux
+#include <unistd.h>
+
+/* same as fsync, but won't fllush non-essential metadata */
+ret = fdatasync (fd);
+if (ret == -1)
+  /* error */
+```
+
 - 메타데이터는 나중에.
 - Dirty Data 만을 저장하고, 메타데이터 저장은 운영체제에게 맡김
 - Why?
   - 디스크에 데이터를 읽고 쓰는 것에는 많은 비용이 들기 때문에 최소화
-- 따라서: fsync 보다 빠르고 간결함
+- 따라서: **fsync 보다 빠르고** 간결함
 
 <br>
 
@@ -73,6 +94,11 @@ use_tex: false
 
 - Ram(buffer)에 있는 dirty 데이터를 sync
   - 다른 프로세스가 작업중인 dirty data 더미를 모두 sync
+```Linux
+#include <unistd.h>
+
+void sync (void)
+```
 - no parameters and no return value.
   - always succeeds and, upon return, all buffers—both data and metadata—are guaranteed to
     reside on disk
@@ -87,7 +113,11 @@ use_tex: false
 #### O_SYNC
 - File open option
 ```linux
-fd = open (file, O_WRONLY | O_SYNC)
+int fd;
+fd = open (file, O_WRONLY | O_SYNC);
+if (fd == -1){
+  perror("open");
+  return -1;}
 ```
   - write 할 때 마다 fsync
   - Implicitly same to fsync() after each write()
@@ -122,9 +152,17 @@ fd = open (file, O_WRONLY | O_SYNC)
 
 ## close() system call
 - To unmap the file descriptor from the associated file via the close() system call
+```Linux
+#include <unistd.h>
+
+int close (int fd);
+```
 - Does <span style="color:orange">NOT guaranteed to flush</span> the data on the working file onto the disk
   - Close 하기 전에는 디스크와 Sync 필수당
-- 역시 file 을 close 하기 전까지는 ram 내부에 데어터 자원 (dirty, inode 등)을 가지고 있는다 !
+  - 역시 file 을 close 하기 전까지는 ram 내부에 데어터 자원 (dirty, inode 등)을 가지고 있는다 !
+  ```Linux
+  if (close (fd) == -1) perror("close");
+  ```
 
 <br>
 <br>
@@ -136,6 +174,12 @@ fd = open (file, O_WRONLY | O_SYNC)
 - To set the file position of a file descriptor to a given value
   - 파일 디스크립터가 가르키는 file 의 offset (loc) 을 기준으로 중간 위치 탐색을 위해
     - " /# define BEG = 0 " -> 첫 위치
+  ```Linux
+  #include <sys/types.h>
+  #include <unistd.h>
+
+  off_t lseek (int df, off_t pos, int origin);
+  ```
 
 ### The lseek flag
 - SEEK_CUR : 읽는 위치 지정
@@ -162,9 +206,21 @@ fd = open (file, O_WRONLY | O_SYNC)
 
 
 ### pread system call
+```Linux
+#define _XOPEN_SOURCE 500
+#include <unistd.h>
+
+ssize_t pread(int fd, void *buf, size_t count, off_t pos);
+```
 - Reads up to count bytes into buf from the file descriptor fd at file position po s
 
 ### pwrite system call
+```Linux
+#define _XOPEN_SOURCE 500
+#include <unistd.h>
+
+ssize_t pwrite(int fd, const void *buf, size_t count, off_t pos);
+```
 - writes up to count bytes from buf to the file descriptor fd at file position pos
 
 #### Differences between pread() / pwrite() and read() / write()
@@ -177,3 +233,26 @@ fd = open (file, O_WRONLY | O_SYNC)
 ## Truncating Files
 
 ### ftruncate() and truncate()
+```linux
+#include <sys/types.h>
+#include <unistd.h>
+
+int ftruncate (int df, off_t len);
+or
+int turncate (const char *path, off_t len);
+```
+
+e.g.,
+```linux
+#include <sys/types.h>
+#include <unistd.h>
+
+int main(){
+  int ret;
+  ret = truncate ("./pirate.txt", 45);
+  if (ret == -1){
+    perror("truncate");
+    return -1;}
+  return 0;
+}
+```
