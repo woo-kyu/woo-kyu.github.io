@@ -10,11 +10,11 @@ use_tex: false
 
 > File system
 
-# Synchronize
+# File System Library
 
----
 
----
+
+## Synchronize
 
 
 > 여러개의 프로세스가 동시에 문서를 작업할 때, File sync 에 대한 system call 
