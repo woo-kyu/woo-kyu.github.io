@@ -29,7 +29,6 @@ use_tex: false
 <br>
 
 ### fsync() system call
-
 - 디스크에도 버퍼를 둠: 프로세스 wanna write -> buffer -> Disk buffer -> disk real write (hit the disk)
   - 버퍼에서 실제로 데이터를 쓰는 시점은 알 수 없음
 
@@ -130,7 +129,7 @@ use_tex: false
 ### lseek() system call
 - To set the file position of a file descriptor to a given value
   - 파일 디스크립터가 가르키는 file 의 offset (loc) 을 기준으로 중간 위치 탐색을 위해
-    - " /# define BEG = 0 " -> 첫 위치
+    - " # define BEG = 0 " -> 첫 위치
 
 ### The lseek flag
 - SEEK_CUR : 읽는 위치 지정
