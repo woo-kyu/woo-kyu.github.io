@@ -29,8 +29,13 @@ use_tex: false
 <br>
 
 ### fsync() system call
+
 - 디스크에도 버퍼를 둠: 프로세스 wanna write -> buffer -> Disk buffer -> disk real write (hit the disk)
   - 버퍼에서 실제로 데이터를 쓰는 시점은 알 수 없음
+
+  <img width="245" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/61fb6d79-f8ae-4ef0-b555-72a12903869b">{: .align-center}
+
+
 
 - <span style="color:orange">Writing back both data and metadata, such as creation timestamps and other attributes contained in the inode</span>
   - 추가된 데이터와 메타데이터(예: 생성 타임스탬프 및 inode 에 포함된 기타 속성) 모두 다시 쓰기
@@ -40,6 +45,12 @@ use_tex: false
 <br>
 
 ### fdatasync() system call
+
+  <img width="191" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/b02ce2c4-deae-47de-ad5d-9747bdccb18c">{: .align-center}
+
+  <img width="477" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/6b398ce0-2398-4f91-8074-33d5e48df609">{: .align-center}
+
+
 - 메타데이터는 나중에.
 - Dirty Data 만을 저장하고, 메타데이터 저장은 운영체제에게 맡김
 - Why?
@@ -70,6 +81,9 @@ use_tex: false
 
 - Ram(buffer)에 있는 dirty 데이터를 sync
   - 다른 프로세스가 작업중인 dirty data 더미를 모두 sync
+    
+  <img width="162" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/2eae1671-aa23-4173-9b31-fdb03a8ac6a5">{: .align-center}
+
 - no parameters and no return value.
   - always succeeds and, upon return, all buffers—both data and metadata—are guaranteed to
     reside on disk
@@ -83,6 +97,9 @@ use_tex: false
 
 #### O_SYNC
 - File open option
+  
+  <img width="291" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/d95175c2-d5fd-4738-bf0a-a65b717ba735">{: .align-center}
+
   - write 할 때 마다 fsync
   - Implicitly same to fsync() after each write()
 - More overhead than fsync() and fdatasync()
@@ -116,9 +133,13 @@ use_tex: false
 
 ## close() system call
 - To unmap the file descriptor from the associated file via the close() system call
+  <img width="166" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/3a693d2a-2ab5-4acb-b0e5-23010cc3c06f">{: .align-center}
+
 - Does <span style="color:orange">NOT guaranteed to flush</span> the data on the working file onto the disk
   - Close 하기 전에는 디스크와 Sync 필수당
   - 역시 file 을 close 하기 전까지는 ram 내부에 데어터 자원 (dirty, inode 등)을 가지고 있는다 !
+    <img width="303" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/6cffb315-7e41-47d5-a9a1-5cc3be027baf">{: .align-center}
+
 
 <br>
 <br>
@@ -129,7 +150,9 @@ use_tex: false
 ### lseek() system call
 - To set the file position of a file descriptor to a given value
   - 파일 디스크립터가 가르키는 file 의 offset (loc) 을 기준으로 중간 위치 탐색을 위해
-    - " # define BEG = 0 " -> 첫 위치
+    - " /# define BEG = 0 " -> 첫 위치
+  <img width="355" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/4d580fde-2ebd-4d4e-a1ff-392ddffd5360">{: .align-center}
+
 
 ### The lseek flag
 - SEEK_CUR : 읽는 위치 지정
@@ -156,9 +179,15 @@ use_tex: false
 
 
 ### pread system call
+```Linux
+
+```
 - Reads up to count bytes into buf from the file descriptor fd at file position po s
 
 ### pwrite system call
+
+<img width="468" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/067e9752-6ea4-4fe1-a859-30a17ff88a4f">{: .align-center}
+
 - writes up to count bytes from buf to the file descriptor fd at file position pos
 
 #### Differences between pread() / pwrite() and read() / write()
@@ -171,3 +200,9 @@ use_tex: false
 ## Truncating Files
 
 ### ftruncate() and truncate()
+<img width="344" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/9f1e2cb8-4660-4d94-8645-bd7679f04277">{: .align-center}
+
+
+e.g.,
+<img width="322" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/7aa6cd35-3d93-40e7-9a65-16ad3d0bb0a3">{: .align-center}
+
