@@ -211,7 +211,32 @@ use_tex: false
 - has only the path of the original file, not the contents.
   - 원본 파일의 경로만 포함. 내용 x
 
+<br>
 
+### Hard Link
+- Copy: 원본 파일을 삭제해도 유지
+  - a mirror copy of the original file:
+    - Even if you delete the original file, the hard link will still has the data of the original file. Because hard link acts as a mirror copy of the original file.
+- 같은 파일 시스템끼리만 가능 (e.g., 같은 드라이브 저장소 내에서만)
+  - can't cross the file system boundaries (i.e. A hardlink can only work on the same file system)
+- 디렉토리는 지정 불가하며, 
+  - can't link directories, 
+- 같은 inode 번호와 권한을 부여받는다
+  - has the same inode number and permissions of original file
+  - permissions will be updated if we change the permissions of source file,
+
+#### 같은 디렉토리 구조 아래 동일한 파일명과 inode를 가진 파일이 두 개 존재하는 것인가?
+- 디렉토리는 기본적으로 파일명과 해당 파일의 inode 번호를 매핑하는 테이블로 작동한다. 
+
+  따라서 같은 디렉토리 내에서 두 개의 파일이 동일한 이름을 가질 수 없다. 
+
+  또한, 같은 파일 시스템 내에서 두 개의 다른 파일이 동일한 inode 번호를 가질 수 없다.
+
+  그러나 하드 링크의 경우, 다른 이름을 가진 두 개의 파일 (또는 더 많은 파일)이 동일한 inode 번호를 공유할 수 있다. 
+
+  이는 두 파일이 실제로 동일한 데이터 블록을 가리키기 때문이다. 
+
+  하지만 이 경우에도 파일명은 서로 다르기 때문에, 파일이 두 개 존재하는 것은 아니다.
 
 
 
