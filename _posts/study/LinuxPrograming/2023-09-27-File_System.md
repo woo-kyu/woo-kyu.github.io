@@ -179,14 +179,12 @@ use_tex: false
 
 
 ### pread system call
-```Linux
 
-```
 - Reads up to count bytes into buf from the file descriptor fd at file position po s
+  <img width="468" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/067e9752-6ea4-4fe1-a859-30a17ff88a4f">{: .align-center}
 
 ### pwrite system call
 
-<img width="468" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/067e9752-6ea4-4fe1-a859-30a17ff88a4f">{: .align-center}
 
 - writes up to count bytes from buf to the file descriptor fd at file position pos
 
