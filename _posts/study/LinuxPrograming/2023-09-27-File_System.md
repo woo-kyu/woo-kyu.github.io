@@ -153,22 +153,4 @@ fd = open (file, O_WRONLY | <span style="color:skyblue">O_SYNC</span>)
 
 <br>
 
-# Positional Reads and Writes
-
-### pread system call 
-- Reads up to count bytes into buf from the file descriptor fd at file position po s
-
-### pwrite system call 
-- writes up to count bytes from buf to the file descriptor fd at file position pos
-
-#### Differences between pread()/pwrite() and read()/write()
-- Easier to use, especially when doing a tricky operation such as moving through a file backward or randomly
-- Not to update the file pointer upon completion
-- To avoid any potential races that might occur when using lseek()
-
-<br>
-
-# Truncating Files
-
-### ftruncate() and truncate()
 
