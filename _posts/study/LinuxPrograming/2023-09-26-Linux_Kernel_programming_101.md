@@ -238,6 +238,30 @@ use_tex: false
 
   하지만 이 경우에도 파일명은 서로 다르기 때문에, 파일이 두 개 존재하는 것은 아니다.
 
+<br>
+<br>
+
+## Special Files
+> Kernel objects represented as files
+> Block device files (to access devices) : To access devices
+
+### Character Device Files
+- To access a linear queue of bytes in the files
+  - 파일 내 byte 를 선형 큐로 접근
+- The device driver places bytes onto the queue, one by one, and user space reads the bytes in the order that they were placed on the queue. (ex. Keyboard)
+  - 디바이스 드라이버는 바이트를 큐에 하나씩 넣고, user space 큐에 들어온 순서대로 바이트를 읽는다.
+- When there are no more characters left to read, the device returns end-of-file (EOF).
+
+### Block Device Files
+- To access an array of bytes in the files
+  - 파일 내 바이트 배열에 접근
+- device driver maps the bytes over a seekable device, and user space is free to access any valid bytes in the array
+  - 디바이스는 바이트를 탐색 가능한 디바이스에 매핑, user space 는 배열 내 유효한 바이트를 random access 가능
+- Block device 는 저장장치
+
+### Named pipes
+- 프로세스간 통신 (e.g., redirection)
+- 
 
 
 
