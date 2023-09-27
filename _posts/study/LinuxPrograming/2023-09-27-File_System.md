@@ -112,10 +112,13 @@ fd = open (file, O_WRONLY | O_SYNC)
   the device, bypassing the page cache
 - All I/O will be synchronous; operations will not return until completed
 
+<br>
 
 
+<br>
 
-# Close
+
+## Close
 
 ## close() system call
 - To unmap the file descriptor from the associated file via the close() system call
@@ -126,18 +129,15 @@ fd = open (file, O_WRONLY | O_SYNC)
 <br>
 <br>
 
-# Location Seek
+## Location Seek
 
----
 
----
-
-## lseek() system call
+### lseek() system call
 - To set the file position of a file descriptor to a given value
   - 파일 디스크립터가 가르키는 file 의 offset (loc) 을 기준으로 중간 위치 탐색을 위해
     - " /# define BEG = 0 " -> 첫 위치
 
-#### The lseek flag
+### The lseek flag
 - SEEK_CUR : 읽는 위치 지정
   - File position of fd = current value + pos
 - SEEK_END
@@ -158,11 +158,8 @@ fd = open (file, O_WRONLY | O_SYNC)
 
 <br>
 
-# positional Read and Write
+## positional Read and Write
 
----
-
----
 
 ### pread system call
 - Reads up to count bytes into buf from the file descriptor fd at file position po s
@@ -170,17 +167,13 @@ fd = open (file, O_WRONLY | O_SYNC)
 ### pwrite system call
 - writes up to count bytes from buf to the file descriptor fd at file position pos
 
-#### Differences between pread()/pwrite() and read()/write()
+#### Differences between pread() / pwrite() and read() / write()
 - Easier to use, especially when doing a tricky operation such as moving through a file backward or randomly
 - Not to update the file pointer upon completion
 - To avoid any potential races that might occur when using lseek()
 
 <br>
 
-# Truncating Files
-
----
-
----
+## Truncating Files
 
 ### ftruncate() and truncate()
