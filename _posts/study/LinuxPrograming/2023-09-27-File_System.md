@@ -8,7 +8,7 @@ search: true
 use_tex: false
 ---
 
-> File system
+> File system 에 관련된 System call 전반
 
 # File System Library
 
@@ -131,7 +131,7 @@ use_tex: false
 
 ## Close
 
-## close() system call
+### close() system call
 - To unmap the file descriptor from the associated file via the close() system call
   <img width="166" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/3a693d2a-2ab5-4acb-b0e5-23010cc3c06f">{: .align-center}
 
