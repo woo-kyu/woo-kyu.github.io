@@ -252,6 +252,8 @@ use_tex: false
   - 디바이스 드라이버는 바이트를 큐에 하나씩 넣고, user space 큐에 들어온 순서대로 바이트를 읽는다.
 - When there are no more characters left to read, the device returns end-of-file (EOF).
 
+<br>
+
 ### Block Device Files
 - To access an array of bytes in the files
   - 파일 내 바이트 배열에 접근
@@ -259,10 +261,25 @@ use_tex: false
   - 디바이스는 바이트를 탐색 가능한 디바이스에 매핑, user space 는 배열 내 유효한 바이트를 random access 가능
 - Block device 는 저장장치
 
-### Named pipes
-- 프로세스간 통신 (e.g., redirection)
-- 
+<br>
 
+### Named pipes
+- 프로세스간 커뮤니케이션 채널. 
+- file descriptor 을 통해
+- file system 에 존재하는 것은 아니다. system call 을 통해 메인메모리에 임시적으로 생성
+- 동일한 컴퓨터 안에서 소통
+  - socket 과의 차이: socket 은 네트워크를 통해 다른 컴퓨터와의 통신도 가능
+
+<br>
+<br>
+
+## File Systems
+- A global and unified namespace of files and directories in Linux
+  - windows system 의 경우 각각의 드라이브는 서로 다른 file system 을 가진다. 그러나, Linux 의 경우 하나의 (통합된) 파일 시스템을 가진다.
+- Physically (i.e., are stored on disk) existing filesystems and **virtual filesystems** that exist only in memory, and network filesystems that exist on machines acr oss the network.
+  - 물리적인 연결이 아니더라도, 네트워크 상에서도 마운트하여 사용 가능
+
+ 
 
 
 
