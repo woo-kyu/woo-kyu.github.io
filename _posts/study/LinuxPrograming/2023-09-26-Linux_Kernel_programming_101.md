@@ -279,7 +279,32 @@ use_tex: false
 - Physically (i.e., are stored on disk) existing filesystems and **virtual filesystems** that exist only in memory, and network filesystems that exist on machines acr oss the network.
   - 물리적인 연결이 아니더라도, 네트워크 상에서도 마운트하여 사용 가능
 
- 
+<br>
+
+### Sector
+- 실제 데이터가 저장된 주소로 접근할 수 있는 포인터 (Physical attribute of the device: 물리적)
+- Smallest addressable unit on a block device
+- A block device cannot transfer or access a unit of data smaller than a sector and all I/O must occur in terms of one or more sectors. (512 bytes sector is common)
+
+<br>
+
+### Block
+- 운영체제에 의해 결정되는 접근 경로
+- The smallest logically addressable unit on a filesystem
+- Usually a power-of-two multiple of the sector size as a block size
+
+<br>
+
+## Namespaces (Structure of Directory)
+- By default, each process with the namespace of its parent
+  - 일반적으로, 현재 실행중인 디렉토리의 상위 폴더로의 접근은 어렵다. (자녀만 상속, 보안을 위해)
+
+<br>
+
+## Processes
+- Programs in execution: 실행중인 프로그램
+  - Object code in execution
+- 
 
 
 
