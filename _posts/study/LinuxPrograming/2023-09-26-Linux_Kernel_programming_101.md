@@ -225,7 +225,8 @@ use_tex: false
   - has the same inode number and permissions of original file
   - permissions will be updated if we change the permissions of source file,
 
-#### 같은 디렉토리 구조 아래 동일한 파일명과 inode를 가진 파일이 두 개 존재하는 것인가?
+#### Question
+> 같은 디렉토리 구조 아래 동일한 파일명과 inode 를 가진 파일이 두 개 존재하는 것인가?
 - 디렉토리는 기본적으로 파일명과 해당 파일의 inode 번호를 매핑하는 테이블로 작동한다. 
 
   따라서 같은 디렉토리 내에서 두 개의 파일이 동일한 이름을 가질 수 없다. 
