@@ -226,7 +226,9 @@ use_tex: false
   - permissions will be updated if we change the permissions of source file,
 
 #### Question
+
 > 같은 디렉토리 구조 아래 동일한 파일명과 inode 를 가진 파일이 두 개 존재하는 것인가?
+
 - 디렉토리는 기본적으로 파일명과 해당 파일의 inode 번호를 매핑하는 테이블로 작동한다. 
 
   따라서 같은 디렉토리 내에서 두 개의 파일이 동일한 이름을 가질 수 없다. 
@@ -305,6 +307,8 @@ use_tex: false
 ## Processes
 - Programs in execution: 실행중인 프로그램
   - Object code in execution
+- The executable format with metadata, and multiple sections of code and data
+  - 메타 데이터를 통해 실행 가능한 포멧. 
 - 
 
 
