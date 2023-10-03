@@ -366,9 +366,26 @@ use_tex: false
 
 ## Users
 - Each user associated with a unique positive integer called the user ID (UID)
+  - 각 프로세스는 정확히 하나의 UID와 연결되며, 이 UID는 프로세스를 실행하는 사용자를 식별 이를 프로세스의 실제 UID.
 - Users, however, refer to themselves and other users through usernames, not numerical values.
   - User names and their corresponding UIDs stored in /etc/passwd, and library routine s map user-supplied usernames to the corresponding UIDs
   - 사용자 계정과 UID 를 사용자 passwd를 shadow 에 위치한 해쉬값과 대조, 사용자의 쉘을 실행
-- 
+
+### Login Process
+- Login program validating users and starting login shell from /etc/passwd
+  - 사용자 검증 및 쉘 시작
+- 쉘의 UID는 사용자의 UID와 동일
+- 부모로부터 자식 프로세스가 UID를 상속 
+- 루트 사용자의 UID는 0
+
+### Type of UIDs
+- Effective UID: 현재 프로세스가 사용하는 UID로, 파일 접근 권한 등을 결정하는 데 사용
+- Saved UID: 프로세스가 권한을 잠시 내려놓았다가 다시 회복할 때 사용
+- Filesystem UID: 파일 시스템 작업을 수행할 때 사용
+
+<br>
+
+
+
 
 
