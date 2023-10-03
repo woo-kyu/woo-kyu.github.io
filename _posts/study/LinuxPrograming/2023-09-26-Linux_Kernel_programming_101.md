@@ -385,7 +385,10 @@ use_tex: false
 
 <br>
 
-
+## Signals
+- A mechanism for one-way asynchronous notifications
+- May be sent from the kernel to a process, from a process to another process,
+  or from a process to itself.
 
 
 
