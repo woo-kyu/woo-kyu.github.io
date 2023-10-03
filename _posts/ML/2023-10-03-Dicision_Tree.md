@@ -8,12 +8,15 @@ search: true
 use_tex: true
 ---
 
-# Dicison Tree
-
 > Tree-Based methods. Predict를 위해 여러 <span style='color:orange'>region</span> 으로 stratifying or <span style='color:orange'>segmenting</span> 하는 방법론. Regression 과 classification 모두 사용 가능하다.
->
+
+<br>
 
 # Terminology for Trees
+
+---
+
+---
 
 <img width="662" alt="PM" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/c433d2fe-9be8-4566-b174-6b620e78cba1">{: .align-center}
 
@@ -21,34 +24,40 @@ use_tex: true
 - Decision tree 는 terminal node가 upside-down 형식으로 되어있음
 - Internal nodes : Predictor space가 나누어 지는 부분
 
+<br>
+
 # Regression with Decision Tree
 
 - Decision tree 는 predictor space를 보통 squre or box 형태로 나뉘는데 이는 predict model의 간단성과 해석의 용이함을 위한 것.
 - <span style='color:orange'>RSS (Residual sum of squares ; 회귀 결정 트리) 를 최소화</span> 하는 boxes $R_1,...,R_J$ 를 찾는 것이 목적이다.
 
-$\sum^J_{j=1} \sum_{x_i \in R_j}(y_i-\overline{y}_{R_j})^2$
+$\sum^J_{j=1}\sum_{x_i\in R_j}(y_i-\overline{y}_{R_j})^2$
+
+<br>
 
 # Greedy Algorithm
+
+---
+
+---
 
 ## Greedy tree-building
 
 - $R_1$ (Entire input space)를 시작으로, reiterate to following the next proceed.
   1. RSS (Residulal sum of squares)를 reduce for maximizer $R_k (\textrm{with }X_j <s)$ 를 찾음
 
-     $$
-     \sum^{|T|}_{m=1} \sum_{x_j\in R_m}(y_i-\overline{y}_{R_m})^2
-     $$
+     $\sum_{m=1}^{|T|}\sum_{x_j\in R_m}(y_i-\overline{y}_{R_m})^2$
 
   2. Splitting point $s$ 를 기준으로 region을 새롭게 define
 
 - Greedy 방식은 certain standard (each region에 5개 이하의 샘플)을 satisfy 시, stop.
 - Every possible region을 consider 하는 것은 calculation impossible
-- Therefore, Top-down approach, greedy recursive binary splittion (방법론)을 사용함.
-- Root to leaves 까지 tree를 생성하기 때문에 it called ‘top-down’
-- There are reason to called ‘Greedy’ 이전이나 이후 state를 고려하지 않고 현재 stat에서의 optimum (best) split을 행하기 때문이다.
+- Therefore, <span style='color:orange'>Top-down approach, greedy recursive binary splittion</span> (방법론)을 사용함.
+- Root to leaves 까지 tree를 생성하기 때문에 it called ‘<span style='color:orange'>top-down</span>’
+- There are reason to called ‘<span style='color:orange'>Greedy</span>’ 이전이나 이후 state를 고려하지 않고 현재 stat에서의 optimum (best) split을 행하기 때문이다.
 - Terminal node 의 수가 많아질 수록,
   1. RSS값이 0으로 converge
-  2. Over-fitting issue 발생 (Decrease Bias, Increase Variance)
+  2. <span style='color:orange'>Over-fitting issue</span> 발생 (Decrease Bias, Increase Variance)
   3. model training 을 위한 computation  cost 증가
 
 ### Preventing Over-fitting
