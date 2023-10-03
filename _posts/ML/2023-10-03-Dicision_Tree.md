@@ -89,6 +89,9 @@ $\textrm{Minimize}\sum_{R_m\in T}\sum_{x_i\in R_m}(y_i-\overline y_{R_m})^2$ <sp
 - $\alpha$  Hyper-parameter 는 Cross validation 을 통해 figure out 할 수 있음
 
 ## ㅇㅅㅇ
+- temp
+---
+
 
 <br>
 
