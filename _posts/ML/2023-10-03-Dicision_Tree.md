@@ -88,10 +88,6 @@ $\textrm{Minimize}\sum_{R_m\in T}\sum_{x_i\in R_m}(y_i-\overline y_{R_m})^2$ <sp
 - $\alpha = 0$ 라면, Full 트리 생성
 - $\alpha$  Hyper-parameter 는 Cross validation 을 통해 figure out 할 수 있음
 
-## ㅇㅅㅇ
-- temp
----
-
 
 <br>
 
@@ -99,7 +95,7 @@ $\textrm{Minimize}\sum_{R_m\in T}\sum_{x_i\in R_m}(y_i-\overline y_{R_m})^2$ <sp
 
 
 
-# Classification with Decision Tree
+## Classification with Decision Tree
 
 ---
 
@@ -109,9 +105,9 @@ $\textrm{Minimize}\sum_{R_m\in T}\sum_{x_i\in R_m}(y_i-\overline y_{R_m})^2$ <sp
 - Average value 가 아닌, <span style='color:orange'>Majority vote</span> 를 통해 예측 (i.e, each region 이 가장 많은 class 를 elect)
 - 새로운 classification loss function 이 필요하다.
 
-## Classification Loss Function
+### Classification Loss Function
 
-### Miss-classification Rate (Classification error rate)
+#### Miss-classification Rate (Classification error rate)
 
 - Region 안의 sample 중에서 most common class에 포함되지 않은 sample의 수를 계산
 - 두 가지 형태의 loss function으로 표현 가능
@@ -122,7 +118,7 @@ $\textrm{Minimize}\sum_{R_m\in T}\sum_{x_i\in R_m}(y_i-\overline y_{R_m})^2$ <sp
 
 <br>
 
-### Gini index
+#### Gini index
 
 - K 개 Class의 dispersion 에 대한 observed value
 - $\textrm{Minimize }$ <span style='color:orange'>${\sum_{m=1}^{\|T\|}q_m \sum^K_{k=1} \widehat p_{mk}(1-\widehat p_{mk})}$</span>
@@ -133,7 +129,7 @@ $\textrm{Minimize}\sum_{R_m\in T}\sum_{x_i\in R_m}(y_i-\overline y_{R_m})^2$ <sp
 
 <br>
 
-### Cross-Entropy
+#### Cross-Entropy
 
 - Gini index와 매우 유사한 loss function class 의 dispersion 에 대한 observed value
 - $\textrm{Minimize }-$ <span style='color:orange'>${\sum_{m=1}^{\|T\|}q_m\sum^K_{k=1} \widehat p_{mk} \textrm{ log } \widehat p_{mk}}$</span>
