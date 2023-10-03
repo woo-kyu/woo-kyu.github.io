@@ -39,7 +39,7 @@ use_tex: true
 - [Dicison Tree]({{site.url}}/ml/Dicision_tree)
 - [Linear Discriminant Analysis (LDA)]({{site.url}}/ml/LDA)
 
-## [Ensemble (Complex)]({{site.url}}/ml/ensemble)
+## [Ensemble (Complex)]({{site.url}}/ml/Ensemble)
 
 - [Bagging]({{site.url}}/ml/bagging)
 - [Boosting]({{site.url}}/ml/boosting)
