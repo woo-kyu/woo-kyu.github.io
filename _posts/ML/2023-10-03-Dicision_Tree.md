@@ -15,7 +15,7 @@ use_tex: true
 
 # Terminology for Trees
 
-<img width="662" alt="PM" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/c433d2fe-9be8-4566-b174-6b620e78cba1">
+<img width="662" alt="PM" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/c433d2fe-9be8-4566-b174-6b620e78cba1">{: .align-center}
 
 - Terminal nodes : Decision tree로 만들어진 region, leaf 라고 표현
 - Decision tree 는 terminal node가 upside-down 형식으로 되어있음
@@ -106,7 +106,7 @@ $$
 - Gini index와 매우 유사한 loss function class 의 dispersion 에 대한 observed value
 - $\textrm{Minimize }- \orange{\sum^{|T|}_{m=1}q_m\sum^K_{k=1} \widehat p_{mk} \textrm{ log } \widehat p_{mk}}$
 
-<img width="287" alt="Screenshot_2023-03-09_at_11 23 11_AM" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/36e91fe3-7ca2-4867-a843-22fcec40d979">
+<img width="287" alt="Screenshot_2023-03-09_at_11 23 11_AM" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/36e91fe3-7ca2-4867-a843-22fcec40d979">{: .align-center}
 
 
 # Pros and Cons for Decision Tree
