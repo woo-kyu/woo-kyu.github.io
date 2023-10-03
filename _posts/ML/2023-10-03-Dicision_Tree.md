@@ -88,6 +88,8 @@ $\textrm{Minimize}\sum_{R_m\in T}\sum_{x_i\in R_m}(y_i-\overline y_{R_m})^2$ <sp
 - $\alpha = 0$ 라면, Full 트리 생성
 - $\alpha$  Hyper-parameter 는 Cross validation 을 통해 figure out 할 수 있음
 
+## ㅇㅅㅇ
+
 <br>
 
 <br>
