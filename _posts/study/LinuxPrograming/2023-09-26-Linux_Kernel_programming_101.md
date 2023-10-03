@@ -305,11 +305,40 @@ use_tex: false
 <br>
 
 ## Processes
-- Programs in execution: 실행중인 프로그램
-  - Object code in execution
+- Programs in execution 
+  - Object code in execution : 실행중인 오브젝트 코드
+- Machine-runnable code in an executable format that the kernel understands
 - The executable format with metadata, and multiple sections of code and data
   - 메타 데이터를 통해 실행 가능한 포멧. 
-- 
+- Typically, request and manipulate resources only through system calls
+  - 모든 자원 사용에 대한 요청은 시스템 콜을 이용하여 요청쇤다.
+
+### Sections
+- linear chunks of the object code that load into linear chunks of memory.
+- All bytes in a section the same, given the same permissions, and generally used for similar purposes
+<br>
+- Text section
+  - Executable code and read-only data, such as constant variables, and is typically marked read-only and executable
+    - 명령어가 명시된 섹션.
+- Data section
+  - initialized data, such as C variables with defined values, and is typically marked readable and writable
+    - 소스코드에서 사용하는 global var. (Local var = in stack)
+- Bss section
+  - uninitialized global data to be mapped the zero page
+    - Global var 이지만, 초기화 되어있지 않은
+    - Bss section 이 존재하는 이유:
+      - zero 로 채워진 page file 을 포인팅 -> 최적화 목적: 값을 초기화하여 저장하는 것 보다, 더미데이터를 가리키는 것이 효율적이기 때문
+
+<br>
+
+
+
+## Thread
+- Each process with one or more threads of execution (usually simplified to threads)
+  - 모든 프로세스는 하나 또는 그 이상의 쓰레드를 가지고 있다.
+  - The unit of activity within a process
+    - 활동 유닛들은 프로세스를 가진다
+  - 
 
 
 
