@@ -330,7 +330,8 @@ use_tex: false
   - uninitialized global data to be mapped the zero page
     - Global var 이지만, 초기화 되어있지 않은
     - Bss section 이 존재하는 이유:
-      - zero 로 채워진 page file 을 포인팅 -> 최적화 목적: 값을 초기화하여 저장하는 것 보다, 더미데이터를 가리키는 것이 효율적이기 때문
+      - zero 로 채워진 page 포인팅 -> 최적화 목적: 
+        - 값을 초기화하여 저장하는 것 보다, 더미데이터를 가리키는 것이 효율적이기 때문
 
 <br>
 
@@ -338,10 +339,14 @@ use_tex: false
 ## Thread
 - Each process with one or more threads of execution (usually simplified to threads)
   - 모든 프로세스는 하나 또는 그 이상의 쓰레드를 가지고 있다.
-  - The unit of activity within a process
-    - 활동 유닛들은 프로세스를 가진다
-  - 
+- Consisting of a stack (which stores its local variables, just as the process stack does on nonthreaded systems), processor state, and a current location in the object code (usually stored in the processor’s instruction pointer)
+  - The majority of the remaining parts of a process are shared among all threads, most notably the process address space
+    - 스레드는 동일한 주소 공간을 공유하면서도 각각 독립적인 실행 흐름을 가지므로, 멀티프로세싱 환경에서 효율적인 병렬 처리를 가능하게 한다.
+    - 공유된 데이터에 대한 동기화와 관련된 복잡성을 관리해야 한다.
 
+<br>
+
+## Process hierarchy
 
 
 
