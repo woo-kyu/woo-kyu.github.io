@@ -26,9 +26,7 @@ use_tex: true
 - Decision tree 는 predictor space를 보통 squre or box 형태로 나뉘는데 이는 predict model의 간단성과 해석의 용이함을 위한 것.
 - <span style='color:orange'>RSS (Residual sum of squares ; 회귀 결정 트리) 를 최소화</span> 하는 boxes $R_1,...,R_J$ 를 찾는 것이 목적이다.
 
-$$
-\sum^J_{j=1} \sum_{x_i \in R_j}(y_i-\overline{y}_{R_j})^2
-$$
+$\sum^J_{j=1} \sum_{x_i \in R_j}(y_i-\overline{y}_{R_j})^2$
 
 # Greedy Algorithm
 
