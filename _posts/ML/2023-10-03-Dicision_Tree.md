@@ -67,34 +67,47 @@ $\sum^J_{j=1}\sum_{x_i\in R_j}(y_i-\overline{y}_{R_j})^2$
 - RSS 값이 일정 threshold 만큼 increase 하지 않으면 tree 성장을 멈춘다.
   - next 성장에서 큰 RSS drop이 일어날 수도 있다.
 
+<br>
+
+
 # Cost Complexity Pruning
+
+---
+
+---
 
 ### Pruning (가지치기) loss Function
 
 - 기존의 loss function RSS에 pruning을 위한 regularization term 을 추가
 
-$$
-\textrm{Minimize} \sum_{R_m \in T} \sum_{x_i \in R_m}(y_i-\overline y_{R_m})^2 \orange{+ \alpha|T|}
-$$
+$\textrm{Minimize}\sum_{R_m\in T}\sum_{x_i\in R_m}(y_i-\overline y_{R_m})^2{+\alpha\|T\|}$
 
-- $|T|$ : # of terminal node
+- $\|T\|$ : # of terminal node
 - $\alpha = \infin$ 라면, Null 트리 생성 (한 개의 leaf 만으로만 구성된 트리)
 - $\alpha = 0$ 라면, Full 트리 생성
-- $\alpha$  Hyper-parameter 는 Cross vaildation 을 통해 figure out 할 수 있음
+- $\alpha$  Hyper-parameter 는 Cross validation 을 통해 figure out 할 수 있음
+
+<br>
+
+
 
 # Classification with Decision Tree
 
+---
+
+---
+
 - Regression Decision Tree 와 매우 유사하지만, RSS의 손실 함수 사용 불가
-- Average value 가 아닌, Majority vote를 통해 예측 (i.e, each region이 가장 많은 class 를 elect)
+- Average value 가 아닌, Majority vote 를 통해 예측 (i.e, each region 이 가장 많은 class 를 elect)
 - 새로운 classification loss function 이 필요하다.
 
 ## Classification Loss Function
 
-### Misclassification Rate (Classification error rate)
+### Miss-classification Rate (Classification error rate)
 
 - Region 안의 sample 중에서 most common class에 포함되지 않은 sample의 수를 계산
 - 두 가지 형태의 loss function으로 표현 가능
-  - $\textrm{Minimize} \sum^{|T|}_{m=1} \sum_{x_i \in R_m} \orange{I(y_i \neq \hat{y}_{R_m})}$
+  - $\textrm{Minimize} \sum_{m=1}^{\|T\|}\sum_{x_i \in R_m} \orange{I(y_i \neq \hat{y}_{R_m})}$
   - $\textrm{Minimize }\orange{1-\underset{a}{max}\ \widehat{p}_{mk}}$
     - $\widehat{p}_{mk}$ : m-th region 에서 k-th class 에 해당하는 ratio of learning data
 - 하지만, Developement for tree 에 있어, 충분히 sensitive 하지 못한 단점.
