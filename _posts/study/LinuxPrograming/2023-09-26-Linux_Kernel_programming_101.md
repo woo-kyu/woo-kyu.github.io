@@ -347,7 +347,24 @@ use_tex: false
 <br>
 
 ## Process hierarchy
+- Process is identified by a unique positive integer called the process ID (pid)
+  - 각각의 프로세스는 프로세스 id를 통해 식별 가능
+- The pid of the first process is 1, and each subsequent process receives a new, unique pid.
+- Processes form a strict hierarchy, known as the process tree
+- fork()
+  - The original process is called the parent; the new process is called the child.
+    - 자식 프로세스를 생성하는 시스템 
+  - Every process except the first has a parent.
+  - If a parent process terminates before its child, the kernel will reparent the child to th e init process.
+    - 자식 프로세스보다 부모 프로세스가 먼저 종료되면, kernel 은 자식 프로세스를 직접 관리
+      - 프로세스를 다시 생성하거나, init 프로세스에게 종속시킨다.
+- Process termination
+  - 프로세스가 정상적으로 종료되면, 자식 프로세스의 존재 확인.
+  - the kernel keeps parts of the process resident in memory to allow the process’s pare nt to inquire about its status upon terminating (waiting on)
 
+<br>
 
+## Users
+- 
 
 
