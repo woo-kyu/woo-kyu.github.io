@@ -139,14 +139,14 @@ $\textrm{Minimize}\sum_{R_m\in T}\sum_{x_i\in R_m}(y_i-\overline y_{R_m})^2$ <sp
 <br>
 
 
-# Pros and Cons for Decision Tree
+## Pros and Cons for Decision Tree
 
 ---
 
 ---
 
 
-## Pros
+### Pros
 
 - 모델에 대한 <span style='color:orange'>easy to Interpret or Explain</span>
 - 인간의 decision making 과 매우 비슷한 형태의 model
