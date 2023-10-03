@@ -103,7 +103,7 @@ use_tex: true
 <br><br>
 
 
-# MLE (Maximum Likehood Estimation)
+# MLE (Maximum Likelihood Estimation)
 
 ## Likehood (우도 확률, $P(X|w)$
 
@@ -122,7 +122,7 @@ use_tex: true
 ## MLE (Maximum Likehood Estimation, 최대 우도 추정법)
 
 - 현재의 데이터 분포가 나올 확률이 가장 높은 parameter == 우도 확률을 최대로 만드는 parameter
-- $\hat{W} = \underset{w}{arg ~max}~P(X|w|)$
+- $\hat{W}=\underset{w}{arg ~max}~P(X\|w\|)$
 - Although it is a very simple parameter estimation method, but the values are sensitive to the data.
 <br>
 
@@ -130,7 +130,7 @@ use_tex: true
 ## MAP (Maximum A posterior, 최대 사후 확률)
 
 - Methods used to address the shortcomings of data-dependent MLE’s
-- $\hat{W} = \underset{w}{arg ~max}~P(w|X|)$
+- $\hat{W}=\underset{w}{arg ~max}~P(w\|X\|)$
 - Posterior is important to calculate immediately
 - Using the Bayes’ theorem, it express the multiple of prior and likelihood probability
 - accurate of estimate is depends upon accurate of prior probability
@@ -144,7 +144,7 @@ use_tex: true
 - Bernoulli’s trials (베르누이 시행) is experiment what they have only two results
 - A probability variable that corresponds to a value of 1 (success) or 0 (failure) according to Bernoulli's trial is referred to as a Bernoulli probability variable.
 - The distribution of this probability variable is called the Bernoulli distribution
-- $P(Y=y_{i})=p^{y_{i}}(1-p)^{1-y_{i}}$  ( $p = p(y=1|x)$ : [0,1] ) → PDF
+- $P(Y=y_{i})=p^{y_{i}}(1-p)^{1-y_{i}}$ ( $p = p(y=1\|x)$ : [0,1] ) → PDF
 - if, $y_{i}=1$ 일때 p, $y_{i}=0$ 일때, 1-p
 - $L=\prod_{i}p^{y_{i}}(1-p)^{1-y_{i}}$ → 모든 데이터 셈플 iid한 베르누이 분포를 가진다고 가정할 때의 우도함수
 <br>
