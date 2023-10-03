@@ -70,7 +70,7 @@ use_tex: true
     - how many higher probability of success ($y = 1$) than fail ($y=0$)
     - $odds~=~\frac{p(y=1\|x\|)}{1-p(y=1\|x\|)}~\because~(p(y=0\|x\|)+p(y=1\|x\|))=1,~~p(y=0\|x)=1-p(y=1\|x)$
   - Logit Transformation
-    - $logit(p)~=~log(odds)=~log\frac{p(y=1|x|)}{1-p(y=1|x|)}$
+    - $logit(p)~=~log(odds)=~log\frac{p(y=1\|x\|)}{1-p(y=1\|x\|)}$
     - Input : $p$  = [0 ~ 1], Output : [$-\infty$ ~ $+\infty$]
     <br><br>
 
@@ -78,7 +78,7 @@ use_tex: true
 
   - Reverse function of Logit Transformation
 
-  - $logit(p)~=~log(odds)=~log\frac{p(y=1|x|)}{1-p(y=1|x|)}~=~w_{0}+w_{1}x_{1}+...+w_{D}x_{D}=w^{t}X$ 
+  - $logit(p)~=~log(odds)=~log\frac{p(y=1\|x\|)}{1-p(y=1\|x\|)}~=~w_{0}+w_{1}x_{1}+...+w_{D}x_{D}=w^{t}X$ 
   - <span style="color:skyblue">Logistic Function : $p(y=1|x)=\frac{e^{w^{T}X}}{1+e^{w^{T}X}}=\frac{1}{e^{-w^{T}X}}$
   - Logistic function is combine linear regression with sigmoid function (sigmoid $x$ → $w^{T}X$)
 <br><br>
@@ -86,7 +86,7 @@ use_tex: true
 # Logistic Regression
 
 - A logistic regression model is a regression model in the form of a logistic function.
-- $P(\hat{y}=1|X) = \frac{1}{1+e^{-w^{T}X}}$
+- $P(\hat{y}=1\|X)=\frac{1}{1+e^{-w^{T}X}}$
 - Predicted value is depends on the value of $wX$
   - $w^{T}X>0$ : Classify 1
   - $w^{T}X<0$ : Classify 0
@@ -94,9 +94,9 @@ use_tex: true
 
 # Bayes’ theorem
 
-- $P(w|X)=\frac{P(X|w)~P(w)}{P(X)}\propto~P(X|w)P(w)$
-- Posterior (사후 확률, $P(w|X)$ ) : 데이터가 주어졌을 때 가설( $w$ ) 에 대한 확률
-- Likelihood (우도 확률, $P(X|w)$) : 가설을 잘 모르지만 안다고 가정한 경우, 주어진 데이터의 분포
+- $P(w\|X)=\frac{P(X\|w)~P(w)}{P(X)}\propto~P(X\|w)P(w)$
+- Posterior (사후 확률, $P(w\|X)$ ) : 데이터가 주어졌을 때 가설( $w$ ) 에 대한 확률
+- Likelihood (우도 확률, $P(X\|w)$) : 가설을 잘 모르지만 안다고 가정한 경우, 주어진 데이터의 분포
 - Prior (사전 확률, $P(w)$) : 데이터를 보기 전, 일반적으로 알고 있는 가설의 확률
 - $\therefore$  사전확률 * 우도확률 = 사후확률
 - 위 확률들을 통해 가설 (모델의 파라미터)를 추정하는 방법으로 MLE 와 MAP 두 가지가 있음
