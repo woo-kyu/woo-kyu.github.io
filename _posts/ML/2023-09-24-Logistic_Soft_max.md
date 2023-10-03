@@ -263,12 +263,8 @@ use_tex: true
 
 ## Likelihood for multi-classification function
 
-- $\prod_{i}p(y_{i}=c\|X_{i})=\prod *{i}\textrm{softmax}(w^{T}X*{i})*{y*{i}},~(\textrm{softmax}=\sigma)$
+- $\prod_{i}p(y_{i}=c\|X_{i})=\prod \*{i}\textrm{softmax}(w^{T}X\*{i})\*{y\*{i}},~(\textrm{softmax}=\sigma)$
 
-- $\textbf{L}
-
-  {\textrm{CE}}=-\sum
-
-  {i}^{n}y_{i}~\textbf{ln}(\textrm{softmax}(w^{T}X_{i})),~  (\textrm{CE = Cross Entropy})$
+- $\textbf{L}{\textrm{CE}}=-\sum{i}^{n}y_{i}~\textbf{ln}(\textrm{softmax}(w^{T}X_{i})),~(\textrm{CE = Cross Entropy})$
 
   - $\textrm{where}~y_{i}=\textrm{[0,0,1,...,0]}$ → Use form one-hot-encoding ($y_{i}$ is exist only one dimension(results))
