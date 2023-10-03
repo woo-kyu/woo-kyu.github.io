@@ -311,7 +311,10 @@ use_tex: false
 - The executable format with metadata, and multiple sections of code and data
   - 메타 데이터를 통해 실행 가능한 포멧. 
 - Typically, request and manipulate resources only through system calls
-  - 모든 자원 사용에 대한 요청은 시스템 콜을 이용하여 요청쇤다.
+  - 모든 자원 사용에 대한 요청은 시스템 콜을 이용하여 요청쇤다. (O/S(커널)에 다이렉트로 요청하는 것이 아닌)
+- A process’s resources, along with data and statistics related to the process to be stored inside the kernel in the process’s process descriptor
+  - O/S(커널) 내부에 프로세스 디스크립터 file 을 가지고 있고, 이 위치에 프로세스의 상태를 기록
+- From the process’s perspective, the view of the system as solely owned one
 
 ### Sections
 - linear chunks of the object code that load into linear chunks of memory.
@@ -330,7 +333,6 @@ use_tex: false
       - zero 로 채워진 page file 을 포인팅 -> 최적화 목적: 값을 초기화하여 저장하는 것 보다, 더미데이터를 가리키는 것이 효율적이기 때문
 
 <br>
-
 
 
 ## Thread
