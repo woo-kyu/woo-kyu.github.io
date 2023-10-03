@@ -365,6 +365,10 @@ use_tex: false
 <br>
 
 ## Users
+- Each user associated with a unique positive integer called the user ID (UID)
+- Users, however, refer to themselves and other users through usernames, not numerical values.
+  - User names and their corresponding UIDs stored in /etc/passwd, and library routine s map user-supplied usernames to the corresponding UIDs
+  - 사용자 계정과 UID 를 사용자 passwd를 shadow 에 위치한 해쉬값과 대조, 사용자의 쉘을 실행
 - 
 
 
