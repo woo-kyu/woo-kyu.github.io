@@ -157,7 +157,7 @@ Scarcity of parameter : Lasso (L1) > Ridge (L2)
 
 ## Lasso (L1) Regression
 
-- $L=\sum_{i=1}^{n}(y_{i}-(\beta_{0}+\sum_{j=1}^{D}\beta_{j}x_{ij}))^2+{\lambda\sum_{j=1}^{D}\left|\beta_{j}\right|}$
+- $L=\sum_{i=1}^{n}(y_{i}-(\beta_{0}+\sum_{j=1}^{D}\beta_{j}x_{ij}))^2+{\lambda\sum_{j=1}^{D}\left\|\beta_{j}\right\|}$
 - MSE Loss를 줄이지 못하면, Term of penalty의 loss value가 더 크게 작용함
 - $\lambda$(Lambda) is part of parameter that controls the effects of regularization. (like loss function, $w$)
 - Regularized expression is expressed by sum of the absolute values
