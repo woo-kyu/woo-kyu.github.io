@@ -5,9 +5,9 @@ main:
   - title: "Tag"
     url: /tags/
   - title: "Results"
-    url: /personal/
-  - title: "Personal"
     url: https://woo-kyu.github.io
+  - title: "Personal"
+    url: /personal/
   - title: "Search"
     url: /search/
 
