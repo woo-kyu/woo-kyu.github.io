@@ -152,7 +152,7 @@ use_tex: true
 
 ### Logistic regression’s likelihood function
 
-- Logistic regression : $P(\hat{y}=1|X)=\frac{1}{1+e^{w^{t}X}}=\sigma(w^{T}X)$
+- Logistic regression : $P(\hat{y}=1\|X)=\frac{1}{1+e^{w^{t}X}}=\sigma(w^{T}X)$
   - $w^{T}X$ > 0, 1로 분류 → $\sigma(w^{T}X) > \frac{1}{2}$
   - $w^{T}X$ < 0, 0으로 분류 → $\sigma(w^{T}X) < \frac{1}{2}$
 - Can be interpreted as a Bernoulli distribution with a parameter value of p ($\sigma (w^{T}X$)
@@ -174,7 +174,7 @@ use_tex: true
 <img width="750" alt="img" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/8b53f34d-bbd2-4714-abda-88a14d134e38">{: .align-center}
 
 
-- $0=\frac{\partial \textbf{ln~L}}{\partial w}=\{\sum *{i}y*{i}X{i}\}+\{\sum *{i}-X*{i}\frac{e^{w^{T}X_{i}}}{1+e^{w^{T}X_{i}}}\}\\=\sum *{i}X*{i}(y_{i}-P(y_{i}=1|X_{i};w))$
+- $0=\frac{\partial\textbf{ln~L}}{\partial w}=\{\sum*{i}y*{i}X{i}\}+\{\sum*{i}-X*{i}\frac{e^{w^{T}X_{i}}}{1+e^{w^{T}X_{i}}}\}=\sum*{i}X*{i}(y_{i}-P(y_{i}=1|X_{i};w))$
 - $w_{t+1}=w_{t}-\textrm{lr}\times \frac{\partial \textrm{ln~L}}{\partial w}$
 <br><br>
 
