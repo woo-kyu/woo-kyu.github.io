@@ -174,7 +174,7 @@ use_tex: true
 <img width="750" alt="img" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/8b53f34d-bbd2-4714-abda-88a14d134e38">{: .align-center}
 
 
-- $0=\frac{\partial\textbf{ln~L}}{\partial w}=\{\sum*{i}y*{i}X{i}\}+\{\sum*{i}-X*{i}\frac{e^{w^{T}X_{i}}}{1+e^{w^{T}X_{i}}}\}=\sum*{i}X*{i}(y_{i}-P(y_{i}=1\|X_{i};w))$
+- $0=\frac{\partial\textbf{ln~L}}{\partial w}=\{\sum\*{i}y\*{i}X{i}\}+\{\sum*{i}-X\*{i}\frac{e^{w^{T}X_{i}}}{1+e^{w^{T}X_{i}}}\}=\sum\*{i}X\*{i}(y_{i}-P(y_{i}=1\|X_{i};w))$
 - $w_{t+1}=w_{t}-\textrm{lr}\times \frac{\partial \textrm{ln~L}}{\partial w}$
 <br><br>
 
