@@ -42,7 +42,7 @@ use_tex: true
 <br>
 
 ## Logit Transformation
-- $ logit(p)=log(odds)=log\frac{p(y=1|x|)}{1-p(y=1|x|)}$
+- $logit(p)=log(odds)=log\frac{p(y=1|x|)}{1-p(y=1|x|)}$
 - Input : $p$  = [0 ~ 1], Output : [$-\infty$ ~ $+\infty$]
 <br><br>
 
