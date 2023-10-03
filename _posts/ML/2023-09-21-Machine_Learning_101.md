@@ -36,7 +36,7 @@ use_tex: true
 
 - [Logistic and Soft-max Regression]({{site.url}}/ml/Logistic_Soft_max)
 - [Support Vector Machine (SVM)]({{site.url}}/ml/SVM)
-- [Dicison Tree]({{site.url}}/ml/Dicison_tree)
+- [Dicison Tree]({{site.url}}/ml/Dicision_tree)
 - [Linear Discriminant Analysis (LDA)]({{site.url}}/ml/LDA)
 
 ## [Ensemble (Complex)]({{site.url}}/ml/ensemble)
