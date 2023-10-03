@@ -59,6 +59,8 @@ $\sum^J_{j=1}\sum_{x_i\in R_j}(y_i-\overline{y}_{R_j})^2$
   1. RSS값이 0으로 converge
   2. <span style='color:orange'>Over-fitting issue</span> 발생 (Decrease Bias, Increase Variance)
   3. model training 을 위한 computation  cost 증가
+  
+<br>
 
 ### Preventing Over-fitting
 
@@ -112,24 +114,35 @@ $\textrm{Minimize}\sum_{R_m\in T}\sum_{x_i\in R_m}(y_i-\overline y_{R_m})^2{+\al
     - $\widehat{p}_{mk}$ : m-th region 에서 k-th class 에 해당하는 ratio of learning data
 - 하지만, Developement for tree 에 있어, 충분히 sensitive 하지 못한 단점.
 
+<br>
+
 ### Gini index
 
 - K 개 Class의 dispersion 에 대한 observed value
-- $\textrm{Minimize } \orange{\sum^{|T|}_{m=1}q_m \sum^K_{k=1} \widehat p_{mk}(1-\widehat p_{mk})}$
+- $\textrm{Minimize } \orange{\sum_{m=1}^{\|T\|}q_m \sum^K_{k=1} \widehat p_{mk}(1-\widehat p_{mk})}$
   - $\widehat p_{mk}$ : m-th region 에서 k-th class 에 해당하는 ratio of learning data
   - $q_m$ : number fo entire data 에 대한 region $R_m$ 에 있는 ratio of sample
 - $\widehat p_{mk}$ 가 모두 0 또는 1 에 converge 할 수록 좋아짐
 - Gini index 값이 작으면 single class 가 node를 장악한 상황이므로, node purity에 대한 observed value 로도 interpretation possible
 
+<br>
+
 ### Cross-Entropy
 
 - Gini index와 매우 유사한 loss function class 의 dispersion 에 대한 observed value
-- $\textrm{Minimize }- \orange{\sum^{|T|}_{m=1}q_m\sum^K_{k=1} \widehat p_{mk} \textrm{ log } \widehat p_{mk}}$
+- $\textrm{Minimize }- \orange{\sum^{\|T\|}_{m=1}q_m\sum^K_{k=1} \widehat p_{mk} \textrm{ log } \widehat p_{mk}}$
 
 <img width="287" alt="Screenshot_2023-03-09_at_11 23 11_AM" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/36e91fe3-7ca2-4867-a843-22fcec40d979">{: .align-center}
 
+<br>
+
 
 # Pros and Cons for Decision Tree
+
+---
+
+---
+
 
 ## Pros
 
