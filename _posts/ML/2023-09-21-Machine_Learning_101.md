@@ -41,8 +41,8 @@ use_tex: true
 
 ## [Ensemble (Complex)]({{site.url}}/ml/Ensemble)
 
-- [Bagging]({{site.url}}/ml/bagging)
-- [Boosting]({{site.url}}/ml/boosting)
+- [Bagging]({{site.url}}/ml/Bagging)
+- [Boosting]({{site.url}}/ml/Boosting)
 
 <br><br>
 ## Regression vs. Classification
@@ -50,16 +50,16 @@ use_tex: true
 ### Regression (회귀)
 
 - Input (Feature) : Real number (실수형),  Discrete value(범주형) etc..,
-- Output (Predict) : Real number (실수형, 이산값)
+- <span style='color:orange'>Output (Predict) : Real number (실수형, 이산값)</span>
 - Model shape : normal function shape (eg. $y = w_{1}x + w_{0}$)
 
 ### Classification (분류)
 
 - Input (Feature) : Real number (실수형),  Discrete value(범주형) etc..
-- Output (Predict) : Discrete value (범주형)
+- <span style='color:orange'>Output (Predict) : Discrete value (범주형)</span>
 - Essential Function for last node
-    - Binary classification (이진 분류) : Sigmoid function
-    - Multiple Classification (다중 분류) : Soft-max function
+    - <span style="color:skyblue">Binary classification (이진 분류) : Sigmoid function</span>
+    - <span style="color:skyblue">Multiple Classification (다중 분류) : Soft-max function</span>
 
 
 <br><br>
