@@ -181,9 +181,9 @@ use_tex: true
 
 # Non-linear Logistic Regression
 
-- $P(\hat{y}=1|X)=\frac{1}{1+e^{-w^{T}X}}=\sigma(w^{T}X)$
+- $P(\hat{y}=1\|X)=\frac{1}{1+e^{-w^{T}X}}=\sigma(w^{T}X)$
 - Linear logistic regression에서 $w^{T}X$를 non-linear regression function으로 exchange
-- $P(\hat{y}=1|X) = \frac{1}{1+e^{-w^{T}X}}=\sigma(W_{0}+w_{1}X+w_{2}X^{2}+w_{3}X^{3})$
+- $P(\hat{y}=1\|X)=\frac{1}{1+e^{-w^{T}X}}=\sigma(W_{0}+w_{1}X+w_{2}X^{2}+w_{3}X^{3})$
 
 <img width="900" alt="img" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/e99c6e9d-1ca9-4154-b799-5d79a110c3b0">{: .align-center}
 
@@ -256,14 +256,14 @@ use_tex: true
 
 # Cross Entropy Loss ; MLE = ln L
 
-- $\textbf{L} = \prod_{i}^{}\sigma(w^{T}X_{i})^{y_{i}}(1-\sigma(w^{T}X_{i}))^{1-y_{i}} \\ \rightarrow \textrm{explainable};\prod_{i}p(y_{i}=c|X_{i})$
+- $\textbf{L}=\prod_{i}^{}\sigma(w^{T}X_{i})^{y_{i}}(1-\sigma(w^{T}X_{i}))^{1-y_{i}}\rightarrow\textrm{explainable};\prod_{i}p(y_{i}=c\|X_{i})$
 - $y_{i}$의 값이 0 or 1 의 condition 에서 0 ~ C의 condition 으로 expansion 필요
 
 
 
 ## Likelihood for multi-classification function
 
-- $\prod_{i}p(y_{i}=c|X_{i})=\prod *{i}\textrm{softmax}(w^{T}X*{i})*{y*{i}},~(\textrm{softmax}=\sigma)$
+- $\prod_{i}p(y_{i}=c\|X_{i})=\prod *{i}\textrm{softmax}(w^{T}X*{i})*{y*{i}},~(\textrm{softmax}=\sigma)$
 
 - $\textbf{L}
 
