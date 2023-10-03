@@ -30,8 +30,7 @@ use_tex: true
 
 - Decision tree 는 predictor space를 보통 squre or box 형태로 나뉘는데 이는 predict model의 간단성과 해석의 용이함을 위한 것.
 - <span style='color:orange'>RSS (Residual sum of squares ; 회귀 결정 트리) 를 최소화</span> 하는 boxes $R_1,...,R_J$ 를 찾는 것이 목적이다.
-
-$\sum^J_{j=1}\sum_{x_i\in R_j}(y_i-\overline{y}_{R_j})^2$
+  - $\sum^J_{j=1}\sum_{x_i\in R_j}(y_i-\overline{y}_{R_j})^2$
 
 <br>
 
@@ -46,7 +45,7 @@ $\sum^J_{j=1}\sum_{x_i\in R_j}(y_i-\overline{y}_{R_j})^2$
 - $R_1$ (Entire input space)를 시작으로, reiterate to following the next proceed.
   1. RSS (Residulal sum of squares)를 reduce for maximizer $R_k (\textrm{with }X_j <s)$ 를 찾음
 
-     $\sum_{m=1}^{|T|}\sum_{x_j\in R_m}(y_i-\overline{y}_{R_m})^2$
+     $\sum_{m=1}^{\|T\|}\sum_{x_j\in R_m}(y_i-\overline{y}_{R_m})^2$
 
   2. Splitting point $s$ 를 기준으로 region을 새롭게 define
 
@@ -82,10 +81,10 @@ $\sum^J_{j=1}\sum_{x_i\in R_j}(y_i-\overline{y}_{R_j})^2$
 
 - 기존의 loss function RSS에 pruning을 위한 regularization term 을 추가
 
-$\textrm{Minimize}\sum_{R_m\in T}\sum_{x_i\in R_m}(y_i-\overline y_{R_m})^2{+\alpha\|T\|}$
+$\textrm{Minimize}\sum_{R_m\in T}\sum_{x_i\in R_m}(y_i-\overline y_{R_m})^2$ <span style='color:orange'>${+\alpha\|T\|}$</span>
 
 - $\|T\|$ : # of terminal node
-- $\alpha = \infin$ 라면, Null 트리 생성 (한 개의 leaf 만으로만 구성된 트리)
+- $\alpha = \infty$ 라면, Null 트리 생성 (한 개의 leaf 만으로만 구성된 트리)
 - $\alpha = 0$ 라면, Full 트리 생성
 - $\alpha$  Hyper-parameter 는 Cross validation 을 통해 figure out 할 수 있음
 
@@ -100,7 +99,7 @@ $\textrm{Minimize}\sum_{R_m\in T}\sum_{x_i\in R_m}(y_i-\overline y_{R_m})^2{+\al
 ---
 
 - Regression Decision Tree 와 매우 유사하지만, RSS의 손실 함수 사용 불가
-- Average value 가 아닌, Majority vote 를 통해 예측 (i.e, each region 이 가장 많은 class 를 elect)
+- Average value 가 아닌, <span style='color:orange'>Majority vote</span> 를 통해 예측 (i.e, each region 이 가장 많은 class 를 elect)
 - 새로운 classification loss function 이 필요하다.
 
 ## Classification Loss Function
@@ -109,8 +108,8 @@ $\textrm{Minimize}\sum_{R_m\in T}\sum_{x_i\in R_m}(y_i-\overline y_{R_m})^2{+\al
 
 - Region 안의 sample 중에서 most common class에 포함되지 않은 sample의 수를 계산
 - 두 가지 형태의 loss function으로 표현 가능
-  - $\textrm{Minimize} \sum_{m=1}^{\|T\|}\sum_{x_i \in R_m} \orange{I(y_i \neq \hat{y}_{R_m})}$
-  - $\textrm{Minimize }\orange{1-\underset{a}{max}\ \widehat{p}_{mk}}$
+  - $\textrm{Minimize} \sum_{m=1}^{\|T\|}\sum_{x_i \in R_m}$ <span style='color:orange'>${I(y_i \neq \hat{y}_{R_m})}$</span>
+  - $\textrm{Minimize }$ <span style='color:orange'>${1-\underset{a}{max} \widehat{p}_{mk}}$</span>
     - $\widehat{p}_{mk}$ : m-th region 에서 k-th class 에 해당하는 ratio of learning data
 - 하지만, Developement for tree 에 있어, 충분히 sensitive 하지 못한 단점.
 
@@ -119,10 +118,10 @@ $\textrm{Minimize}\sum_{R_m\in T}\sum_{x_i\in R_m}(y_i-\overline y_{R_m})^2{+\al
 ### Gini index
 
 - K 개 Class의 dispersion 에 대한 observed value
-- $\textrm{Minimize } \orange{\sum_{m=1}^{\|T\|}q_m \sum^K_{k=1} \widehat p_{mk}(1-\widehat p_{mk})}$
+- $\textrm{Minimize }$ <span style='color:orange'>${\sum_{m=1}^{\|T\|}q_m \sum^K_{k=1} \widehat p_{mk}(1-\widehat p_{mk})}$</span>
   - $\widehat p_{mk}$ : m-th region 에서 k-th class 에 해당하는 ratio of learning data
   - $q_m$ : number fo entire data 에 대한 region $R_m$ 에 있는 ratio of sample
-- $\widehat p_{mk}$ 가 모두 0 또는 1 에 converge 할 수록 좋아짐
+- <span style='color:orange'>$\widehat p_{mk}$ 가 모두 0 또는 1 에 converge 할 수록 좋아짐</span>
 - Gini index 값이 작으면 single class 가 node를 장악한 상황이므로, node purity에 대한 observed value 로도 interpretation possible
 
 <br>
@@ -130,9 +129,9 @@ $\textrm{Minimize}\sum_{R_m\in T}\sum_{x_i\in R_m}(y_i-\overline y_{R_m})^2{+\al
 ### Cross-Entropy
 
 - Gini index와 매우 유사한 loss function class 의 dispersion 에 대한 observed value
-- $\textrm{Minimize }- \orange{\sum^{\|T\|}_{m=1}q_m\sum^K_{k=1} \widehat p_{mk} \textrm{ log } \widehat p_{mk}}$
+- $\textrm{Minimize }-$ <span style='color:orange'>${\sum_{m=1}^{\|T\|}q_m\sum^K_{k=1} \widehat p_{mk} \textrm{ log } \widehat p_{mk}}$</span>
 
-<img width="287" alt="Screenshot_2023-03-09_at_11 23 11_AM" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/36e91fe3-7ca2-4867-a843-22fcec40d979">{: .align-center}
+<img width="600" alt="Screenshot_2023-03-09_at_11 23 11_AM" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/36e91fe3-7ca2-4867-a843-22fcec40d979">{: .align-center}
 
 <br>
 
@@ -146,11 +145,11 @@ $\textrm{Minimize}\sum_{R_m\in T}\sum_{x_i\in R_m}(y_i-\overline y_{R_m})^2{+\al
 
 ## Pros
 
-- 모델에 대한 easy to Interpret or Explain
+- 모델에 대한 <span style='color:orange'>easy to Interpret or Explain</span>
 - 인간의 decision making 과 매우 비슷한 형태의 model
 - visualization 이 가능하고 이해하기 쉽다.
 
 ### Cons
 
-- 다른 Regression / Classification model 에 비해 predict preformance 가 일반적으로 떨어짐
+- 다른 Regression / Classification model 에 비해 <span style='color:orange'>predict preformance 가 일반적으로 떨어짐</span>
 - but, 이는 많은 수의 decision tree 의 결과를 종합하는 Ensemble learning (e.g., Bagging, Boostion)으로 supplementation 가능하다.
