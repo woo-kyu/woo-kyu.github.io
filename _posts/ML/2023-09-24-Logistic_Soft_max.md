@@ -36,8 +36,7 @@ use_tex: true
 
 ## Odds
 - how many higher probability of success ($y = 1$) than fail ($y=0$)
-- odds:
-  - $\frac{p(y=1|x|)}{1-p(y=1|x|)}$
+- odds = $\frac{p(y=1\|x\|)}{1-p(y=1\|x\|)}$
 - $\because (p(y=0|x|)+p(y=1|x|))=1,~~p(y=0|x)=1-p(y=1|x)$
 <br>
 
