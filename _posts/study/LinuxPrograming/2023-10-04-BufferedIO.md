@@ -56,7 +56,7 @@ use_tex: false
 
 <br>
 
-# Opening Files
+## Opening Files
 
 ---
 
@@ -64,5 +64,19 @@ use_tex: false
 - To open the file path with the behavior given by mode and associates a new stream with it.
   <img width="720" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/906ed885-b40e-4440-90b0-eef4469fce01">{: .align-center}
 
-파일 디스크립터를 얻는것과 파일 스트림을 얻는 것의 차이를 알기
+- 파일 디스크립터를 얻는것과 파일 스트림을 얻는 것의 차이를 알기
+
+### Opening a Stream via File Descriptor
+- Converting an already open file descriptor (fd) to a stream
+  <img width="658" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/cae6d6ce-a908-46cb-8388-bb78df0425bf">{: .align-center}
+
+### Closing Stream
+```Linux
+int fclose (FILE *stream);
+```
+- Any buffered and not-yet-written data is first flushed. 
+- On success, fclose() returns 0. 
+- On failure, it returns EOF and sets errno appropriately.
+
+
 
