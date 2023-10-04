@@ -27,7 +27,7 @@ use_tex: true
   <img width="650" alt="PM" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/cb586e0c-1494-45bf-971b-f4f05e35c3d4">{: .align-center}
 
 
-- Empty space가 많아지며, 이는 정보가 없는, garbage space 가 많아지는 것을 의미한다,
+- Empty space 가 많아지며, 이는 정보가 없는, garbage space 가 많아지는 것을 의미한다,
 - 이 문제를 해결하는 방법은 크게 두 가지가 있다.
   1. Collect data
   2. <span style="color:skyblue">Dimension reduction</span>
@@ -44,7 +44,7 @@ use_tex: true
 ---
 
 - <span style='color:orange'>종속 변수와 가장 관련성이 높은 feature 만을 선택</span>해, 나머지를 제외시킴
-  - e.g., 각각의 feature 를 model 에 포함시킴으로서, **loss value가 낮아지는 정도를 비교** <img width="295" alt="Heatmap" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/45c9bf1d-3285-4c82-9ef9-eb4d17b0f0b2">{: .align-right}
+  - e.g., 각각의 feature 를 model 에 포함시킴으로서, **loss value 가 낮아지는 정도를 비교** <img width="295" alt="Heatmap" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/45c9bf1d-3285-4c82-9ef9-eb4d17b0f0b2">{: .align-right}
 
 
 - Bagged Tree 에서의 피처 중요도 계산
@@ -53,7 +53,7 @@ use_tex: true
 
 # Feature Extraction (형상 추출)
 
-- 개별 feature을 제거하는 대신, <span style='color:orange'>Low level dimension 으로 projection</span> 하여 데이터와 모델을 단순화
+- 개별 feature 을 제거하는 대신, <span style='color:orange'>Low level dimension 으로 projection</span> 하여 데이터와 모델을 단순화
 - Feature Extraction 의 algorithm 종류
   - PCA (주성분 분석)
   - SVD (특이값 분해)

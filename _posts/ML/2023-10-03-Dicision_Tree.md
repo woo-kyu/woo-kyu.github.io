@@ -52,7 +52,7 @@ use_tex: true
 
 - Greedy 방식은 certain standard (each region 에 5개 이하의 샘플)을 satisfy 시, stop.
 - Every possible region 을 consider 하는 것은 calculation impossible
-- Therefore, <span style='color:orange'>Top-down approach, greedy recursive binary splittion</span> (방법론)을 사용함.
+- Therefore, <span style='color:orange'>Top-down approach, greedy recursive binary splitting</span> (방법론)을 사용함.
 - Root to leaves 까지 tree 를 생성하기 때문에 it called ‘<span style='color:orange'>top-down</span>’
 - There are reason to called ‘<span style='color:orange'>Greedy</span>’ 이전이나 이후 state 를 고려하지 않고 현재 stat 에서의 optimum (best) split 을 행하기 때문이다.
 - Terminal node 의 수가 많아질 수록,
@@ -102,7 +102,7 @@ $\textrm{Minimize}\sum_{R_m\in T}\sum_{x_i\in R_m}(y_i-\overline y_{R_m})^2$ <sp
 
 ---
 
-- Regression Decision Tree 와 매우 유사하지만, RSS의 손실 함수 사용 불가
+- Regression Decision Tree 와 매우 유사하지만, RSS 의 손실 함수 사용 불가
 - Average value 가 아닌, <span style='color:orange'>Majority vote</span> 를 통해 예측 (i.e, each region 이 가장 많은 class 를 elect)
 - 새로운 classification loss function 이 필요하다.
 
@@ -156,4 +156,4 @@ $\textrm{Minimize}\sum_{R_m\in T}\sum_{x_i\in R_m}(y_i-\overline y_{R_m})^2$ <sp
 ### Cons
 
 - 다른 Regression / Classification model 에 비해 <span style='color:orange'>predict performance 가 일반적으로 떨어짐</span>
-- but, 이는 많은 수의 decision tree 의 결과를 종합하는 Ensemble learning (e.g., Bagging, Boostion)으로 supplementation 가능하다.
+- but, 이는 많은 수의 decision tree 의 결과를 종합하는 Ensemble learning (e.g., Bagging, Boosting)으로 supplementation 가능하다.

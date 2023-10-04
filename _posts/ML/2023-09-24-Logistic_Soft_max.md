@@ -20,7 +20,7 @@ use_tex: true
 - For Binary classification
 - Non-linear function
 - $y = \frac{1}{1 +e^{-x}} where  \ x= net$.
-- Function’s output is always over 0 to under 1. mid value is 0.5
+- Function’s output is always over 0 to under 1. mid-value is 0.5
 <br>
 
 
@@ -57,7 +57,7 @@ use_tex: true
     - For Binary classification
     - Non-linear function
     - $y = \frac{1}{1 +e^{-x}}.  \ x= net$.
-    - Function’s output is always over 0 to under 1. mid value is 0.5
+    - Function’s output is always over 0 to under 1. mid-value is 0.5
   - Soft-max function
     - For Multiple Classification
     - Non-linear function
@@ -105,17 +105,17 @@ use_tex: true
 
 # MLE (Maximum Likelihood Estimation)
 
-## Likehood (우도 확률, $P(X|w)$
+## Likelihood (우도 확률, $P(X|w)$
 
-- Model parameter value를 잘 모르지만, 그것이 맞다고 가정했을 경우 주어진 데이터의 분포
-- $\therefore$ Likelihood 는 model의 parameter ($w$)에 대한 함수로, 데이터의 분포를 표현함
-- 각 sample이 I.I.D (Independent and Identical Distributed)하다고 가정 후, 흔히아는 PDF(Probability density function)의 곱으로 표현됨
+- Model parameter value 를 잘 모르지만, 그것이 맞다고 가정했을 경우 주어진 데이터의 분포
+- $\therefore$ Likelihood 는 model 의 parameter ($w$)에 대한 함수로, 데이터의 분포를 표현함
+- 각 sample 이 I.I.D (Independent and Identical Distributed)하다고 가정 후, 흔히아는 PDF(Probability density function)의 곱으로 표현됨
 - Ex) 정규 분포를 따르는 데이터에 대한 우도 확률
-  - $w : \mu (Everage),~ \sigma (Dispersion)$
+  - $w : \mu (Average),~ \sigma (Dispersion)$
   - $PDF : \frac{1}{\sigma \sqrt{2\pi }}\textbf{e}^{\frac{-1}{2}(\frac{x-\mu }{\sigma })^2}$
   - $Likelihood : \prod_{i}^{n}\frac{1}{\sigma \sqrt{2\pi }}\textbf{e}^{\frac{-1}{2}(\frac{x_{i}-\mu }{\sigma })^2}$
 - pdf = 정규분포를 따르는 데이터 → 정규분포를 표현하기 위한 파라미터 (평균, 분산)을 사용해 임의의 데이터가 나올 수 있는 확률
-- 샘플이 i 부터 n개 까지의 데이터들의 pdf값에 대한 곱 = 전체 데이터가 나올 확률
+- 샘플이 i 부터 n개 까지의 데이터들의 pdf 값에 대한 곱 = 전체 데이터가 나올 확률
 <br>
 
 
@@ -132,7 +132,7 @@ use_tex: true
 - Methods used to address the shortcomings of data-dependent MLE’s
 - $\hat{W}=\underset{w}{arg ~max}~P(w\|X\|)$
 - Posterior is important to calculate immediately
-- Using the Bayes’ theorem, it express the multiple of prior and likelihood probability
+- Using the Bayes’ theorem, it expresses the multiple of prior and likelihood probability
 - accurate of estimate is depends upon accurate of prior probability
 <br><br>
 
@@ -146,7 +146,7 @@ use_tex: true
 - The distribution of this probability variable is called the Bernoulli distribution
 - $P(Y=y_{i})=p^{y_{i}}(1-p)^{1-y_{i}}$ ( $p = p(y=1\|x)$ : [0,1] ) → PDF
 - if, $y_{i}=1$ 일때 p, $y_{i}=0$ 일때, 1-p
-- $L=\prod_{i}p^{y_{i}}(1-p)^{1-y_{i}}$ → 모든 데이터 셈플 iid한 베르누이 분포를 가진다고 가정할 때의 우도함수
+- $L=\prod_{i}p^{y_{i}}(1-p)^{1-y_{i}}$ → 모든 데이터 셈플 IID 한 베르누이 분포를 가진다고 가정할 때의 우도함수
 <br>
 
 
@@ -157,11 +157,11 @@ use_tex: true
   - $w^{T}X$ < 0, 0으로 분류 → $\sigma(w^{T}X) < \frac{1}{2}$
 - Can be interpreted as a Bernoulli distribution with a parameter value of p ($\sigma (w^{T}X$)
 - $\textbf{L} = \prod_{i}^{}\sigma(w^{T}X_{i})^{y_{i}}(1-\sigma(w^{T}X_{i}))^{1-y_{i}}$ → logistic 분포를 베르누이 분포로 표현
-- Log function는 monotone increasing function (단조 증가 함수) 이므로 L 또는  $\textbf{ln~L}$ 를 최대로 만드는 $w$는 동일함. ($\textbf{ln} = log_{e}$)
+- Log function 는 monotone increasing function (단조 증가 함수) 이므로 L 또는  $\textbf{ln~L}$ 를 최대로 만드는 $w$는 동일함. ($\textbf{ln} = log_{e}$)
   {% raw %}
   $\textbf{ln}~L = \sum_{i}y_{i}~\textbf{ln}\{\sigma(w^{T}X_{i})\}+\sum_{i}(1-y_{i})~\textbf{ln}\{1-\sigma (w^{T}X_{i})\}$
   {% endraw %}
-- Log likelihood function을 maximize == - Log likelihood function을 minimize
+- Log likelihood function 을 maximize == - Log likelihood function 을 minimize
 - - log likelihood value ($\textbf{ln~L}$)를 minimize → 손실함수를 최소화
 <br>
 
@@ -182,7 +182,7 @@ use_tex: true
 # Non-linear Logistic Regression
 
 - $P(\hat{y}=1\|X)=\frac{1}{1+e^{-w^{T}X}}=\sigma(w^{T}X)$
-- Linear logistic regression에서 $w^{T}X$를 non-linear regression function으로 exchange
+- Linear logistic regression 에서 $w^{T}X$를 non-linear regression function 으로 exchange
 - $P(\hat{y}=1\|X)=\frac{1}{1+e^{-w^{T}X}}=\sigma(W_{0}+w_{1}X+w_{2}X^{2}+w_{3}X^{3})$
 
 <img width="900" alt="img" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/e99c6e9d-1ca9-4154-b799-5d79a110c3b0">{: .align-center}
@@ -210,7 +210,7 @@ use_tex: true
 
 ## Precision (정밀도)
 
-- 모델이 Positive로 예측한 것 중 실제값 또한 Positive인 비율 $\frac{TP}{TP+FP}$
+- 모델이 Positive 로 예측한 것 중 실제값 또한 Positive 인 비율 $\frac{TP}{TP+FP}$
 
   <img width="600" alt="Screenshot_2023-01-22_at_5 20 53_PM" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/86cae381-0de7-4b92-a0f7-5a64ffd87dbb">{: .align-center}
 
@@ -219,7 +219,7 @@ use_tex: true
 
 ## Recall (재현도)
 
-- 실제 값이 Positive인 것 중 모델이 Positive로 예측한 비율 $\frac{TP}{TP+FN}$
+- 실제 값이 Positive 인 것 중 모델이 Positive 로 예측한 비율 $\frac{TP}{TP+FN}$
 
   <img width="600" alt="Screenshot_2023-01-22_at_5 22 05_PM" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/5474aa82-19aa-4226-bf3d-606ea630fe49">{: .align-center}
 
