@@ -159,6 +159,11 @@ char * fgets (char *str, int size, FILE *stream);
   e returned.
   - A return value less than nr denotes error.
 
+<br>
+
+## Seeking Stream
+
+
 
 
 
