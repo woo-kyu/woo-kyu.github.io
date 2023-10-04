@@ -134,6 +134,36 @@ char * fgets (char *str, int size, FILE *stream);
 
 <br>
 
+### Reading Binary Data
+  <img width="682" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/57919ba2-73db-4fde-9b67-fc55a9355af7">{: .align-center}
+- nr: read 반복 횟수
+- nr 횟수보다 적게 읽혔다? : 실패하였는지 또는 (EOF)인지 확인 필요
+
+<br>
+
+### Writing a Single Character
+  <img width="551" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/ddf449d6-a918-460c-9f5d-133a0f0eba0d">{: .align-center}
+
+<br>
+
+### Writing a String of Characters
+  <img width="685" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/3225121b-6002-4e9b-9572-08aaea00aa4b">{: .align-center}
+
+<br>
+
+### Writing Binary Data 
+  <img width="257" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/fb669c84-e152-4f91-9aca-2588b42acc5c">{: .align-center}
+- Writing to stream up to nr elements, each size bytes in length, from the data pointed at by buf
+- The file pointer will be advanced by the total number of bytes written.
+- The number of elements (not the number of bytes!) successfully written will b
+  e returned.
+  - A return value less than nr denotes error.
+
+
+
+
+
+
 
 
 
