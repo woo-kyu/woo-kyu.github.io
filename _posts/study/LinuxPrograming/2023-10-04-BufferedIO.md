@@ -58,3 +58,11 @@ use_tex: false
 
 # Opening Files
 
+---
+
+---
+- To open the file path with the behavior given by mode and associates a new stream with it.
+  <img width="720" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/906ed885-b40e-4440-90b0-eef4469fce01">{: .align-center}
+
+파일 디스크립터를 얻는것과 파일 스트림을 얻는 것의 차이를 알기
+
