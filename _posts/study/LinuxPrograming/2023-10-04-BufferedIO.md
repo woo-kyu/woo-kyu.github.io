@@ -11,7 +11,7 @@ use_tex: false
 > 
 
 
-# Buffered I/O
+# I/O
 
 ## Block
 - An abstraction representing the <span style="color:skyblue">smallest unit of storage on a file system</span>
@@ -58,9 +58,6 @@ use_tex: false
 
 ## Opening Files
 
----
-
----
 - To open the file path with the behavior given by mode and associates a new stream with it.
   <img width="720" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/906ed885-b40e-4440-90b0-eef4469fce01">{: .align-center}
 
@@ -70,6 +67,8 @@ use_tex: false
 - Converting an already open file descriptor (fd) to a stream
   <img width="658" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/cae6d6ce-a908-46cb-8388-bb78df0425bf">{: .align-center}
 
+<br>
+
 ### Closing Stream
 ```Linux
 int fclose (FILE *stream);
@@ -78,6 +77,8 @@ int fclose (FILE *stream);
 - On success, fclose() returns 0. 
 - On failure, it returns EOF and sets errno appropriately.
 
+<br>
+
 ### Closing All Streams
 ```Linux
 int fcloseall (return);
@@ -85,3 +86,58 @@ int fcloseall (return);
 - Closing all streams associated with the current process, including standard in, standard out, and standard error
 - Before closing, all streams are flushed.
 - Always returning 0
+
+<br>
+
+## Reading from a Stream
+- Reading a Character at a Time
+  <img width="679" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/ccff4701-49c5-4936-8c78-2012f3eb303c">{: .align-center}
+  - fgetc 함수는 스트림에서 다음 문자를 읽고, 이를 int로 캐스팅된 unsigned char로 반환 
+  - 파일의 끝이나 오류를 알리기 위해 충분한 범위를 가지도록, 이러한 조건에서는 EOF(End Of File)가 반환
+  - fgetc의 반환 값은 int 타입 변수에 저장
+  - 반환 값을 char에 저장하는 것은 흔하지만 위험한 실수이다. 왜냐하면 이렇게 하면 오류를 감지할 능력을 잃게 되기 때문. 
+  - i.e., fgetc는 스트림에서 다음 문자를 읽어와 int로 변환된 unsigned char 형태로 반환하며, 오류나 파일 끝을 감지하기 위해 반환 값을 int 타입에 저장해야 한다.
+
+<br>
+
+### Putting the character back
+```Linux
+int ungetc (int c, FILE *stream);
+```
+- On success, c is returned
+- On failure, EOF is returned
+- A subsequent read from stream will return c.
+- If multiple characters are pushed back, they are returned in the reverse order, last in/first out like a stack—that is, the more recently pushed character is ret urned first.
+
+<br>
+
+### Reading an Entire Line
+```Linux
+char * fgets (char *str, int size, FILE *stream);
+```
+- Reading up to one less than size bytes from stream and stores the results in str
+  - On success, str to be returned. On failure, NULL to be returned.
+- A null character (\0) to be stored in the buffer after the last byte read in
+- Reading stops after an EOF or a newline character
+- If a newline is read, the \n is stored in str.
+
+<br>
+
+#### Reading an entire line with fgetc instead of fgets
+  <img width="356" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/5b8b556a-e751-4870-8f4a-70090fb220e5">{: .align-center}
+
+<br>
+
+#### Reading an entire line with fgetc instead of fgets for delimiting
+- 개행 문자 (딜리미터)를 기준으로 문자열 슬라이싱
+  <img width="498" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/2286d8d3-f959-4514-a0f1-cfc3304a3696">{: .align-center} 
+
+<br>
+
+
+
+
+
+
+
+
