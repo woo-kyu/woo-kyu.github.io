@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Buffered I/O
+title: 3. Buffered I/O
 categories: Linux
 tags: [Linux, Uni]
 author_profile: false
@@ -9,6 +9,9 @@ use_tex: false
 ---
 
 > 
+
+
+# Buffered I/O
 
 ## Block
 - An abstraction representing the <span style="color:skyblue">smallest unit of storage on a file system</span>
@@ -45,7 +48,13 @@ use_tex: false
 
 <br>
 
+## Standard I/O
+
 ### File Pointer
 - Standard I/O routines do not operate directly on file descriptors
   - Instead, they use their own unique identifier, known as the file pointer. Inside the C l ibrary, the file pointer maps to a file descriptor.
+
+<br>
+
+# Opening Files
 
