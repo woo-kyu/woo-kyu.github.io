@@ -163,6 +163,121 @@ char * fgets (char *str, int size, FILE *stream);
 
 ## Seeking Stream
 
+### Writing Binary Data
+```Linux
+size_t fwrite (void *buf, size_t size, size_t wr, FILE *stream);
+```
+- Writing to stream up to nr elements, each size bytes in length, from the data pointed at by buf
+- The file pointer will be advanced by the total number of bytes written.
+- The number of elements (not the number of bytes!) successfully written will be returned.
+  - A return value less than nr denotes error.
+
+<br>
+
+```Linux
+int fseek (FILE *stream, long offset, int whence);
+```
+- whence set to SEEK_SET
+  - the file position is set to offset
+- whence set to SEEK_CUR
+  - the file position is set to the current position plus offset.
+- whence is set to SEEK_END
+  - the file position is set to the end of the file plus offset.
+- Upon successful completion,
+  - returning 0, clearing the EOF indicator, and undoing the effects (if any) of ungetc()
+- On error,
+  - returning −1, and errno set appropriately
+  - The most common errors are invalid stream (EBADF) and invalid whence argument ( EINVAL).
+
+<br>
+
+```Linux
+void rewind (FILE *stream);
+
+or
+rewind (stream);
+fseek (stream, 0, SEEK_SET);
+
+or (No return val)
+errno = 0;
+rewind (stream);
+if (errno)
+  /* error */
+```
+- Resetting the position back to the start of the stream
+
+<br>
+
+### Obtaining the Current Stream Position
+- The ftell() function returns the current stream position of stream:
+  - Unlike lseek(), fseek() does not return the updated position.
+
+```Linux
+long ftell (FILE *stream);
+
+or
+int fgetpos (FILE *stream, fpos_t *pos);
+```
+- Upon success, fgetpos() returns 0, and places the current stream position of stream in pos.
+- On failure, it returns −1 and sets errno appropriately.
+
+<br>
+
+## Flushing stream
+- Any unwritten data in the stream pointed to by stream is flushed <span style='color:orange'>to the kernel</span>
+  - If stream is NULL, all open input streams in the process are flushed
+  - On success, fflush() returns 0.
+  - On failure, it returns EOF, and errno is set appropriately.
+  - fsync() required to ensure flushed data(by fflush()) to be written into the storage
+```Linux
+int fflush (FILE *stream);
+```
+
+<br>
+
+## Error and End-of-File
+```Linux
+/* To check if there is an error: Returning a nonzero value if the indicator set, otherwise 0 */
+  int ferror (FILE *stream);
+  
+/* To check if the position is at the EOF: Returning a nonzero value if the indicator set, otherwise 0 */
+  int feof (FILE *stream);
+```
+
+<br>
+
+## Obtaining the Associate File Descriptor
+```Linux
+/* Flush operation required before calling it */
+  int fileno (FILE *stream);
+```
+
+<br>
+
+## Manual File Locking
+
+### Blocking
+```Linux
+/* To lock stream */
+  void flockfile (FILE *stream);
+  
+/* To unlock stream */
+  int ftrylockfile (FILE *stream);
+```
+
+<br>
+
+### Non-Blocking
+```Linux
+/* To lock stream */
+int ftrylockfile (FILE *stream);
+```
+
+
+
+
+
+
 
 
 
