@@ -78,5 +78,10 @@ int fclose (FILE *stream);
 - On success, fclose() returns 0. 
 - On failure, it returns EOF and sets errno appropriately.
 
-
-
+### Closing All Streams
+```Linux
+int fcloseall (return);
+```
+- Closing all streams associated with the current process, including standard in, standard out, and standard error
+- Before closing, all streams are flushed.
+- Always returning 0
