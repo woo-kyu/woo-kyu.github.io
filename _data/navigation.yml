@@ -1,9 +1,9 @@
 # main links
 main:
   - title: "Category"
-    url: /categories/
+    url: /categories-grid/
   - title: "Tag"
-    url: /tags/
+    url: /tags-grid/
   - title: "Results"
     url: https://woo-kyu.github.io
   - title: "Personal"
