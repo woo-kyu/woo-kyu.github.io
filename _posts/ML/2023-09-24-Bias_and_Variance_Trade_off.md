@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "Bias and Variance Trade-off"
+toc_label: Bias and Variance Trade-off
 categories: ML
 tag: [ML]
 author_profile: false
