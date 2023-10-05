@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "Clustering"
+toc_label: Clustering
 categories: ML
 tag: [ML]
 author_profile: false

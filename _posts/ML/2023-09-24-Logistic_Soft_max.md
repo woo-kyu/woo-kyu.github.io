@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "Logistic and Soft-max Regression"
+toc_label: Logistic and Soft-max Regression
 categories: ML
 tag: [ML]
 author_profile: false

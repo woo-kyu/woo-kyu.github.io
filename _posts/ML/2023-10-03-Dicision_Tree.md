@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "The Decision Tree"
+toc_label: The Decision Tree
 categories: ML
 tag: [ML]
 author_profile: false

@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "Dimension Reduction (차원 축소)"
+toc_label: Dimension Reduction
 categories: ML
 tag: [ML]
 author_profile: false

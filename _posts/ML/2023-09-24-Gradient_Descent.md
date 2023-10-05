@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "Gradient Descent"
+toc_label: Gradient Descent
 categories: ML
 tag: [ML]
 author_profile: false

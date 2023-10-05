@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "Linear and Non-linear Regression"
+toc_label: Linear and Non-linear Regression
 categories: ML
 tag: [ML]
 author_profile: false
