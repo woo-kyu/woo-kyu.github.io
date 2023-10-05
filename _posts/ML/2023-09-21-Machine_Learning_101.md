@@ -19,18 +19,23 @@ use_tex: true
 - Reinforcement Learning
 
 
-
   <img width="746" alt="ml" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/88db6bbf-59d2-4af4-b252-6c2b2da3c01f">{: .align-center}
 
-
+<br>
 
 # Supervised Learning
+
+---
+
+---
 
 ## Regression
 
 - [Linear and Non-linear Regression]({{site.url}}/ml/Regression/)
 - [Gradient Descent]({{site.url}}/ml/Gradient_Descent/)
 - [Bias and Variance Trade-off]({{site.url}}/ml/Bias_and_Variance_Trade_off/)
+
+<br>
 
 ## Classification
 
@@ -39,19 +44,25 @@ use_tex: true
 - [Dicison Tree]({{site.url}}/ml/Dicision_tree)
 - [Linear Discriminant Analysis (LDA)]({{site.url}}/ml/LDA)
 
+<br>
+
 ## [Ensemble (Complex)]({{site.url}}/ml/Ensemble)
 
 - [Bagging]({{site.url}}/ml/Bagging)
 - [Boosting]({{site.url}}/ml/Boosting)
 
-<br><br>
+<br>
+
 ## Regression vs. Classification
+
 
 ### Regression (회귀)
 
 - Input (Feature) : Real number (실수형),  Discrete value(범주형) etc..,
 - <span style='color:orange'>Output (Predict) : Real number (실수형, 이산값)</span>
 - Model shape : normal function shape (eg. $y = w_{1}x + w_{0}$)
+
+<br>
 
 ### Classification (분류)
 
@@ -62,41 +73,58 @@ use_tex: true
     - <span style="color:skyblue">Multiple Classification (다중 분류) : Soft-max function</span>
 
 
-<br><br>
+<br>
+
 # Unsupervised Learning
 
-## [Dimension Reduction](https://www.notion.so/Dimension-Reduction-45abe195f9f447bfb4c4982c613ef4fa?pvs=21) (차원 축소; Data pre-processing)
+---
+
+---
+
+## [Dimension Reduction]({{site.url}}/ml/Dimension_Reduction) (차원 축소; Data pre-processing)
 
 ### Kind of Feature Extraction in DR
 
-- [Singular Value Decompostion (SVD)](https://www.notion.so/Singular-Value-Decompostion-SVD-5da6cb1712364bd9845ae07a13698a02?pvs=21)
-- [Principal Component Analysis (PCA)](https://www.notion.so/Principal-Component-Analysis-PCA-66343cdc55d34874a61101bf40942d5b?pvs=21)
-- [Linear Discriminant Analysis (LDA)](https://www.notion.so/Linear-Discriminant-Analysis-LDA-2b14db1bad49487b85eb708d31b1c1bf?pvs=21)
-- [t-SNE](https://www.notion.so/t-SNE-fd6407b027c34b2c8001365a1ac309b6?pvs=21)
-- [UMAP](https://www.notion.so/UMAP-11c80720f11a442f8752f87091e3978e?pvs=21)
+- [Singular Value Decompostion (SVD)]({{site.url}}/ml/SVD)
+- [Principal Component Analysis (PCA)]({{site.url}}/ml/PCA)
+- [Linear Discriminant Analysis (LDA)]({{site.url}}/ml/LDA_us)
+- [t-SNE]({{site.url}}/ml/t_SNE)
+- [UMAP]({{site.url}}/ml/UMAP)
 
-## [Clustering](https://www.notion.so/Clustering-fbbfae030d4048be891716a048687704?pvs=21)
+<br>
+
+## [Clustering]({{site.url}}/ml/Clustering)
+
 
 ### Parametric
 
-- [Gaussian Mixture Model](https://www.notion.so/Gaussian-Mixture-Model-788947a18796444993171391bbda5332?pvs=21)
+- [Gaussian Mixture Model]({{site.url}}/ml/GMM)
+
+<br>
 
 ### Non-Parametric
 
-- [K-Means](https://www.notion.so/K-Means-c37168198a6a46fb9b5378ed97ac186e?pvs=21)
-- [Mean Shift](https://www.notion.so/Mean-Shift-579f0e5b05924843894dd55cfcdcb199?pvs=21)
-- [DBSCAN](https://www.notion.so/DBSCAN-61c514e745ed47c3ae19ea017bfc2fa9?pvs=21)
+- [K-Means]({{site.url}}/ml/K_Means)
+- [Mean Shift]({{site.url}}/ml/MS)
+- [DBSCAN]({{site.url}}/ml/DBSCAN)
 
-### [Hierarchial Clustering](https://www.notion.so/Hierarchial-Clustering-0297536f98824b8e8ed209fafe05fae9?pvs=21)
+### [Hierarchial Clustering]({{site.url}}/ml/HC)
 
-<br><br>
+<br>
+
 
 # Parameter vs. Hyper-parameter
+
+---
+
+---
 
 ## Parameter ( ; weight)
 
 - learnable parameter within model
 - ex) $w_{0}, w_{1}, ... w_{D}$
+
+<br>
 
 ## Hyper-parameter
 
@@ -104,15 +132,25 @@ use_tex: true
 - ex) Learning rate, Disposition size(배치 크기)
 
 
-<br><br>
+<br>
+
 # Data structure
+
+---
+
+---
 
 - Feature (attribute) : information = X
 - Label : results = y (predict : y_hat)
 
 
-<br><br>
+<br>
+
 # Use verified data-sets
+
+---
+
+---
 
 ## LOOCV
 
@@ -135,55 +173,60 @@ use_tex: true
 
 
 
-<br><br>
-Lower Documents
+<br>
 
-[Gradient Descent](https://www.notion.so/Gradient-Descent-aa1c49bfa7ce43f18b02c3040d7ba050?pvs=21)
+# All Relative Documents
 
-[LRS (Learning Rate Scheduler)](https://www.notion.so/LRS-Learning-Rate-Scheduler-2be9e4dc1e11422da41eee7fcaf22aa9?pvs=21)
+---
 
-[Optima (Local minima problem)](https://www.notion.so/Optima-Local-minima-problem-90ceae844ae54ea8acdb27f3958aaa6d?pvs=21)
+---
 
-[Linear and Non-linear Regression](https://www.notion.so/Linear-and-Non-linear-Regression-ae1a552966a04ff298180bd7ffb0ab84?pvs=21)
+[Linear and Non-linear Regression]({{site.url}}/ml/Regression/)
 
-[Bias and Variance Trade-off](https://www.notion.so/Bias-and-Variance-Trade-off-d60ef99cf5ad43679a8ede2a08e80943?pvs=21)
+[Gradient Descent]({{site.url}}/ml/Gradient_Descent/)
 
-[Logistic and Soft-max Regression](https://www.notion.so/Logistic-and-Soft-max-Regression-3bb3afc3a96c41afb8d483f5ab888a3d?pvs=21)
+[LRS (Learning Rate Scheduler)]({{site.url}}/ml/LRS/)
 
-[Support Vector Machine (SVM)](https://www.notion.so/Support-Vector-Machine-SVM-983a2cc660224238aa7e6da3ce42dc41?pvs=21)
+[Optima (Local minima problem)]({{site.url}}/ml/Optima/)
 
-[Dicison Tree](https://www.notion.so/Dicison-Tree-983f9fac33ac43b98ace686faaf422e0?pvs=21)
+[Bias and Variance Trade-off]({{site.url}}/ml/Bias_and_Variance_Trade_off/)
 
-[Linear Discriminant Analysis (LDA)](https://www.notion.so/Linear-Discriminant-Analysis-LDA-8808104ff8524e09b7d429869c0bb7ad?pvs=21)
+[Logistic and Soft-max Regression]({{site.url}}/ml/Logistic_Soft_max)
 
-[Bagging](https://www.notion.so/Bagging-d31aa1187e00477e89f464254e6f8993?pvs=21)
+[Support Vector Machine (SVM)]({{site.url}}/ml/SVM)
 
-[Boosting](https://www.notion.so/Boosting-884046b371f34e9f936f54d5f5e507f8?pvs=21)
+[Dicison Tree]({{site.url}}/ml/Dicision_tree)
 
-[Singular Value Decompostion (SVD)](https://www.notion.so/Singular-Value-Decompostion-SVD-5da6cb1712364bd9845ae07a13698a02?pvs=21)
+[Linear Discriminant Analysis (LDA)]({{site.url}}/ml/LDA)
 
-[Principal Component Analysis (PCA)](https://www.notion.so/Principal-Component-Analysis-PCA-66343cdc55d34874a61101bf40942d5b?pvs=21)
+[Ensemble (Complex)]({{site.url}}/ml/Ensemble)
 
-[Linear Discriminant Analysis (LDA)](https://www.notion.so/Linear-Discriminant-Analysis-LDA-2b14db1bad49487b85eb708d31b1c1bf?pvs=21)
+[Bagging]({{site.url}}/ml/Bagging)
 
-[t-SNE](https://www.notion.so/t-SNE-fd6407b027c34b2c8001365a1ac309b6?pvs=21)
+[Boosting]({{site.url}}/ml/Boosting)
 
-[UMAP](https://www.notion.so/UMAP-11c80720f11a442f8752f87091e3978e?pvs=21)
+[Dimension Reduction]({{site.url}}/ml/Dimension_Reduction)
 
-[K-Means](https://www.notion.so/K-Means-c37168198a6a46fb9b5378ed97ac186e?pvs=21)
+[Singular Value Decompostion (SVD)]({{site.url}}/ml/SVD)
 
-[Mean Shift](https://www.notion.so/Mean-Shift-579f0e5b05924843894dd55cfcdcb199?pvs=21)
+[Principal Component Analysis (PCA)]({{site.url}}/ml/PCA)
 
-[Gaussian Mixture Model](https://www.notion.so/Gaussian-Mixture-Model-788947a18796444993171391bbda5332?pvs=21)
+[Linear Discriminant Analysis (LDA)]({{site.url}}/ml/LDA_us)
 
-[DBSCAN](https://www.notion.so/DBSCAN-61c514e745ed47c3ae19ea017bfc2fa9?pvs=21)
+[t-SNE]({{site.url}}/ml/t_SNE)
 
-[Hierarchial Clustering](https://www.notion.so/Hierarchial-Clustering-0297536f98824b8e8ed209fafe05fae9?pvs=21)
+[UMAP]({{site.url}}/ml/UMAP)
 
-[Ensemble (Complex)](https://www.notion.so/Ensemble-Complex-f7f9181358a048759159eacb55ee1ea0?pvs=21)
+[Clustering]({{site.url}}/ml/Clustering)
 
-[Dimension Reduction](https://www.notion.so/Dimension-Reduction-45abe195f9f447bfb4c4982c613ef4fa?pvs=21)
+[Gaussian Mixture Model]({{site.url}}/ml/GMM)
 
-[Clustering](https://www.notion.so/Clustering-fbbfae030d4048be891716a048687704?pvs=21)
+[K-Means]({{site.url}}/ml/K_Means)
 
-[Reinforcement Learning](https://www.notion.so/Reinforcement-Learning-db77c17aa27f469bb78819690688cee6?pvs=21)
+[Mean Shift]({{site.url}}/ml/MS)
+
+[DBSCAN]({{site.url}}/ml/DBSCAN)
+
+[Hierarchial Clustering]({{site.url}}/ml/HC)
+
+
