@@ -295,6 +295,6 @@ defaults:
       show_date: true
       toc: true
       toc_sticky: true
-      toc_label:  Outline
+      toc_label:  {{site.title}}
 
 
