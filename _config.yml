@@ -24,7 +24,7 @@ description              : "for Workbook"
 url                      : "https://woo-kyu.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : "/assets/images/IMG_1501.JPG"
+teaser                   : "/assets/images/t.jpeg"
 logo                     : "/assets/images/logo.jpeg"
 masthead_title           : #
 breadcrumbs              : true # false (default)
