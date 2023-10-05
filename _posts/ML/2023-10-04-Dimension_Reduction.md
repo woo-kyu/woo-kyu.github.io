@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Dimension Reduction"
+title: "Dimension Reduction (차원 축소)"
 categories: ML
 tag: [ML]
 author_profile: false
@@ -8,7 +8,7 @@ search: true
 use_tex: true
 ---
 
-> 차원 축소(Dimension Reduction)는 고차원 데이터에서 중요한 정보는 최대한 유지하면서 데이터의 차원을 줄이는 기법으로, 계산 비용을 줄이고, 데이터를 시각화하기 용이하게 만들며, 때로는 모델의 성능 향상을 도모하기 위해 사용되며, 주요 방법론으로는 주성분 분석(PCA), 선형 판별 분석(LDA), t-SNE 등이 있다.
+> 고차원 데이터에서 중요한 정보는 최대한 유지하면서 데이터의 차원을 줄이는 기법으로, 계산 비용을 줄이고, 데이터를 시각화하기 용이하게 만들며, 때로는 모델의 성능 향상을 도모하기 위해 사용되며, 주요 방법론으로는 주성분 분석(PCA), 선형 판별 분석(LDA), t-SNE 등이 있다.
 
 - Data 에 대한 Reduction of dimension 은 calculate speed 뿐만 아니라 performance 면에서 필요함
 - model learning 에 unusable 한 feature (속도 향상) 또는 방해되는 feature (성능 향상) 을 제거해야 한다.
