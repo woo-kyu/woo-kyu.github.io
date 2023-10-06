@@ -10,7 +10,7 @@ author_profile: false
 search: true
 use_tex: true
 ---
->**디지털 화상 처리** 또는 **디지털 영상 처리**는 컴퓨터 알고리즘을 사용하여 디지털 이미지에 대한 화상 처리를 수행하는 것이다. 디지털 신호 처리의 하위분야로, 디지털 영상 처리는 아날로그 영상 처리에 비해 많은 장점이 있다. 입력 자료에 더욱 광범위한 알고리즘을 적용 가능하게 하고, 처리 도중 발생하는 소음과 신호 왜곡과 같은 문제들을 방지할 수 있다.
+>**디지털 화상 처리** 또는 **디지털 영상 처리**는 컴퓨터알고리즘을 사용하여디지털 이미지에 대한화상 처리를 수행하는 것이다.디지털 신호 처리의 하위분야로, 디지털 영상 처리는 아날로그 영상 처리에 비해 많은 장점이 있다. 입력 자료에 더욱 광범위한 알고리즘을 적용 가능하게 하고, 처리 도중 발생하는 소음과 신호 왜곡과 같은 문제들을 방지할 수 있다.
 
 ## Image (영상)
 ### 일반적인 의미
@@ -168,106 +168,6 @@ use_tex: true
   - $n(x,y)$ : Noise
 
 <br>
-
-### Image Digitization
-- 샘플링 및 양자화를 통한 디지털 영상 생성
-  - 샘플링: 연속적인 아날로그 영상을 일정간격으로 수치화
-  - 양자화: 각 새믈의 값을 정해진 수치로 대응
-  <img width="675" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/06ec28a0-30f5-4054-817b-b5eccb4175dd">{: .align-center}
-
-<br>
-
-### Sampling & Quantization
-- Convert the continuous sensed data into a digital format
-- Sampling: Digitizing the coordinate values 
-- Quantization: Digitizing the amplitude values
-<img width="765" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/e6834062-c736-4a10-a345-448dbd3f4cf3">{: .align-center}
-
-<br>
-
-- Sampling and quantization on the 2D sensor array
-<img width="497" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/4d922bac-0f3e-4da4-ac47-0f830707c937">{: .align-center}
-
-<br>
-
-#### Sampling
-- 아날로그 신호를 디지털 영상으로 표현하기 위해 샘플링 신호로 추출
-- 공간 생플링
-  - 픽셀을 하나의 데이터로 표현
-- 시간 샘플링
-  - 연속적인 시간을 특정 주기의 시간으로 나누어 영상을 취득
-<img width="563" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/21b17de1-322a-4bfd-afff-175a09359427">{: .align-center}
-
-<br>
-
-#### Quantization
-- 영상 신호의 진폭 값을 디지털 화
-- 샘플링 된 값을 일정 길이의 비트로 표현
-<img width="459" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/028c0394-7c61-48ab-9d14-2f101dae1dd6">{: .align-center}
-
-<br>
-
-### Assume a Digital Image $f(x,y)$
-- $x,y$ : Discrete coordinates with M rows and N columns
-- $f(x,y)$ : Value of digital image
-- Representation of $f(x,y)$ 
-
-<img width="842" alt="AM" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/f9278265-c629-4ddf-82e9-2ce2d0b76972">{: .align-center}
-
-<br>
-
-#### Pixel
-- 디지털 영상을 구성하는 최소 단위 (화소)
-
-
-#### Resolution
-- 영상의 가로 x 세로 값
-<img width="348" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/84edce49-d57d-4e6b-b9e9-136ef73bf0dd">{: .align-center}
-
-<br>
-
-- Spatial resolution
-  - The smallest discernible detail in an image
-  - Dots (pixels) per unit distance
-  - Matrix size is not the spatial resolution
-  <img width="620" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/dcdd198d-17c1-4285-8d55-9961b260a534">{: .align-center}
-
-- Intensity resolution
-  - The smallest discernible changes in intensity level
-  <img width="647" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/87c6d9cb-d243-4484-9039-3dad9d00265b">{: .align-center}
-
-<br>
-
-### Neighbors of a pixel
-- Consider a pixel $p$ at coordinates $(x,y)$
-  - Two horizontal/vertical neighbors $[N_4(p)]$:
-    - $(x+1,y),(x-1,y),(x,y+1),(x,y-1)$
-  - Four diagonal neighbors $[N_D(p)]$:
-    - $(x+1,y+1),(x+1,y-1),(x-1,y+1),(x-1,y-1)$
-  - $N_8(p):~N_4(p)&N_D(p)$
-
-<br>
-
-### Adjacency
-- 4-adjacency: Two pixels $p$ and $q$ are 4-adjacent if $q$ is in the set $N_4(p)$
-- 8-adjacency: Two pixels $p$ and $q$ are 8-adjacent if $q$ is in the set $N_8(p)$
-- m-adjacency (mixed adjacency): Two pixels $p$ and $q$ are m-adjacent if 
-  - $q$ is in $N_4(p)$ or 
-  - $q$ is in $N_D(p)$ <span style='color:orange'>and</span> the set $N_4(p)\cap N_8(p)$ has no pixels
-<img width="680" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/588eb3b9-88a0-477f-a26c-f43ecf99542a">{: .align-center}
-
-<br>
-
-<img width="809" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/04990fd8-7c0a-4ee7-8ff7-fc15511b8ed9">{: .align-center}
-
-<br>
-
-### Digital path (curve)
-- Sequence of distinct pixels
-  - E.g., Path from pixel $p$ with coordinates $(x_0,y_0)$ 
-
-
-
 
 
     
