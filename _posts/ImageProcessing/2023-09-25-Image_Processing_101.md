@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Histogram
+title: Image Processing 101
 categories: ImageProcess
 tags:
   - CV
@@ -12,28 +12,34 @@ use_tex: true
 ---
 >**디지털 화상 처리** 또는 **디지털 영상 처리**는 컴퓨터 알고리즘을 사용하여 디지털 이미지에 대한 화상 처리를 수행하는 것이다. 디지털 신호 처리의 하위분야로, 디지털 영상 처리는 아날로그 영상 처리에 비해 많은 장점이 있다. 입력 자료에 더욱 광범위한 알고리즘을 적용 가능하게 하고, 처리 도중 발생하는 소음과 신호 왜곡과 같은 문제들을 방지할 수 있다.
 
-# Image (영상)
+## Image (영상)
 ### 일반적인 의미
 - 가시광선을 센싱하여 자연 세계의 광학 현상을 2차원 이상의 데이터로 표현한 것
+
+<br>
 
 ### 넓은 의미
 - 가시광선 영역 외의 범위를 센싱 또는 컴퓨터 그래픽을 이용해 생성 한 것
 - 파동, signal 을 계측해서 시각화 한 것
 
-### Electromagnetic spectrum
-<img width="600" alt="img" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/6840aa5d-8826-4611-8dba-a587e5ba53e0">{: .align-center}
-<br>
 <br>
 
-## 영상의 인식
-### 인간의 인식
+### Electromagnetic spectrum
+<img width="600" alt="img" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/6840aa5d-8826-4611-8dba-a587e5ba53e0">{: .align-center}
+
+<br>
+
+### 영상의 인식
+#### 인간의 인식
 - 3차원 공간에 존재하는 빛이 눈으로 입력되어 뇌가 인지하는 과정
 - 단계
 	- 감각: 외부 빛이 눈의 렌즈를 통해 망막의 신경 세포에서 보내는 전기적 신호로 변환 후 신경계를 통해 뇌로 보내어지는 단계
 	- 선택: 보고자 하는 대상을 분리하는 단계
 	- 지각: 기억 데이터를 근거로 대상을 이해하여 지각하는 단계
 
-### 기계의 인식
+<br>
+
+#### 기계의 인식
 - 디지털 영상 처리 단계
 	- 저수준 영상 처리: 디지털 영상 입력, 포멧에 맞는 저장
 	- 중간 수준 영상 처리: 영상 분할, 심볼 매핑 등 특별 목적에 따라 영상을 가공하는 과정
@@ -42,13 +48,13 @@ use_tex: true
 <img width="704" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/98743ce6-61bf-4a1b-bc69-28fa9709e7bc">{: .align-center}
 
 <br>
-<br>
 
-# Perception
+## Perception
 
-> How images are formed and perceived by humans
 
-## Structure of human eye
+> <span style='color:orange'>How images are formed and perceived by humans</span>
+
+### Structure of human eye
 - Retina (망막)): Light from an object is imaged on the retina
 - Light receptors
 	- Cones (각막)
@@ -60,48 +66,245 @@ use_tex: true
 		- Capture an overall image of the field of view
 		- Sensitive to <span style="color:orange">low levels of illumination</span>
 <img width="432" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/06934284-86a3-45ec-a03f-52b8d1ccb53f">{: .align-center}
+
 <br>
 
-## Distribution of rods and cons in the retina
+### Distribution of rods and cons in the retina
 <img width="600" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/0b0f7d2c-2dfb-4b7e-a45d-cd5a647d5aff">{: .align-center}
 
 - Blind Spot: Receptors are absence
 - Receptor distributions are symmetric about the fovea except for the blind spot
 	- Cons are dense in fovea
 	- Rods increase from the center out to ~20' off axis, and decrease out to the periphery of the retina
+
 <br>
-## Image formation in the eye
+
+### Image formation in the eye
 <img width="600" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/cce13e4b-8fce-4429-9a8a-3a6964c39f9b">{: .align-center}
 -  Input images are reverse 
 -  Lens를 잡고있는 근육을 변화시키면서 focal length(C)를 조절: 초점 조절
+
 <br>
 
-## Brightness adaptation
+### Brightness adaptation
 - 사람이 인식하는 빛의 강도 = $log~curve$
 - 인식할 수 있는 빛의 dynamic range 가 매우 넓다
 	- 단, 모든 범위를 한 번에 인식할 수는 없다.
-- $Therefore$, 밝기에 대한 sensitivity를 조정 -> bright adaptation
+- $Therefore$, 밝기에 대한 sensitivity 를 조정 -> bright adaptation
 -<img width="700" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/cf05a099-47b7-4947-b513-e30605f663df">{: .align-center}
+
 <br>
 
-## Brightness adaptation
 - Digital images are displayed as sets of discrete intensities
 - How the eye discriminate between different intensity levels?
 <img width="725" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/514c23b2-8d99-420d-9251-6408efe5ca16">{: .align-center}
+
 <br>
 
 ### Mach band effect 
 - Visual system tends to under / over shoot around the boundary of different intensities
-- <span style="color:orange"> 변화하는 빛의 intensities 를 감지할 때 발생하는 현상 -> 밝기 변화 인지 과정은 linear 하지 않음</span>
+- <span style='color:#ff7fff'>변화하는 빛의 intensities 를 감지할 때 발생하는 현상 -> 밝기 변화 인지 과정은 linear 하지 않음</span>
+
 <br>
 
 ### Simultaneous contrast
 - A region's perceived brightness does not depend only on its intensity
 <img width="650" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/a7cfa614-135a-4c0f-aaab-b6da7325bd6e">{: .align-center}
+
 <br>
+
 ### Optical illusions
 - Eyes fill in non-existing details or wrongly perceives geometrical properties of objects
 - 시각 정보 인지 과정에서 상실되었거나 예측 가능한 정보를 interpolation
 <img width="650" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/3ed7b3ee-7ac6-4f0e-a350-c9ab77cb2a46">{: .align-center}
+
 <br>
+
+## 영상의 취득과 표현
+
+<img width="480" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/dbda5dd2-37b5-451b-82a5-b64594991e37">{: .align-center}
+영상을 디지털 데이터로 받아들이는 과정
+
+<br>
+
+### 취득
+- 목표 : 광원을 통해 생성된 빛이 물체에서 반사, 투영된 빛을 취득 장취가 취득하여 디지털 화 하는 것
+  - 광원 : 스스로 빛을 생성하는 물체
+  - 취득 장치 : 렌즈를 통해 들어온 빛이 센서에 맺히면서 전기적 신호로써 영상을 생성
+  - 카메라 모델 : 원근 투영으로 모델화 된 핀홀 카메라 모델
+- 단계 : 영상 취득 및 디지털 화
+
+<Br>
+
+### 표현
+- 2차원 함수 $f$
+  - $f(x,y)$: 임의의 위치 $(x,y)$ 에서 영상의 밝기
+  - $(x,y)$ : 영상 평면 내 공간 좌표
+- $f$ 가 디지털 영상이 되기 위한 조건
+  - $f$ 와 $(x,y)$가 모두 유한하며 이산적인 값을 가짐
+
+### 원근 투영
+<img width="345" alt="AM" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/d1a9c475-1cac-4ae0-b5c1-fda883039800">{: .align-center}
+- 3타원 공간 물체에 빛을 핀홀 카메라를 통해 2차원 좌표축에 매핑
+- 3차원 좌표계와 영상 좌표계
+  - $(X_W,Y_W,Z_W)$ : 실 세계의 좌표 공간 좌표
+  - $(P(X_W,Y_W,Z_W))$ : 공간 속 임의의 물체
+  - $(X_c,Y_c,Z_c)$ : 카메라 좌표계
+  - $p'(x,y)$ : 영상 평면에 투영된 물체
+
+<br>
+
+- Imaging sensor arrangements
+  - Imaging 3차원 공간의 물체를 2D Array 로 투영 시키는 것
+  <img width="514" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/714399fb-0927-4596-a822-c7f6503f9536">{: .align-center}
+
+<br>
+
+### Image Formation
+- 위치 x, y 에서, $f(x,y)=i(x,y)/r(x,y)+n(x,y)$
+  - $0<f(x,y)<\infty$ : Intensity – proportional to energy radiated by a physical source
+  - $0<i(x,y)<\infty$ : Illumination, lights src dependent
+  - $0<r(x,y)<1$ : Obj dependent. 0: Absorption,  1: Reflectance
+  - $n(x,y)$ : Noise
+
+<br>
+
+### Image Digitization
+- 샘플링 및 양자화를 통한 디지털 영상 생성
+  - 샘플링: 연속적인 아날로그 영상을 일정간격으로 수치화
+  - 양자화: 각 새믈의 값을 정해진 수치로 대응
+  <img width="675" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/06ec28a0-30f5-4054-817b-b5eccb4175dd">{: .align-center}
+
+<br>
+
+### Sampling & Quantization
+- Convert the continuous sensed data into a digital format
+- Sampling: Digitizing the coordinate values 
+- Quantization: Digitizing the amplitude values
+<img width="765" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/e6834062-c736-4a10-a345-448dbd3f4cf3">{: .align-center}
+
+<br>
+
+- Sampling and quantization on the 2D sensor array
+<img width="497" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/4d922bac-0f3e-4da4-ac47-0f830707c937">{: .align-center}
+
+<br>
+
+#### Sampling
+- 아날로그 신호를 디지털 영상으로 표현하기 위해 샘플링 신호로 추출
+- 공간 생플링
+  - 픽셀을 하나의 데이터로 표현
+- 시간 샘플링
+  - 연속적인 시간을 특정 주기의 시간으로 나누어 영상을 취득
+<img width="563" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/21b17de1-322a-4bfd-afff-175a09359427">{: .align-center}
+
+<br>
+
+#### Quantization
+- 영상 신호의 진폭 값을 디지털 화
+- 샘플링 된 값을 일정 길이의 비트로 표현
+<img width="459" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/028c0394-7c61-48ab-9d14-2f101dae1dd6">{: .align-center}
+
+<br>
+
+### Assume a Digital Image $f(x,y)$
+- $x,y$ : Discrete coordinates with M rows and N columns
+- $f(x,y)$ : Value of digital image
+- Representation of $f(x,y)$ 
+
+<img width="842" alt="AM" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/f9278265-c629-4ddf-82e9-2ce2d0b76972">{: .align-center}
+
+<br>
+
+#### Pixel
+- 디지털 영상을 구성하는 최소 단위 (화소)
+
+
+#### Resolution
+- 영상의 가로 x 세로 값
+<img width="348" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/84edce49-d57d-4e6b-b9e9-136ef73bf0dd">{: .align-center}
+
+<br>
+
+- Spatial resolution
+  - The smallest discernible detail in an image
+  - Dots (pixels) per unit distance
+  - Matrix size is not the spatial resolution
+  <img width="620" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/dcdd198d-17c1-4285-8d55-9961b260a534">{: .align-center}
+
+- Intensity resolution
+  - The smallest discernible changes in intensity level
+  <img width="647" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/87c6d9cb-d243-4484-9039-3dad9d00265b">{: .align-center}
+
+<br>
+
+### Neighbors of a pixel
+- Consider a pixel $p$ at coordinates $(x,y)$
+  - Two horizontal/vertical neighbors $[N_4(p)]$:
+    - $(x+1,y),(x-1,y),(x,y+1),(x,y-1)$
+  - Four diagonal neighbors $[N_D(p)]$:
+    - $(x+1,y+1),(x+1,y-1),(x-1,y+1),(x-1,y-1)$
+  - $N_8(p):~N_4(p)~&~N_D(p)$
+
+<br>
+
+### Adjacency
+- 4-adjacency: Two pixels $p$ and $q$ are 4-adjacent if $q$ is in the set $N_4(p)$
+- 8-adjacency: Two pixels $p$ and $q$ are 8-adjacent if $q$ is in the set $N_8(p)$
+- m-adjacency (mixed adjacency): Two pixels $p$ and $q$ are m-adjacent if 
+  - $q$ is in $N_4(p)$ or 
+  - $q$ is in $N_D(p)$ <span style='color:orange'>and</span> the set $N_4(p)\cap N_8(p)$ has no pixels
+<img width="680" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/588eb3b9-88a0-477f-a26c-f43ecf99542a">{: .align-center}
+
+<br>
+
+<img width="809" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/04990fd8-7c0a-4ee7-8ff7-fc15511b8ed9">{: .align-center}
+
+<br>
+
+### Digital path (curve)
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
