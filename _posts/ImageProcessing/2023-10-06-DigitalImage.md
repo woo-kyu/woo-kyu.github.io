@@ -199,9 +199,15 @@ use_tex: true
 - <span style='color:orange'>Chessboard distance</span>
   - $D_8(p,q)=\textrm{max}(\|x-u\|,\|y-v\|)$
 
+<br>
 
+# Basic Mathematical tools
 
+---
 
+---
+
+## Elementwise operation
 
 
 
