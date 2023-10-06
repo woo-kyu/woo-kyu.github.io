@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Digital Image 
-categories: ImageProcessing1
+categories: ImageProcessing
 tags: [CV, ImageProcess]
 author_profile: false
 search: true
@@ -188,9 +188,9 @@ use_tex: true
 ### Distance measure
 - Consider pixels $p,q$ and $s$ with coordinates $(x,y), (u,v)$ and $(w,z)$
 - Distance function (D):
-  - $D(p,q)\geq0(D(p,q)=0 if p=q)$
+  - $D(p,q)\geq 0(D(p,q)=0 if p=q)$
   - $D(p,q) = D(q,p)$
-  - $D(p,s)\leqD(p,q)+D(q,s)$
+  - $D(p,s)\leq D(p,q)+D(q,s)$
 
 - <span style='color:orange'>Euclidean distance</span>
   - $D_e(p,q)=[(x-u)^2+(y-v)^2]^{\frac{1}{2}}$
