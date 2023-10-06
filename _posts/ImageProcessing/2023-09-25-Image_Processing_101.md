@@ -161,7 +161,7 @@ use_tex: true
 <br>
 
 ### Image Formation
-- 위치 x, y 에서, $f(x,y)=i(x,y)/r(x,y)+n(x,y)$
+- 위치 x, y 에서, $f(x,y)=i(x,y)r(x,y)+n(x,y)$
   - $0<f(x,y)<\infty$ : Intensity – proportional to energy radiated by a physical source
   - $0<i(x,y)<\infty$ : Illumination, lights src dependent
   - $0<r(x,y)<1$ : Obj dependent. 0: Absorption,  1: Reflectance
@@ -244,7 +244,7 @@ use_tex: true
     - $(x+1,y),(x-1,y),(x,y+1),(x,y-1)$
   - Four diagonal neighbors $[N_D(p)]$:
     - $(x+1,y+1),(x+1,y-1),(x-1,y+1),(x-1,y-1)$
-  - $N_8(p):~N_4(p)~&~N_D(p)$
+  - $N_8(p):~N_4(p)&N_D(p)$
 
 <br>
 
