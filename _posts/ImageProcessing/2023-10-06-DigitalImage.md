@@ -164,4 +164,69 @@ tags:
 
 <br>
 
-### <span style='color:#ff7fff'>Boundary & Edge</span>
+### Boundary (Border or Contour)
+- Set of pixels in the region
+  - That have at least one background neighbor
+- Consider inner & outer border
+  - for developing border-following algorithms
+
+#### <span style='color:#ff7fff'>Boundary & Edge</span>
+- Boundary : Closed path & more global concept
+  - 객체의 외곽선을 형성하는 픽셀들의 집합을 지칭합니다. 바운더리는 객체의 형태와 크기를 나타내는 데 사용되며, 객체 인식과 분할에 중요한 역할을 한다.
+  - 바운더리 추출은 이미지에서 객체의 외곽을 찾는 과정으로, 이는 엣지 검출을 기반으로 하거나, 세그멘테이션(segmentation) 결과를 기반으로 할 수 있다. 
+  - 바운더리는 객체의 형태를 분석하거나, 객체를 다른 이미지로 오버레이(overlay) 하는 데 사용한다.
+- Edge : Could from open path via thresholding & more local concept
+  - 이미지에서 밝기의 급격한 변화가 발생하는 지점을 지칭한다.
+  - 이 변화는 일반적으로 객체의 경계와 배경 사이, 또는 이미지 내의 두 개의 다른 영역 사이에서 발생
+  - 엣지 검출은 이러한 밝기의 변화를 찾아내는 과정으로, 이는 대개 그래디언트 계산을 포함한다.
+  - 엣지는 이미지의 주요 특징을 추출하고 분석하는 데 사용되며, 엣지 검출 알고리즘의 예로는 위에서 언급한 소벨 필터, 라플라시안 필터, 캐니 엣지 검출기 등이 있다.
+
+<span style='color:orange'>엣지는 이미지에서 밝기의 변화를, 바운더리는 객체의 외곽을 나타낸다.</span>
+<span style='color:orange'>엣지는 이미지 전체에서 찾아질 수 있는 반면, 바운더리는 특정 객체의 외곽선에만 국한된다. </span>
+<span style='color:orange'>또한, 바운더리는 대개 연속된 픽셀의 집합으로, 객체의 형태를 따라간다.</span>
+
+<br>
+
+### Distance measure
+- Consider pixels $p,q$ and $s$ with coordinates $(x,y), (u,v)$ and $(w,z)$
+- Distance function (D):
+  - $D(p,q)\geq0(D(p,q)=0 if p=q)$
+  - $D(p,q) = D(q,p)$
+  - $D(p,s)\leqD(p,q)+D(q,s)$
+
+- <span style='color:orange'>Euclidean distance</span>
+  - $D_e(p,q)=[(x-u)^2+(y-v)^2]^{\frac{1}{2}}$
+- <span style='color:orange'>City-block distance</span>
+  - $D_4(p,q)=\|x-u\|+\|y-v\|$
+- <span style='color:orange'>Chessboard distance</span>
+  - $D_8(p,q)=\textrm{max}(\|x-u\|,\|y-v\|)$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
