@@ -1,6 +1,6 @@
 ---
 layout: single
-title: 2_File System
+title: File System
 categories: Linux
 tags: [Linux, Uni]
 author_profile: false

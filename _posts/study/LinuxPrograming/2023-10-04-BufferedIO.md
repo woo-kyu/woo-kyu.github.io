@@ -1,6 +1,6 @@
 ---
 layout: single
-title: 3_Buffered I/O
+title: Buffered I/O
 categories: Linux
 tags: [Linux, Uni]
 author_profile: false
