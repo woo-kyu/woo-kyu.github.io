@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Digital Image 
-categories: ImageProcessing
+categories: ImageProcessing1
 tags: [CV, ImageProcess]
 author_profile: false
 search: true
@@ -208,6 +208,10 @@ use_tex: true
 ---
 
 ## Elementwise operation
+
+- Pixel-by-Pixel basis
+- Consider 2 x 2 images (matrices):
+  - $\begin{bmatrix}a_{11}&a_{12}\\a_{21}&a_{22}\\\end{bmatrix},\begin{bmatrix}b_{11}&b_{12}\\b_{21}&b_{22}\\\end{bmatrix}$
 
 
 
