@@ -207,11 +207,44 @@ use_tex: true
 
 ---
 
-## Elementwise operation
+### Elementwise operation
 
 - Pixel-by-Pixel basis
-- Consider 2 x 2 images (matrices):
-  - $\begin{bmatrix}a_{11}&a_{12}\\a_{21}&a_{22}\\\end{bmatrix},\begin{bmatrix}b_{11}&b_{12}\\b_{21}&b_{22}\\\end{bmatrix}$
+<img width="626" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/78a4d7c7-8ca6-4f20-803f-4221eb1a6698">{: .align-center}
+
+<br>
+
+### Linear vs. Non-linear operations
+<img width="791" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/4792cc6d-cf21-44e8-9929-efb837f3d844">{: .align-center}
+
+<br>
+
+### Average operation
+- Average multiple noisy images may yield clear image
+<img width="606" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/d8615be2-a57c-498f-9369-0fb101e2f0d5">{: .align-center}
+
+<br>
+
+### Subtraction operation
+<img width="792" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/4bda909e-b709-4900-9691-82e52317204d">{: .align-center}
+
+<br>
+
+### Multiplication / division operations
+- Shading correction
+  <img width="733" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/a0d1e41f-08a5-4839-bf2b-0a89091045d9">{: .align-center}
+
+<br>
+
+- Masking
+  <img width="720" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/65868cf3-1c56-42b1-b6f3-796f244eadbd">{: .align-center}
+
+<br>
+
+### Spatial operations
+- 
+
+
 
 
 
