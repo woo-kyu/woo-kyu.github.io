@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Image Processing 101
+title: Image Processing Basic
 categories: ImageProcess
 tags:
   - CV
@@ -263,6 +263,8 @@ use_tex: true
 <br>
 
 ### Digital path (curve)
+- Sequence of distinct pixels
+  - E.g., Path from pixel $p$ with coordinates $(x_0,y_0)$ 
 
 
 
