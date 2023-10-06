@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Digital Image 
-categories: ImageProcess
+categories: ImageProcessing
 tags: [CV, ImageProcess]
 author_profile: false
 search: true
