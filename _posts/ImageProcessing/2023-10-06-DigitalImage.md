@@ -2,12 +2,10 @@
 layout: single
 title: Digital Image 
 categories: ImageProcess
-tags:
-- CV
-- ImageProcess
-  author_profile: false
-  search: true
-  use_tex: true
+tags: [CV, ImageProcess]
+author_profile: false
+search: true
+use_tex: true
 ---
 
 > 이미지의 디지털 화
