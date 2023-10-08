@@ -14,12 +14,12 @@ use_tex: false
 
 ### 1. Basic
 
-[Introduction]({{site.url}}/linux_programing/lp_basic)
+[Introduction]({{site.url}}/linux/lp_basic)
 
 ### 2. File System
 
-[File System]({{site.url}}/linux_programing/file_system)
+[File System]({{site.url}}/linux/file_system)
 
 ### 3. Buffered I/O
 
-[Buffered I/O]({{site.url}}/linux_programing/buffered_io)
+[Buffered I/O]({{site.url}}/linux/buffered_io)
