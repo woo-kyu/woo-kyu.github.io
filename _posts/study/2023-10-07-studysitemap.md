@@ -1,10 +1,20 @@
 ---
 layout: single
 title: Study GuideMap
-categories: ImageProcessing
+categories: Study
 author_profile: false
 search: false
 use_tex: false
 ---
 
-> study sitemap
+> 정규전공과목 메모장
+
+## Linux System Programing
+
+[Linux System Programing]({{site.url}}/linux_programing/lp_guidemap)
+
+<br>
+
+## Image Processing
+
+[Image Processing]({{site.url}}/image_processing/ip_guidemap)

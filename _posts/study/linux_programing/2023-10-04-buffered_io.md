@@ -8,7 +8,7 @@ search: true
 use_tex: false
 ---
 
-> 
+> 파일 시스템 작업과 관련된 I/O
 
 
 # I/O
