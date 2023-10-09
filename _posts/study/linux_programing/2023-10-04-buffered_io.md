@@ -61,7 +61,34 @@ use_tex: false
 - To open the file path with the behavior given by mode and associates a new stream with it.
   <img width="720" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/906ed885-b40e-4440-90b0-eef4469fce01">{: .align-center}
 
-- 파일 디스크립터를 얻는것과 파일 스트림을 얻는 것의 차이를 알기
+### <span style='color:orange'>파일 디스크립터를 얻는것과 파일 스트림을 얻는 것의 차이를 알기</span>
+
+#### File Descriptor
+정의: 파일 디스크립터는 열린 파일 또는 I/O 스트림에 대한 정수형 식별자이다.
+사용: 주로 저수준 I/O함수 (e.g., read, write)와 함께 사용한다.
+특징:
+- 파일 스크립터는 버퍼링, 포멧팅, 문자변환 등의 기능을 제공하지 않는다.\
+- 파일 디스크립터는 open, socket, pipe 등의 시스템 호출을 통해 얻는다.
+E.g., int fd = open("example.txt", O_RDONLY)
+
+<br>
+
+#### File Stream
+정의: 파일 스트림은 FILE 구조체의 포인터로, 파일이나, I/O 채널과의 상호 작용을 위한 높은 수준의 인터페이스를 제공한다.
+사용: 주로 고수준 I/O 함수 (e.g., fread, fwrite)와 함께 사용한다.
+특징: 
+- 파일 스트림은 버퍼링, 포멧팅, 문자 변환 등의 추가 기능을 제공한다.
+- 파일 스트림은 'fopen' 함수를 통해 얻는다.
+E.g., FILE *file = fopen("example.txt", "r")
+
+<br>
+
+#### 차이점
+- 추상화 수준: 파일 스트림은 파일 디스크립터보다 높은 수준의 추상화를 제공합니다. 이는 파일 스트림이 버퍼링, 포맷팅, 문자 변환 등의 추가 기능을 제공한다는 것을 의미한다.
+- 사용 함수: 파일 디스크립터와 파일 스트림은 각각 다른 세트의 I/O 함수와 함께 사용된다.
+- 효율성과 편의성: 파일 스트림은 사용하기 편리하지만, 추가적인 기능 때문에 파일 디스크립터에 비해 약간의 오버헤드가 발생할 수 있다.
+
+<br>
 
 ### Opening a Stream via File Descriptor
 - Converting an already open file descriptor (fd) to a stream
@@ -69,7 +96,7 @@ use_tex: false
 
 <br>
 
-### Closing Stream
+## Closing Stream
 ```Linux
 int fclose (FILE *stream);
 ```
