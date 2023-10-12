@@ -241,8 +241,110 @@ use_tex: true
 
 <br>
 
-### Spatial operations
-- 
+# Spatial Operations
+
+---
+
+---
+
+> Spatial Operations 는 이미지의 픽셀을 다루는 연산이다.
+
+<br>
+
+### Single-Pixel Operation (단일 픽셀 연산)
+- Alter the pixel intensity $(x)$ using a transformation function $T:s=T(z)$
+  - s = 출력 픽셀의 밝기, z = 입력 픽셀의 밝기, T = 변환 함수
+- 목적: 특정 픽셀의 밝기 (intensity) 를 변경한다.
+- 이 연산은 이미지의 각 픽셀의 밝기를 독립적으로 변환. 전체 이미지의 밝기 및 대비 조절.
+
+<br>
+
+### Neighborhood operations (이웃 픽셀 연산)
+- Generates a pixel at the same coordinates in an output image
+- Value of that pixel is determined by a specified operation on the neighborhood of pixels in the input image
+- 목적: 출력 이미지의 특정 픽셀 값을 입력 이미지의 해당 픽섹의 이웃 픽셀의 값을 이용해 결정.
+- Blur 또는 Edge detection 연산에서 사용
+
+<br>
+
+### Geometric transformations (기하학적 변환)
+
+#### Spatial Transformation of Coordinates (좌표의 공간 변환)
+- 이미지의 픽셀을 이동시키는 것
+  <img width="588" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/e636a2ca-6968-4801-83db-c32ac3d166a1">{: .align-center}
+  - T: 변환 행렬, (x,y): 원본 좌표, (x',y'): 변환된 좌표
+
+<br>
+
+#### Intensity Interpolation (밝기 보간)
+- 공간 변환 후 새로운 좌표에 밝기 값을 할당
+- 공간 변환으로 인해 픽셀이 이동하면, 새로운 위치에서의 픽셀 밝기 값을 결정해야 한다.
+- 이때, 보간법(Interpolation)을 사용하여 주변 픽셀의 밝기 값으로부터 새 픽셀의 밝기 값을 추정합니다.
+
+<br>
+
+##### Nearest Neighbor (최근접 이웃)
+- 원리: 변환된 위치에서의 픽셀 값은 원본 이미지에서 가장 가까운 픽셀의 강도 값을 가진다.
+- 특징: 계산 비용이 낮고 간단하지만, 직선 모서리에서 왜곡이 발생할 수 있다.
+
+<br>
+
+##### Bilinear (양선형)
+- 원리: 변환된 위치에서의 픽셀 값은 주변 네 개의 픽셀 강도 값에 가중치를 둔 합으로 계산된다.
+- $v(x,y)=ax+by+cxy+d$
+- 최근접 이웃 방법에 비해 경계가 부드럽지만, 계산 비용이 더 높다.
+
+<br>
+
+##### Bicubic (양입방)
+- 원리: 변환된 위치에서의 픽셀 값은 주변 열 여섯개의 픽셀 강도 값에 가중치를 둔 합으로 계산된다.
+- $v(x,y)=\sum_{i=0}^{3}\sum_{j=0}^{3}a_{ij}x^iy^j$
+- 특징: 양선형 방법에 비해 더 부드러운 이미지를 생성하지만, 계산 비용이 가장 크다.
+
+<img width="1184" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/604614e3-c977-4da7-bfcf-057dc8e42259">{: .align-center}
+
+<br>
+
+<img width="854" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/f05f1269-016a-4580-8eca-d350ddefc790">{: .align-center}
+
+<br>
+
+#### Affine Transformation (어파인 변환)
+- 종류: Scaling (확대/축소), Translation (이동), Rotation (회전), Shearing (기울임)
+- 표현: 동차 좌표 (homogeneous coordinates)를 사용하여 아핀 변환을 표현합니다.
+- 설명: 아핀 변환은 이미지를 선형적으로 변환하고, 이동시키는 연산. 이는 이미지의 기하학적인 형태를 변경하지만, 직선의 평행성은 유지한다.
+
+<br>
+
+### Image registration (이미지 정합)
+
+- 목적
+  - 입력 이미지를 기하학적으로 변환하여 참조 이미지와 정렬(등록)된 출력 이미지를 생성한다.
+  - 이미지간 정량적인 분석과 비교를 수행
+  - 다양한 상황에서 이미지 간의 기하학적인 관계를 찾아서 이미지를 정렬하는 과정이다.
+
+- 고려사항
+  - 기하학적 왜곡
+
+- 예시
+  - 다른 이미징 시스템의 이미지
+  - 동일한 기기로 다른 시간에 촬영된 이미지
+
+- 절차
+  1. 특징 추출: 이미지에서 관심 영역이나 점을 찾는다.
+  2. 특징 매칭: 한 이미지의 특징과 다른 이미지의 특징을 매칭한다.
+  3. 변환 모델 추정: 매칭된 특징 점들을 기반으로 이미지 간의 기하학적 환계를 추정한다.
+  4. 이미지 변환과 병합: 추정된 변환 모델을 사용하여 이미지를 정합하고, 필요한 경우 병합한다.
+
+<img width="1359" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/db52b3b3-f578-4f10-abe8-c189c8e9d077">{: .align-center}
+
+<br>
+
+<img width="1397" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/97378dd4-8feb-4939-925d-0f8ed08dafb3">{: .align-center}
+
+<br>
+
+
 
 
 

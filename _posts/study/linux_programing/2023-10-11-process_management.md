@@ -135,6 +135,11 @@ use_tex: false
 
 <br>
 
+#### Execv
 
+<br>
+
+### The fork() system call
+- 자식프로세스에서 부포프로세스를 또 실행하지 않게 하기 위해 if 분기. pid를 이용해 구분?
 
 
