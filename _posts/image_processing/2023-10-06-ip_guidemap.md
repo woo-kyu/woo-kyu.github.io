@@ -15,12 +15,12 @@ use_tex: false
 # Image Processing 이론
 
 ### 1. Basic
-[Introduction]({{site.url}}/image_processing/ip_basic)
+[Introduction]({{site.url}}/imageprocessing/ip_basic)
 
 ### 2. Digital Image
-[Digital Image]({{site.url}}/image_processing/digital_image/)
+[Digital Image]({{site.url}}/imageprocessing/digital_image/)
 
 ### 3. Filter
-[Filter]({{site.url}}/image_processing/filter/)
+[Filter]({{site.url}}/imageprocessing/filter/)
 
 ### 4.
