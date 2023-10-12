@@ -241,11 +241,9 @@ use_tex: true
 
 <br>
 
-# Spatial Operations
+## Spatial Operations
 
----
 
----
 
 > Spatial Operations 는 이미지의 픽셀을 다루는 연산이다.
 
