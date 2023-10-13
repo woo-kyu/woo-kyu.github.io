@@ -34,3 +34,5 @@ use_tex: false
 
 <br>
 
+### 5. Filtering
+[Filtering]({{site.url}}/imageprocessing/filtering/)
