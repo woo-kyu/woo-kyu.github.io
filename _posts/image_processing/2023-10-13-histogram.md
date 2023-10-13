@@ -177,9 +177,36 @@ use_tex: true
 
 ## Histogram Equalization vs. Specification
 
-<img width="800" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/098a1ee6-cf4f-4f07-8f4e-6707de970de1">{: .align-center}
+<img width="1000" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/098a1ee6-cf4f-4f07-8f4e-6707de970de1">{: .align-center}
 
 <br>
 
-# Local Histogram Processing
+## Local Histogram Processing
+- 이전까지 논의된 메서드는 '글로벌' 특성을 가지고 있다. 이는 변환 작업이 이미지 전체의 인텐시티 분포를 수정한다는 것을 의미한다.
+- 이러한 접근법은 전반적인 향상을 위해 적합하지만, 작은 영역에 대한 세부 사항을 강조하는 목표를 가질 때 일반적으로 실패한다.
+  - Transformation modifies the intensity distribution of an <span style='color:orange'>entire image</span>
+  - Suitable for <span style='color:orange'>overall enhancement</span>
+  - Generally, <span style='color:orange'>fails</span> when the objective is to <span style='color:orange'>enhance details over small areas</span>
+- 핵심:
+  - 픽셀 중심 이동: 주어진 픽셀의 중심에서 그 주변으로 이동
+    - Move from a given <span style='color:orange'>pixel’s center to its neighborhood</span>
+  - 각 위치에서 계산: 각 위치에서 히스토그램 평활화 또는 Specification(명세화)를 계산
+  - 계산 축소: 중첩되지 않는 영역을 사용하여 계산을 줄임
 
+<img width="800" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/21e7980f-2de0-49a9-a0fa-43d9507cc565">{: .align-center}
+
+<br>
+
+### Additional Explain
+- Global vs. Local
+  - 글로벌 메서드는 전체 이미지에 대한 인텐시티 분포를 수정. 전체 이미지 변화에 적합
+  - 로컬 메서드는 이미지의 일부 영역 또는 이웃 영역을 대상. 지역적인 세부 사항과 특징을 강조
+- Local Histogram Process
+  - 이미지의 각 픽셀에 대해, 그 주변의 이웃을 고려하여 히스토그램 평활화 또는 명세화를 적용
+  - 이미지의 작은 영역에서 세부 사항을 강조하고, 지역적인 특징을 개선
+- Efficiently Calculate
+  - 로컬 히스토그램 처리는 계산이 복잡하다.
+  - 중첩되지 않는 영역(i.e., 각 픽셀이 정확히 하나의 로컬 영역에만 속하는 경우)를 사용하여 계산을 단순화하고 효율성을 증대.
+
+
+<br>
