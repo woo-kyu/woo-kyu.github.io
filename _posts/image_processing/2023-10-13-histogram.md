@@ -175,7 +175,7 @@ use_tex: true
 
 <br>
 
-# Histogram Equalization vs. Specification
+## Histogram Equalization vs. Specification
 
 <img width="800" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/098a1ee6-cf4f-4f07-8f4e-6707de970de1">{: .align-center}
 
