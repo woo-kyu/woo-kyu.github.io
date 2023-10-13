@@ -35,17 +35,14 @@ use_tex: true
 ### Pass
 - 이미지의 특정 주파수 성분이 필터를 통과하도록 허용한다.
 
-<br>
 
 ### Modify
 - 특정 주파수 성분이 필터를 통과할 때, 그 성분을 변경하거나 조정한다.
 
-<br>
 
 ### Rejected
 - 특정 주파수 성분이 필터를 통과하지 못하도록 차단한다.
 
-<br>
 
 <img width="1000" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/46f86251-7647-4f09-b0ec-f0b2a48e6b59">{: .align-center}
 
@@ -235,15 +232,34 @@ use_tex: true
 
 <br>
 
-<img width="800" alt="image" src="(https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/732fa981-6aef-4ca2-868f-e654c5e26646">{: .align-center}
+<img width="800" alt="image" src="(https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/a668efc9-1195-4069-b2dc-b4d0230a39db">{: .align-center}
 
 <br>
 
-## Smoothing Filter
+## Smoothing (Averaging)
 
+> 스무딩: 이미지의 세세한 변화나 노이즈를 줄이는 데 사용되는 기법. 이미지의 각 픽셀 값을 해당 픽셀 주변의 값들의 평균으로 대체함.
+> 이미지의 선명도를 약간 감소시키지만, 랜덤 노이즈를 효과적으로 줄일 수 있다.
 
+- Random noise typically consists of <span style='color:#fff9ff'>sharp transitions in intensity</span>
+  - 노이즈는 일반적으로 intensity 의 급격한 변화로 구성된다.
 
+### Random Noise 와 Smoothing
+#### Random Noise
+- 일반적으로 이미지의 강도에서 발생하는 급격한 변화로 표현된다.
+- Salt and pepper noise 또는 impulse noise 라고 한다.
 
+<br>
+
+#### Noise Decrease
+- 스무딩은 이미지의 강도에서 급격한 변화를 줄임으로써 노이즈를 감소시킨다.
+- 노이즈가 포함된 픽셀이 주변 픽셀의 값과 평균을 내며 노이즈의 영향이 약화되기 때문
+
+<br>
+
+### 스무딩의 기법
+- 이동 평균 필터: 각 픽셀의 값을 그 주변 픽셀의 평균 값으로 대체하는 가장 간단한 스무딩 기법
+- 가우시안 스무딩: 이는 가우시안 함수를 사용하여 주변 픽셀에 가중치를 부여하며, 중심 픽셀에 더 큰 가중치를 부여한다. 이는 중심 픽셀에 가까운 픽셀이 결과에 더 큰 영향을 미친다.
 
 
 
