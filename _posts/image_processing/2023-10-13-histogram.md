@@ -54,7 +54,7 @@ use_tex: true
 - Intensity Mapping Transformation: $s=T(r), 0\leq r\leq L-1$
 - Assume
   - $T(r)$은 &0\leq r\leq L-1& 에 대해 (엄밀히) 단조 증가 함수이다.
-  - $&0\leq T(r)\leq L-1$ 이며, 이미지의 인텐시티는 [0, L-1]의 무작위 변수로 볼 수 있다.
+  - $0\leq T(r)\leq L-1$ 이며, 이미지의 인텐시티 $r$ 는 [0, L-1]의 무작위 변수로 볼 수 있다.
   <img width="800" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/f36f1d94-4da5-4b08-a232-3dac91a1b501">{: .align-center}
 
 ## <span style='color:orange'>PDF(확률 밀도 함수) & CDF (누적 분포 함수)</span>
