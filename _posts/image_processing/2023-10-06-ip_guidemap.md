@@ -30,7 +30,7 @@ use_tex: false
 <br>
 
 ### 4. Histogram
-#[Histogram Processing]({{site.url}}/imageprocessing/histogram/)
+[Histogram Processing]({{site.url}}/imageprocessing/histogram/)
 
 <br>
 
