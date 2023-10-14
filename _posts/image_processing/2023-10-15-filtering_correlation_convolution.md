@@ -13,7 +13,7 @@ use_tex: true
 
 ## <span style='color:#fff9ff'>Correlation (상관 관계)</span>
 - 공간 correlation 는 이미지와 커널(또는 마스크, 필터) 간의 유사도를 측정하는 방법이다.
-- 이는 커널을 이미지 위로 이동시키면서 각 위치에서 커널과 이미지 섹션 간의 합곱을 계산함으로써 수행된다.
+- <span style='color:skyblue'>커널을 이미지 위로 이동시키면서 각 위치에서 커널과 이미지 섹션 간의 합곱을 계산함으로써 수행된다.</span>
   <img width="398" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/7776e92c-5946-4586-a519-b15a3e321eb4">{: .align-center}
   - $g(x,y)$: 출력 이미지의 픽셀
   - $f(x+i,y+j)$: 입력 이미지의 픽셀
@@ -40,7 +40,7 @@ use_tex: true
 <br>
 
 ## <span style='color:#fff9ff'>Convolution</span>
-- 컨볼루션은 correlation 과 유사한 연산이지만, 커널이 180도 회전된다는 점에서 차이가 있다.
+- 컨볼루션은 correlation 과 유사한 연산이지만, <span style='color:#fff9ff'>커널이 180도 회전</span>된다는 점에서 차이가 있다.
 - 컨볼루션은 신호 처리에서 주로 사용된다.
   <img width="397" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/498d2dc9-2a91-416f-ac3f-907c1ffb60b7">{: .align-center}
 - 상관관계와 유사하지만, 커널이 180도 회전한다.
@@ -66,6 +66,14 @@ use_tex: true
 - correlation 은 두 이미지의 유사도를 측정하는 반면, 컨볼루션은 두 함수의 중첩 정도를 측정한다.
   - correlation 은 일반적으로 두 이미지 간의 유사성을 평가하는 데 사용되며, 컨볼루션은 신호 처리에서 시스템의 출력을 예측하는 데 사용된다.
 
+### What is different to?
+- 필터의 회전
+  - Correlation: 필터를 회전하지 않음
+  - Convolution: 필터를 180도 회전 후 계산.
+- 용도
+  - Correlation: 두 신호간 유사성 비교
+  - Convolution: 시스템의 출력 응답 도출
+
 <br>
 
 <img width="838" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/b6cca586-dfd4-4bb1-af4a-03f20982cdf4">{: .align-center}
@@ -73,6 +81,11 @@ use_tex: true
 <br>
 
 <img width="846" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/e4fdc8a4-13f7-4d29-917b-e5ec0ee0374a">{: .align-center}
+
+<br>
+
+<img width="846" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/e7dbe9a1-5736-473e-9b91-4e8c19e47550">{: .align-center}
+
 
 <br>
 
