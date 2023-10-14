@@ -14,6 +14,7 @@ use_tex: true
 
 - Random noise typically consists of <span style='color:#fff9ff'>sharp transitions in intensity</span>
   - 노이즈는 일반적으로 intensity 의 급격한 변화로 구성된다.
+- Reduces <span style='color:#fff9ff'>sharp transitions</span> but has the undesirable side effect that they blur edges
 
 ## Random Noise 와 Smoothing
 ### Random Noise
@@ -29,10 +30,18 @@ use_tex: true
 <br>
 
 ## 스무딩의 기법
-### 이동 평균 필터
+### Mean Filter Kernel
 - 각 픽셀의 값을 그 주변 픽셀의 평균 값으로 대체하는 가장 간단한 스무딩 기법
-  <img width="841" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/adf53973-16b5-4df7-a051-981082393f4b">{: .align-center}
 - 이동 평균 필터의 예시
+  <img width="841" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/27024278-f951-4636-9c8b-60c13e42d165">{: .align-center}
+  <img width="841" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/adf53973-16b5-4df7-a051-981082393f4b">{: .align-center}
+
+<br>
+
+<img width="1316" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/6ea62eeb-cacd-42d9-943c-e33a896c14ec">{: .align-center}
+
+
+
 
 <br>
 
@@ -72,3 +81,13 @@ use_tex: true
   - 평균 필터는 outliers 에 예민하다.
 
 <img width="795" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/4f8fbbfa-55bc-4d3c-9b7f-653a5e11da05">{: .align-center}
+
+<br>
+
+### Smoothing Linear Filters
+<img width="1430" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/e62c1ae4-ede4-4ec6-b161-88c7d26d9712">{: .align-center}
+
+<img width="1308" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/5a36d891-6ecc-42f4-98c2-37c5eba45dac">{: .align-center}
+
+
+

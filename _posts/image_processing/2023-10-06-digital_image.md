@@ -95,7 +95,7 @@ use_tex: true
     - $(x+1,y),(x-1,y),(x,y+1),(x,y-1)$
   - Four diagonal neighbors $[N_D(p)]$:
     - $(x+1,y+1),(x+1,y-1),(x-1,y+1),(x-1,y-1)$
-  - $N_8(p):~N_4(p)&N_D(p)$
+  - $N_8(p):~N_4(p) \&\& N_D(p)$
 
 <br>
 

@@ -10,6 +10,10 @@ use_tex: false
 
 <br>
 
+자료 참조: 영상처리(원지혜 교수님) 자료, 구글링, chatGPT, etc...
+
+<br>
+
 > 이미지 프로세싱 페이지 개요
 
 # Image Processing 이론
