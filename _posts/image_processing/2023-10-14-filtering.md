@@ -277,7 +277,7 @@ use_tex: true
 
   <img width="791" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/158c1e90-18e5-4a7c-8692-1c5619c069ad">{: .align-center}
 
-  <img width="650" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/7f7e5e11-d179-4ba5-a920-1d5cde3fc10f">
+  <img width="650" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/7f7e5e11-d179-4ba5-a920-1d5cde3fc10f">{: .align-center}
 
 <br>
 
@@ -454,7 +454,7 @@ use_tex: true
 - Blur 이미지를 원본 이미지에서 삭제하여 마스크 생성.
   - $g_{\textrm{mask}}(x,y)=f(x,y)-\overline{f}(x,y)$
 - 마스크를 원본 이미지에 추가
-  - $g(x,y)=f(x,y)+k_g_(\textrm{mask})(x,y)$
+  - $g(x,y)=f(x,y)+k_(g_(\textrm{mask}))(x,y)$
   - k: 샤프닝의 정도를 조절하는 계수.
     - k= 1: unsharp masking
     - k > 1: highboost filtering

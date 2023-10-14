@@ -36,3 +36,8 @@ use_tex: false
 
 ### 5. Filtering
 [Filtering]({{site.url}}/imageprocessing/filtering/)
+
+<br>
+
+### 6. Fourier Transform
+[Fourier Transform]({{site.url}}/imageprocessing/fourier_transform/)
