@@ -10,6 +10,8 @@ use_tex: true
 
 > Spatial Correlation & Convolution
 
+# [DL-Convolution]({{site.url}}/ml/convolution/)
+
 
 ## <span style='color:#fff9ff'>Correlation (상관 관계)</span>
 - 공간 correlation 는 이미지와 커널(또는 마스크, 필터) 간의 유사도를 측정하는 방법이다.
