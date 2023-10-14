@@ -53,7 +53,33 @@ use_tex: true
 > 공간 필터링은 이미지의 각 픽셀과 그 주변 픽셀의 값을 이용한 함수의 결과로 이미지를 수정하는 과정이다.
 > 이는 이미지의 공간 도메인에서 진행되며, 특정 픽셀의 값을 그 주변 픽셀의 값에 기반하여 변경한다.
 
-[Spatial Filtering]({{site.url}}/imageprocessing/spatiaal_filtering)
+
+#### 아웃 정의:
+- 픽셀의 이웃(neighbors)은 일반적으로 해당 픽셀을 중심으로 하는 작은 영역이나 윈도우(window)를 의미한다.
+
+<br>
+
+#### 필터 적용:
+- 각 픽셀과 그 이웃에 대해 특정 함수(필터)를 적용하여 새로운 픽셀 값으로 변경한다.
+
+<br>
+
+### 종류
+
+#### Linear filtering:
+- 이웃 픽셀의 선형 조합으로 새로운 픽셀 값을 계산한다.
+  - E.g., 평균 필터링, Sobel, Prewitt, Roberts...
+
+
+<br>
+
+#### Non-Linear filtering:
+- 이웃 픽셀의 비선형 함수로 새로운 픽셀 값을 계산한다.
+  - E.g., 중간값 필터링, Canny Edge
+
+<br>
+
+<img width="800" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/54870150-1b34-4658-875b-669fb5f7fa32">{: .align-center}
 
 
 <br>
@@ -63,13 +89,13 @@ use_tex: true
 > 선형 공간 필터링은 이미지의 각 픽셀에 대해 주변 픽셀과 필터 커널(filter kernel) 사이의 합곱(또는 컨볼루션) 연산을 수행함으로써 이미지를 변형한다.
 > <span style='color:skyblue'>filter as said mask, template, window</span>
 
-[Mechanics of Linear Spatial Filtering]({{site.url}}/imageprocessing/mlsf)
+[Mechanics of Linear Spatial Filtering]({{site.url}}/imageprocessing/filtering_mlsf)
 
 <br>
 
 ## Spatial Correlation & Convolution
 
-[Spatial Correlation & Convolution]({{site.url}}/imageprocessing/correlation_convolution)
+[Spatial Correlation & Convolution]({{site.url}}/imageprocessing/filtering_correlation_convolution)
 
 <br>
 
@@ -78,7 +104,7 @@ use_tex: true
 > 스무딩: 이미지의 세세한 변화나 노이즈를 줄이는 데 사용되는 기법. 이미지의 각 픽셀 값을 해당 픽셀 주변의 값들의 평균으로 대체함.
 > 이미지의 선명도를 약간 감소시키지만, 랜덤 노이즈를 효과적으로 줄일 수 있다.
 
-[Smoothing]({{site.url}}/imageprocessing/smoooooothing)
+[Smoothing]({{site.url}}/imageprocessing/filtering_smoooooothing)
 
 <br>
 
@@ -86,26 +112,7 @@ use_tex: true
 
 > 샤프닝은 이미지에서 인텐시티의 변화를 강조한다. 즉, 이미지의 경계선을 더 명확하게 한다.
 
-[Sharpening]({{site.url}}/imageprocessing/sharpening)
+[Sharpening]({{site.url}}/imageprocessing/filtering_sharpening)
 
 <br>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
