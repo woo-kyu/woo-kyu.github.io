@@ -514,6 +514,9 @@ use_tex: true
 - 동작 원리: 픽셀 강도의 범위 확장 또는 조절로 이미지의 명암 개선
 - 결과: 원하는 특징 검출
 
+### E.g.
+<img width="913" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/ff34244b-924c-4604-91ee-307ec7fa4e99">{: .align-center}
+
 
 
 
