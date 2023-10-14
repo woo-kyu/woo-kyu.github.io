@@ -84,7 +84,7 @@ use_tex: true
 
 <br>
 
-## Mechanics of Linear Spatial Filtering
+# Mechanics of Linear Spatial Filtering
 
 > 선형 공간 필터링은 이미지의 각 픽셀에 대해 주변 픽셀과 필터 커널(filter kernel) 사이의 합곱(또는 컨볼루션) 연산을 수행함으로써 이미지를 변형한다.
 > <span style='color:skyblue'>filter as said mask, template, window</span>
@@ -93,13 +93,13 @@ use_tex: true
 
 <br>
 
-## Spatial Correlation & Convolution
+# Spatial Correlation & Convolution
 
 [Spatial Correlation & Convolution]({{site.url}}/imageprocessing/filtering_correlation_convolution)
 
 <br>
 
-## Smoothing (Averaging)
+# Smoothing (Averaging)
 
 > 스무딩: 이미지의 세세한 변화나 노이즈를 줄이는 데 사용되는 기법. 이미지의 각 픽셀 값을 해당 픽셀 주변의 값들의 평균으로 대체함.
 > 이미지의 선명도를 약간 감소시키지만, 랜덤 노이즈를 효과적으로 줄일 수 있다.
@@ -108,7 +108,7 @@ use_tex: true
 
 <br>
 
-## Sharpening Filters
+# Sharpening Filters
 
 > 샤프닝은 이미지에서 인텐시티의 변화를 강조한다. 즉, 이미지의 경계선을 더 명확하게 한다.
 
