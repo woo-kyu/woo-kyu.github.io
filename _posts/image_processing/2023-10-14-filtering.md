@@ -496,6 +496,23 @@ use_tex: true
 
 <br>
 
+## Combination of spatial enhancement methods
+- 위 필터들은 목적에 맞게 다양한 부분에서 조합되고, 사용된다.
+- 아래는 그 예시이다.
+
+### Laplacian
+- 목적: 미세한 디테일 강조
+- 동작 원리:  Laplacian 필터는 두 번째 도함수를 사용하여 이미지의 빠른 강도 변화(예: 에지)를 강조
+
+### Gradient
+- 목적: 강한 엣지를 강조
+- 동작 원리: Gradient 방법은 첫 번째 도함수를 이용하여 이미지의 강도 변화율을 찾아낸다.
+- 결과: 명확한 컨투어를 더욱 강조
+
+### Intensity Transformation
+- 목적: 동적 범위 증대
+- 동작 원리: 픽셀 강도의 범위 확장 또는 조절로 이미지의 명암 개선
+- 결과: 원하는 특징 검출
 
 
 
