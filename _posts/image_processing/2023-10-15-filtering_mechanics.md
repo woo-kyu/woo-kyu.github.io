@@ -47,7 +47,9 @@ use_tex: true
 
 ### 필터 커널
 - 필터 커널은 이미지의 각 픽셀에 적용되는 작은 행렬이다.
-- 이 커널은 이미지의 로컬 영역에 대해 어떤 연산(e.g., 평균, 가중치 합 연산 등)을 수행할 지 정의한다.
+- 각 픽셀에 대해 일련의 이웃 픽셀과 연관된 가중치와 결합.
+- 마스크 또는 커널로 표현되며, 이미지 위를 이동하며 각 픽셀과 그 주변 이웃 픽셀과의 결합을 계산한다.
+- 이미지의 로컬 영역에 대해 어떤 연산(e.g., 평균, 가중치 합 연산 등)을 수행할 지 정의한다.
 
 <br>
 
@@ -61,13 +63,14 @@ use_tex: true
 
 <br>
 
-### 응답 계산
+### 선형 필터링
 - 이미지의 각 위치 $(x,y)$에서 응답 $g(x,y)$는 다음과 같이 계산된다.
   <img width="404" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/98f518f5-1e1d-4db1-9f1f-9a46e4d2176a">{: .align-center}
   - $g(x,y)$: 출력 이미지의 (x,y) 위치의 픽셀 값
   - $w(s,t)$: 필터 커널의 (s,t) 위치의 값
-    - <span style='color:skyblue'>Convolution mask</span>
-  - $f(x+s,y+t)$: 입력 이미지의 $(x+s,y+t)$ 위치의 픽셀 값
+    - <span style='color:skyblue'>Convolution mask</span> (가중치)
+    - 보통 정규화된 값으로 구성되어 마스크의 모든 값들의 합이 1이 된다.
+  - $f(x+s,y+t)$: 입력 이미지의 $(x+s,y+t)$ 위치의 픽셀 인텐시티
   - a, b: 필터 커널의 크기 정의 (e.g., 3x3 커널일 때 a=b=1)
 
 <br>
@@ -92,10 +95,25 @@ use_tex: true
 
 <img width="1350" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/c913f5f4-9042-46d5-883b-a7ac4ef31428">{: .align-center}
 
+<br>
+
+## Vector Representation of Linear Filtering
+
+- 벡터 표현은 이러한 연산을 좀 더 효과적으로 나타내며, 특히 컴퓨터 비젼과 이미지 처리에서 널리 사용된다.
+- 벡터화된 선형 필터링 표현은 픽셀 인텐시티와 가중치를 행렬 또는 벡터로 표현하여 간단하게 만든다.
+
+- #g=H\times f#
+  - g: 출력 이미지
+  - H: 변환(필터링) 을 나타내는 행렬
+  - f: 입력 이미지
+
+<img width="1277" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/017ce495-358d-468a-a5a1-5cd1d0187106">{: .align-center}
+
+
 
 <br>
 
-### Moving average
+## Moving average
 
 <img width="800" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/cb44bd8d-b618-40e3-a9b9-a6786f764bf9">{: .align-center}
 
@@ -118,5 +136,10 @@ use_tex: true
 <br>
 
 <img width="800" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/36ffd323-d520-4208-b5dd-9b1dc0751e72">{: .align-center}
+
+<br>
+
+위 내용은 Convolution 에서 다시한 번 다룸.
+[Spatial Correlation & Convolution]({{site.url}}/imageprocessing/filtering_correlation_convolution)
 
 <br>
