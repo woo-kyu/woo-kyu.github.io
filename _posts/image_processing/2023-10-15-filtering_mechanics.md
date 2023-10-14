@@ -14,6 +14,25 @@ use_tex: true
 
 ## 선형 공간 필터링의 기본 메커니즘
 
+### 선형 연산
+- Linear operation
+
+#### Mask (filter) 고려
+- Consider a mask (filter) of <span style='color:#fff9ff'>odd size</span> m × n
+- 홀수 크기 m x n 의 마스크를 고려한다.
+  - normally, $m=2a+1,~n=2b+1$ 이고, a, b는 양수이다.
+
+<br>
+
+#### In generally
+- 크기가 M x N 인 이미지 $f$를 크기 m x n 의 필터 마스크로 선형 필터링 하는 것은 다음 표현과 같다.
+  - $a=\frac{m-1}{2},~b=\frac{n-1}{2}$
+  - Linear spatial filtering = <span style='color:#fff9ff'>convolving</span> (합성곱) a mask with an imag
+- In general, linear filtering of <span style='color:skyblue'>an image f of size M X N</span> with a filter <span style='color:skyblue'>mask of size m X n</span> is given by the expression.
+
+
+<br>
+
 ### 합곱 연산
 - 입력 이미지 $f$ 와 필터 커널 $w$ 간의 합곱 연산
 
@@ -25,7 +44,8 @@ use_tex: true
 
 <br>
 
-<img width="600" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/11c97fa0-0d11-47e0-b046-1cefdb7a31d4">{: .align-center}
+<img width="1333" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/a30358e8-38fe-4ba2-b092-f6c8b897dd4f">{: .align-center}
+
 
 <br>
 
@@ -39,6 +59,7 @@ use_tex: true
   <img width="404" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/98f518f5-1e1d-4db1-9f1f-9a46e4d2176a">{: .align-center}
   - $g(x,y)$: 출력 이미지의 (x,y) 위치의 픽셀 값
   - $w(s,t)$: 필터 커널의 (s,t) 위치의 값
+    - <span style='color:skyblue'>Convolution mask</span>
   - $f(x+s,y+t)$: 입력 이미지의 $(x+s,y+t)$ 위치의 픽셀 값
   - a, b: 필터 커널의 크기 정의 (e.g., 3x3 커널일 때 a=b=1)
 
@@ -59,6 +80,11 @@ use_tex: true
 - 필터 커널의 크기와 형태는 필터링의 효과와 계산 복잡도에 영향을 미친다.
 - 커널의 키기와 형태는 필터링의 목적에 따라 다르게 선택된다.
 - 선형 공간 필터링은 이미지 전체 영역에 대해 수행되며, 각 픽셀은 주변ㄴ픽셀의 정보를 사용하여 새로운 값을 계산한다.
+
+<br>
+
+<img width="1350" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/c913f5f4-9042-46d5-883b-a7ac4ef31428">{: .align-center}
+
 
 <br>
 

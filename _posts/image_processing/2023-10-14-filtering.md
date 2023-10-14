@@ -53,6 +53,23 @@ use_tex: true
 > 공간 필터링은 이미지의 각 픽셀과 그 주변 픽셀의 값을 이용한 함수의 결과로 이미지를 수정하는 과정이다.
 > 이는 이미지의 공간 도메인에서 진행되며, 특정 픽셀의 값을 그 주변 픽셀의 값에 기반하여 변경한다.
 
+### Fundamentals of spatial filtering
+
+- 주요 목적: 이미지를 강화하는 것
+- Name “<span style='color:#fff9ff'>filter</span>” borrowed from frequency domain approach
+  - 필터: 주파수 영역 방식에서 대여된 용어이다. 
+  - 주파수 도메인 접근 방식에서는 특정 정보만을 유지 또는 거부한다.
+
+#### 필터링의 유형
+- 스무딩 (Low-pass filtering): 이미지의 노이즈를 줄이고 전체적인 패턴을 부드럽게 만든다.
+- 엣지 강화 (High-pass filtering): 이미지의 엣지나 세부 정보를 강조한다.
+- <span style='color:#fff9ff'>Filtering creates a new pixel with coordinates equal to the coordinates of the center of the neighborhood</span>, and whose value is the result of the filtering operation
+- 동작원리: 
+  - 미리 정의된 이웃 픽셀: 4, 8 또는 <span style='color:#fff9ff'>squared(정사각) region</span> 등 다양한 이웃 픽셀 정의 방식이 있다.
+- 요약:
+  - 공간 필터링은 이미지의 특정 영역(이웃)을 중심으로 작동하는 기술이다. 
+  - 이를 통해 이미지의 전반적인 품질을 개선하거나, 특정 특징을 강조할 수 있다. 
+  - 다양한 필터링 기술을 적절히 조합하여 이미지의 선명도, 대비, 디테일 등을 조절할 수 있다.
 
 #### 아웃 정의:
 - 픽셀의 이웃(neighbors)은 일반적으로 해당 픽셀을 중심으로 하는 작은 영역이나 윈도우(window)를 의미한다.
@@ -81,15 +98,20 @@ use_tex: true
 
 <img width="800" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/54870150-1b34-4658-875b-669fb5f7fa32">{: .align-center}
 
+<br>
+
+
+
 
 <br>
+
 
 # Mechanics of Linear Spatial Filtering
 
 > 선형 공간 필터링은 이미지의 각 픽셀에 대해 주변 픽셀과 필터 커널(filter kernel) 사이의 합곱(또는 컨볼루션) 연산을 수행함으로써 이미지를 변형한다.
 > <span style='color:skyblue'>filter as said mask, template, window</span>
 
-[Mechanics of Linear Spatial Filtering]({{site.url}}/imageprocessing/filtering_mlsf)
+[Mechanics of Linear Spatial Filtering]({{site.url}}/imageprocessing/filtering_mechanics)
 
 <br>
 

@@ -40,7 +40,7 @@ use_tex: false
 
 #### Lower case
 
-[Mechanics of Linear Spatial Filtering]({{site.url}}/imageprocessing/filtering_mlsf)
+[Mechanics of Linear Spatial Filtering]({{site.url}}/imageprocessing/filtering_mechanics)
 
 [Spatial Correlation & Convolution]({{site.url}}/imageprocessing/filtering_correlation_convolution)
 
