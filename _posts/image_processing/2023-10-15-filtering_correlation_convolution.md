@@ -92,11 +92,11 @@ use_tex: true
 
 <br>
 
-<img width="846" alt="image" src="https://https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/a2512762-a3ff-450e-80b0-f6e757702d7c">{: .align-center}
+<img width="846" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/a2512762-a3ff-450e-80b0-f6e757702d7c">{: .align-center}
 
 <br>
 
-<img width="838" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/2af34b9f-02f8-48e7-af4d-060e0485d5f0">{: .align-center}
+<img width="838" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/33b752eb-9f24-406a-84e5-165729409d25">{: .align-center}
 
 <br>
 
