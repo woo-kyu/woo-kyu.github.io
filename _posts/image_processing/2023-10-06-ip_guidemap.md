@@ -39,15 +39,14 @@ use_tex: false
 
 
 #### Lower case
-[Spatial Filtering]({{site.url}}/imageprocessing/spatiaal_filtering)
 
-[Mechanics of Linear Spatial Filtering]({{site.url}}/imageprocessing/mlsf)
+[Mechanics of Linear Spatial Filtering]({{site.url}}/filtering_imageprocessing/mlsf)
 
-[Spatial Correlation & Convolution]({{site.url}}/imageprocessing/correlation_convolution)
+[Spatial Correlation & Convolution]({{site.url}}/imageprocessing/filtering_correlation_convolution)
 
-[Smoothing]({{site.url}}/imageprocessing/smoooooothing)
+[Smoothing]({{site.url}}/imageprocessing/filtering_smoooooothing)
 
-[Sharpening]({{site.url}}/imageprocessing/sharpening)
+[Sharpening]({{site.url}}/imageprocessing/filtering_sharpening)
 
 
 <br>
