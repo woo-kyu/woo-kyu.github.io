@@ -258,7 +258,8 @@ use_tex: true
 <br>
 
 ### 스무딩의 기법
-#### 이동 평균 필터: 각 픽셀의 값을 그 주변 픽셀의 평균 값으로 대체하는 가장 간단한 스무딩 기법
+#### 이동 평균 필터 
+- 각 픽셀의 값을 그 주변 픽셀의 평균 값으로 대체하는 가장 간단한 스무딩 기법
 <img width="841" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/adf53973-16b5-4df7-a051-981082393f4b">{: .align-center}
 - 이동 평균 필터의 예시
 
@@ -269,11 +270,11 @@ use_tex: true
 - 중심 픽셀에 가까운 픽셀이 결과에 더 큰 영향을 미친다.
 - 가우시안 필터는 주로 이미지에서 노이즈를 제거하거나 이미지를 부드럽게 만드는 데 사용된다.
   <img width="431" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/f5a86a47-9e08-48eb-906d-f79a76ec79bf">{: .align-center}
-  - h: Gaussian kernel function, u, v: 2차원 공간에서의 좌표, e: 자연 상수, $\sigam$: 가우시안 분포의 표준편차 (분산의 제곱근)
+  - h: Gaussian kernel function, u, v: 2차원 공간에서의 좌표, e: 자연 상수, $\sigma$: 가우시안 분포의 표준편차 (분산의 제곱근)
 
   <img width="466" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/9da3af17-50d0-4b92-aa1b-fb7ba08ec1ce">{: .align-center}
 
-- 가우시안 분산; $\sigma^2$ 이 ㅡ면, 커널의 영향이 더 넓게 퍼져 이미지의 스무딩이 더 극대화 된다.
+- 가우시안 분산; $\sigma^2$ 이면, 커널의 영향이 더 넓게 퍼져 이미지의 스무딩이 더 극대화 된다.
 
   <img width="791" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/158c1e90-18e5-4a7c-8692-1c5619c069ad">{: .align-center}
 
