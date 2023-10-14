@@ -37,6 +37,19 @@ use_tex: false
 ### 5. Filtering
 [Filtering]({{site.url}}/imageprocessing/filtering/)
 
+
+#### Lower case
+[Spatial Filtering]({{site.url}}/imageprocessing/spatiaal_filtering)
+
+[Mechanics of Linear Spatial Filtering]({{site.url}}/imageprocessing/mlsf)
+
+[Spatial Correlation & Convolution]({{site.url}}/imageprocessing/correlation_convolution)
+
+[Smoothing]({{site.url}}/imageprocessing/smoooooothing)
+
+[Sharpening]({{site.url}}/imageprocessing/sharpening)
+
+
 <br>
 
 ### 6. Fourier Transform
