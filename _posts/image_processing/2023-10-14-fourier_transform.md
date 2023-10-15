@@ -82,9 +82,52 @@ Fourier Series 의 계산을 'Harmonic Analysis' 라고 칭한다.
 - 이산형 $A_n$ 을 연속형 $F(k)dk$로 바꾸고, $\frac{n}{L}$ 을 k 로 변환한다.
 - 그 후, 합 (sum)을 적분 (integral)로 변경하면, 식이 변형된다.
 
-- 아래는 푸리에 변환과 역 푸리에 변환의 formula 이다.
+- 아래는 푸리에 변환과 역푸리에 변환의 formula 이다.
 
 <img width="1028" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/52ef4413-feb8-477f-aa19-dc97ddca9a9e">{: .align-center}
+
+- $F(k)$ 는 $f(x)$ 의 푸리에 변환이다.
+- $f(x)$ 는 $F(k)$ 의 역푸리에 변환이다.
+- k 는 주파수 공간에서의 변수이다.
+- $e^{2\pi ikx}$ 와 $e^{-2\pi ikx}$ 는 각각 복소 지수 함수에서의 Positive 및 Negative 회전을 나타낸다.  
+
+<br>
+
+## 종류
+
+### Continuous Fourier Transform (CFT, 연속 푸리에 변환)
+
+> 연속적인 시간 신호를 주파수 도메인으로 변환
+> 시간 영역에서 복잡한 신호를 주파수 영역에서 각 주파수 성분으로 분해한다.
+
+<img width="806" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/539378c3-1091-4ce7-afe9-94cf334d5fc5">{: .align-center}
+
+- $F(k)$: 신호 $f(x)$의 푸리에 변환 결과
+- $k$: 주파수 변수. 변환된 신호의 주파수 성분을 나타낸다.
+- $\int^{\infty}_{-\infty}$: $-\infty$ 에서 $\infty$ 까지의 적분
+- $e^{-2\pi ikx}$: 복소 지수 함수. 신호의 각 주파수 성분을 회전으로 표현한다.
+
+<br>
+
+### Discrete Fourier Transform (DFT, 이산 푸리에 변환)
+> 시간 영역에서 이산적인 신호를 주파수 영역으로 변환하는 데 사용되는 기법
+> DFT 는 연속적인 신호를 샘플링하여 얻은 이산 데이터에 적용
+
+<img width="925" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/0c97bd57-6c99-49fe-8ac4-e6ebb51dd24e">{: .align-center}
+
+- $X[k]$: 출력의 주파수 도메인에서의 k 번째 값
+- $x[n]$: 입력 신호의 n 번째 샘플
+- $N$: 총 샘플의 개수
+- $e^{-j(2\pi nk)~/~N}$: 신호의 회전과 관련된 복소 지수 함수
+
+
+#### 특성 및 한계
+- 해상도 한계: DFT는 주파수 영역의 해상도가 제한적이기 때문에, 실제 연속 신호의 모든 세부 정보를 캡처하지는 못한다.
+- 계산 복잡도: DFT는 데이터 포인트의 수에 따라 계산 복잡도가 증가하는 단점이 있습니다. 이 문제는 빠른 푸리에 변환(Fast Fourier Transform, FFT)을 사용하여 부분적으로 해결할 수 있다.
+
+<br>
+
+### 
 
 
 
