@@ -1,6 +1,7 @@
 ---
 layout: single
 title: IP GuideMap
+toc_label: IP Guide Map
 categories: ImageProcessing
 tags: [Map]
 author_profile: false
