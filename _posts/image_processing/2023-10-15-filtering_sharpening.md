@@ -250,6 +250,21 @@ use_tex: true
 
 <br>
 
+<img width="1466" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/491f3ff5-4646-46cd-a4cd-ca2a8bae0252">{: .align-center}
+
+<img width="1284" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/9adddf1c-276f-4dbd-8b22-b7ccb9489424">{: .align-center}
+
+<br>
+
+## Sobel filter
+
+<img width="1272" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/04f02d4a-ba0c-48ec-ba15-c500f76e8fef">{: .align-center}
+
+<img width="1411" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/7c5e2c5e-6d88-4b7d-8c9c-c7e4a950f371">{: .align-center}
+
+
+<br>
+
 ## Combination of spatial enhancement methods
 - 위 필터들은 목적에 맞게 다양한 부분에서 조합되고, 사용된다.
 - 아래는 그 예시이다.
@@ -270,6 +285,9 @@ use_tex: true
 
 ### E.g.
 <img width="913" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/ff34244b-924c-4604-91ee-307ec7fa4e99">{: .align-center}
+
+<img width="1551" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/17bfbd9b-fff2-4968-9229-8436ff18779d">{: .align-center}
+
 
 
 
