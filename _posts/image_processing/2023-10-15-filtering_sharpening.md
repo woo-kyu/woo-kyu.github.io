@@ -13,8 +13,32 @@ use_tex: true
 
 - Sharpening <span style='color:#fff9ff'>highlights transitions</span> in intensity
 - 주로 이미지의 1차 또는 2차 도함수(미분)를 기반으로 한다.
+  - 두 함수 모두 엣지 추출에 사용
 - 도함수는 이미지에서 강도의 변화를 측정하는 데 사용된다.
   - <span style='color:#fff9ff'>Based on first- and second-order derivatives</span>
+
+<br>
+
+### What is different to
+#### Blur vs. Sharpening
+
+- Blur:
+  - 이미지의 선명도를 줄인다.
+  - 고주파 성분을 감쇠시키고, 노이즈를 줄인다.
+  - 펼균화 또는 저주파 필터링 기법 사용
+
+- Sharpening
+  - 이미지의 선명도 향상
+  - 엣지와 같은 고주파 성분을 강조
+
+<br>
+
+#### <span style='color:#fff9ff'>Integration vs. Derivatives</span>
+- Spatial averaging or Integration (공간 적분)
+  - 이미지의 선명도를 줄이고, 전체적인 이미지를 부드럽게
+- Spatial differentiation or Derivatives (공간 미분)
+  - 이미지에서 엣지를 강조하여 선명도를 증가.
+
 
 <br>
 
@@ -60,10 +84,13 @@ use_tex: true
 
 <img width="857" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/95674fe4-36a2-4c4a-815d-83f8e0147fc7">{: .align-center}
 
+<img width="1434" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/5d9afa28-342a-4a78-a42e-79aebff48907">{: .align-center}
+
+
 <br>
 
 ## Laplacian
-- 라플라시안은 2차 도함수를 기반으로 한다.
+- 라플라시안은 2차 도함수(미분 연산자)를 기반으로 한다.
   - <span style='color:#fff9ff'>Second-order derivatives</span> for image sharpening
 - ㅇ이미지의 두 번째 공간 도함수의 합으로 정의
 - 이미지에서의 강도의 변화를 강조
@@ -73,6 +100,15 @@ use_tex: true
   - x, y: 좌표
   - 수식은 각각 x, y에 대한 두 번째 도함수의 합을 의미.
   - 픽셀의 급격한 인텐시티 변화를 탐색가능
+- <span style='color:#fff9ff'>Laplacian</span> is <span style='color:orange'>isotropic</span>(등방성) derivative operator
+  - 이소트로픽 미분 연산자란, 모든 방향에 대해 동일한 응답을 하는 미분 연산자.
+  - 이소트로픽 필터는 회전 불변성을 가진 필터로, 필터의 응답이 방향에 독립적이다.
+  - 즉, 이미지를 어떠한 방향으로 회전시켜도 필터의 응답이 동일하다.
+
+<br>
+
+<img width="1291" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/21471f27-e499-4efe-80a7-2d61808dcb7c">{: .align-center}
+
 
 <br>
 
@@ -84,7 +120,11 @@ use_tex: true
 
 <br>
 
-<img width="759" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/ab8ffef7-1407-4f9d-b238-f5b97158ffd3">{: .align-center}
+<img width="1352" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/3483ab45-8ad6-4c59-a202-29472b6de624">{: .align-center}
+
+<img width="1557" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/caa55a42-c9d6-4be6-958a-4d282357bb7c">{: .align-center}
+
+
 - 위 예시에서, 2차원 그리드 상 특정 픽셀 (x,y) 의 라플라시안 값을 계산하기 위한 것.
 - 각 항은 해당 픽셀 주변의 픽셀 인텐시티 값을 나타냄.
 - 중심 픽셀의 인텐시티 값은 -4, 상하좌우의 픽셀 인텐시티는 +1의 가중치가 부여된다.
@@ -107,7 +147,10 @@ use_tex: true
 - 내부의 인텐시티가 부드럽게 변하는 부분은 약화된다.
 - 엣지와 다른 불연속성이 뚜렷하게 도출된다.
 
-<img width="591" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/b655ef4a-6199-4b36-b1f4-9d31608b480d">{: .align-center}
+<img width="1548" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/f15b8fc2-ee6f-4091-badb-240c9a5c4370">{: .align-center}
+
+<img width="1470" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/82146e32-8037-4911-8548-85b764bb49c1">{: .align-center}
+
 
 <br>
 
@@ -164,15 +207,19 @@ use_tex: true
     - k= 1: unsharp masking
     - k > 1: highboost filtering
     - k < 1: reduce the contribution of the unsharp
-      <img width="192" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/e3a8342b-357c-4d1a-8949-f9aba8157831">{: .align-center}
+- Image sharpening by <span style='color:#fff9ff'>subtracting smoothed version of an image from original image</span>
+<img width="1444" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/c23e501c-128e-4aaa-84d1-7acbe4190494">{: .align-center}
 
 <br>
 
-<img width="847" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/da539d52-4f47-4407-9d4f-60704be2c197">{: .align-center}
+<img width="1418" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/3ebf6ad9-8ac9-48d1-bacc-ea6f739043dd">{: .align-center}
+
+<br>
 
 ## Gradient
 - Scalar field (스칼라 공간; 이미지) 에서 벡터 값 변화의 방향과 크기를 나타내는 벡터.
 - <span style='color:#fff9ff'>First-order derivatives</span> for image sharpening
+- Non-isotropic linear operator
 
 ### Definition
 - 방향: 함수$f(x,y)$의 최대 변화율의 방향
@@ -189,6 +236,9 @@ use_tex: true
 
 ### Gradient Magnitude (rate of change)
 <img width="447" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/a55797de-b589-47be-8536-b8c9c492117c">{: .align-center}
+
+- $= \|g_x\|+\|g_y\|$
+  - simple to implement, <span style='color:skyblue'>isotropic for multiples of 90'</span>
 
 <br>
 
