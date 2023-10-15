@@ -165,6 +165,27 @@ Fourier Series 의 계산을 'Harmonic Analysis' 라고 칭한다.
 
 <br>
 
+## Inverse Fourier Transform
+- 함수를 주파수 도메인에서 시간 도메인으로 매핑하는 것 
+- 주파수 도메인 표현에서 시간 도메인 함수를 재구성하는 것
+
+<img width="515" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/932d6197-a6b1-4007-aa5b-be079a12d84f">{: .align-center}
+
+### 특성
+- 손실 없는 변환: 이상적으로는 시간 도메인과 주파수 도메인 간의 왕복은 손실 없이 이루어져야 하며, 변환 과정에서 정보가 손실되지 않아야 한다.
+- 대칭성: 푸리에 변환과 그 역변환은 밀접한 관련이 있으며, 수학적 형태에서 강력한 대칭성을 공유한다.
+- 재구성: 주파수 도메인 표현이 정확하고 완전하다면 역변환은 원래의 시간 도메인 신호를 정확하게 재구성한다.
+
+<br>
+
+## Synthesis & Analysis
+
+### Synthesis
+- 정의: 합성은 다양한 주파수 성분들, 주로 사인과 코사인 함수 또는 복소 지수 함수의 형태를 가지는 기저함수들을 조합하여 원하는 신호를 만드는 과정이다. 
+- 수학적 표현: 주어진 주파수 성분들의 선형 조합을 통해 원래의 시간 도메인 신호를 재구축한다. 
+  - e.g., 주어진 주파수 성분들 $c_n$ 과 기저함수 $e^{2\pi inf_0t}$ 를 사용하여 신호를 합성할 수 있다.
+    <img width="502" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/7fa493d4-94fd-4428-9aab-f8eb47edba4d">{: .align-center}
+
 
 
 
