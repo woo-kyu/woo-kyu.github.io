@@ -36,10 +36,6 @@ use_tex: true
   <img width="841" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/27024278-f951-4636-9c8b-60c13e42d165">{: .align-center}
   <img width="841" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/adf53973-16b5-4df7-a051-981082393f4b">{: .align-center}
 
-<br>
-
-<img width="1316" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/6ea62eeb-cacd-42d9-943c-e33a896c14ec">{: .align-center}
-
 
 
 
@@ -65,7 +61,7 @@ use_tex: true
 ### Median Filter Kernels
 - Non-Linear Filter.
 - 적용
-  - 주변 픽셀의 인텐시티를 순서대로 나열한다.
+  - 주변 픽셀의 인텐시티를 순서대로 나열한다. (어떠한 기준에 따라 픽셀을 정렬)
   - 나열된 값의 중간 값을 선택한다.
 - 미디언 필터를 적용할 때, 새로운 회색조 레벨이 생성되지 않는다는 것을 의미한다.
   - No new gray level emerges
@@ -85,6 +81,9 @@ use_tex: true
 <br>
 
 ### Smoothing Linear Filters
+
+<img width="1316" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/6ea62eeb-cacd-42d9-943c-e33a896c14ec">{: .align-center}
+
 <img width="1430" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/e62c1ae4-ede4-4ec6-b161-88c7d26d9712">{: .align-center}
 
 <img width="1308" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/5a36d891-6ecc-42f4-98c2-37c5eba45dac">{: .align-center}

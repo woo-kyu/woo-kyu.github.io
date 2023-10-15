@@ -131,7 +131,7 @@ use_tex: true
   - 그 결과, 이미지가 전반적으로 어둡고, 중요한 특징이 무시된다.
   - 이 때문에, Scaling 이 필요하다.
 
-#### 프로세스
+#### Progress
 - 가장 음수 값을 '0'으로.
   - <span style='color:skyblue'>most negative value to 0</span>
   - Laplacian image 의 결과는 양수와 음수 값을 모두 가질 수 있다.

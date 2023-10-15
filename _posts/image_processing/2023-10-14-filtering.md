@@ -93,16 +93,38 @@ use_tex: true
 
 ### 종류
 
-#### Linear filtering:
+#### Linear Filtering:
 - 이웃 픽셀의 선형 조합으로 새로운 픽셀 값을 계산한다.
   - E.g., 평균 필터링, Sobel, Prewitt, Roberts...
 
 
 <br>
 
-#### Non-Linear filtering:
+#### Non-Linear (Order-static) Filtering:
 - 이웃 픽셀의 비선형 함수로 새로운 픽셀 값을 계산한다.
   - E.g., 중간값 필터링, Canny Edge
+- 픽셀 값은 어떠한 특정 기준(e.g., 크기)에 따라 정렬하고, 이 절렬된 값을 기반으로 새 픽셀 값을 결정
+  - Order-statistic filter are nonlinear spatial filter whose <span style='color:#fff9ff'>response is based on ordering (ranking)</span>
+- E.g., 중앙값 필터
+
+##### E.g.
+- <span style='color:orange'>Median Filter:</span>
+- Median filter 는 특히 한 픽셀과 그 이웃 픽셀들의 값을 정렬하고, 이 정렬된 값의 중앙값을 새로운 픽셀 값으로 사용한다.
+- popular because they provide excellent noise reduction capabilities with <span style='color:#skyblue'>less blurring</span> than linear spatial filter
+- $A={a_1,a_2,...,a_k}$ 는 주어진 픽셀의 이웃에 있는 픽셀 값들을 의미하며, $a_1\leq a_2\leq...\leq a_k$는 픽셀 값이 정렬되어 있음을 알 수 있다.
+- Median 은 정렬 값 중 <span style='color:#fff9ff'>중앙값</span>을 의미.
+- $\textrm{Median}(A)=a_{\frac{k}{2}}\textrm{ for K even}$ <span style='color:skyblue'>or</span> $a_{\frac{k+1}{2}}\textrm{ for K odd}$
+
+
+
+<img width="1356" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/c7b7581f-190b-4239-b383-4cb0bc45f527">{: .align-center}
+
+<img width="1356" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/1d0913c7-a86b-4483-a408-cb5b6cbb16ae">{: .align-center}
+
+
+
+
+
 
 <br>
 
