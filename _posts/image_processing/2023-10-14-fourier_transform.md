@@ -28,9 +28,10 @@ Fourier Series 의 계산을 'Harmonic Analysis' 라고 칭한다.
 
 <br>
 
-## Formula
+## Theoretical Overview
 목표:
 - 복잡한 periodic 함수를 더 단순한 사인 및 코사인 함수의 합으로 표현, 분석한다.
+- 두 함수 $f$
 
 <img width="1015" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/f4ea852f-d721-44c0-8e3a-d2400a98eaa2">{: .align-center}
 
@@ -49,7 +50,12 @@ Fourier Series 의 계산을 'Harmonic Analysis' 라고 칭한다.
   - $a_n, b_n$ 은 이 각각의 함수들이 합쳐질 때 $f(x)$ 에 기여하는 정도를 결정한다.
   - $a_0$은 함수의 전반적인 수준 (또는 offset)을 제공한다.
 
+<br>
 
+## Calculating Coefficients
+> 두 함수 $f_1(x)~=~\textrm{cos}(x)$ 와, $f_2~=~textrm{sin}(x)$ 가
+> $[-\pi,\pi]$ 구간에서 complete orthogonal system(완전한 직교 시스템)을 형성할 때,
+> 푸리에 급수는 어떠한 함수 $f(x)$ 의 근사를 다음과 같이 도출할 수 있다.
 
 
 
