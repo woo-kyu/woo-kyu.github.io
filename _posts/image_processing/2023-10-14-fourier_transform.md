@@ -10,7 +10,7 @@ use_tex: true
 ---
 
 > is a transform that converts a function into a form that describes the frequencies present in the original function.
-> 시간이나 공간에 대한 함수를 시간 또는 공간 주파수 성분으로 분해하는 변환
+>> 시간이나 공간에 대한 함수를 시간 또는 공간 주파수 성분으로 분해하는 변환
 
 <br>
 
@@ -31,7 +31,6 @@ Fourier Series 의 계산을 'Harmonic Analysis' 라고 칭한다.
 ## Theoretical Overview
 목표:
 - 복잡한 periodic 함수를 더 단순한 사인 및 코사인 함수의 합으로 표현, 분석한다.
-- 두 함수 $f$
 
 <img width="1015" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/f4ea852f-d721-44c0-8e3a-d2400a98eaa2">{: .align-center}
 
@@ -52,10 +51,47 @@ Fourier Series 의 계산을 'Harmonic Analysis' 라고 칭한다.
 
 <br>
 
-## Calculating Coefficients
-> 두 함수 $f_1(x)~=~\textrm{cos}(x)$ 와, $f_2~=~textrm{sin}(x)$ 가
-> $[-\pi,\pi]$ 구간에서 complete orthogonal system(완전한 직교 시스템)을 형성할 때,
-> 푸리에 급수는 어떠한 함수 $f(x)$ 의 근사를 다음과 같이 도출할 수 있다.
+## Calculating Coefficients (E.g.)
+- 두 함수 $f_1(x)~=~\textrm{cos}(x)$ 와, $f_2~=~textrm{sin}(x)$ 가
+- $[-\pi,\pi]$ 구간에서 complete orthogonal system(완전한 직교 시스템)을 형성할 때,
+- 푸리에 급수는 어떠한 함수 $f(x)$ 의 근사를 다음과 같이 도출할 수 있다.
+
+<img width="1015" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/f4ea852f-d721-44c0-8e3a-d2400a98eaa2">{: .align-center}
+
+
+<img width="976" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/2ea6add7-4300-4195-a82e-6010d9586e88">{: .align-center}
+
+
+- 위 각각의 계수 $a_n, b_n$은 함수 $f(x)$를 삼각함수, 
+- i.e., $cos(nx)$ 와 $sin(nx)$ 로 분해하는 데 사용되며, 이 삼각 함수들은 직교한다.
+- 이러한 직교성은 크로네커 델타 $(\delta_{mn})$ 와 관련되어 있으며,
+- 이는 다음과 같이 정의할 수 있다.
+
+<img width="985" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/6024b315-d0bb-490c-b5a7-82cc935c50ef">{: .align-center}
+
+- 여기서 $m$ 과 $n$ 은 양의 정수이며, 
+- $\delta_{mn}$은 크로네커 델타로, $m=n$ 일 때 1이고, 그러하지 않을 때 0 이 된다.
+- 이 직교성은 fourier 계수를 찾는 데 사용되는 적분을 단순화 하는 데 도움된다.
+
+<br>
+
+
+# Fourier Transform
+> 푸리에 급수를 일반화한 형태로, L이 무한대로 가는 극한에서 복소 푸리에 급수의 일반화이다.
+
+- 이산형 $A_n$ 을 연속형 $F(k)dk$로 바꾸고, $\frac{n}{L}$ 을 k 로 변환한다.
+- 그 후, 합 (sum)을 적분 (integral)로 변경하면, 식이 변형된다.
+
+- 아래는 푸리에 변환과 역 푸리에 변환의 formula 이다.
+
+<img width="1028" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/52ef4413-feb8-477f-aa19-dc97ddca9a9e">{: .align-center}
+
+
+
+
+
+
+
 
 
 
@@ -76,5 +112,6 @@ Fourier Series 의 계산을 'Harmonic Analysis' 라고 칭한다.
 ## Reference
 
 [Fourier Series](https://mathworld.wolfram.com/FourierSeries.html)
+[Fourier Transform](https://mathworld.wolfram.com/FourierTransform.html)
 
 
