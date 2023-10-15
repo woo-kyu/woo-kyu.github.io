@@ -122,18 +122,48 @@ Fourier Series 의 계산을 'Harmonic Analysis' 라고 칭한다.
 
 
 #### 특성 및 한계
-- 해상도 한계: DFT는 주파수 영역의 해상도가 제한적이기 때문에, 실제 연속 신호의 모든 세부 정보를 캡처하지는 못한다.
-- 계산 복잡도: DFT는 데이터 포인트의 수에 따라 계산 복잡도가 증가하는 단점이 있습니다. 이 문제는 빠른 푸리에 변환(Fast Fourier Transform, FFT)을 사용하여 부분적으로 해결할 수 있다.
+- 해상도 한계: DFT 는 주파수 영역의 해상도가 제한적이기 때문에, 실제 연속 신호의 모든 세부 정보를 캡처하지는 못한다.
+- 계산 복잡도: DFT 는 데이터 포인트의 수에 따라 계산 복잡도가 증가하는 단점이 있습니다. 이 문제는 빠른 푸리에 변환(Fast Fourier Transform, FFT)을 사용하여 부분적으로 해결할 수 있다.
 
 <br>
 
-### 
+### Fast Fourier Transform (FFT, 빠른 푸리에 변환)
+> 산 푸리에 변환(Discrete Fourier Transform, DFT)을 효과적이고 빠르게 계산하기 위한 알고리즘
+> DFT 의 계산 복잡도를 상당히 줄여주어, 대용량 데이터에 대한 푸리에 변환을 실시간 혹은 빠른 시간 내에 계산이 가능
 
+- 일반적으로, DFT 의 계산 복잡도는 $O(N^2)$이다. 이는 신호의 샘플 수가 많아지면 계산 시간이 지수적으로 증가한다는 것이다.
 
+- 아래는 FFT 의 기본 알고리즘을 바탕으로, 가장 흔히 사용되는  Cooley-Tukey 알고리즘이다.
+- 재귀적으로 DFT 를 더 작은 DFTs 로 분해하는 방법이다.
 
+<img width="1020" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/211fa1e1-08b2-4f5c-a174-5edf43c5cc78">{: .align-center}
+- 첫 번째 합은 짝수 인덱스, 두 번째 합은 홀수 인덱스에 해당한다.
+- 위 알고리즘은 기존 DFT 알고리즘의 계산복잡도인 $O(N^2)$를 $O(N\textrm{log}N)$ 으로 줄인다.
 
+## Fourier Transform 의 성질
+### Linearity (선형성)
+  <img width="525" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/b613dedd-ef7b-4173-805b-66de71e96811">{: .align-center}
+- 선형성의 원리는 푸리에 변환이 선형 연산자라는 것을 나타낸다. 
+- a, b는 스칼라 상수. f, g는 변환하고자 하는 함수이다. 
+- 이 성질은 함수의 선형 조합에 대한 푸리에 변환은 각 함수의 푸리에 변환의 동일한 선형 조합과 같다는 것을 의미한다. 
+- 두 개의 신호를 더하거나 상수배한 신호에 대한 푸리에 변환을 간단히 할 수 있다.
 
+<br>
 
+### Time Shift (시간 이동)
+  <img width="410" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/2018859e-8eee-4a9d-bcac-fb2cb2536cc0">{: .align-center}
+- 시간 이동 성질은 함수에 복소 지수를 곱하여 주어진 신호를 시간 축으로 이동시키면 주파수 영역에서는 주파수를 변환하지 않고 단순히 위치만 이동시키는 특징을 가진다. 
+- a 는 이동량. 실제 시스템에서 신호의 타임 지연을 모델링하는 데 유용하다.
+
+<br>
+
+### Frequency Shift (주파수 이동)
+  <img width="426" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/343dc928-1c15-4980-9fff-511f973ef196">{: .align-center}
+- 주파수 이동은 신호가 시간 영역에서 이동할 때 주파수 영역에서 어떻게 변화하는지를 보여준다. 
+- 시간 영역에서의 이동 a 는 주파수 영역에서는 $e^{−2pi ika}$ 만큼의 복소 지수 변환을 가져온다,
+- 주파수 성분들이 같은 크기를 유지하면서 단순히 위상만 변경된다는 것을 의미한다.
+
+<br>
 
 
 
