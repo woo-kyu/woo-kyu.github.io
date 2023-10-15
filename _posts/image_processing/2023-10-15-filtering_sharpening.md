@@ -10,6 +10,7 @@ use_tex: true
 
 > 샤프닝은 이미지에서 인텐시티의 변화를 강조한다. 즉, 이미지의 경계선을 더 명확하게 한다.
 
+## Sharpening
 
 - Sharpening <span style='color:#fff9ff'>highlights transitions</span> in intensity
 - 주로 이미지의 1차 또는 2차 도함수(미분)를 기반으로 한다.
