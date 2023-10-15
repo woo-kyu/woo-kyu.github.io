@@ -186,6 +186,19 @@ Fourier Series 의 계산을 'Harmonic Analysis' 라고 칭한다.
   - e.g., 주어진 주파수 성분들 $c_n$ 과 기저함수 $e^{2\pi inf_0t}$ 를 사용하여 신호를 합성할 수 있다.
     <img width="502" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/7fa493d4-94fd-4428-9aab-f8eb47edba4d">{: .align-center}
 
+<br>
+
+### Analysis
+- 정의: 분석은 신호를 기본 주파수 성분으로 분해하여 그 신호가 어떤 주파수 성분들로 이루어져 있는지 파악하는 과정이다.
+- 푸리에 변환을 이용한 분석: 신호 $x(t)$ 의 주파수 성분을 알기 위해, 푸리에 변환을 사용하여 그 신호를 주파수 도메인으로 변환한다. 
+  - 신호의 푸리에 변환은 다음과 같이 표현된다.
+    <img width="558" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/dc092d18-e2eb-4fea-afaf-d681be0e6459">{: .align-center}
+    - $X(f)$: 주파수 도메인에서의 신호. 각 주파수 성분의 강도
+
+<br>
+
+
+
 
 
 
