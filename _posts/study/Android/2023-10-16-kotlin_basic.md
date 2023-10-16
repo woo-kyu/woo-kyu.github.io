@@ -11,6 +11,12 @@ use_tex: false
 
 > Kotlin Basic for Android
 
+# Kotlin
+
+---
+
+---
+
 ### 특징
 - Java 를 완전히 대체할 수 있다.
 - Jave 보다 문법이 간결하다.

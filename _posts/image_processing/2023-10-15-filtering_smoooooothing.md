@@ -12,6 +12,11 @@ use_tex: true
 > 스무딩: 이미지의 세세한 변화나 노이즈를 줄이는 데 사용되는 기법. 이미지의 각 픽셀 값을 해당 픽셀 주변의 값들의 평균으로 대체함.
 > 이미지의 선명도를 약간 감소시키지만, 랜덤 노이즈를 효과적으로 줄일 수 있다.
 
+# Smoothing
+
+---
+
+---
 
 - Random noise typically consists of <span style='color:#fff9ff'>sharp transitions in intensity</span>
   - 노이즈는 일반적으로 intensity 의 급격한 변화로 구성된다.
