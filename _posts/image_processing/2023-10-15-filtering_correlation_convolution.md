@@ -1,6 +1,7 @@
 ---
 layout: single
 title: Spatial Correlation & Convolution
+toc_label: Spatial Correlation & Convolution
 categories: ImageProcessing
 tags: [CV, ImageProcess]
 author_profile: false

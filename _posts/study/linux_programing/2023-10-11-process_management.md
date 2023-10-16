@@ -1,6 +1,7 @@
 ---
 layout: single
 title: Process Management
+toc_label: Process Management
 categories: Linux
 tags: [Linux, Uni]
 author_profile: false

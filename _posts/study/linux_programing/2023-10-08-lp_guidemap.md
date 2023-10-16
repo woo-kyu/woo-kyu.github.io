@@ -1,6 +1,7 @@
 ---
 layout: single
 title: Linux Programing Map
+toc_label: Linux Programing Map
 categories: Linux
 tags: [Linux, Uni, Map]
 author_profile: false

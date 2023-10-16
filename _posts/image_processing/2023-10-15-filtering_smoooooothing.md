@@ -1,6 +1,7 @@
 ---
 layout: single
 title: Smoooooothing
+toc_label: Smoooooothing
 categories: ImageProcessing
 tags: [CV, ImageProcess]
 author_profile: false

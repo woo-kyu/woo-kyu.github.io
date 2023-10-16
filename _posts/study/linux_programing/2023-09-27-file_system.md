@@ -1,6 +1,7 @@
 ---
 layout: single
 title: File System
+toc_label: File System
 categories: Linux
 tags: [Linux, Uni]
 author_profile: false

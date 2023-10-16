@@ -11,7 +11,7 @@ use_tex: false
 
 <br>
 
-자료 참조: 영상처리(원지혜 교수님) 자료, 구글링, chatGPT, etc...
+Reference : 영상처리(원지혜 교수님) 강의 자료, 구글링, chatGPT, etc...
 
 <br>
 

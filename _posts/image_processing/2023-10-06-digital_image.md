@@ -1,6 +1,7 @@
 ---
 layout: single
-title: Digital Image 
+title: Digital Image
+toc_label: Digital Image
 categories: ImageProcessing
 tags: [CV, ImageProcess]
 author_profile: false

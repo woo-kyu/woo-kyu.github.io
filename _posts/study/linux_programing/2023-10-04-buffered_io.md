@@ -1,6 +1,7 @@
 ---
 layout: single
 title: Buffered I/O
+toc_label: Buffered I/O
 categories: Linux
 tags: [Linux, Uni]
 author_profile: false

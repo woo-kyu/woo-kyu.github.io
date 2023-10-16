@@ -1,6 +1,7 @@
 ---
 layout: single
 title: Sharpening
+toc_label: Sharpening
 categories: ImageProcessing
 tags: [CV, ImageProcess]
 author_profile: false

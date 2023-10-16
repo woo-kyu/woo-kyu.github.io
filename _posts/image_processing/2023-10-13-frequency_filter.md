@@ -1,6 +1,7 @@
 ---
 layout: single
 title: Frequency Filter
+toc_label: Frequency Filter
 categories: ImageProcessing
 tags: [CV, ImageProcess]
 author_profile: false

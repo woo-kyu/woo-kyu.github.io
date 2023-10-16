@@ -1,6 +1,7 @@
 ---
 layout: single
 title: Filtering
+toc_label: Filtering
 categories: ImageProcessing
 tags: [CV, ImageProcess]
 author_profile: false

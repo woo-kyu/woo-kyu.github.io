@@ -1,6 +1,7 @@
 ---
 layout: single
 title: Histogram
+toc_label: Histogram
 categories: ImageProcessing
 tags: [CV, ImageProcess]
 author_profile: false
