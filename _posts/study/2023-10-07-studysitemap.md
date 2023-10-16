@@ -19,5 +19,8 @@ use_tex: false
 
 [Image Processing]({{site.url}}/image_processing/ip_guidemap)
 
+<br>
+
 ## Mobile Programing: Kotlin
+
 [Mobile Programing: Kotlin]({{site.url}}/android/mobile_programing_map)
