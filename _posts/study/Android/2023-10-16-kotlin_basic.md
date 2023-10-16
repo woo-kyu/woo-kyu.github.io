@@ -17,7 +17,6 @@ use_tex: false
 
 ---
 
-### 특징
 - Java 를 완전히 대체할 수 있다.
 - Java 보다 문법이 간결하다.
 - 안정성이 높다.
@@ -84,4 +83,46 @@ any!!.add(100) // 값 100을 추가
 <br>
 
 # 조건문: if / when
-##
+### if
+- 이중 분기문
+- true / false 에 따라 작업 변경
+
+### when
+- 다중 분기문
+- 경우에 맞게 작업
+- 각각의 값에 따라 처리.
+- 범위로 처리: in 사용
+  - 'in n .. m ->'
+
+```kotlin
+if(조건문){}
+when(식){
+  값 1 -> // true 시
+  값 2->
+  else ->
+}
+
+e.g.,
+var a : Int = (count / 10) * 10
+when (a) {
+  100 -> println()
+  90 -> println()
+  in 70 .. 90 -> println()
+  else -> println()
+}
+```
+
+<br>
+
+# 배열
+### 1차원
+- var 배열명 = Array<데이터 형식>(개수, {초기값}) or Array<데이터 형식>(개수) {초기값}
+```kotlin
+e.g.,
+var a = Array<Int>(4,{0})
+a[0] = 10
+a[3] = 3
+```
+<br>
+
+### 2차원
