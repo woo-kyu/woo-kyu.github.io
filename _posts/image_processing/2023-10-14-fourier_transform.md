@@ -12,6 +12,9 @@ use_tex: true
 > is a transform that converts a function into a form that describes the frequencies present in the original function.
 >> 시간이나 공간에 대한 함수를 시간 또는 공간 주파수 성분으로 분해하는 변환
 
+<img width="500" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/70b2169a-26fd-49b9-b9d4-f14400a621b0">{: .align-center}
+
+
 <br>
 
 # Fourier Series
@@ -20,6 +23,9 @@ use_tex: true
 > 사인 및 코사인 함수의 직교(orthogonality) 관계를 활용한다.
 >> A Fourier series is an expansion of a periodic function f(x) in terms of an infinite sum of sines and cosines.
 >> Fourier series make use of the orthogonality relationships of the sine and cosine functions.
+
+
+<img width="850" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/a1d381b2-3acf-446b-8198-efbce89963c9">{: .align-center}
 
 
 Fourier Series 의 계산을 'Harmonic Analysis' 라고 칭한다.
@@ -45,9 +51,9 @@ Fourier Series 의 계산을 'Harmonic Analysis' 라고 칭한다.
 - $n$: 양의 정수로, 급수의 항을 결정.
 - 적분 $\int$: 특정 구간 $[\frac{-T}{2},\frac{T}{2}]$ 에서 함수 $f(x)$ 의 면적을 계산한다.
   - 위 계수는 주어진 함수 $f(x)$를 cos 과 sin 함수들의 합으로 근사화 하는데 사용된다.
-  - 각 cos 과 sin 함수는 함수 $f(x)$ 의 특정한 <span style='color:#fff9ff'>진동</span> 또는 <span style='color:#fff9ff'>파장</span>을 나타내며,
+  - 각 cos 과 sin 함수는 함수 $f(x)$ 의 특정한 <span style='color:#fff9ff'>진동</span> 또는 <span style='color:#fff9ff'>파장</span>을 나타낸다.
   - $a_n, b_n$ 은 이 각각의 함수들이 합쳐질 때 $f(x)$ 에 기여하는 정도를 결정한다.
-  - $a_0$은 함수의 전반적인 수준 (또는 offset)을 제공한다.
+  - $a_0$ 은 함수의 전반적인 수준 (또는 offset)을 제공한다.
 
 <br>
 
@@ -64,14 +70,14 @@ Fourier Series 의 계산을 'Harmonic Analysis' 라고 칭한다.
 
 - 위 각각의 계수 $a_n, b_n$은 함수 $f(x)$를 삼각함수, 
 - i.e., $cos(nx)$ 와 $sin(nx)$ 로 분해하는 데 사용되며, 이 삼각 함수들은 직교한다.
-- 이러한 직교성은 크로네커 델타 $(\delta_{mn})$ 와 관련되어 있으며,
+- 이 직교성은 크로네커 델타 $(\delta_{mn})$ 와 관련되어 있다.
 - 이는 다음과 같이 정의할 수 있다.
 
 <img width="985" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/6024b315-d0bb-490c-b5a7-82cc935c50ef">{: .align-center}
 
-- 여기서 $m$ 과 $n$ 은 양의 정수이며, 
-- $\delta_{mn}$은 크로네커 델타로, $m=n$ 일 때 1이고, 그러하지 않을 때 0 이 된다.
-- 이 직교성은 fourier 계수를 찾는 데 사용되는 적분을 단순화 하는 데 도움된다.
+- $m$, $n$: 양의 정수.
+- $\delta_{mn}$: 크로네커 델타. $m=n$ 일 때 1이고, 그러하지 않을 때 0
+- 직교성은 fourier 계수를 찾는 데 사용되는 적분을 단순화 하는 데 도움된다.
 
 <br>
 
@@ -80,16 +86,16 @@ Fourier Series 의 계산을 'Harmonic Analysis' 라고 칭한다.
 > 푸리에 급수를 일반화한 형태로, L이 무한대로 가는 극한에서 복소 푸리에 급수의 일반화이다.
 
 - 이산형 $A_n$ 을 연속형 $F(k)dk$로 바꾸고, $\frac{n}{L}$ 을 k 로 변환한다.
-- 그 후, 합 (sum)을 적분 (integral)로 변경하면, 식이 변형된다.
+- 그 후, 합 (sum)을 적분 (integral)로 변경하면 식이 변형된다.
 
 - 아래는 푸리에 변환과 역푸리에 변환의 formula 이다.
 
 <img width="1028" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/52ef4413-feb8-477f-aa19-dc97ddca9a9e">{: .align-center}
 
-- $F(k)$ 는 $f(x)$ 의 푸리에 변환이다.
-- $f(x)$ 는 $F(k)$ 의 역푸리에 변환이다.
-- k 는 주파수 공간에서의 변수이다.
-- $e^{2\pi ikx}$ 와 $e^{-2\pi ikx}$ 는 각각 복소 지수 함수에서의 Positive 및 Negative 회전을 나타낸다.  
+- $F(k)$: $f(x)$ 의 푸리에 변환이다.
+- $f(x)$: $F(k)$ 의 역푸리에 변환이다.
+- k: 주파수 공간에서의 변수이다.
+- $e^{2\pi ikx}$, $e^{-2\pi ikx}$: 각각 복소 지수 함수에서의 Positive 및 Negative 회전을 나타낸다.  
 
 <br>
 
