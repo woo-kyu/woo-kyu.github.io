@@ -140,7 +140,7 @@ use_tex: true
   - 이 경로는 일련의 픽셀로 이루어져 있으며, 각각의 연속된 픽셀 쌍은 서로 인접해야 한다.
 - Connected component: Set of pixels that are connected
   - 연결된 픽셀간의 집합으로, 집합 내 모든 픽셀 쌍에 대해 어떤 경로가 존재하면, 그 집합은 연결 성분이라고 한다.
-  - 연결 성분 내 모든 픽셀은 서로 연결되어 있으ㅡ며, 성분 외부의 픽셀과는 연결되어 있지 않다.
+  - 연결 성분 내 모든 픽셀은 서로 연결되어 있으며, 성분 외부의 픽셀과는 연결되어 있지 않다.
 - Connected set(= region): There is only one connected component
   - 연결된 픽셀들의 집합을 지칭하며, 이는 일반적으로 영상 내에서 동일한 특성(예: 색상, 강도)을 공유하는 픽셀들로 구성된다.
   - "Region"이라는 용어는 종종 연결된 픽셀들의 집합이 동일한 속성이나 특성을 가지고 있음을 의미하는 데 사용됩니다. 예를 들어, 같은 색의 영역이나 같은 질감의 영역 등이 있다. 
@@ -304,14 +304,15 @@ use_tex: true
 
 <br>
 
-<img width="854" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/f05f1269-016a-4580-8eca-d350ddefc790">{: .align-center}
-
-<br>
-
 #### Affine Transformation (어파인 변환)
 - 종류: Scaling (확대/축소), Translation (이동), Rotation (회전), Shearing (기울임)
 - 표현: 동차 좌표 (homogeneous coordinates)를 사용하여 아핀 변환을 표현합니다.
 - 설명: 아핀 변환은 이미지를 선형적으로 변환하고, 이동시키는 연산. 이는 이미지의 기하학적인 형태를 변경하지만, 직선의 평행성은 유지한다.
+
+- 추가설명: [Affine Transform](https://brilliant.org/wiki/affine-transformations/)
+- **Rotation**
+
+<img width="854" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/f05f1269-016a-4580-8eca-d350ddefc790">{: .align-center}
 
 <br>
 
