@@ -80,6 +80,8 @@ var ary = ArrayList<INT>(1) // 1개짜리 배열 리스트
 any!!.add(100) // 값 100을 추가
 ```
 
+#### ㅇㅅㅇ
+
 <br>
 
 # 조건문: if / when
@@ -126,3 +128,18 @@ a[3] = 3
 <br>
 
 ### 2차원
+- var 배열명 = Array<배열 데이터 형식>(행 개수, {배열 데이터 형식(열 개수)})
+- var 배열명 = Array<데이터 형식>(개수) {초기값}
+```kotlin
+E.g., 3x4 2차원 배열 선언
+var b = Array<IntArray>(3,{IntArray(4)})
+b[0][0] = 100
+b[2][3] = 200 
+```
+<img width="296" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/ae585caa-c32a-4437-92e3-b4bd6c4d6720">{: .align-center}
+
+<img width="570" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/cf5188ee-cbdc-4285-8bc6-5b3a03841012">{: .align-center}
+
+<br>
+
+# 반복문 for / while
