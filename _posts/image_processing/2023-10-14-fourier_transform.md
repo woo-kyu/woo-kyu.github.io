@@ -25,7 +25,7 @@ use_tex: true
 >> Fourier series make use of the orthogonality relationships of the sine and cosine functions.
 
 
-<img width="850" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/a1d381b2-3acf-446b-8198-efbce89963c9">{: .align-center}
+<img width="650" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/a1d381b2-3acf-446b-8198-efbce89963c9">{: .align-center}
 
 
 Fourier Series 의 계산을 'Harmonic Analysis' 라고 칭한다.
