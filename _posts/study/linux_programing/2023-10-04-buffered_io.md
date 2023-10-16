@@ -98,7 +98,7 @@ E.g., FILE *file = fopen("example.txt", "r")
 <br>
 
 ## Closing Stream
-```Linux
+```c
 int fclose (FILE *stream);
 ```
 - Any buffered and not-yet-written data is first flushed. 
@@ -108,7 +108,7 @@ int fclose (FILE *stream);
 <br>
 
 ### Closing All Streams
-```Linux
+```c
 int fcloseall (return);
 ```
 - Closing all streams associated with the current process, including standard in, standard out, and standard error
@@ -129,7 +129,7 @@ int fcloseall (return);
 <br>
 
 ### Putting the character back
-```Linux
+```c
 int ungetc (int c, FILE *stream);
 ```
 - On success, c is returned
@@ -140,7 +140,7 @@ int ungetc (int c, FILE *stream);
 <br>
 
 ### Reading an Entire Line
-```Linux
+```c
 char * fgets (char *str, int size, FILE *stream);
 ```
 - Reading up to one less than size bytes from stream and stores the results in str
@@ -192,7 +192,7 @@ char * fgets (char *str, int size, FILE *stream);
 ## Seeking Stream
 
 ### Writing Binary Data
-```Linux
+```c
 size_t fwrite (void *buf, size_t size, size_t wr, FILE *stream);
 ```
 - Writing to stream up to nr elements, each size bytes in length, from the data pointed at by buf
@@ -202,7 +202,7 @@ size_t fwrite (void *buf, size_t size, size_t wr, FILE *stream);
 
 <br>
 
-```Linux
+```c
 int fseek (FILE *stream, long offset, int whence);
 ```
 - whence set to SEEK_SET
@@ -219,7 +219,7 @@ int fseek (FILE *stream, long offset, int whence);
 
 <br>
 
-```Linux
+```c
 void rewind (FILE *stream);
 
 or
@@ -240,7 +240,7 @@ if (errno)
 - The ftell() function returns the current stream position of stream:
   - Unlike lseek(), fseek() does not return the updated position.
 
-```Linux
+```c
 long ftell (FILE *stream);
 
 or
@@ -257,14 +257,14 @@ int fgetpos (FILE *stream, fpos_t *pos);
   - On success, fflush() returns 0.
   - On failure, it returns EOF, and errno is set appropriately.
   - fsync() required to ensure flushed data(by fflush()) to be written into the storage
-```Linux
+```c
 int fflush (FILE *stream);
 ```
 
 <br>
 
 ## Error and End-of-File
-```Linux
+```c
 /* To check if there is an error: Returning a nonzero value if the indicator set, otherwise 0 */
   int ferror (FILE *stream);
   
@@ -275,7 +275,7 @@ int fflush (FILE *stream);
 <br>
 
 ## Obtaining the Associate File Descriptor
-```Linux
+```c
 /* Flush operation required before calling it */
   int fileno (FILE *stream);
 ```
@@ -285,7 +285,7 @@ int fflush (FILE *stream);
 ## Manual File Locking
 
 ### Blocking
-```Linux
+```c
 /* To lock stream */
   void flockfile (FILE *stream);
   
@@ -296,7 +296,7 @@ int fflush (FILE *stream);
 <br>
 
 ### Non-Blocking
-```Linux
+```c
 /* To lock stream */
 int ftrylockfile (FILE *stream);
 ```
