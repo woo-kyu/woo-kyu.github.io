@@ -24,3 +24,6 @@ use_tex: false
 ### 3. Buffered I/O
 
 [Buffered I/O]({{site.url}}/linux/buffered_io)
+
+### 4. Process Management
+[Process Management]({{site.url}}/linux/process_management)
