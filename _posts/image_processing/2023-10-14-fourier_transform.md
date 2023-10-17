@@ -19,7 +19,7 @@ use_tex: true
 
 # Fourier Series
 
-> $sin$ 과 $cos$ 의 무한한 합으로 주기 함수 $f(x)$를 확장한 것이다.
+> <span style='color:#fff9ff'>$sin$ 과 $cos$ 의 무한한 합</span>으로 주기 함수 $f(x)$를 확장한 것이다.
 > 사인 및 코사인 함수의 직교(orthogonality) 관계를 활용한다.
 >> A Fourier series is an expansion of a periodic function f(x) in terms of an infinite sum of sines and cosines.
 >> Fourier series make use of the orthogonality relationships of the sine and cosine functions.
@@ -27,6 +27,10 @@ use_tex: true
 
 <img width="650" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/a1d381b2-3acf-446b-8198-efbce89963c9">{: .align-center}
 
+
+<img width="650" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/00c73d0d-49a5-4bd6-8e39-b188c8218ba1">{: .align-center}
+
+<img width="650" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/f6eca8b5-393a-418b-8f77-1ba37cc0d007">{: .align-center}
 
 Fourier Series 의 계산을 'Harmonic Analysis' 라고 칭한다.
 이는 임의의 periodic 함수를 간단한 항들로 분해하고 이 항들을 개별적으로 해결한 뒤,
@@ -51,9 +55,9 @@ Fourier Series 의 계산을 'Harmonic Analysis' 라고 칭한다.
 - $n$: 양의 정수로, 급수의 항을 결정.
 - 적분 $\int$: 특정 구간 $[\frac{-T}{2},\frac{T}{2}]$ 에서 함수 $f(x)$ 의 면적을 계산한다.
   - 위 계수는 주어진 함수 $f(x)$를 cos 과 sin 함수들의 합으로 근사화 하는데 사용된다.
-  - 각 cos 과 sin 함수는 함수 $f(x)$ 의 특정한 <span style='color:#fff9ff'>진동</span> 또는 <span style='color:#fff9ff'>파장</span>을 나타낸다.
-  - $a_n, b_n$ 은 이 각각의 함수들이 합쳐질 때 $f(x)$ 에 기여하는 정도를 결정한다.
-  - $a_0$ 은 함수의 전반적인 수준 (또는 offset)을 제공한다.
+- 각 cos 과 sin 함수는 함수 $f(x)$ 의 특정한 <span style='color:#fff9ff'>진동</span> 또는 <span style='color:#fff9ff'>파장</span>을 나타낸다.
+- $a_n, b_n$ 은 이 각각의 함수들이 합쳐질 때 $f(x)$ 에 기여하는 정도를 결정한다.
+- $a_0$ 은 함수의 전반적인 수준 (또는 offset)을 제공한다.
 
 <br>
 

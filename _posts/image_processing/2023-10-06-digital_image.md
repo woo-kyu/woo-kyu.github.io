@@ -248,6 +248,8 @@ use_tex: true
 
 > Spatial Operations 는 이미지의 픽셀을 다루는 연산이다.
 
+
+
 <br>
 
 ### Single-Pixel Operation (단일 픽셀 연산)
@@ -268,6 +270,26 @@ use_tex: true
 
 ### Geometric transformations (기하학적 변환)
 
+#### 사상 (Mapping)
+- 화소들의 배치를 변경할 때, 입력 영상의 좌표에 해당하는 해당 목적 영상의 좌표를 찾아, 화소를 옮기는 과정
+
+##### 순 방향 사상
+- 원본 영상의 좌표를 중심으로 목적 영상의 좌표를 계산하여 화소의 위치를 변환하는 방식
+- hole 또는 overlap (빈 픽셀) 문제 발생
+  <img width="600" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/402fe8b2-4497-4b34-954d-b580aa2be6ab">{: .align-center}
+  - hole: 입력 영상의 좌표들로 목적영상의 좌표를 만드는 과정에서 사상되지 않은 화소; 확대 및 회전시 주로 발생
+  - overlap: 원본 영상의 여러 화소가 목적영상의 한 화소로 사상; 축소할 때 주로 발생
+
+<br>
+
+##### 역 방향 사상
+- 목적영상의 좌표를 중심으로 역 변환 계산.
+- 오버랩이나 홀이 발생하지 않는다.
+- 영상 품질이 떨어질 수 있다.
+  <img width="720" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/6b19d9ab-12ff-48c1-8177-5aec5a985f26">{: .align-center}
+
+<br>
+
 #### Spatial Transformation of Coordinates (좌표의 공간 변환)
 - 이미지의 픽셀을 이동시키는 것
   <img width="588" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/e636a2ca-6968-4801-83db-c32ac3d166a1">{: .align-center}
@@ -276,22 +298,30 @@ use_tex: true
 <br>
 
 #### Intensity Interpolation (밝기 보간)
+- 일반적으로 영상 확대 시: resolution 확대
 - 공간 변환 후 새로운 좌표에 밝기 값을 할당
 - 공간 변환으로 인해 픽셀이 이동하면, 새로운 위치에서의 픽셀 밝기 값을 결정해야 한다.
 - 이때, 보간법(Interpolation)을 사용하여 주변 픽셀의 밝기 값으로부터 새 픽셀의 밝기 값을 추정합니다.
+- 순방향 사상: 홀이 발생
+  - 역방향 사상을 통해 홀의 화소를 찾고, 오버랩 되지 않게 화소를 배치
+    <img width="450" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/838752ac-74fa-4619-8106-d6ab5eb824c0">{: .align-center}
+
 
 <br>
 
 ##### Nearest Neighbor (최근접 이웃)
 - 원리: 변환된 위치에서의 픽셀 값은 원본 이미지에서 가장 가까운 픽셀의 강도 값을 가진다.
 - 특징: 계산 비용이 낮고 간단하지만, 직선 모서리에서 왜곡이 발생할 수 있다.
+  <img width="600" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/e8345857-c500-4587-8f0f-f8d2db745a8c">{: .align-center}
 
 <br>
 
-##### Bilinear (양선형)
+##### Bi-linear (양선형)
 - 원리: 변환된 위치에서의 픽셀 값은 주변 네 개의 픽셀 강도 값에 가중치를 둔 합으로 계산된다.
 - $v(x,y)=ax+by+cxy+d$
 - 최근접 이웃 방법에 비해 경계가 부드럽지만, 계산 비용이 더 높다.
+  <img width="600" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/38691a13-d83b-4184-b361-3bb4fcb6e64d">{: .align-center}
+  <img width="720" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/4b08dbd1-7039-4ee7-b9a0-b3344d129563">{: .align-center}
 
 <br>
 
