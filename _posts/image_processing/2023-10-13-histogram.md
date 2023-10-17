@@ -19,7 +19,7 @@ use_tex: true
 ---
 
 - <span style='color:orange'>$r_k$: L-level 디지털 이미지 $f(x,y)$의 강도를 나타낸다.</span>
-  - L-Level: 이지미에서 나타날 수 있는 강도의 총 레벨(종류)를 의미한다.
+  - L-Level: 이미지에서 나타날 수 있는 강도의 총 레벨(종류)를 의미한다.
 - <span style='color:orange'>$f:h(r_k)=n_k$</span> 는 정규화 되지 않은 히스토그램을 나타낸다.
   - $n_k$는 강도 $r_k$를 가진 픽셀의 수. k 는 인텐시티 레벨; 0 부터 L-1 까지의 값을 가짐
 
@@ -54,7 +54,7 @@ use_tex: true
 
 - Intensity Mapping Transformation: $s=T(r), 0\leq r\leq L-1$
 - Assume
-  - $T(r)$은 &0\leq r\leq L-1& 에 대해 (엄밀히) 단조 증가 함수이다.
+  - $T(r)$은 $0\leq r\leq L-1$ 에 대해 (엄밀히) 단조 증가 함수이다.
   - $0\leq T(r)\leq L-1$ 이며, 이미지의 인텐시티 $r$ 는 [0, L-1]의 무작위 변수로 볼 수 있다.
   <img width="800" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/f36f1d94-4da5-4b08-a232-3dac91a1b501">{: .align-center}
 

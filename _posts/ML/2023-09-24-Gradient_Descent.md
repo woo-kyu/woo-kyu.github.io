@@ -100,7 +100,7 @@ is a supplement learning rate
 
 for Local minima problem
 
-[Optima (Local minima problem)]({{site.url}}/ml/Optima(LMP))
+[Optima (Local minima problem)]({{site.url}}/ml/Optima)
 
 ## Pseudo Code
 

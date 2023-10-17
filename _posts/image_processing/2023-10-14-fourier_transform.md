@@ -58,7 +58,7 @@ Fourier Series 의 계산을 'Harmonic Analysis' 라고 칭한다.
 <br>
 
 ## Calculating Coefficients (E.g.)
-- 두 함수 $f_1(x)~=~\textrm{cos}(x)$ 와, $f_2~=~textrm{sin}(x)$ 가
+- 두 함수 $f_1(x)~=~\textrm{cos}(x)$ 와, $f_2~=~\textrm{sin}(x)$ 가
 - $[-\pi,\pi]$ 구간에서 complete orthogonal system(완전한 직교 시스템)을 형성할 때,
 - 푸리에 급수는 어떠한 함수 $f(x)$ 의 근사를 다음과 같이 도출할 수 있다.
 
@@ -135,7 +135,7 @@ Fourier Series 의 계산을 'Harmonic Analysis' 라고 칭한다.
 <br>
 
 ### Fast Fourier Transform (FFT, 빠른 푸리에 변환)
-> 산 푸리에 변환(Discrete Fourier Transform, DFT)을 효과적이고 빠르게 계산하기 위한 알고리즘.
+> 이산 푸리에 변환(Discrete Fourier Transform, DFT)을 효과적이고 빠르게 계산하기 위한 알고리즘.
 > DFT 의 계산 복잡도를 상당히 줄여주어, 대용량 데이터에 대한 푸리에 변환을 실시간 혹은 빠른 시간 내에 계산 가능
 
 - 일반적으로 DFT 의 계산 복잡도는 $O(N^2)$이다. 

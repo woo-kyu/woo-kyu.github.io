@@ -31,7 +31,7 @@ use_tex: true
 - Blur:
   - 이미지의 선명도를 줄인다.
   - 고주파 성분을 감쇠시키고, 노이즈를 줄인다.
-  - 펼균화 또는 저주파 필터링 기법 사용
+  - 평균화 또는 저주파 필터링 기법 사용
 
 - Sharpening
   - 이미지의 선명도 향상
@@ -98,7 +98,7 @@ use_tex: true
 ## Laplacian
 - 라플라시안은 2차 도함수(미분 연산자)를 기반으로 한다.
   - <span style='color:#fff9ff'>Second-order derivatives</span> for image sharpening
-- ㅇ이미지의 두 번째 공간 도함수의 합으로 정의
+- 이미지의 두 번째 공간 도함수의 합으로 정의
 - 이미지에서의 강도의 변화를 강조
   <img width="425" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/64454626-ce3d-4352-b419-2c619d7bea3a">{: .align-center}
   - $\triangledown^2f$: 라플라시안 연산자
@@ -204,7 +204,7 @@ use_tex: true
 - 원본 이미지에서 블러된 이미지를 빼 선명도를 높임
 
 ### Process
-- 원본 이미지를 Blur 화. $(\overline{f}(x,y)$
+- 원본 이미지를 Blur 화. $(\overline{f}(x,y))$
 - Blur 이미지를 원본 이미지에서 삭제하여 마스크 생성.
   - $g_{\textrm{mask}}(x,y)=f(x,y)-\overline{f}(x,y)$
 - 마스크를 원본 이미지에 추가
