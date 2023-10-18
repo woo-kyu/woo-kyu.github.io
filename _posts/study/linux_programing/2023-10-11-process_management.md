@@ -495,7 +495,48 @@ pid_t waitpid (pid_t pid, int *status, int options);
 int waitid (idtype_t idtype, id_t id, siginfo_t *infop, int options);
 ```
 - idtype: 해당하는 type 의 id를 기다린다 
+  - P_PID: id 매개변수로 주어진 프로세스 ID와 일치하는 자식 프로세스를 기다린다
+  - P_GID: id 매개변수로 주어진 프로세스 그룹 ID와 일치하는 자식 프로세스를 기다린다.
+  - P_ALL: 어떤 자식 프로세스든지 기다린다. 이 경우 id 매개변수는 무시한다.
 
+- id: idtype에 따라 프로세스 또는 프로세스 그룹을 식별하는 데 사용
+  - id_t 타입을 사용. 일반적인 식별 번호를 나타내는 타입이다.
+  - id_t 타입은 다양한 ID를 나타낼 수 있기 때문에 waitid() 함수에서 사용된다.
 
+- optioins: 
+  - WEXITED: 함수는 종료된 자식 프로세스( id와 idtype에 의해 결정됨)를 기다린다
+  - WSTOPPED: 시그널의 수신에 응답하여 실행을 중단한 자식 프로세스를 기다린다
+  - WCONTINUED: 시그널의 수신에 응답하여 실행을 계속한 자식 프로세스를 기다린다
+  - WNOHANG: 함수는 차단되지 않고, 이미 종료(또는 중지 또는 계속)된 일치하는 자식 프로세스가 없는 경우 즉시 반환된다
+  - WNOWAIT: 함수는 일치하는 프로세스를 좀비 상태에서 제거하지 않습니다. 이 프로세스는 미래에 대기할 수 있다.
 
+- infop: waitid() 함수가 성공적으로 자식 프로세스를 기다린 후에는, infop 매개변수를 채운다. 이 매개변수는 유효한 siginfo_t 타입을 가리키는 포인터여야 한다.
+  - si_pid: 자식 프로세스의 pid이다.
+  - si_uid: 자식 프로세스의 uid이다.
+  - si_code: 자식이 종료, 시그널로 인한 사망, 시그널로 중지, 또는 시그널로 계속될 때 각각 CLD_EXITED, CLD_KILLED, CLD_STOPPED, 또는 CLD_CONTINUED로 설정된다
+  - si_signo: SIGCHLD로 설정된다
+  - si_status:
+    - si_code가 CLD_EXITED인 경우, 이 필드는 자식 프로세스의 종료 코드이다
+    - 그렇지 않으면, 이 필드는 상태 변경의 원인이 된 자식에게 전달된 시그널의 번호이다.
 
+- errno
+  - CHLD: id와 idtype에 의해 지정된 프로세스 또는 프로세스들이 존재하지 않음
+  - EINTR: options에 WNOHANG이 설정되지 않았고, 시그널이 실행을 중단
+  - EINVAL: options 인수 또는 id와 idtype 인수의 조합이 유효하지 않음.
+
+<br>
+
+## BSD wants to Play: wait3() and wait4()
+- wait3(): 어떤 자식 프로세스든 상태가 바뀔 때까지 기다린다
+- wait4(): pid 매개변수로 지정된 특정 자식 프로세스의 상태 변화를 기다린다
+- options 인자는 waitpid()와 동일한 방식으로 동작한다
+
+<img width="700" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/62a060a7-7be5-43f3-9a57-d7ecb64e346c">{: .align-center}
+
+<img width="800" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/72317556-53b4-4e15-8eae-5945992d6890">{: .align-center}
+
+<img width="800" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/2326611d-c1fe-4fca-82a7-e32605f1272f">{: .align-center}
+
+<img width="800" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/bbf69b83-036f-4498-99a7-1a6d21d6c96a">{: .align-center}
+
+<br>
