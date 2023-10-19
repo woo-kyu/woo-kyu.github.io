@@ -213,13 +213,28 @@ Fourier Series 의 계산을 'Harmonic Analysis' 라고 칭한다.
 <br>
 
 # Complex Numbers
-<img width="558" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/7be01968-077f-41d1-8938-93b41214c8c3">{: .align-center}
+<img width="600" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/7be01968-077f-41d1-8938-93b41214c8c3">{: .align-center}
 
 - R: 복소수의 실수.
 - I: 허수.
 - j: $\sqrt{-1}$.
 - 켤례 복소수(Conjugate): $C^*=R-jI$
 
+<br>
+
+## Represent in polar coordinates
+- 극좌표
+-  <img width="600" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/243ff449-5a37-4f88-9339-9b68897fa0d2">{: .align-center}
+  - Length of the vector extending from the origin to point $(R,I)$
+  - $\theta$: Angle between the vector and the real axis
+  - $\tan\theta~=~\frac{I}{R}\rightarrow\theta~=~\arctan(\frac{I}{R})$
+
+<br>
+
+## Euler's Formula
+- 오일러 공식
+- <img width="600" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/8585efc9-3652-4bd2-85c4-721983f97263">{: .align-center}
+- $\therefore C=\|C\|e^{j\theta}$
 
 
 
