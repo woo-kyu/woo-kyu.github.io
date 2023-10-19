@@ -186,7 +186,7 @@ Fourier Series 의 계산을 'Harmonic Analysis' 라고 칭한다.
 
 <img width="515" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/932d6197-a6b1-4007-aa5b-be079a12d84f">{: .align-center}
 
-### 특성
+### Feature
 - 손실 없는 변환: 시간 도메인과 주파수 도메인 간의 왕복은 손실 없이 이루어져야 하며, 변환 과정에서 정보가 손실되지 않아야 한다.
 - 대칭성: 푸리에 변환과 그 역변환은 밀접한 관련이 있으며, 수학적 형태에서 강력한 대칭성을 공유한다.
 - 재구성: 주파수 도메인 표현이 정확하고 완전하다면 역변환은 원래의 시간 도메인 신호를 정확하게 재구성한다.
@@ -211,6 +211,15 @@ Fourier Series 의 계산을 'Harmonic Analysis' 라고 칭한다.
     - $X(f)$: 주파수 도메인에서의 신호. 각 주파수 성분의 강도
 
 <br>
+
+# Complex Numbers
+<img width="558" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/7be01968-077f-41d1-8938-93b41214c8c3">{: .align-center}
+
+- R: 복소수의 실수.
+- I: 허수.
+- j: $\sqrt{-1}$.
+- 켤례 복소수(Conjugate): $C^*=R-jI$
+
 
 
 
