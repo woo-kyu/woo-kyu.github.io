@@ -212,7 +212,7 @@ Fourier Series 의 계산을 'Harmonic Analysis' 라고 칭한다.
 
 <br>
 
-# Complex Numbers
+## Complex Numbers
 <img width="600" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/7be01968-077f-41d1-8938-93b41214c8c3">{: .align-center}
 
 - R: 복소수의 실수.
@@ -222,7 +222,7 @@ Fourier Series 의 계산을 'Harmonic Analysis' 라고 칭한다.
 
 <br>
 
-## Represent in polar coordinates
+### Represent in polar coordinates
 - 극좌표
 -  <img width="600" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/243ff449-5a37-4f88-9339-9b68897fa0d2">{: .align-center}
   - Length of the vector extending from the origin to point $(R,I)$
@@ -231,7 +231,7 @@ Fourier Series 의 계산을 'Harmonic Analysis' 라고 칭한다.
 
 <br>
 
-## Euler's Formula
+### Euler's Formula
 - 오일러 공식
 - <img width="600" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/8585efc9-3652-4bd2-85c4-721983f97263">{: .align-center}
 - $\therefore C=\|C\|e^{j\theta}$
