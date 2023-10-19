@@ -3,7 +3,7 @@ layout: single
 title: Fourier Transform
 toc_label: Fourier Transform
 categories: ImageProcessing
-tags: [CV, ImageProcess]
+tags: [CV, ImageProcess, Fourier]
 author_profile: false
 search: true
 use_tex: true
