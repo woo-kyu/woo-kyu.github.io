@@ -27,10 +27,7 @@ use_tex: true
 
 <img width="650" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/a1d381b2-3acf-446b-8198-efbce89963c9">{: .align-center}
 
-
-<img width="650" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/00c73d0d-49a5-4bd6-8e39-b188c8218ba1">{: .align-center}
-
-<img width="650" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/f6eca8b5-393a-418b-8f77-1ba37cc0d007">{: .align-center}
+<img width="400" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/f6eca8b5-393a-418b-8f77-1ba37cc0d007">{: .align-center}
 
 Fourier Series 의 계산을 'Harmonic Analysis' 라고 칭한다.
 이는 임의의 periodic 함수를 간단한 항들로 분해하고 이 항들을 개별적으로 해결한 뒤,
@@ -213,7 +210,7 @@ Fourier Series 의 계산을 'Harmonic Analysis' 라고 칭한다.
 <br>
 
 ## Complex Numbers
-<img width="600" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/7be01968-077f-41d1-8938-93b41214c8c3">{: .align-center}
+<img width="450" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/7be01968-077f-41d1-8938-93b41214c8c3">{: .align-center}
 
 - R: 복소수의 실수.
 - I: 허수.
@@ -224,7 +221,7 @@ Fourier Series 의 계산을 'Harmonic Analysis' 라고 칭한다.
 
 ### Represent in polar coordinates
 - 극좌표
--  <img width="600" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/243ff449-5a37-4f88-9339-9b68897fa0d2">{: .align-center}
+-  <img width="450" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/243ff449-5a37-4f88-9339-9b68897fa0d2">{: .align-center}
   - Length of the vector extending from the origin to point $(R,I)$
   - $\theta$: Angle between the vector and the real axis
   - $\tan\theta~=~\frac{I}{R}\rightarrow\theta~=~\arctan(\frac{I}{R})$
@@ -233,7 +230,7 @@ Fourier Series 의 계산을 'Harmonic Analysis' 라고 칭한다.
 
 ### Euler's Formula
 - 오일러 공식
-- <img width="600" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/8585efc9-3652-4bd2-85c4-721983f97263">{: .align-center}
+<img width="450" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/8585efc9-3652-4bd2-85c4-721983f97263">{: .align-center}
 - $\therefore C=\|C\|e^{j\theta}$
 
 
