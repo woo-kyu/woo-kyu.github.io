@@ -80,6 +80,66 @@ Fourier Series 의 계산을 'Harmonic Analysis' 라고 칭한다.
 - $\delta_{mn}$: 크로네커 델타. $m=n$ 일 때 1이고, 그러하지 않을 때 0
 - 직교성은 fourier 계수를 찾는 데 사용되는 적분을 단순화 하는 데 도움된다.
 
+### Kronecker Delta
+- 이산 시간 시스템에서 사용.
+- 두 인덱스 i, j 가 같을 때 1. 이 외의 값에서는 0
+- 주로 시퀸스 데이터나 벡터 내 특정 위치의 값을 선택하는 데 사용
+
+<br>
+
+## Complex Fourier Series
+> 실수 영역에서의 푸리에 급수를 복소수 영역으로 확장
+
+<img width="450" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/02989ca7-6756-4ead-aff2-76cad75a26a2">{: .align-center}
+
+<br>
+
+## Impulse (Delta)
+### Definition
+- 연속 시간 시스템(linear) 시스템에서 사용한다.
+- $t=0$ 에서의 값은 $\infty$. 이 외의 모든 지점에서 0의 값을 가진다.
+- 전체 영역에서의 적분 값: $\int\infty{-\infty}\delta(t)dt=1$
+- t = time
+- Impulse 함수는 무한대의 진폭과 0의 지속 시간을 가지는 스파이크 형태를 띄며, 총 면적은 1이다.
+
+<br>
+
+### Feature
+- 다른 함수와의 적분에서, 특정 지점의 값을 추출하는 (sifting) 속성을 가진다.
+- $\int\infty{-\infty}f(t)\delta(t-t_0)dt=f(t_0)$
+- $t_0$: 임의의 시점에서의 함수 $f(t)$ 값을 추출하는 것을 의미한다.
+- 순간적인 변화를 측정
+  <img width="450" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/d3901528-4ab4-4dfb-a80d-46102ee3f6cd">{: .align-center}
+
+<br>
+
+### Impulse train
+- $s_{\triangle T}(t)$
+- impulse train 은 일정한 간격 $\triangle T$ 로 무한히 많은 impulse 의 합으로 구성된다.
+- 수학적으로, impulse train 은 아래와 같이 표현한다.
+  <img width="450" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/d341c53c-3aa8-4206-a6b6-ccc8c167dd98">{: .align-center}
+- 이 표현은 시간 축 상에서 간격 $\triangle T$ 로 무한히 많은 임펄스들이 위치한다는 것을 나타낸다.
+
+<br>
+
+### Impulse and there sifting properties
+#### Definition
+- 이산 임펄스 함수의 정의 
+- x: assume, 이산 값
+- 이산 impulse 값은 다음과 같이 정의한다.
+  <img width="450" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/18c74df6-26e4-4e33-bc51-5a6749d200e2">{: .align-center}
+- 주어진 식의 합성은 다음과 같이 제약된다. $\sum^{\infty}_{x=-\infty}\delta(x)=1$
+- I.e., 모든 $x$ 값에 대한 $\delta(x)$ 의 합은 1이다.
+
+<br>
+
+#### Sifting Property
+- $\sum^{\infty}_{x=-\infty}f(x)\delta(x)=f(0)$
+- 연속 시간에서의 임펄스 함수의 체(sifting) 에 따른 속성과 유사하게, 이산 임펄스 함수가 특정 지점에서의 함수 f(x)의 값을 추출
+- 임의의 지점 $x_0$일 때, $\sum^{\infty}_{x=-\infty}f(x)\delta(x-x_0)=f(x_0)$
+  - 이는, 임펄스 함수가 $x_0$ 에서의 함수 f(x)의 값을 추출
+    <img width="800" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/0eefa6e6-415c-415d-88e6-86b707ca9d00">
+
 <br>
 
 
