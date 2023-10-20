@@ -293,22 +293,42 @@ Fourier Series 의 계산을 'Harmonic Analysis' 라고 칭한다.
 <img width="450" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/8585efc9-3652-4bd2-85c4-721983f97263">{: .align-center}
 - $\therefore C=\|C\|e^{j\theta}$
 
+<br>
+
+### Convolution
+#### Definition
+- 두 연속 함수 $f(t), h(t)$ 의 convolution 은 다음과 같이 정의된다.
+  <img width="450" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/800a3a5e-1b7e-43c7-bb92-e71522e55235">{: .align-center}
+  - $f, h$ 의 각 시간 지점에서의 값을 "Flip" 하고, "Slide" 하며 곱한 결과를 적분하여 합성된 결과를 얻는 것.
+
+<br>
+
+#### Fourier Transform by Convolution
+- $(f\starh)(t)$ 의 Fourier transform 은 다음과 같이 표현괸다.
+  <img width="450" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/b6ed58d5-e852-4f76-bc98-c1c682f22469">{: .align-center}
+
+<br>
+
+  <img width="886" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/1e2c4ec1-3bf2-4215-9410-b91c9d428bea">{: .align-center}
+
+<br>
+
+#### 푸리에 변환의 합성 속성
+- 컨볼루션의 결과의 푸리에 변환은 원래 함수들의 푸리에 변화의 곱과 같다.
+- I.e., $F{(f\star h)(t)}=F(\mu)\cdot H(\mu)$
+  - $F(\mu), H(\mu)$ 는 각각 $f(t), h(t)$ 의 푸리에 변환을 나타낸다.
+
+<img width="1229" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/21ea2eb7-b18d-449b-a469-c7f0b0690ba8">{: .align-center}
 
 
+<br>
 
 
+## Advanced Fourier Transform
+[Advanced of Fourier Transform]({{site.url}}/imageprocessing/Advanced Fourier Transform/)
 
 
-
-
-
-
-
-
-
-
-
-
+<br>
 
 
 

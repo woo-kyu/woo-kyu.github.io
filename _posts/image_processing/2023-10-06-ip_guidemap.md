@@ -59,4 +59,4 @@ Reference : 영상처리(원지혜 교수님) 강의 자료, 구글링, chatGPT,
 ### 6. Fourier Transform
 [Fourier Transform]({{site.url}}/imageprocessing/fourier_transform/)
 
-[Advanced of Fourier Transform]({{site.url}}/imageprocessing/freq_domain_filter/)
+[Advanced of Fourier Transform]({{site.url}}/imageprocessing/Advanced Fourier Transform/)
