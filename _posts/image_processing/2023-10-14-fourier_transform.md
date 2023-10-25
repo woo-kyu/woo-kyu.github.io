@@ -311,7 +311,7 @@ Fourier Series 의 계산을 'Harmonic Analysis' 라고 칭한다.
 <br>
 
 #### Fourier Transform by Convolution
-- $(f\starh)(t)$ 의 Fourier transform 은 다음과 같이 표현괸다.
+- $(f\star h)(t)$ 의 Fourier transform 은 다음과 같이 표현괸다.
   <img width="450" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/b6ed58d5-e852-4f76-bc98-c1c682f22469">{: .align-center}
 
 <br>
