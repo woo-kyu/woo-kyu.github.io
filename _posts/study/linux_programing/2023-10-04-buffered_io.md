@@ -62,7 +62,11 @@ use_tex: false
 - To open the file path with the behavior given by mode and associates a new stream with it.
   <img width="720" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/906ed885-b40e-4440-90b0-eef4469fce01">{: .align-center}
 
-### <span style='color:orange'>파일 디스크립터를 얻는것과 파일 스트림을 얻는 것의 차이를 알기</span>
+<br>
+
+<span style='color:orange'>파일 디스크립터를 얻는것과 파일 스트림을 얻는 것의 차이를 알기</span>
+
+<br>
 
 #### File Descriptor
 정의: 파일 디스크립터는 열린 파일 또는 I/O 스트림에 대한 정수형 식별자이다.
