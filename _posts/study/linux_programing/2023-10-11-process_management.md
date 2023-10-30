@@ -526,9 +526,14 @@ int waitid (idtype_t idtype, id_t id, siginfo_t *infop, int options);
 
 <br>
 
+[//]: # (중간고사 범위)
+
 ## BSD wants to Play: wait3() and wait4()
-- wait3(): 어떤 자식 프로세스든 상태가 바뀔 때까지 기다린다
+- 프로세스 종료에 대한 더 고급 정보를 제공해 준다.
+- wait3(): 어떤 자식 프로세스든 상태가 바뀔 때까지 기다린다.
+  - pid 값 지정 불가
 - wait4(): pid 매개변수로 지정된 특정 자식 프로세스의 상태 변화를 기다린다
+  - 특정 pid 값 지정
 - options 인자는 waitpid()와 동일한 방식으로 동작한다
 
 <img width="700" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/62a060a7-7be5-43f3-9a57-d7ecb64e346c">{: .align-center}
@@ -540,3 +545,26 @@ int waitid (idtype_t idtype, id_t id, siginfo_t *infop, int options);
 <img width="800" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/bbf69b83-036f-4498-99a7-1a6d21d6c96a">{: .align-center}
 
 <br>
+
+## Launching and Waiting for a New Process
+```c
+int system (const char *command);
+```
+- fork-exec-exit 과 같은 함수를 포함.
+- 동기적 프로세스 호출 또는 자식 프로세스 종료 대기를 위한 함수이다.
+- 실행 후 결과 값을 int 로 반환
+- 성공적인 실행함에도 불구하고, 실패 리턴값을 받을 수 있는데: 이는 실행은 가능 하나 exec-exit 함수 실패 시
+  - Two cases of failure code even in success, either failure from invoking the command or failure from executing the command(shell)
+  - system() 함수를 사용할 때, 성공적으로 함수가 호출되어 명령어가 실행되었다 하더라도, 두 가지 경우에서 '실패 코드'를 반환할 수 있습니다. 
+    - 명령어 호출 실패 (Invocation Failure): 이 경우는 system() 함수가 외부 명령어를 실행시키기 위해 쉘을 올바르게 시작하지 못했을 때 발생합니다. 예를 들어, 시스템에 /bin/sh 쉘이 없거나, 시스템 리소스에 문제가 있어 새로운 프로세스를 시작할 수 없는 상황에서 이러한 오류가 발생할 수 있습니다. 
+    - 명령어 실행 실패 (Execution Failure): 이 경우는 쉘이 올바르게 시작되어 명령어를 호출했지만, 해당 명령어의 실행 자체에서 문제가 발생했을 때입니다. 예를 들어, 호출된 스크립트나 프로그램이 오류 코드를 반환하거나, 실행 도중 예상치 못한 문제가 발생하여 비정상적으로 종료됐을 때 이런 상태가 반환됩니다. 
+  - system() 함수의 반환 값은 이러한 두 가지 유형의 실패를 포함하여, 실제로 실행된 명령어의 종료 상태를 나타내기 때문에, 함수가 성공적으로 명령어를 호출했더라도 명령어의 실행 결과에 따라 실패 상태를 반환할 수 있습니다. 이는 WEXITSTATUS 매크로를 사용하여 추출할 수 있는 종료 코드에서 확인할 수 있습니다.
+
+<img width="447" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/346ab6d8-bebb-4c36-a8b7-5543d87fc1e8">{: .align-center}
+
+명령어 실행 중:
+
+SIGCHLD 시그널은 차단(blocked)됩니다. 이는 자식 프로세스가 종료되었을 때 부모 프로세스에 알리는 시그널로, system() 함수는 이 시그널을 처리하지 않기 때문에 기본적으로 차단합니다.
+SIGINT (인터럽트 시그널)과 SIGQUIT (종료 시그널)은 무시(ignored)됩니다. 이는 사용자가 키보드 입력 (Ctrl+C 또는 Ctrl+\)을 통해 명령어 실행을 중단하려고 해도, system() 함수가 이러한 시그널을 무시하고 명령어가 완전히 실행되기를 기다린다는 것을 의미합니다.
+system() 함수를 반복문 내에서 호출하는 경우, 프로그램이 자식 프로세스의 종료 상태를 제대로 확인하도록 해야 합니다. 이는 반복문 내에서 여러 번의 system() 호출이 이루어질 때, 각 호출이 성공적으로 완료되었는지, 그리고 예상한 결과를 반환했는지를 확인하기 위함입니다. 종료 상태를 확인하지 않고 다음 반복으로 넘어가면, 예기치 않은 동작이나 오류를 놓칠 수 있습니다.
+system() 함수를 사용할 때 이러한 세부 사항을 이해하는 것은 중요합니다. 왜냐하면 이 함수는 외부 명령어를 실행할 때 시그널 처리를 어떻게 할지, 명령어의 종료 상태를 어떻게 확인할지 등 프로세스 관리와 오류 처리에 영향을 미치기 때문입니다.
