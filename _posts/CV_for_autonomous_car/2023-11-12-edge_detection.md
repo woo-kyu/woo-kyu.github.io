@@ -22,11 +22,11 @@ use_tex: true
 <br>
 
 ### Input
-<img width="900" alt="untitle" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/9b301a2a-bbc6-4e8a-8198-fa89c2373e0c">{: .align-center}
+<img width="450" alt="untitle" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/9b301a2a-bbc6-4e8a-8198-fa89c2373e0c">{: .align-center}
 
 <br>
 
-<img width="900" alt="untitle" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/d2cd0828-ad9a-4f53-881e-e8a4d2976cf5">{: .align-center}
+<img width="450" alt="untitle" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/d2cd0828-ad9a-4f53-881e-e8a4d2976cf5">{: .align-center}
 
 <br>
 
@@ -44,11 +44,11 @@ edge_x = np.uint8(255 * edge_x / np.max(edge_x))
 
 ### Output
 
-<img width="600" alt="untitle" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/a96405cd-49a4-4148-9e6b-d384700ad2cd">{: .align-center}
+<img width="450" alt="untitle" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/a96405cd-49a4-4148-9e6b-d384700ad2cd">{: .align-center}
 
 <br>
 
-<img width="600" alt="untitle" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/b9ef1e0d-a2f0-43ca-99ad-52eb78550668">{: .align-center}
+<img width="450" alt="untitle" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/b9ef1e0d-a2f0-43ca-99ad-52eb78550668">{: .align-center}
 
 
 <br>
@@ -96,11 +96,13 @@ edge_x = np.where(edge_x > threshold, edge_x, 0)
 
 <br>
 
-![image](https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/29c8a16b-0ef5-474f-b361-37f6c14b660b)
+
+<img width="450" alt="untitle" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/29c8a16b-0ef5-474f-b361-37f6c14b660b)">{: .align-center}
 
 <br>
 
-![image](https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/82343b8d-4188-4082-a244-6a68719512a0)
+<img width="450" alt="untitle" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/82343b8d-4188-4082-a244-6a68719512a0">{: .align-center}
+
 
 <br>
 
@@ -119,11 +121,13 @@ binary[img_his >= threshold] = 255
 
 <br>
 
-![image](https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/9241fe3d-dabc-41d9-88e6-cf633c8b3929)
+<img width="450" alt="untitle" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/9241fe3d-dabc-41d9-88e6-cf633c8b3929">{: .align-center}
+
 
 <br>
 
-![image](https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/3fa78935-bffe-42d9-bbe3-0e7bd61f9b16)
+<img width="450" alt="untitle" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/3fa78935-bffe-42d9-bbe3-0e7bd61f9b16">{: .align-center}
+
 
 <br>
 

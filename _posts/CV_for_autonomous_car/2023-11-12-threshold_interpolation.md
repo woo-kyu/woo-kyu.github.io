@@ -14,11 +14,11 @@ use_tex: true
 
 ## Original
 
-<img width="600" alt="untitle" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/a96405cd-49a4-4148-9e6b-d384700ad2cd">{: .align-center}
+<img width="450" alt="untitle" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/9b301a2a-bbc6-4e8a-8198-fa89c2373e0c">{: .align-center}
 
 <br>
 
-<img width="600" alt="untitle" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/b9ef1e0d-a2f0-43ca-99ad-52eb78550668">{: .align-center}
+<img width="450" alt="untitle" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/d2cd0828-ad9a-4f53-881e-e8a4d2976cf5">{: .align-center}
 
 <br>
 
@@ -45,17 +45,24 @@ for y in range(height):
 
 ### Experimental Image
 
-![image](https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/6fa8cba2-9d29-49d9-88b9-59c1d895b1f4)
+<img width="450" alt="untitle" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/6fa8cba2-9d29-49d9-88b9-59c1d895b1f4)">{: .align-center}
 
-![image](https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/9d89a446-3fe5-4dd2-9ab9-aafc99e38736)
-
-
-### Comparison Image
-
-![image](https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/4d6502ef-46a5-47f1-84a8-91b471b61862)
 
 <br>
 
-![image](https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/113ad32d-7f6c-432a-bebe-ed6c880a8e1b)
+<img width="450" alt="untitle" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/9d89a446-3fe5-4dd2-9ab9-aafc99e38736">{: .align-center}
 
 
+<br>
+
+### Comparison Image
+
+<img width="450" alt="untitle" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/4d6502ef-46a5-47f1-84a8-91b471b61862">{: .align-center}
+
+
+<br>
+
+<img width="450" alt="untitle" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/113ad32d-7f6c-432a-bebe-ed6c880a8e1b">{: .align-center}
+
+
+<br>
