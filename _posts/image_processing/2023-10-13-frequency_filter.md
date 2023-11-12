@@ -3,7 +3,7 @@ layout: single
 title: Frequency Filter
 toc_label: Frequency Filter
 categories: ImageProcessing
-tags: [CV, ImageProcess]
+tags: [CV, ImageProcessing]
 author_profile: false
 search: true
 use_tex: true

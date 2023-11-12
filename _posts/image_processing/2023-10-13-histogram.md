@@ -3,7 +3,7 @@ layout: single
 title: Histogram
 toc_label: Histogram
 categories: ImageProcessing
-tags: [CV, ImageProcess]
+tags: [CV, ImageProcessing]
 author_profile: false
 search: true
 use_tex: true

@@ -3,7 +3,7 @@ layout: single
 title: Advanced Fourier Transform
 toc_label: Advanced Fourier Transform
 categories: ImageProcessing
-tags: [CV, ImageProcess]
+tags: [CV, ImageProcessing]
 author_profile: false
 search: true
 use_tex: true

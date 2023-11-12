@@ -3,7 +3,7 @@ layout: single
 title: Mechanics of Linear Spatial Filtering
 toc_label: Mechanics of Linear Spatial Filtering
 categories: ImageProcessing
-tags: [CV, ImageProcess]
+tags: [CV, ImageProcessing]
 author_profile: false
 search: true
 use_tex: true

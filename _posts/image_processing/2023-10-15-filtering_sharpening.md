@@ -3,7 +3,7 @@ layout: single
 title: Sharpening
 toc_label: Sharpening
 categories: ImageProcessing
-tags: [CV, ImageProcess]
+tags: [CV, ImageProcessing]
 author_profile: false
 search: true
 use_tex: true
