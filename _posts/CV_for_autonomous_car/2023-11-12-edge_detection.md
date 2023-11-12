@@ -44,11 +44,11 @@ edge_x = np.uint8(255 * edge_x / np.max(edge_x))
 
 ### Output:
 
-<img width="900" alt="untitle" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/a96405cd-49a4-4148-9e6b-d384700ad2cd">{: .align-center}
+<img width="600" alt="untitle" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/a96405cd-49a4-4148-9e6b-d384700ad2cd">{: .align-center}
 
 <br>
 
-<img width="900" alt="untitle" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/b9ef1e0d-a2f0-43ca-99ad-52eb78550668">{: .align-center}
+<img width="600" alt="untitle" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/b9ef1e0d-a2f0-43ca-99ad-52eb78550668">{: .align-center}
 
 
 <br>
@@ -165,6 +165,5 @@ cv2.Laplacian(src, ddepth)
 ## Prewitt
 
 <br>
-
 
 
