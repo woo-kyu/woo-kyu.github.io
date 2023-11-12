@@ -21,7 +21,7 @@ use_tex: true
 
 <br>
 
-### Input:
+### Input
 <img width="900" alt="untitle" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/9b301a2a-bbc6-4e8a-8198-fa89c2373e0c">{: .align-center}
 
 <br>
@@ -42,7 +42,7 @@ edge_x = np.uint8(255 * edge_x / np.max(edge_x))
 
 <br>
 
-### Output:
+### Output
 
 <img width="600" alt="untitle" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/a96405cd-49a4-4148-9e6b-d384700ad2cd">{: .align-center}
 
