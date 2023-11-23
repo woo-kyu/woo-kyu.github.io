@@ -1,13 +1,13 @@
 # main links
 main:
   - title: "Category"
-    url: /categories-grid/
+    url: /categories/
   - title: "Tag"
     url: /tags-grid/
-  - title: "Results"
+  - title: "Home"
     url: https://woo-kyu.github.io
-  - title: "Personal"
-    url: /personal/
+  - title: "Personal_space"
+    url: https://www.instagram.com/wo_okyu/
   - title: "Search"
     url: /search/
 
