@@ -126,8 +126,12 @@ $%$ \textrm{PDF}~:~p(z)=\frac{1}{\sqrt{2\pi \sigma}}e^{-\frac{(z-\bar z)^2}{2\si
 
 ## Mean filters
 
-#### Arithmetic mean filter (=box filter)
- - 
+### Arithmetic mean filter (=box filter)
+
+> 산술 평규 필터
+
+- 산술평균 필터는 주어진 영역(윈도우) 내의 모든 픽셀 값들의 평균을 계산한다.
+- $\hat f(x,y)=\frac{1}{mn}\sum_{(r,c)\in S_{xy} g(r,c)$
 
 
 
