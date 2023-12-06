@@ -23,3 +23,6 @@ use_tex: true
 - $g(x,y) = h \star f(x,y) + \eta(x,y)$
   - $h(x,y)$ : 열화 함수의 공간적 표현
   - $\star$ : Convolution (합성곱)
+
+$$\textrm{In Frequency Domain}:G(u,v) = H(u,v)F(u,v)+N(u,v)$$
+
