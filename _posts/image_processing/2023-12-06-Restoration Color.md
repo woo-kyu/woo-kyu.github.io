@@ -141,7 +141,7 @@ $%$ \textrm{PDF}~:~p(z)=\frac{1}{\sqrt{2\pi \sigma}}e^{-\frac{(z-\bar z)^2}{2\si
 > 산술 평규 필터
 
 - 산술평균 필터는 주어진 영역(윈도우) 내의 모든 픽셀 값들의 평균을 계산한다.
-- $%$\hat f(x,y)=\frac{1}{mn}\sum_{(r,c)\in S_{xy} g(r,c)$%$
+$%$\hat f(x,y)=\frac{1}{mn}\sum_{(r,c)\in S_{xy} g(r,c)$%$
   - $S_{xy}$ : $m \times n$ 크기의 사각형 하위 이미지 윈도우
   - $g(r,c)$ : 윈도우 내 픽셀 값
 - 노이즈를 줄이는 데 효과적이지만, 선명도가 감소한다.
@@ -155,12 +155,35 @@ $%$ \textrm{PDF}~:~p(z)=\frac{1}{\sqrt{2\pi \sigma}}e^{-\frac{(z-\bar z)^2}{2\si
 > 기하 평균 필터
 
 - 기하 평균 필터는 윈도우 내의 모든 픽셀 값을 곱한 후, 이를 $\frac{1}{mn}$의 거듭제곱으로 계산한다.
-- $%$\hat f(x,y)=\begin{pmatrix} \prod_{(r,c)\in S(xy)}g(r,c) \end{pmatrix}^{\frac{1}{mn}}$%$
+$%$\hat f(x,y)=\begin{pmatrix} \prod_{(r,c)\in S(xy)}g(r,c) \end{pmatrix}^{\frac{1}{mn}}$%$
   - $\prod$ : Times
 - 기하 평균 필터는 산술 평균 필터에 비해 영상의 세부 사항을 덜 잃어버리는 경향이 있다.
 - 특히 멀티플리케이티브(곱셈적) 노이즈에 효과적이다.
 - 영역 내의 픽셀 값들을 곱한 후 거듭제곱근을 취하여 노이즈를 줄입니다. 세부 사항을 보다 잘 보존할 수 있다.
 
+<br>
+
+### Harmonic Mean Filter
+
+> 조화 평균 필터
+
+- 조화 평균 필터는 주어진 영역 내의 픽셀 값의 역수의 평균의 역수를 계산한다.
+$%$\hat f (x,y) = \frac{mn}{\sum_{(r,c)\in S(xy)}\frac{1}{g(r,c)}}}$%$
+  - $S_{xy}$ : $m \times n$ 크기의 사각형 하위 이미지 윈도우
+- 조화 평균 필터는 소금 노이즈(밝은 노이즈)에 효과적이지만, 후추 노이즈(어두운 노이즈)에는 그렇지 않다.
+- 가우시안 노이즈 제거에도 사용
+
+<br>
+
+### Contraharmonic Mean Filter
+
+> 대조 평균 필터
+
+- 대조 평균 필터는 주어진 영역 내의 픽셀 값의 $Q + 1$ 제곱의 합을 픽셀값의 $Q$ 제곱의 합으로 나눈다.
+$%$\hat f(x,y) = \frac{\sum_{(r,c)\in S_{xy}g(r,c)^{Q+1}}}{(r,c)\in S_{xy}g(r,c)^{Q}}$%$
+  - $Q$ : 필터의 차수
+- 대조 평균 필터는 Salt-and-pepper noise 에 효과적이다.
+-  $Q$의 값에 따라 필터의 성질이 달라지며, 적절한 $Q$ 값을 선정하는 것이 중요하다.
 
 
 
