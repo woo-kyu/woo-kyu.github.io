@@ -24,7 +24,19 @@ use_tex: true
   - $h(x,y)$ : 열화 함수의 공간적 표현
   - $\star$ : Convolution (합성곱)
 
-$$\textrm{In Frequency Domain}:G(u,v) = H(u,v)F(u,v)+N(u,v)$$
+$-$\textrm{In Frequency Domain}:G(u,v) = H(u,v)F(u,v)+N(u,v)$-$
 
+<br>
 
+## Image Restoration
+> 원본 이미지와 가능한 가깝게 $\hat f(x,y)$ 를 추정하는 것
+
+<br>
+
+### Topic key-word
+- Additive Noise (가산 잡음,$\eta (x,y)$): 이미지에 추가된 불필요한 정보나 잡음. 이미지의 품질을 저하시키는 주요 원인이다.
+
+<img width="600" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/2364fdc4-43be-48dc-a6f2-c13d2e84ddf6">{: .align-center}
+
+<br>
 
