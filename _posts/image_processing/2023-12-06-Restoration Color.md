@@ -185,8 +185,17 @@ $%$\hat f(x,y) = \frac{\sum_{(r,c)\in S_{xy}g(r,c)^{Q+1}}}{(r,c)\in S_{xy}g(r,c)
 - 대조 평균 필터는 Salt-and-pepper noise 에 효과적이다.
 -  $Q$의 값에 따라 필터의 성질이 달라지며, 적절한 $Q$ 값을 선정하는 것이 중요하다.
 
+<br>
 
+<img width="600" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/7f362bac-ec19-4712-8140-27aaf8a8e13a">{: .align-center}
 
+<br>
+
+## Order - Statistic filter
+
+> 영상의 픽셀 값을 그 주변 픽셀 값들의 통계적 순서에 기반하여 결정
+
+### Median filter
 
 
 
