@@ -24,7 +24,7 @@ use_tex: true
   - $h(x,y)$ : 열화 함수의 공간적 표현
   - $\star$ : Convolution (합성곱)
 
-$_$\textrm{In Frequency Domain}:G(u,v) = H(u,v)F(u,v)+N(u,v)$_$
+$%$\textrm{In Frequency Domain}:G(u,v) = H(u,v)F(u,v)+N(u,v)$%$
 
 <br>
 
@@ -43,6 +43,8 @@ $_$\textrm{In Frequency Domain}:G(u,v) = H(u,v)F(u,v)+N(u,v)$_$
 # Noise Models
 
 ## Gaussian noise
-$_$ \textrm{PDF}~:~p(z)=\frac{1}{\sqrt{2\pi \sigma}}e^{-\frac{(z-\bar z)^2}{2\sigma^2}}, (-\infty < z < \infty) $_$
+$%$ \textrm{PDF}~:~p(z)=\frac{1}{\sqrt{2\pi \sigma}}e^{-\frac{(z-\bar z)^2}{2\sigma^2}}, (-\infty < z < \infty) $%$
+
+
 
 
