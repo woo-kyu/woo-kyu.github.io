@@ -46,6 +46,10 @@ $%$\textrm{In Frequency Domain}:G(u,v) = H(u,v)F(u,v)+N(u,v)$%$
 
 ---
 
+## Noise models
+
+<br>
+
 ### Gaussian noise
 $%$ \textrm{PDF}~:~p(z)=\frac{1}{\sqrt{2\pi \sigma}}e^{-\frac{(z-\bar z)^2}{2\sigma^2}}, (-\infty < z < \infty) $%$
 - PDF : Probability Density Function
@@ -101,6 +105,12 @@ $%$ \textrm{PDF}~:~p(z)=\frac{1}{\sqrt{2\pi \sigma}}e^{-\frac{(z-\bar z)^2}{2\si
 
 ---
 
+<br>
+
+## Restoration in spatial domain
+
+<Br>
+
 ### Noise Parameter Estimate
 
 > 노이즈 파라미터 추정
@@ -132,7 +142,14 @@ $%$ \textrm{PDF}~:~p(z)=\frac{1}{\sqrt{2\pi \sigma}}e^{-\frac{(z-\bar z)^2}{2\si
 
 - 산술평균 필터는 주어진 영역(윈도우) 내의 모든 픽셀 값들의 평균을 계산한다.
 - $\hat f(x,y)=\frac{1}{mn}\sum_{(r,c)\in S_{xy} g(r,c)$
+  - $S_{xy}$ : $m \times n$ 크기의 사각형 하위 이미지 윈도우
+  - $g(r,c)$ : 윈도우 내 픽셀 값
+- 노이즈를 줄이는 데 효과적이지만, 선명도가 감소한다.
+- 균일하거나, 가우시안 노이즈 제거와 같은 기법에서 사용한다.
 
+<br>
+
+### Geometric Mean Filter
 
 
 
