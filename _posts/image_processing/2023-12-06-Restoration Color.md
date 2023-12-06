@@ -42,8 +42,96 @@ $%$\textrm{In Frequency Domain}:G(u,v) = H(u,v)F(u,v)+N(u,v)$%$
 
 # Noise Models
 
-## Gaussian noise
+---
+
+---
+
+### Gaussian noise
 $%$ \textrm{PDF}~:~p(z)=\frac{1}{\sqrt{2\pi \sigma}}e^{-\frac{(z-\bar z)^2}{2\sigma^2}}, (-\infty < z < \infty) $%$
+- PDF : Probability Density Function
+- $z$ : Intensity
+- $\bar z$ : Mean Intensity
+- $\sigma $: Standard deviation (표준편차)
+
+<img width="200" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/73b7728f-1d65-4ffb-9810-ee904d14bfec">{: .align-center}
+
+- 이러한 확률 밀도 함수는 가우시간 잡음이 어떻게 분포하는 지 나타낸다.
+- 통계적으로, 정규 분포를 따르는 무작위 픽셀의 조합이다.
+
+<br>
+
+### Rayleigh noise
+<img width="600" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/c100484f-acc9-4d67-a6c6-6237be687699">{: .align-center}
+
+<br>
+
+### Erlang (Gamma) noise
+<img width="600" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/b776d1c7-cf53-4535-a6a5-52474d18c977">{: .align-center}
+
+<br>
+
+### Exponential noise
+<img width="600" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/e222ec20-8f06-4d80-a978-20dc37786716">{: .align-center}
+
+<br>
+
+### Uniform noise
+
+<img width="600" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/ce32fb15-65ab-47f0-8066-d14294f33741">{: .align-center}
+
+<br>
+
+### Solt and Pepper noise
+
+<img width="600" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/a885f1b4-7a6a-4274-b93c-df57c3d32d25">{: .align-center}
+
+<br>
+
+<img width="600" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/39e4718d-08a1-428c-8357-05cf6907cf73">{: .align-center}
+
+<br>
+
+<br>
+
+# Restoration in spatial domain
+
+> 공간 영역에서의 영상 복원: 노이즈 추정 및 공간 필터링
+
+---
+
+---
+
+### Noise Parameter Estimate
+
+> 노이즈 파라미터 추정
+
+- 실제영상 $f(x,y)$ 에 노이즈 $\eta(x,y)$ 가 더해져, 관측영상 $g(x,y)$ 생성
+  - $g(x,y) = f(x,y) + \eta(x,y)$
+- In frequency domain: $G(u,v)=F(u,v)+N(u,v)$
+- <span style="color:skyblue">노이즈 항</span> $\eta(x,y)$ 또는 $N(u,v)$ 는 일반적으로 <span style="color:skyblue">알려져있지 않다.</span> (알 수 없다.)
+
+<br>
+
+### Spatial filtering
+
+> 공간 필터링
+
+- 공간 필터링은 영상의 각 픽셀에 대해 주변 픽셀의 값들을 사용하여 노이즈를 제거하거나 영상을 개선하는 방법
+- 주로 마스크(또는 커널)를 사용하여 이루어지며, 마스크는 영상의 각 픽셀에 적용되어 새로운 값으로 계산
+- <span style="color:orange">노이즈가 가산적이고 무작위적일 때</span>, i.e., $g(x,y) = f(x,y) + \eta(x,y)$ 의 형태일 때
+  - <span style="color:skyblue">공간 필터링은 효과적</span>이다.
+- 평균 필터, 중앙값 필터, 가우시안 필터와 같이 다양한 필터링 방법을 사용
+
+<br>
+
+## Mean filters
+
+#### Arithmetic mean filter (=box filter)
+ - 
+
+
+
+
 
 
 
