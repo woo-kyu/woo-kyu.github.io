@@ -205,5 +205,53 @@ $%$\hat f(x,y) = \frac{\sum_{(r,c)\in S_{xy}g(r,c)^{Q+1}}}{(r,c)\in S_{xy}g(r,c)
 
 $%$\hat f(x,y)=\underset{\textrm{median}}{{(r,c)}\in S_{xy}}}{g(r,c)}$%$
 
+- $S_{xy}$ : $m \times n$ 크기의 이미지 윈도우
+- 중앙값 필터는 특히 소금-후추 노이즈와 같은 무작위 노이즈에 효과적이다.
+- 영상의 선명도를 유지하면서 노이즈를 제거할 수 있다.
+
+<br>
+
+### Min / min / max point filters
+
+$%$\textrm{MAX: }\hat f(x,y)=\underset{max}{(r,c)\in S_{xy}}{g(r,c)}$%$
+
+$%$\textrm{Min: }\hat f(x,y)=\underset{min}{(r,c)\in S_{xy}}{g(r,c)}$%$
+
+$%$\textrm{Midpoint: }\hat f(x,y)=\frac{1}{2}\begin{bmatrix} \underset{max}{(r,c)\in S_{xy}}{g(r,c)} + \underset{min}{(r,c)\in S_{xy}}{g(r,c)} \end{bmatrix}$%$
+
+- 이들 필터는 무작위로 분포된 노이즈(예: 가우시안 노이즈, 균일 노이즈)에 효과적이다. 
+- 최대/최소 필터는 각각 밝은 또는 어두운 노이즈에 더 효과적일 수 있다.
+
+<img width="600" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/1b950e91-4133-43a4-8541-df92a4a36e87">{: .align-center}
+
+<br>
+
+## Adaptive filters
+
+> 적응형 필터(Adaptive Filters)는 영상처리에서 노이즈 제거를 위해 사용되는 고급 필터링 기법 중 하나이다.
+
+- 이 필터는 영상의 통계적 특성을 기반으로 필터 영역 내의 강도 변화를 고려하여 작동합니다.
+- 적응형 필터는 영상의 로컬 영역에 따라 필터링 방식을 조정하여, 노이즈를 제거하면서도 영상의 중요한 세부 정보(예: 가장자리)를 보존합니다.
+
+- Quantities
+  - $g(x,y)$ : noisy image at (x,y) 
+    - x, y에서의 노이즈가 있는 영상
+  - $\sigma^{2}_{\eta}$
+    - 노이즈 분산
+  - $\bar z_{S_{xy}}$ : local average intensity of the pixels in $S_{xy}$
+    - S 내의 픽셀들의 로컬 평균 강도
+  - $\sigma^{2}_{S_{xy}}$ : local variance of intensities in pixels in $S_{xy}$
+    - 픽셀 강도들의 로컬 분산
+
+- Steps
+  - $\sigma^{2}{\eta}$ = 0, $g(x,y) = (x,y)$
+    - 노이즈 분산이 0일때, g(x,y)는 변화가 없다. 
+    - 노이즈가 없다
+  - \
+
+
+
+
+
 
 
