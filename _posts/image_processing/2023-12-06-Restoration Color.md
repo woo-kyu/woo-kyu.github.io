@@ -217,7 +217,7 @@ $%$\textrm{MAX: }\hat f(x,y) = \textrm{max}_{(r,c)\in S_{xy}}\begin{Bmatrix} g(r
 
 $%$\textrm{Min: }\hat f(x,y) = \textrm{min}_{(r,c)\in S_{xy}}\begin{Bmatrix} g(r,c) \end{Bmatrix}$%$
 
-$%$\textrm{Midpoint: }\hat $%$
+$%$\textrm{Midpoint: }\hat f(x,y) = \frac{1}{2})\begin{pmatrix} \textrm{max}_{(r,c)\in S_{xy}}\begin{Bmatrix} g(r,c) \end{Bmatrix} + \textrm{min}_{(r,c)\in S_{xy}}\begin{Bmatrix} g(r,c) \end{Bmatrix} \end{pmatrix}$%$
 
 - 이들 필터는 무작위로 분포된 노이즈(예: 가우시안 노이즈, 균일 노이즈)에 효과적이다. 
 - 최대/최소 필터는 각각 밝은 또는 어두운 노이즈에 더 효과적일 수 있다.
