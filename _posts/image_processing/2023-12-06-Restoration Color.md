@@ -203,7 +203,7 @@ $%$\hat f(x,y) = \frac{\sum_{(r,c)\in S_{xy}g(r,c)^{Q+1}}}{(r,c)\in S_{xy}g(r,c)
 
 - 중앙값 필터는 주어진 영역 내의 픽셀 값들 중 중앙값으로 해당 픽셀 값을 대체한다.
 
-$%$\hat f(x,y)=\textrm{median}_{(r,c)\in S_{xy}}}{g(r,c)}$%$
+$%$\hat f(x,y)=\underset{\textrm{median}}{{(r,c)}\in S_{xy}}}{g(r,c)}$%$
 
 
 
