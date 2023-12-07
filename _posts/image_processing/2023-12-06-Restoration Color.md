@@ -138,11 +138,11 @@ $%$ \textrm{PDF}~:~p(z)=\frac{1}{\sqrt{2\pi \sigma}}e^{-\frac{(z-\bar z)^2}{2\si
 
 ### Arithmetic mean filter (=box filter)
 
-> 산술 평규 필터
+> 산술 평균 필터
 
 - 산술평균 필터는 주어진 영역(윈도우) 내의 모든 픽셀 값들의 평균을 계산한다.
 
-$%$\hat f(x,y)=\frac{1}{mn}\sum_{(r,c)\in S_{xy} g(r,c)$%$
+$%$ \hat f(x,y)=\frac{1}{mn}\sum_{(r,c)\in S_{xy}} g(r,c) $%$
   - $S_{xy}$ : $m \times n$ 크기의 사각형 하위 이미지 윈도우
   - $g(r,c)$ : 윈도우 내 픽셀 값
 - 노이즈를 줄이는 데 효과적이지만, 선명도가 감소한다.
@@ -184,7 +184,7 @@ $%$\hat f (x,y) = \frac{mn}{\sum_{(r,c)\in S(xy)}\frac{1}{g(r,c)}}$%$
 
 - 대조 평균 필터는 주어진 영역 내의 픽셀 값의 $Q + 1$ 제곱의 합을 픽셀값의 $Q$ 제곱의 합으로 나눈다.
 
-$%$\hat f(x,y) = \frac{\sum_{(r,c)\in S_{xy}g(r,c)^{Q+1}}}{(r,c)\in S_{xy}g(r,c)^{Q}}$%$
+$%$\hat f(x,y) = \frac{\sum_{(r,c)\in S_{xy}g(r,c)^{Q+1}}}{\sum_{(r,c)\in S_{xy}}g(r,c)^{Q}}$%$
   - $Q$ : 필터의 차수
 - 대조 평균 필터는 Salt-and-pepper noise 에 효과적이다.
 -  $Q$의 값에 따라 필터의 성질이 달라지며, 적절한 $Q$ 값을 선정하는 것이 중요하다.
@@ -203,7 +203,7 @@ $%$\hat f(x,y) = \frac{\sum_{(r,c)\in S_{xy}g(r,c)^{Q+1}}}{(r,c)\in S_{xy}g(r,c)
 
 - 중앙값 필터는 주어진 영역 내의 픽셀 값들 중 중앙값으로 해당 픽셀 값을 대체한다.
 
-$%$\hat f(x,y)=\underset{\textrm{median}}{{(r,c)}\in S_{xy}}{g(r,c)}$%$
+$%$\hat f(x,y)=\underset{{(r,c)}\in S_{xy}}{\textrm{median}}\begin{Bmatrix} g(r,c) \end{Bmatrix}$%$
 
 - $S_{xy}$ : $m \times n$ 크기의 이미지 윈도우
 - 중앙값 필터는 특히 소금-후추 노이즈와 같은 무작위 노이즈에 효과적이다.
