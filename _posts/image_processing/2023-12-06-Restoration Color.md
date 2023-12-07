@@ -183,6 +183,7 @@ $%$\hat f (x,y) = \frac{mn}{\sum_{(r,c)\in S(xy)}\frac{1}{g(r,c)}}$%$
 > 대조 평균 필터
 
 - 대조 평균 필터는 주어진 영역 내의 픽셀 값의 $Q + 1$ 제곱의 합을 픽셀값의 $Q$ 제곱의 합으로 나눈다.
+
 $%$\hat f(x,y) = \frac{\sum_{(r,c)\in S_{xy}g(r,c)^{Q+1}}}{(r,c)\in S_{xy}g(r,c)^{Q}}$%$
   - $Q$ : 필터의 차수
 - 대조 평균 필터는 Salt-and-pepper noise 에 효과적이다.
