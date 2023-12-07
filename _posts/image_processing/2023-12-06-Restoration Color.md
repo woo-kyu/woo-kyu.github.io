@@ -203,7 +203,7 @@ $%$\hat f(x,y) = \frac{\sum_{(r,c)\in S_{xy}g(r,c)^{Q+1}}}{\sum_{(r,c)\in S_{xy}
 
 - 중앙값 필터는 주어진 영역 내의 픽셀 값들 중 중앙값으로 해당 픽셀 값을 대체한다.
 
-$%$\hat f(x,y)=\underset{{(r,c)}\in S_{xy}}{\textrm{median}}\begin{Bmatrix} g(r,c) \end{Bmatrix}$%$
+$%$ \hat f(x,y) = \textrm{median}_{(r,c)\in S_{xy}}\begin{Bmatrix} g(r,c) \end{Bmatrix} $%$
 
 - $S_{xy}$ : $m \times n$ 크기의 이미지 윈도우
 - 중앙값 필터는 특히 소금-후추 노이즈와 같은 무작위 노이즈에 효과적이다.
@@ -213,11 +213,11 @@ $%$\hat f(x,y)=\underset{{(r,c)}\in S_{xy}}{\textrm{median}}\begin{Bmatrix} g(r,
 
 ### Min / min / max point filters
 
-$%$\textrm{MAX: }\hat f(x,y)=\underset{(r,c)\in S_{xy}}{max}\begin{Bmatrix} g(r,c) \end{Bmatrix}$%$
+$%$\textrm{MAX: }\hat f(x,y) = \textrm{max}_{(r,c)\in S_{xy}}\begin{Bmatrix} g(r,c) \end{Bmatrix}$%$
 
-$%$\textrm{Min: }\hat f(x,y)=\underset{(r,c)\in S_{xy}}{min}\begin{Bmatrix} g(r,c) \end{Bmatrix}$%$
+$%$\textrm{Min: }\hat f(x,y) = \textrm{min}_{(r,c)\in S_{xy}}\begin{Bmatrix} g(r,c) \end{Bmatrix}$%$
 
-$%$\textrm{Midpoint: }\hat f(x,y)=\frac{1}{2}\begin{bmatrix} \underset{max}{(r,c)\in S_{xy}}{g(r,c)} + \underset{min}{(r,c)\in S_{xy}}{g(r,c)} \end{bmatrix}$%$
+$%$\textrm{Midpoint: }\hat $%$
 
 - 이들 필터는 무작위로 분포된 노이즈(예: 가우시안 노이즈, 균일 노이즈)에 효과적이다. 
 - 최대/최소 필터는 각각 밝은 또는 어두운 노이즈에 더 효과적일 수 있다.
