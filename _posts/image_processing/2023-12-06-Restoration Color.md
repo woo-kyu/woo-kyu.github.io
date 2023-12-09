@@ -244,11 +244,84 @@ $%$\textrm{Midpoint: }\hat f(x,y) = \frac{1}{2})\begin{pmatrix} \textrm{max}_{(r
     - 픽셀 강도들의 로컬 분산
 
 - Steps
-  - $\sigma^{2}{\eta}$ = 0, $g(x,y) = (x,y)$
+  - If, $\sigma^{2}{\eta}$ = 0, $g(x,y) = (x,y)$
     - 노이즈 분산이 0일때, g(x,y)는 변화가 없다. 
     - 노이즈가 없다
-  - \
+  - If, $\sigma^{2}_{S_{xy}}$ 가 $\sigma^{2}_{\eta}$ 에 비해 상대적으로 높다.
+    - 이는 가장자리나 세부 사항이 존재한다는 signal
+    - $g(x,y) 에 가까운 값을 반환하여 가장자리를 보존한다.
+  - If, $\sigma^{2}_{S_{xy}}$ = $\sigma^{2}_{\eta}$
+    - 로컬 분산과 노이즈 분산이 같다.
+    - 산술 평균 필터를 적용한다.
+    - 영역이 주로 노이즈로 구성되어 있다.
 
+<img width="600" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/678c9d7c-6f2f-4191-9498-bba5a4769a86">{: .align-center}
+
+<br>
+
+# Restoration in frequency domain
+
+---
+
+---
+
+<br>
+
+> 일정한 주기를 가지는 노이즈는 주파수 도메인에서 효과적으로 분석되고 필터링 될 수 있다.
+
+
+<img width="600" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/15ba5fe8-6a47-4283-9cf8-a7c708f4e988">{: .align-center}
+
+
+<br>
+
+# Color 
+
+---
+
+---
+
+<br>
+
+## Color fundamentals
+
+> 빛 (색)의 본질
+
+<br>
+
+### Continuous spectrum
+- 일반적으로 빛은 흰색으로 인식되지만, 실제로는 보라색에서 빨간색에 이르기까지 연속적인 색상 스펙트럼으로 구성되어 있다. 
+- 이 스펙트럼은 가시광선 범위에 해당하며, 인간의 눈으로 감지할 수 있는 빛의 범위이다.
+
+<img width="600" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/ae1b82c1-5edf-4cd3-b3b4-a8bc9aa2e36e">{: .align-center}
+
+<br>
+
+### Feature of color spectrum
+- 부드러운 전환:
+  - 색상 스펙트럼은 갑작스럽게 끝나지 않고, 한 색상에서 다른 색상으로 부드럽게 이어진다.
+
+<img width="600" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/e00e9884-1fd5-4572-ae5b-f5bff1aadfbc">{: .align-center}
+
+<br>
+
+## Primary colors
+
+- R(Red) / G(Green) / B(Blue)
+- CIE Standardization (International Commission on Illumination)
+  - CIE 는 RGB 색상에 대해 특정 파장 값을 지정한다.
+
+  <img width="600" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/c7d0b8ee-d8d4-4930-9526-347cec83f870">{: .align-center}
+
+
+
+
+
+
+
+
+
+ 
 
 
 
