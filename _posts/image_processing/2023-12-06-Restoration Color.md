@@ -305,7 +305,7 @@ $%$\textrm{Midpoint: }\hat f(x,y) = \frac{1}{2})\begin{pmatrix} \textrm{max}_{(r
 
 <br>
 
-## Primary colors
+### Primary colors
 
 - R(Red) / G(Green) / B(Blue)
 - CIE Standardization (International Commission on Illumination)
@@ -313,7 +313,133 @@ $%$\textrm{Midpoint: }\hat f(x,y) = \frac{1}{2})\begin{pmatrix} \textrm{max}_{(r
 
   <img width="600" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/c7d0b8ee-d8d4-4930-9526-347cec83f870">{: .align-center}
 
+- 파장의 변화 허용
+  - Primary color의 각 색상은 다른 생상을 혼항ㅂ하여 만들 수 없는 색상이다.
+  - 파장이 변할 수 있게되면, 기본 색상을 다양하게 변화할 수 있음
 
+<br>
+
+### Secondary color
+
+- 기본 색상은 기본 색상들을 혼합하여 만든 것
+- 이차 색상에는 마젠타(Magenta), 시안(Cyan), 노란색(Yellow)이 포함
+  <img width="600" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/2d431b8d-9e9d-4ff8-89e8-ba7a0b1487c3">{: .align-center}
+
+<br>
+
+### Feature of lights (color)
+
+> 빛(색)의 3 요소
+
+#### Brightness
+‐ Achromatic (void of color) notion of intensity
+- 밝기: 색상의 명도 또는 강도
+- 무채색 수준에서의 표현
+- 색상의 빛의 양
+
+<br>
+
+#### Hue
+- Dominant wavelength in a mixture of light waves
+- 색상: 색의 종류를 나타내며, 다양한 파장의 빛에 의해 결정
+- 빛의 지배적인 파장에 의해 결정되며, 색상의 이름(예: 빨간색, 파란색)으로 표현
+- 색상은 색상환에서 위치로 표현될 수 있으며, 빨간색, 녹색, 파란색 등과 같은 구별된 색이다.
+- 색의 "종류"를 나타내는 가장 기본적인 특성
+
+<br>
+
+#### Saturation
+- Purity (amount of white light) mixed with a hue
+- 채도: 색상의 순도 또는 강렬함
+- 특정 색상에 혼합된 흰색의 양에 의해 결정
+- 높은 채도는 순수하고 강렬한 색상을 의미하며, 낮은 채도는 더 희미하거나 희석된 색상을 의미
+
+<br>
+
+#### Tristimulus Values
+- 삼자 극값: 특정 색상을 생성하기 위해 필요한 R, G, B 의 양
+- 삼색도 좌표 (Trichromatic Coefficients):
+  - $x = \frac{X}{(X+Y+Z)}$, y, z
+  - $x+y+z = 1$
+
+<br>
+
+### Chromaticity
+
+> 색도: 색상의 밝기를 제외한 순수한 색상 정보
+
+#### Chromaticity Diagram
+- 색도 좌표는 색상 공간에서 색상의 위치를 정의
+- 색상의 정확한 재현과 색상간의 비교
+
+> 색도도 (Chromaticity Diagram) 는 색상의 색조와 채도를 시각적으료 표현
+
+특징:
+- Curved Outer Edge (곡선형 외곽선)
+  - 색도도의 외곽선은 단일 파장의 색상을 나타낸다.
+  - 이 색상들은 완전히 포화되었거나 "순수한" 색상이다. 
+  - 예를 들어, 무지개의 색상은 이 곡선을 따라 배치된다.
+
+- Points Inside the Region (내부 영역의 점)
+  - 색도도 내부의 점들은 순수한 색상들의 혼합을 나타낸다. 
+  - 이 점들은 채도가 낮은 색상, 즉 순수한 색상에 흰색이 섞인 색상을 표현한다.
+
+- Point of Equal Energy (동일 에너지점)
+  - 도도의 중심에 위치한 이 점은 세 기본 색상의 동등한 분획을 나타낸다. 
+  - 이는 흰색 빛에 해당하며, 모든 기본 색상이 균등하게 혼합되어 있는 상태를 의미한다.
+
+<img width="400" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/80ff0961-b072-4c0e-8b2e-361d580945fc">{: .align-center}
+
+<br>
+
+## Color Modles
+> 상 모델은 색상을 표현하고 생성하는 방법을 정의한다.
+
+### RGB Color models
+
+- RGB 모델은 빨간색(Red), 녹색(Green), 파란색(Blue)의 세 가지 색상을 기본 색상으로 정의,
+- 색상을 생성하기 위해 이 세 가지 색상의 강도를 조절
+
+- Grayscale: 
+  - RGB 모델에서 그레이스케일은 검은색(0, 0, 0)에서 흰색(255, 255, 255)으로 이어지는 대각선에 해당
+  - 대각선 상의 모든 점은 R, G, B 값이 동일하며, 이는 다양한 명도의 회색을 나타낸다.
+
+- Additive System (가산 혼합 시스템)
+  - RGB는 가산 혼합 시스템을 사용합니다.
+  - 이 시스템에서는 색상이 검은색(0, 0, 0)에서 시작하여 각 기본 색상을 추가함으로써 생성된다.
+
+<img width="700" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/c178ebdd-36fc-46c8-abef-a6325215ca3d">{: .align-center}
+
+
+<br>
+
+### CMY Color Models
+
+- CMY Model 은 Cyan, Magenta, Yellow 기본 색상으로 사용한다.
+- 컬러 인쇄 장치에서 주로 사용한다.
+
+- Subtractive System (감산 혼합 시스템)
+  - CMY는 감산 혼합 시스템이다.
+  - 이 시스템에서는 색상이 흰색(1, 1, 1)에서 시작하여 각 기본 색상을 빼는 방식으로 생성한다.
+  - CMY 값은 RGB 값에서 각각 빼는 방식으로 계산한다.
+<img width="600" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/dd5056ed-9e47-4ae6-9610-d1102cd40606">{: .align-center}
+
+<br>
+
+### HSI(Hue-Saturation-Intensity)
+
+- 색상 모델은 색상을 인간의 시각적 인식에 더 가깝게 표현하는 데 사용한다.
+- 이 모델은 색상(Hue), 채도(Saturation), 밝기(Intensity)의 세 가지 구성 요소를 기반으로 한다.
+- HSI 모델은 인간의 시각적 인식 방식과 관련된다.
+- HSI 모델은 이미지의 색상 인식과 분석에 더 적합하다.
+
+<img width="600" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/6eb56e72-da83-4b71-8c31-d3636d3c4db5">{: .align-center}
+
+<img width="300" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/be83b748-d39b-4c52-be33-9aef1fc5e5ec">{: .align-center}
+
+---
+
+<img width="600" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/9faaac5e-9f33-4790-96f3-9aaf1839c9ce">{: .align-center}
 
 
 
