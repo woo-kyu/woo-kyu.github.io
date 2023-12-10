@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Hit or Miss Transform
+title: "Morphology: Hit or Miss Transform"
 toc_label: Hit or Miss Transform
 categories: ImageProcessing
 tags: [CV, ImageProcessing]
@@ -82,7 +82,7 @@ use_tex: true
 
 #### Fit the background
 - A의 보완 (complement of A), i.e., $A^C$를 계산한다.
-- 보완은 이미지의 픽셀값을 반전ㅅ키는 것을 의미한다.
+- 보완은 이미지의 픽셀값을 반전키는 것을 의미한다.
 - 이미지의 배경과 객체를 반전시켜, 배경에 초점
 
 <img width="600" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/f80be902-b296-4468-9afc-16de7dae8e28">{: .align-center}
@@ -135,7 +135,7 @@ use_tex: true
 
 #### Input and Results
 
-<img width="600" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/9206577b-5b19-4014-a5a3-3b710eb63274">{: .align-center}
+<img width="600" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/b5484716-729d-4a77-b2ef-b91d87acd760">{: .align-center}
 
 <br>
 

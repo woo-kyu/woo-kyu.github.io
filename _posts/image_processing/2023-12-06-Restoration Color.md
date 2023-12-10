@@ -2,7 +2,7 @@
 layout: single
 title: Restoratioin Color
 toc_label: Restoratioin Color
-categories: ImageProcessing
+categories: "Image Processing"
 tags: [CV, ImageProcessing]
 author_profile: false
 search: true
