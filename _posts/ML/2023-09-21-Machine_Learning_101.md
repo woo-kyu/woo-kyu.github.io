@@ -120,7 +120,7 @@ toc_label: Machine Learning 101
 
 ---
 
-## Parameter ( ; weight)
+## Parameter (weight)
 
 - learnable parameter within model
 - ex) $w_{0}, w_{1}, ... w_{D}$
