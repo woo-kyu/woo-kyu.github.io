@@ -213,7 +213,7 @@ $%$ \hat f(x,y) = \underset{(r,c)\in S_{xy}}{\textrm{median}}\begin{Bmatrix} g(r
 
 ### Min / min / max point filters
 
-$%$ \textrm{MAX: }\hat f(x,y) = \underset{(r,c)\in S_{xy}}{{\textrm{median}}}\begin{Bmatrix} g(r,c) \end{Bmatrix} $%$
+$%$ \textrm{MAX: }\hat f(x,y) = \underset{(r,c)\in S_{xy}}{\textrm{median}}\begin{Bmatrix} g(r,c) \end{Bmatrix} $%$
 
 $%$ \textrm{Min: }\hat f(x,y) = \underset{(r,c)\in S_{xy}}{\textrm{min}}\begin{Bmatrix} g(r,c) \end{Bmatrix} $%$
 
