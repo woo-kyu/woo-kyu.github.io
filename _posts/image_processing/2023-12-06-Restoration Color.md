@@ -203,7 +203,7 @@ $%$\hat f(x,y) = \frac{\sum_{(r,c)\in S_{xy}g(r,c)^{Q+1}}}{\sum_{(r,c)\in S_{xy}
 
 - 중앙값 필터는 주어진 영역 내의 픽셀 값들 중 중앙값으로 해당 픽셀 값을 대체한다.
 
-$%$ \hat f(x,y) = \textrm{median}_{(r,c)\in S_{xy}}\begin{Bmatrix} g(r,c) \end{Bmatrix} $%$
+$%$ \hat f(x,y) = \underset{{(r,c)\in S_{xy}}}{\textrm{median}}\begin{Bmatrix} g(r,c) \end{Bmatrix} $%$
 
 - $S_{xy}$ : $m \times n$ 크기의 이미지 윈도우
 - 중앙값 필터는 특히 소금-후추 노이즈와 같은 무작위 노이즈에 효과적이다.
