@@ -439,7 +439,23 @@ int withdraw (struct account *account, int amout){
 
 > 스레딩 라이브러리의 표준: POSIX thread
 
+## Creating threads
 
+```c 
+#include <pthread.h>
+
+int pthread_create (pthread_t *thread, const pthread_attr_t *attr, void *(*start_routine) (void *), void *arg);
+```
+
+- pthread_create 를 성공적으로 호출하면 새로운 스레드가 생성되고, 제공된 'start_routine' 함수를 실행
+- 이 함수는 'arg' 인자를 유일한 매개변수로 받는다.
+- 'start_routine' 함수는 새로 생성된 스레드를 나타내는 스레드 ID를 'pthread_t' 타입의 변수에 저장한다.
+- 이 변수는 'tread'포인터에 의해 지정되며, 'thread' 가 NULL 이 아닐 경우에만 사용된다.
+
+<br>
+
+### Thread attribute (pthread_attr_t)
+- 
 
 
 
