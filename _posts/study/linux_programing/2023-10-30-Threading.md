@@ -451,11 +451,99 @@ int pthread_create (pthread_t *thread, const pthread_attr_t *attr, void *(*start
 - 이 함수는 'arg' 인자를 유일한 매개변수로 받는다.
 - 'start_routine' 함수는 새로 생성된 스레드를 나타내는 스레드 ID를 'pthread_t' 타입의 변수에 저장한다.
 - 이 변수는 'tread'포인터에 의해 지정되며, 'thread' 가 NULL 이 아닐 경우에만 사용된다.
+- 만약, 스레드가 함수호출에 실패하면, null을 반환한다.
+- 함수가 잘 실행되면 int return. pthread 는 routine 함수가 저장되는 곳(thread) 을 가리킨다. 
 
 <br>
 
 ### Thread attribute (pthread_attr_t)
-- 
+- 'pthread_attr_t' 타입의 'attr'을 사용하여 새로 생성된 스레드의 기본 속성을 변경할 수 있다.
+- 대부분의 'pthread_create()' 호출은 'attr' 에 NULL 을 전달하여 기본 속성을 사용한다.
+- 스레드 속성을 통해 프로그램은 스레드의 많은 측면을 변경할 수 있다.
+  - E.g., 스택 크기, 스케줄링 매개변수, 초기 분리 상태(detached state) 등을 조정할 수 있다.
+
+<Br>
+
+### starting thread
+```c 
+void * start_thread (void *arg);
+```
+- 스레드는 'void' 포인터를 유일한 인자로 받고 'void' 포인터를 반환값으로 가지는 함수를 실행함으로써 시작된다.
+- 이 함수는, 스레드의 주요 작업을 정의하며, 스레드의 실행이 시작되는 지점이다.
+
+<br>
+
+### What is different thread and processes
+- fork() 와 유사하게, 새로운 스레드는 대부분의 속성, 능력, 그리고 상태를 부모(생헝한 프로세스)로 부터 상속받는다.
+- 하지만, fork() 와 달리, 스레드는 부모의 리소스를 공유한다.
+  - I.g., 새로운 복사본을 받는 대신 기존 리소스에 대한 접근을 공유한다.
+- <span style="color:orange"> 핵심 공유 리소스는 프로세스의 주소 공간이지만, 신호 핸들러와 열린 파일들도 스레드간 공유된다. </span>
+  - The most notable shared resource is, of course, the process address space, but threads also share (in lieu of receiving copies of) signal handlers and open files.
+
+<br>
+
+### Exception
+- 오류 발생시, 'pthread_creat()'는 0이 아닌 에러코드를 직접 반환한다. (error code는 errno를 통해 전달되지 않음)
+- 에러코드로는 EAGAIN (resource 부족), EINVAL (잘못된 인자), EPERM (권한 없음)
+- 오류가 발생하면 'thread' 변수의 내용은 정의되지 않는다.
+
+<br>
+
+#### Creating Threads Example
+```c 
+pthread_t tread;
+int ret;
+
+ret = pthread_create (&thread, NULL, start_routine, NULL);
+if (!ret) {
+  errno = ret;
+  perror("pthread_create");
+  return -1;
+}
+// A new thread is created and running start_routine concurrently...
+```
+
+<br>
+
+## Thread IDs
+
+```c
+#include <pthread.h>
+int pthread_equal (pthread_t t1, pthread_t t2);
+```
+
+- 두 스레드 ID가 동일하면 pthread_equal()함수는 0이 아닌 값을 반환한다. 다르다면, 0을 반환한다.
+
+<br>
+
+### Thread ID (TID) vs. Process ID (PID)
+
+- 리눅스 커널에 의해 각 프로세스에는 고유한 프로세스 ID(PID) 가 할당된다.
+- 스레드에 대해서도 유사하게 스레드 ID(TID)가 할당된다.
+  - TID 는 'pthread_t' 타입으로표현되며, POSIX 표준은 이를 산술적 타입으로 요구하지 않는다.
+  - I.e., TID 는 단순한 숫자가 아닌 복잡한 구조를 가질 수 있다.
+
+```c 
+#include <pthread.h>
+pthread_t pthread_self (void);
+
+const pthread_t me = pthread_self ();
+```
+
+<br>
+
+### Get TID
+- TID 는 특정 함수를 사용하여 얻을 수 있다. 
+- E.g., pthread_self() 함수는 호출하는 스레드의 TID를 반환한다. 
+  - 이 함수는 실패하지 않으므로, 실패에 대한 검사가 필요 없다.
+
+<br>
+
+### Compare TID
+- TID를 비교하기 위해서는 pthread_equal() 함수를 사용한다. 
+  - 이 함수는 두 pthread_t 타입의 변수가 같은 스레드를 가리키는지 여부를 확인한다.
+- TID가 단순한 숫자가 아니기 때문에, 일반적인 비교 연산자(예: ==)를 사용하는 대신 pthread_equal() 함수를 사용해야 한다.
+
 
 
 
