@@ -602,5 +602,125 @@ else
 void pthread_exit (void *retval);
 ```
 
-- start_routine 을 
+- start_routine 을 실행하면 보통 스레드를 스스로 종료하게 만들 수 있다.
+- void 인 이유: 자신이 죽어가는 마당에 결과값을 남길 기회는 없다고 본다..
+
+<br>
+
+### Terminating others (cancellation)
+
+> 다른 스레드 종료하기
+
+```c 
+int pthread_cancle (pthread_t thread);
+```
+
+- 스레드가 취소될 수 있는지와 취소 시점은 각각 스레드의 취소 상태와 취소 타입에 따라 다르다.
+- 취소 상태는 스레드가 취소 요청을 받아들일 수 있는지 여부를 결정한다.
+- 종료는 비동기적으로 발생한다.
+- 성공시 0. 취소 요청을 보내는 데 성공했다는 의미.
+- 실패시 ESRCH 반환
+- 스레드의 취소 상태는 가능일수도 있고, 불가능일수도 있다.
+  - 타겟은 cancellation 신호를 받지 않는다.
+  - 기본값은 취소 가능
+  - 스레드 취소 상태가 불가능이라면, 해당 요청은 가능할 때 까지 큐에 대기
+  - 취소 상태는 PTHREAD_CANCEL_ENABLE 또는 PTHREAD_CANCEL_DISABLE를 사용하여 변경할 수 있다.
+
+```c 
+int pthread_setcancelstate (int state, int *oldstate);
+```
+
+<br>
+
+## Cancellation Type
+
+> 스레드의 취소 유형은 스레드가 어떻게 종료될 수 있는지를 결정한다. 
+> 주로 두 가지 유형이 있는데, 비동기 취소(asynchronous cancellation)와 지연 취소(deferred cancellation)이다.
+
+<br>
+
+### Asynchronous cancellation
+- 동기 취소는 취소 요청이 발행된 후 어느 시점에서든 스레드를 종료시킬 수 있다. 
+- 그러나 이 방식의 문제는 스레드가 임계 영역 내에 있을 때 취소될 경우, 데이터 일관성 및 안정성 문제가 발생할 수 있다.
+
+<Br>
+
+### Deferred cancellation
+- 지연 취소는 스레드가 특정 취소 지점에서만 종료될 수 있다. 
+- 이러한 지점들은 Pthreads 또는 C 라이브러리 내의 함수들로, 호출자를 안전하게 종료시킬 수 있는 지점을 나타낸다. 
+- 이 방법은 스레드가 안전하지 않은 상태에서 갑작스럽게 종료되는 것을 방지한다.
+
+<br>
+
+### How to change type of cancellation
+- 스레드의 취소 유형은 pthread_setcanceltype() 함수를 사용하여 변경할 수 있다. 
+  - E.g., pthread_setcanceltype(PTHREAD_CANCEL_ASYNCHRONOUS, NULL)은 비동기 취소를 활성화하고, pthread_setcanceltype(PTHREAD_CANCEL_DEFERRED, NULL)은 지연 취소를 활성화한다.
+
+```c 
+int unused;
+int ret;
+
+ret pthread_setcancelstate (PTHREAD_CANCEL_ENABLE, &unused);
+if (ret){
+  errno = ret;
+  perror ("pthread_setcancelstate");
+  return -1;
+}
+
+ret =  pthread_setcanceltype (PTHREAD_CANCEL_DEFERRED, &unused);
+if (ret){
+  errno = ret;
+  perror ("pthread_setcanceltype");
+  return -1;
+}
+```
+
+<br>
+
+### Request cancellation sign
+- 다른 스레드로부터 취소 요청을 받는 예시: pthread_cancel(pthread_t thread) 함수를 사용하는 것이 있다. 
+- 이 함수는 지정된 스레드에 취소 요청을 보낸다.
+
+```c 
+int ret;
+/* 'thread' is the thread ID of the to-terminate thread */
+ret = pthread_cancel (thread);
+if (ret) {
+  error = ret;
+  perror("pthread_cancel");
+  return -1;
+}
+```
+
+<br>
+
+# Joining and Detaching Threads
+
+---
+
+---
+
+## Joining Threads
+
+> 스레드 결합 
+
+- 스레드 결합은 한 스레드가 다른 스레드의 종료를 기다리면서 블록되는 것을 허용한다. 
+- pthread_join() 함수를 성공적으로 호출하면, 호출하는 스레드는 지정된 thread가 종료될 때까지 블록된다(이미 종료된 스레드에 대해서는 즉시 반환된다). 
+- thread가 종료되면, 호출 스레드가 깨어나고, retval이 NULL이 아닌 경우 종료된 스레드가 pthread_exit()에 전달하거나 시작 루틴에서 반환한 반환 값이 제공된다. 
+- 스레드 결합을 통해 스레드는 다른 스레드의 생명주기에 대해 실행을 동기화할 수 있다. 
+- <span style="color:orange"> Pthreads에서 모든 스레드는 동등한 관계(peer)에 있으며, 어떤 스레드도 다른 스레드와 결합할 수 있다. </span>
+  - <span style="color:orange"> 하나의 스레드가 여러 스레드와 결합할 수 있지만, 특정 스레드와는 오직 한 스레드만 결합해야 한다; 여러 스레드가 하나의 스레드와 결합하려고 시도해서는 안 된다. </span>
+    - All threads in Pthreads are peers; any thread may join any other. 
+    - A single thread can join many threads (in fact, as we’ll see, this is often how the main thread waits for th e threads it has created), 
+    - but only one thread should try to join any particular threa d; multiple threads should not attempt to join with any one other.
+
+
+
+
+
+
+
+
+
+
 
