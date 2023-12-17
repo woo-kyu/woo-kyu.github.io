@@ -444,7 +444,10 @@ int withdraw (struct account *account, int amout){
 ```c 
 #include <pthread.h>
 
-int pthread_create (pthread_t *thread, const pthread_attr_t *attr, void *(*start_routine) (void *), void *arg);
+int pthread_create (pthread_t *thread, 
+  const pthread_attr_t *attr, 
+  void *(*start_routine) (void *), 
+  void *arg);
 ```
 
 - pthread_create 를 성공적으로 호출하면 새로운 스레드가 생성되고, 제공된 'start_routine' 함수를 실행
@@ -540,10 +543,64 @@ const pthread_t me = pthread_self ();
 <br>
 
 ### Compare TID
+
+```c 
+// example
+int ret;
+
+ret = pthread_equal(thing1, thing2);
+if (ret != 0)
+  printf("The TIDs are equal!\n");
+else
+  printf("The TIDs are unequal!\n");
+```
+
 - TID를 비교하기 위해서는 pthread_equal() 함수를 사용한다. 
   - 이 함수는 두 pthread_t 타입의 변수가 같은 스레드를 가리키는지 여부를 확인한다.
 - TID가 단순한 숫자가 아니기 때문에, 일반적인 비교 연산자(예: ==)를 사용하는 대신 pthread_equal() 함수를 사용해야 한다.
 
 
+<br>
 
+# Terminating Thread
+
+---
+
+---
+
+## Case of terminating thread
+
+<br>
+
+### Cases to terminate a thread
+
+> 개별 스레드 종료
+
+- 스타트 루틴 반환: 스레드가 시작 루틴(스레드가 실행하는 함수)에서 반환되면 종료된다. 
+  - 이는 main() 함수의 끝에 도달하는 것과 유사하다.
+- pthread_exit() 호출: 스레드가 pthread_exit() 함수를 호출하면 종료된다. 
+  - 이는 exit() 함수를 호출하는 것과 유사하다.
+- 다른 스레드에 의한 취소: 스레드가 다른 스레드에 의해 pthread_cancel() 함수를 통해 취소되면 종료된다. 
+  - 이는 kill() 함수를 통해 SIGKILL 신호를 받는 것과 유사하다.
+
+<br>
+
+### Cases to terminate all threads in a process
+
+> 프로세스 내 모든 스레드 종료
+
+- main() 함수에서의 반환: 프로세스가 main() 함수에서 반환되면, 해당 프로세스 내의 모든 스레드가 종료된다. 
+- exit() 함수 호출: 프로세스가 exit() 함수를 호출하면, 해당 프로세스 내의 모든 스레드가 종료된다.
+- execve()를 통한 새 바이너리 이미지 실행: 프로세스가 execve() 함수를 실행하여 새로운 바이너리 이미지를 실행하면, 해당 프로세스 내의 모든 스레드가 종료된다.
+
+<br>
+
+### Terminating itself
+
+```c 
+#include <pthread.h>
+void pthread_exit (void *retval);
+```
+
+- start_routine 을 
 
