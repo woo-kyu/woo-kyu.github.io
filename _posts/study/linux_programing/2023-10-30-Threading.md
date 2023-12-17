@@ -700,6 +700,10 @@ if (ret) {
 
 ---
 
+> 스레드의 결합과 분리는 프로그램의 동작과 자원 관리에 영향을 미친다. 
+> 결합은 스레드 간의 종속성을 만들어 실행 순서를 제어할 수 있게 해주고, 
+> 분리는 스레드가 독립적으로 실행되고 종료되게 해 자원을 효율적으로 관리할 수 있게 한다.
+
 ## Joining Threads
 
 > 스레드 결합 
@@ -714,6 +718,40 @@ if (ret) {
     - A single thread can join many threads (in fact, as we’ll see, this is often how the main thread waits for th e threads it has created), 
     - but only one thread should try to join any particular threa d; multiple threads should not attempt to join with any one other.
 
+```c 
+int ret;
+/* join with 'thread' and we dont care avout its return value */
+ret = pthread_join (thread, NULL);
+if (ret) ...
+```
+
+<br>
+
+## Detaching Threads
+
+
+- 스레드를 분리하는 것은 스레드를 더 이상 결합 가능(joinable) 상태가 아니게 만드는 작업이다. 
+- 스레드 분리는 시스템 자원 관리에 중요한 역할을 한다.
+- 분리된 스레드는 다른 스레드가 종료를 기다리지 않고 독립적으로 실행된다.
+
+```c 
+int pthread_detach (pthread_t thread);
+```
+
+- 'pthread_detach(pthread_t thread)' 함수를 사용하여 스레드를 분리할 수 있다. 
+  - 이 함수는 지정된 스레드를 분리 상태로 만든다. 
+- 분리된 스레드는 자동으로 자원을 해제하며, 다른 스레드가 pthread_join()을 호출하여 기다리지 않는다.
+
+- 스레드 분리의 개념
+  - 생성 시 기본적으로 스레드는 결합 가능한 상태(joinable)이다. 그러나 스레드는 분리(detach)될 수 있으며, 이로 인해 더 이상 다른 스레드에 의해 결합될 수 없게 된다.
+- pthread_detach() 함수
+  - 성공 시, pthread_detach() 함수는 지정된 thread를 분리하고 0을 반환한다.
+  - 이미 분리된 스레드에 pthread_detach()를 호출하는 경우 결과는 정의되지 않는다.
+- 에러 처리
+  - 오류 발생 시, 함수는 ESRCH를 반환하여 지정된 thread가 유효하지 않음을 나타낸다.
+- 스레드와 시스템 자원
+  - 프로세스 내의 각 스레드에 대해 pthread_join() 또는 pthread_detach() 중 하나를 반드시 호출해야 한다. 이는 스레드가 종료될 때 시스템 자원이 해제되도록 보장하기 위함이다. 
+  - 전체 프로세스가 종료되면 모든 스레딩 리소스가 해제되지만, 모든 스레드를 명시적으로 결합하거나 분리하는 것이 좋은 실천 방법이다.
 
 
 
