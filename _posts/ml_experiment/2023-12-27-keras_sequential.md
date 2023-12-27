@@ -9,17 +9,15 @@ search: true
 use_tex: true
 ---
 
-> define model
+> Define Sequential Layer Models
 
 <br>
 
-# Sequential
+# Overview
 
 ---
 
 ---
-
-## Overview
 
 ```python
 from tensorflow.keras.models import Sequential
@@ -30,6 +28,10 @@ model = Sequential
 - 가장 기본적인 모델
 - 다양한 layer 을 순서대로 쌓아 신경망을 구축한다.
 - 리스트와 같이, 층을 순차적으로 추가할 수 있는 컨테이너로 동작한다.
+
+<br>
+
+## Parameters
 
 <br>
 
