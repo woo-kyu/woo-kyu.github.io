@@ -388,6 +388,9 @@ Requiring indivisible transaction as one atomic unit
 <br>
 
 ### Mutex
+
+> Mutex: Mutual Exclusion (상호 배제)
+
 - 가장 일반적인 기술은 락(lock)이라는 메커니즘을 사용하는 것이다. 
   - 락은 임계 영역 내에서 상호 배타를 보장하며, 이를 원자적으로 만든다.
 - 설계자는 락을 정의하고 임계 영역에 진입하기 전에 이를 획득해야 한다.
@@ -491,7 +494,7 @@ void * start_thread (void *arg);
 <br>
 
 ### What is different thread and processes
-- fork() 와 유사하게, 새로운 스레드는 대부분의 속성, 능력, 그리고 상태를 부모(생헝한 프로세스)로 부터 상속받는다.
+- fork() 와 유사하게, 새로운 스레드는 대부분의 속성, 능력, 그리고 상태를 부모(생성한 프로세스)로 부터 상속받는다.
 - 하지만, fork() 와 달리, 스레드는 부모의 리소스를 공유한다.
   - I.g., 새로운 복사본을 받는 대신 기존 리소스에 대한 접근을 공유한다.
 - <span style="color:orange"> 핵심 공유 리소스는 프로세스의 주소 공간이지만, 신호 핸들러와 열린 파일들도 스레드간 공유된다. </span>
