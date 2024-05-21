@@ -42,7 +42,7 @@ toc_label: Machine Learning 101
 
 - [Logistic and Soft-max Regression]({{site.url}}/ml/Logistic_Soft_max)
 - [Support Vector Machine (SVM)]({{site.url}}/ml/SVM)
-- [Dicison Tree]({{site.url}}/ml/Dicision_tree)
+- [Dicison Tree]({{site.url}}/ml/Dicision_Tree)
 - [Linear Discriminant Analysis (LDA)]({{site.url}}/ml/LDA)
 
 <br>
