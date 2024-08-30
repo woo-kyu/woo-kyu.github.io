@@ -8,3 +8,11 @@ author_profile: false
 search: false
 use_tex: false
 ---
+
+# CNN
+
+---
+
+# RNN
+
+- [RNN 101]({{site.url}}/dl/RNN_101/)
