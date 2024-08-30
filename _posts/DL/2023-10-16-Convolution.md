@@ -1,7 +1,7 @@
 ---
 layout: single
-title: Deep learning GuideMap
-toc_label: Deep learning Guide Map
+title: Convolution
+toc_label: Convolution
 categories: 'Deeplearning'
 tags: [Map, DeepLearning]
 author_profile: false
