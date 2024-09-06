@@ -2,8 +2,8 @@
 layout: single
 title: Edge Detection
 toc_label: Edge Detection
-categories: Autonomous_Driving
-tags: [CV, ImageProcessing, Basic, Autonomous_Driving, Edge_Detection]
+categories: Computer_Vision
+tags: [Image Processing]
 author_profile: false
 search: true
 use_tex: true

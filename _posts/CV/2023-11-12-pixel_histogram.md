@@ -2,8 +2,8 @@
 layout: single
 title: Pixel Histogram
 toc_label: Pixel Histogram
-categories: Autonomous_Driving
-tags: [CV, ImageProcessing, Basic, Autonomous_Driving]
+categories: Computer_Vision
+tags: [Image Processing]
 author_profile: false
 search: true
 use_tex: true
