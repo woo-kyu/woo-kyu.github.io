@@ -32,25 +32,25 @@ toc_label: Machine Learning 101
 
 ## Regression
 
-- [Linear and Non-linear Regression]({{site.url}}/ml/Regression/)
-- [Gradient Descent]({{site.url}}/ml/Gradient_Descent/)
-- [Bias and Variance Trade-off]({{site.url}}/ml/Bias_and_Variance_Trade_off/)
+- [Linear and Non-linear Regression]({{site.url}}/machine_learning/Regression/)
+- [Gradient Descent]({{site.url}}/machine_learning/Gradient_Descent/)
+- [Bias and Variance Trade-off]({{site.url}}/machine_learning/Bias_and_Variance_Trade_Off/)
 
 <br>
 
 ## Classification
 
-- [Logistic and Soft-max Regression]({{site.url}}/ml/Logistic_Soft_max)
-- [Support Vector Machine (SVM)]({{site.url}}/ml/SVM)
-- [Dicison Tree]({{site.url}}/ml/Dicision_Tree)
-- [Linear Discriminant Analysis (LDA)]({{site.url}}/ml/LDA)
+- [Logistic and Soft-max Regression]({{site.url}}/machine_learning/Logistic_Soft_max)
+- [Support Vector Machine (SVM)]({{site.url}}/machine_learning/SVM)
+- [Dicison Tree]({{site.url}}/machine_learning/Dicision_Tree)
+- [Linear Discriminant Analysis (LDA)]({{site.url}}/machine_learning/LDA)
 
 <br>
 
-## [Ensemble (Complex)]({{site.url}}/ml/Ensemble)
+## [Ensemble (Complex)]({{site.url}}/machine_learning/Ensemble)
 
-- [Bagging]({{site.url}}/ml/Bagging)
-- [Boosting]({{site.url}}/ml/Boosting)
+- [Bagging]({{site.url}}/machine_learning/Bagging)
+- [Boosting]({{site.url}}/machine_learning/Boosting)
 
 <br>
 
@@ -82,34 +82,34 @@ toc_label: Machine Learning 101
 
 ---
 
-## [Dimension Reduction]({{site.url}}/ml/Dimension_Reduction) (차원 축소; Data pre-processing)
+## [Dimension Reduction]({{site.url}}/machine_learning/Dimension_Reduction) (차원 축소; Data pre-processing)
 
 ### Kind of Feature Extraction in DR
 
-- [Singular Value Decompostion (SVD)]({{site.url}}/ml/SVD)
-- [Principal Component Analysis (PCA)]({{site.url}}/ml/PCA)
-- [Linear Discriminant Analysis (LDA)]({{site.url}}/ml/LDA_us)
-- [t-SNE]({{site.url}}/ml/t_SNE)
-- [UMAP]({{site.url}}/ml/UMAP)
+- [Singular Value Decompostion (SVD)]({{site.url}}/machine_learning/SVD)
+- [Principal Component Analysis (PCA)]({{site.url}}/machine_learning/PCA)
+- [Linear Discriminant Analysis (LDA)]({{site.url}}/machine_learning/Unsupervised_LDA)
+- [t-SNE]({{site.url}}/machine_learning/t_SNE)
+- [UMAP]({{site.url}}/machine_learning/UMAP)
 
 <br>
 
-## [Clustering]({{site.url}}/ml/Clustering)
+## [Clustering]({{site.url}}/machine_learning/Clustering)
 
 
 ### Parametric
 
-- [Gaussian Mixture Model]({{site.url}}/ml/GMM)
+- [Gaussian Mixture Model]({{site.url}}/machine_learning/Gaussian_Mixture_Model)
 
 <br>
 
 ### Non-Parametric
 
-- [K-Means]({{site.url}}/ml/K_Means)
-- [Mean Shift]({{site.url}}/ml/MS)
-- [DBSCAN]({{site.url}}/ml/DBSCAN)
+- [K-Means]({{site.url}}/machine_learning/K_Means)
+- [Mean Shift]({{site.url}}/machine_learning/Mean_Shift)
+- [DBSCAN]({{site.url}}/machine_learning/DBSCAN)
 
-### [Hierarchial Clustering]({{site.url}}/ml/HC)
+### [Hierarchial Clustering]({{site.url}}/machine_learning/Hierarchical_Clustering)
 
 <br>
 
@@ -182,52 +182,52 @@ toc_label: Machine Learning 101
 
 ---
 
-[Linear and Non-linear Regression]({{site.url}}/ml/Regression/)
+[Linear and Non-linear Regression]({{site.url}}/machine_learning/Regression/)
 
-[Gradient Descent]({{site.url}}/ml/Gradient_Descent/)
+[Gradient Descent]({{site.url}}/machine_learning/Gradient_Descent/)
 
-[LRS (Learning Rate Scheduler)]({{site.url}}/ml/LRS/)
+[LRS (Learning Rate Scheduler)]({{site.url}}/machine_learning/LRS/)
 
-[Optima (Local minima problem)]({{site.url}}/ml/Optima/)
+[Optima (Local minima problem)]({{site.url}}/machine_learning/Optima/)
 
-[Bias and Variance Trade-off]({{site.url}}/ml/Bias_and_Variance_Trade_off/)
+[Bias and Variance Trade-off]({{site.url}}/machine_learning/Bias_and_Variance_Trade_Off/)
 
-[Logistic and Soft-max Regression]({{site.url}}/ml/Logistic_Soft_max)
+[Logistic and Soft-max Regression]({{site.url}}/machine_learning/Logistic_Soft_max)
 
-[Support Vector Machine (SVM)]({{site.url}}/ml/SVM)
+[Support Vector Machine (SVM)]({{site.url}}/machine_learning/SVM)
 
-[Dicison Tree]({{site.url}}/ml/Dicision_tree)
+[Dicison Tree]({{site.url}}/machine_learning/Dicision_tree)
 
-[Linear Discriminant Analysis (LDA)]({{site.url}}/ml/LDA)
+[Linear Discriminant Analysis (LDA)]({{site.url}}/machine_learning/LDA)
 
-[Ensemble (Complex)]({{site.url}}/ml/Ensemble)
+[Ensemble (Complex)]({{site.url}}/machine_learning/Ensemble)
 
-[Bagging]({{site.url}}/ml/Bagging)
+[Bagging]({{site.url}}/machine_learning/Bagging)
 
-[Boosting]({{site.url}}/ml/Boosting)
+[Boosting]({{site.url}}/machine_learning/Boosting)
 
-[Dimension Reduction]({{site.url}}/ml/Dimension_Reduction)
+[Dimension Reduction]({{site.url}}/machine_learning/Dimension_Reduction)
 
-[Singular Value Decompostion (SVD)]({{site.url}}/ml/SVD)
+[Singular Value Decompostion (SVD)]({{site.url}}/machine_learning/SVD)
 
-[Principal Component Analysis (PCA)]({{site.url}}/ml/PCA)
+[Principal Component Analysis (PCA)]({{site.url}}/machine_learning/PCA)
 
-[Linear Discriminant Analysis (LDA)]({{site.url}}/ml/LDA_us)
+[Linear Discriminant Analysis (LDA)]({{site.url}}/machine_learning/Unsupervised_LDA)
 
-[t-SNE]({{site.url}}/ml/t_SNE)
+[t-SNE]({{site.url}}/machine_learning/t_SNE)
 
-[UMAP]({{site.url}}/ml/UMAP)
+[UMAP]({{site.url}}/machine_learning/UMAP)
 
-[Clustering]({{site.url}}/ml/Clustering)
+[Clustering]({{site.url}}/machine_learning/Clustering)
 
-[Gaussian Mixture Model]({{site.url}}/ml/GMM)
+[Gaussian Mixture Model]({{site.url}}/machine_learning/Gaussian_Mixture_Model)
 
-[K-Means]({{site.url}}/ml/K_Means)
+[K-Means]({{site.url}}/machine_learning/K_Means)
 
-[Mean Shift]({{site.url}}/ml/MS)
+[Mean Shift]({{site.url}}/machine_learning/Mean_Shift)
 
-[DBSCAN]({{site.url}}/ml/DBSCAN)
+[DBSCAN]({{site.url}}/machine_learning/DBSCAN)
 
-[Hierarchial Clustering]({{site.url}}/ml/HC)
+[Hierarchial Clustering]({{site.url}}/machine_learning/Hierarchical_Clustering)
 
 
