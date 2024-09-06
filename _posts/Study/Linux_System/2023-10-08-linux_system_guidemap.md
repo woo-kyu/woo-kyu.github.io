@@ -15,15 +15,15 @@ use_tex: false
 
 ### 1. Basic
 
-[Introduction]({{site.url}}/linux/lp_basic)
+[Introduction]({{site.url}}/linux_system/Linux_System)
 
 ### 2. File System
 
-[File System]({{site.url}}/linux/file_system)
+[File System]({{site.url}}/linux_system/File_System)
 
 ### 3. Buffered I/O
 
-[Buffered I/O]({{site.url}}/linux/buffered_io)
+[Buffered I/O]({{site.url}}/linux_system/Buffered_Io)
 
 ### 4. Process Management
-[Process Management]({{site.url}}/linux/process_management)
+[Process Management]({{site.url}}/linux_system/Process_Management)

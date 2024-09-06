@@ -20,43 +20,46 @@ Reference : 영상처리(원지혜 교수님) 강의 자료, 구글링, chatGPT,
 # Image Processing 이론
 
 ### 1. Basic
-[Introduction]({{site.url}}/imageprocessing/ip_basic)
+[Introduction]({{site.url}}/image_processing/Image_Processing_basic)
 
 <br>
 
 ### 2. Digital Image
-[Digital Image]({{site.url}}/imageprocessing/digital_image/)
+[Digital Image]({{site.url}}/image_processing/Digital_Image/)
 
 <br>
 
 ### 3. Filter
-[Filter]({{site.url}}/imageprocessing/filter/)
+[Filter]({{site.url}}/image_processing/Filter/)
 
 <br>
 
 ### 4. Histogram
-[Histogram Processing]({{site.url}}/imageprocessing/histogram/)
+[Histogram Processing]({{site.url}}/image_processing/Histogram/)
 
 <br>
 
 ### 5. Filtering
-[Filtering]({{site.url}}/imageprocessing/filtering/)
-
-
-#### Lower case
-
-[Mechanics of Linear Spatial Filtering]({{site.url}}/imageprocessing/filtering_mechanics)
-
-[Spatial Correlation & Convolution]({{site.url}}/imageprocessing/filtering_correlation_convolution)
-
-[Smoothing]({{site.url}}/imageprocessing/filtering_smoooooothing)
-
-[Sharpening]({{site.url}}/imageprocessing/filtering_sharpening)
+[Filtering]({{site.url}}/image_processing/Filtering/)
 
 
 <br>
 
 ### 6. Fourier Transform
-[Fourier Transform]({{site.url}}/imageprocessing/fourier_transform/)
+[Fourier Transform]({{site.url}}/image_processing/Fourier_Transform/)
 
-[Advanced of Fourier Transform]({{site.url}}/imageprocessing/advanced_fourier/)
+[Advanced of Fourier Transform]({{site.url}}/image_processing/Advanced_Fourier/)
+
+<br>
+<br>
+
+#### Lower case
+
+[Mechanics of Linear Spatial Filtering]({{site.url}}/image_processing/Filtering_mechanics)
+
+[Spatial Correlation & Convolution]({{site.url}}/image_processing/Filtering_Correlation_Convolution)
+
+[Smoothing]({{site.url}}/image_processing/Filtering_Smoooooothing)
+
+[Sharpening]({{site.url}}/image_processing/Filtering_Sharpening)
+

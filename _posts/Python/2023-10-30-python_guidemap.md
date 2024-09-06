@@ -10,4 +10,4 @@ use_tex: false
 ---
 
 ## Numpy
-[Numpy_basic]([Introduction]({{site.url}}/python/numpy_basic))
+[Numpy_basic]([Introduction]({{site.url}}/python/Numpy_Basic/))

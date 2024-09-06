@@ -1,7 +1,7 @@
 ---
 layout: single
-title: Deep Learning GuideMap
-toc_label: Deep Learning Guide Map
+title: Deep Learning 101
+toc_label: Deep Learning 101
 categories: 'Deep_Learning'
 tags: [Map, Deep Learning]
 author_profile: false
@@ -15,4 +15,4 @@ use_tex: ture
 
 # RNN
 
-- [RNN 101]({{site.url}}/dl/RNN_101/)
+- [RNN 101]({{site.url}}/deep_learning/RNN_101/)
