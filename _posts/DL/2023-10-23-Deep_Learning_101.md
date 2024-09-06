@@ -5,8 +5,8 @@ toc_label: Deep learning Guide Map
 categories: 'Deeplearning'
 tags: [Map, DeepLearning]
 author_profile: false
-search: false
-use_tex: false
+search: true
+use_tex: ture
 ---
 
 # CNN

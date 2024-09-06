@@ -2,10 +2,10 @@
 layout: single
 title: Convolution
 toc_label: Convolution
-categories: 'Deeplearning'
+categories: 'DeepLearning'
 tags: [Map, DeepLearning]
 author_profile: false
-search: false
-use_tex: false
+search: ture
+use_tex: ture
 ---
 
