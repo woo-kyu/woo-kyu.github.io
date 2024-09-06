@@ -2,6 +2,7 @@
 layout: single
 title: Study GuideMap
 categories: Study
+tags: [Map]
 author_profile: false
 search: false
 use_tex: false
