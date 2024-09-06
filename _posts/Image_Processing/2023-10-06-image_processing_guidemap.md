@@ -50,6 +50,13 @@ Reference : 영상처리(원지혜 교수님) 강의 자료, 구글링, chatGPT,
 
 [Advanced of Fourier Transform]({{site.url}}/image_processing/Advanced_Fourier/)
 
+### 7. Restoration Color
+[Restoration Color]({{site.url}}/image_processing/Restoration_Color/)
+
+
+### 8. Morphology
+[Hit-or-Miss Transform]({{site.url}}/image_processing/Hit_Or_Miss_Transform/)
+
 <br>
 <br>
 
