@@ -3,7 +3,7 @@ layout: single
 title: Lidar Setup
 toc_label: Lidar Setup
 categories: Lidar
-tags: [Lidar, Sensor_Data_Process]
+tags: [Lidar, Sensor Data Process]
 author_profile: false
 search: true
 use_tex: true

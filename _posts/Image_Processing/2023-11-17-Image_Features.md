@@ -3,7 +3,7 @@ layout: single
 title: Image Features
 toc_label: Image Features
 categories: Image_Processing
-tags: [ImageProcessing]
+tags: [Image Processing]
 author_profile: false
 search: true
 use_tex: true
