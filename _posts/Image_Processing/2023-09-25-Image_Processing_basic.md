@@ -2,8 +2,8 @@
 layout: single
 title: Image Processing Basic
 toc_label: Image Processing Basic
-categories: ImageProcessing
-tags: [CV, ImageProcessing, Basic]
+categories: Image_Processing
+tags: [Image Processing, Basic]
 author_profile: false
 search: true
 use_tex: true

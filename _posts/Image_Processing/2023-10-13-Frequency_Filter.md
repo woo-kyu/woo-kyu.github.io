@@ -2,8 +2,8 @@
 layout: single
 title: Frequency Filter
 toc_label: Frequency Filter
-categories: ImageProcessing
-tags: [CV, ImageProcessing]
+categories: Image_Processing
+tags: [Image Processing]
 author_profile: false
 search: true
 use_tex: true

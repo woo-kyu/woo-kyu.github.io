@@ -2,8 +2,8 @@
 layout: single
 title: Image Features
 toc_label: Image Features
-categories: ImageProcessing
-tags: [CV, ImageProcessing]
+categories: Image_Processing
+tags: [ImageProcessing]
 author_profile: false
 search: true
 use_tex: true

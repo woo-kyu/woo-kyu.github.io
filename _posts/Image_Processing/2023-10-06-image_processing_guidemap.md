@@ -1,8 +1,8 @@
 ---
 layout: single
-title: IP GuideMap
-toc_label: IP Guide Map
-categories: ImageProcessing
+title: Image Processing GuideMap
+toc_label: Image Processing Guide Map
+categories: Image_Processing
 tags: [Map]
 author_profile: false
 search: false

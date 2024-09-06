@@ -94,13 +94,13 @@ Learning rate 의 volume 에 따른 진행과정
 
 is a supplement learning rate
 
-[LRS (Learning Rate Scheduler)]({{site.url}}/ml/LRS)
+[LRS (Learning Rate Scheduler)]({{site.url}}/machine_learning/LRS)
 
 ## Optimizer
 
 for Local minima problem
 
-[Optima (Local minima problem)]({{site.url}}/ml/Optima)
+[Optima (Local minima problem)]({{site.url}}/machine_learning/Optima)
 
 ## Pseudo Code
 

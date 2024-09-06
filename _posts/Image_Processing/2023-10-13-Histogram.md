@@ -2,8 +2,8 @@
 layout: single
 title: Histogram
 toc_label: Histogram
-categories: ImageProcessing
-tags: [CV, ImageProcessing]
+categories: Image_Processing
+tags: [Image Processing]
 author_profile: false
 search: true
 use_tex: true

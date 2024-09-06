@@ -14,7 +14,7 @@ use_tex: true
 > 비지도 LDA 는 데이터의 내재된 구조를 발견하려고 시도하며, 이는 주로 데이터의 클러스터링을 통해 이루어진다.
 >> It is basement on classification in supervised learning.
 >> Please refer to LDA page in supervised learning, classification.                                                                              
->> [Linear Discriminant Analysis (LDA)]({{site.url}}/ml/LDA)
+>> [Linear Discriminant Analysis (LDA)]({{site.url}}/machine_learning/LDA)
 
 <br>
 
