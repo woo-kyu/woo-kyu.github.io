@@ -1,7 +1,7 @@
 ---
 layout: single
-title: Deep learning GuideMap
-toc_label: Deep learning Guide Map
+title: Deep Learning GuideMap
+toc_label: Deep Learning Guide Map
 categories: 'Deep_Learning'
 tags: [Map, Deep Learning]
 author_profile: false
