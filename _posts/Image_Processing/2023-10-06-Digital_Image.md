@@ -266,6 +266,8 @@ use_tex: true
 - 목적: 출력 이미지의 특정 픽셀 값을 입력 이미지의 해당 픽섹의 이웃 픽셀의 값을 이용해 결정.
 - Blur 또는 Edge detection 연산에서 사용
 
+<img width="650" alt="image" src="https://github.com/user-attachments/assets/fd6ffcb1-2721-4a1f-888d-baded00d7dec">{: .align-center}
+
 <br>
 
 ### Geometric transformations (기하학적 변환)

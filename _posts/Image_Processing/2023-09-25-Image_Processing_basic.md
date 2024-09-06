@@ -56,7 +56,7 @@ use_tex: true
 
 <br>
 
-## Perception
+## Perception (인식)
 
 
 > <span style='color:orange'>How images are formed and perceived by humans</span>
@@ -108,14 +108,17 @@ use_tex: true
 
 <br>
 
-### Mach band effect 
+### Mach band effect
 - Visual system tends to under / over shoot around the boundary of different intensities
+  - 시각 시스템은 서로 다른 강도 영역의 <span style='color:#ff7fff'> 경계 주변에서 아래 또는 위로 조절</span> 하는 경향이 있다.
 - <span style='color:#ff7fff'>변화하는 빛의 intensities 를 감지할 때 발생하는 현상 -> 밝기 변화 인지 과정은 linear 하지 않음</span>
+  <img width="650" alt="image" src="https://github.com/user-attachments/assets/40ffeb1a-3b92-4dbe-b419-40c0e9966be2">{: .align-center}
 
 <br>
 
 ### Simultaneous contrast
 - A region's perceived brightness does not depend only on its intensity
+  - 특정 지역의 지각된 밝기는 <span style='color:#ff7fff'> 강도만으로 결정되지 않음 </span>
 <img width="650" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/a7cfa614-135a-4c0f-aaab-b6da7325bd6e">{: .align-center}
 
 <br>
@@ -128,8 +131,12 @@ use_tex: true
 
 <br>
 
-## 영상처리란?
+# 영상처리란?
 - 2차원 데이터에 대한 행렬 연산
+  - f(x,y): 임의의 위치 (x,y)에서 영상의 밝기
+  - (x,y): 영상 평면 내 공간 좌표
+- f 가 디지털 영상이 되기위한 조건
+  - f와 (x,y) 모두 유한이며 이산적인 값을 가짐
 
 <br>
 
@@ -182,13 +189,6 @@ use_tex: true
   - $n(x,y)$ : Noise
 
 <br>
-
-### Gray-scale
-- 0-255까지의 흰색-검정색의 밝기 단계만을 가지는 그림
-
-<br>
-
-
 
     
 
