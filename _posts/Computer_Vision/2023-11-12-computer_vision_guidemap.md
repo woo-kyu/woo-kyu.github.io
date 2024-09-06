@@ -1,7 +1,7 @@
 ---
 layout: single
-title: Computer_Vision GuideMap
-toc_label: Computer_Vision Guide Map
+title: ComputerVision Guide Map
+toc_label: Computer Vision
 categories: Computer_Vision
 tags: [Map, Image Processing]
 author_profile: false
