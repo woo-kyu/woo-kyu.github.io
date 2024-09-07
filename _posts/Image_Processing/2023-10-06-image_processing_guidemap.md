@@ -11,10 +11,6 @@ use_tex: false
 
 <br>
 
-Reference : 영상처리(원지혜 교수님) 강의 자료, 구글링, chatGPT, etc...
-
-<br>
-
 > 이미지 프로세싱 페이지 개요
 
 # Image Processing 이론
@@ -34,16 +30,27 @@ Reference : 영상처리(원지혜 교수님) 강의 자료, 구글링, chatGPT,
 
 <br>
 
-### 4. Histogram
+### 4. Filtering in Spatial Domain
+[Spatial Filtering]({{site.url}}/image_processing/Spatial_Filtering/)
+
 [Histogram Processing]({{site.url}}/image_processing/Histogram/)
 
+[Smoothing]({{site.url}}/image_processing/Filtering_Smoooooothing)
+
+[Sharpening]({{site.url}}/image_processing/Filtering_Sharpening)
+
+
 <br>
 
-### 5. Filtering
-[Filtering]({{site.url}}/image_processing/Filtering/)
+### 5. Filtering in Frequency Domain
+
+
 
 
 <br>
+
+### 6. Image Feature
+
 
 ### 6. Fourier Transform
 [Fourier Transform]({{site.url}}/image_processing/Fourier_Transform/)
@@ -66,7 +73,4 @@ Reference : 영상처리(원지혜 교수님) 강의 자료, 구글링, chatGPT,
 
 [Spatial Correlation & Convolution]({{site.url}}/image_processing/Filtering_Correlation_Convolution)
 
-[Smoothing]({{site.url}}/image_processing/Filtering_Smoooooothing)
-
-[Sharpening]({{site.url}}/image_processing/Filtering_Sharpening)
 
