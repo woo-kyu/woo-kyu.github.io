@@ -24,6 +24,7 @@ use_tex: true
   - 이미지의 각 필셀 값을 직접 조작한다.
   - 주로 컨볼루션을 사용하여 이루어지며, 커널 또는 마스크를 이미지에 적용하여 특정 픽셀의 새로운 값을 계산한다.
     <img width="1000" alt="image" src="_posts/Image_Processing/source/Spatial_Filtering_a.png">{: .align-center}
+![Spatial_Filtering_a.png](source%2FSpatial_Filtering_a.png)
     
 <br>
 
