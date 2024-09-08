@@ -9,7 +9,9 @@ search: true
 use_tex: true
 ---
 
-## Numpy
+> Numpy Basic
+
+# Numpy
 
 ```python
 import numpy as np
@@ -49,7 +51,7 @@ np.linalg.det(A): 행렬식 (Determinant)
 
 <br>
 
-## Pandas
+# Pandas
 
 ```python
 import pandas as pd
@@ -94,7 +96,7 @@ DataFrame_left_data.marge(DataFrame_right_data, how = merge_method, on = key_lab
 
 <br>
 
-## Matplotlib
+# Matplotlib
 ```python
 
 

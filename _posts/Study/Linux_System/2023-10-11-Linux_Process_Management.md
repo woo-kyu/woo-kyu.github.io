@@ -9,7 +9,7 @@ search: true
 use_tex: false
 ---
 
-> 프로세스 매니지먼트
+> Process Management
 
 <br>
 

@@ -9,6 +9,8 @@ search: true
 use_tex: ture
 ---
 
+> Deep Learning
+
 # CNN
 
 ---

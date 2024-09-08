@@ -9,6 +9,8 @@ search: true
 use_tex: false
 ---
 
+> Threading
+
 > Threading 을 사용함으로써 얻는 Benefit: Concurrency, Parallelism.
 > 이로인해 발생하는 Race condition problem, Race problem 의 solution 인 synchronization,
 > synchronization 의 problem: deadlock 과 그 밖의 것

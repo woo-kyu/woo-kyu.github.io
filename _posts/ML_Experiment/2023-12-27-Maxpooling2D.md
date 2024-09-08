@@ -9,7 +9,7 @@ search: true
 use_tex: true
 ---
 
-> Convolutional Neural Networks 에서 사용되는 pooling 층 중 하나이다.
+> Convolutional Neural Networks 에서 사용되는 pooling 층 중 하나
 
 <br>
 

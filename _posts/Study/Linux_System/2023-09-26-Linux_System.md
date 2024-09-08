@@ -9,7 +9,9 @@ search: true
 use_tex: false
 ---
 
-> Linux Kernel Programing: 컴퓨터 구조 아래 Application 과 O/S 단계 사이에서 Kernel 을 직접 통제하는 System Library 에 대해 학습.
+> Linux kernel Programing
+
+> 컴퓨터 구조 아래 Application 과 O/S 단계 사이에서 Kernel 을 직접 통제하는 System Library 에 대해 학습.
 > 일반적인 Application(API) 수준보다 더 Low level 에서 접근하는: Kernel level 로의 접근을 할 수 있도록 하는 system library
 > 
 

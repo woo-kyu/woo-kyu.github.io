@@ -9,6 +9,8 @@ search: true
 use_tex: false
 ---
 
+> User and Group
+
 > User: 각 사용자는 고유한 식별자인 User ID(UID)로 식별되고, 이는 시스템 리소스에 대한 접근 권환과 사용자의 권한을 결정한다.
 > Group: 그룹은 여러 사용자를 하나의 단위로 묶어서 관리한다; GID
 
