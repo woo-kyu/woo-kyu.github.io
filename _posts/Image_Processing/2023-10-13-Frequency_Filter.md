@@ -23,7 +23,7 @@ use_tex: true
 
 ### Filtering fundamentals
 
-- $g(x,y)=\textrm{Real} \{ \Im^{-1}[H(\mu ,\nu )F(\mu ,\nu)] \}$
+- $g(x,y)=\textrm{Real} [\Im^{-1}[H(\mu ,\nu )F(\mu ,\nu)]]$
   - $\Im^{-1}$: IDFT
   - $F(\mu ,\nu)$: DFT of the input image $f(x,y)$
   - $H(\mu ,\nu)$: Filter transfer function
@@ -49,7 +49,7 @@ use_tex: true
 4. Compute DFT $F(\mu ,\nu)$ of an image from Step 3
 5. Construct a real, symmetric filter transfer function $H(\mu, \nu)$ of size P x Q with center at (P/2 , Q/2)
 6. Elementwise multiplication: $G(\mu, \nu) = H(\mu, \nu)F(\mu, \nu)$
-7. Obtain the filtered image of size P x Q by computing the IDFT of $G(\mu, \nu)g_{p}(x,y) = (\textrm{Real} \left\ {\Im^{-1}[H(\mu ,\nu )F(\mu ,\nu)] \right\})(-1)^{x+y}$
+7. Obtain the filtered image of size P x Q by computing the IDFT of $G(\mu, \nu)g_{p}(x,y) = (\textrm{Real} [\Im^{-1}[H(\mu ,\nu )F(\mu ,\nu)]])(-1)^{x+y}$
 8. Obtain the final filtered result $g(x,y)$ of size M x N by extracting the M x N regions from the top, left quadrant of $g_{p}(x,y)$
 
 <img width="800" alt="image" src="https://github.com/user-attachments/assets/e23cc599-a599-418c-a3ec-417894b4373a">{: .align-center}
