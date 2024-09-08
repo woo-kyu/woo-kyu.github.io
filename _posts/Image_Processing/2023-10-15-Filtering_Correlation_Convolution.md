@@ -11,7 +11,11 @@ use_tex: true
 
 > Spatial Correlation & Convolution
 
-# [DL-Convolution]({{site.url}}/ml/convolution/)
+> Spatial Correlation: 필터 커널을 이미지에 적용하면서 각 픽셀의 주변 값들과 커널 값을 곱한 후 더해 새로운 값을 계산하는 방식. 커널이 그대로 적용된다.
+
+>Convolution: Correlation과 유사하지만, 커널을 먼저 가로, 세로로 뒤집은 후 적용하는 연산. 이 방식은 신호처리와 컨볼루션 신경망(CNN)에서 자주 사용되며, 커널을 뒤집는 이유는 수학적인 특성에 맞추기 위함.
+
+# [DL-Convolution]({{site.url}}/Deep_Learning/Convolution/)
 
 
 ## <span style='color:#fff9ff'>Correlation (상관 관계)</span>

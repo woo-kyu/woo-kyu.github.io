@@ -8,7 +8,7 @@ author_profile: false
 search: true
 use_tex: true
 ---
-> 색상 복원
+> 손상되거나 열화된 컬러 이미지를 원래 상태로 복원하기 위한 기술
 
 # Image Degradation and Restoration
 

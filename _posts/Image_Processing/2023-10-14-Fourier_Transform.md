@@ -9,8 +9,9 @@ search: true
 use_tex: true
 ---
 
+> 시간이나 공간에 대한 함수를 시간 또는 공간 주파수 성분으로 분해하는 변환
+
 > is a transform that converts a function into a form that describes the frequencies present in the original function.
->> 시간이나 공간에 대한 함수를 시간 또는 공간 주파수 성분으로 분해하는 변환
 
 <img width="800" alt="image" src="https://github.com/user-attachments/assets/0c971003-988e-4b02-a5c4-eb51c56a93e3">{: .align-center}
 

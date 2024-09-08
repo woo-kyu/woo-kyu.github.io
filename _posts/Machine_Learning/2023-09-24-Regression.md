@@ -9,7 +9,7 @@ search: true
 use_tex: true
 ---
 
-> Linear Regression은 독립 변수와 종속 변수 사이의 선형 관계를 모델링
+> Linear Regression은 독립 변수와 종속 변수 사이의 선형 관계를,
 > Non-linear Regression은 변수들 간의 비선형 관계를 모델링하여 보다 복잡한 패턴을 학습
 
 > 연속적인 값을 예측하는 작업에 사용된다. 

@@ -11,7 +11,7 @@ use_tex: false
 
 <br>
 
-> 이미지 프로세싱 페이지 개요
+> Imaging Processing Map
 
 # Image Processing 이론
 

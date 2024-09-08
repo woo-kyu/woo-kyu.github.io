@@ -9,7 +9,7 @@ search: true
 use_tex: true
 ---
 
-> 이미지의 디지털 화
+> 아날로그 이미지를 디지털 형식으로 변환. 주로 샘플링과 양자화를 통해 이루어짐
 
 # Image Digitization
 

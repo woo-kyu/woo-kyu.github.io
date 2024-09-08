@@ -9,6 +9,8 @@ search: true
 use_tex: true
 ---
 
+> 이미지를 처리할 때, 각 픽셀에 주변 픽셀 값들의 선형 결합을 적용하는 방식
+
 > 선형 공간 필터링은 이미지의 각 픽셀에 대해 주변 픽셀과 필터 커널(filter kernel) 사이의 합곱(또는 컨볼루션) 연산을 수행함으로써 이미지를 변형한다.
 > <span style='color:skyblue'>filter as said mask, template, window</span>
 
