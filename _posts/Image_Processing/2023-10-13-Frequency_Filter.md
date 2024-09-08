@@ -23,7 +23,7 @@ use_tex: true
 
 ### Filtering fundamentals
 
-- $g(x,y)=\textrm{Real} \left\ {\Im^{-1}[H(\mu ,\nu )F(\mu ,\nu)] \right\}$
+- $g(x,y)=\textrm{Real} \left\{ \Im^{-1}[H(\mu ,\nu )F(\mu ,\nu)] \right\}$
   - $\Im^{-1}$: IDFT
   - $F(\mu ,\nu)$: DFT of the input image $f(x,y)$
   - $H(\mu ,\nu)$: Filter transfer function
