@@ -115,4 +115,6 @@ use_tex: true
 
 <img width="1385" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/5b2a3c05-f9bd-44fc-b52c-e5bc3381ef63">{: .align-center}
 
-## Discrete Fourier Transform (DFT)
+
+
+
