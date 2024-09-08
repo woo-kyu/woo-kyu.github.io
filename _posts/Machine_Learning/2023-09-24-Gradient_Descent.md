@@ -9,6 +9,7 @@ search: true
 use_tex: true
 ---
 
+> 함수의 기울기를 따라가면서 손실을 최소화하는 방향으로 파라미터를 업데이트하는 최적화 알고리즘
  
 > is a first-order iterative optimization algorithm for finding a local minimum of a differentiable function.
 > 비용 함수의 최소값을 찾기 위해 반복적으로 파라미터를 업데이트하는 최적화 알고리즘으로, 각 단계에서 현재 파라미터 위치의 기울기(경사)를 계산하고, 그 경사가 감소하는 방향으로 파라미터를 업데이트함으로써, 최종적으로 전역(또는 지역) 최소값으로 수렴하게 된다.
@@ -94,7 +95,7 @@ Learning rate 의 volume 에 따른 진행과정
 
 is a supplement learning rate
 
-[LRS (Learning Rate Scheduler)]({{site.url}}/machine_learning/LRS)
+[Learning Rate Scheduler]({{site.url}}/machine_learning/Learning_Rate_Scheduler)
 
 ## Optimizer
 

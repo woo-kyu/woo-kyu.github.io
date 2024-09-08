@@ -186,7 +186,7 @@ toc_label: Machine Learning 101
 
 [Gradient Descent]({{site.url}}/machine_learning/Gradient_Descent/)
 
-[LRS (Learning Rate Scheduler)]({{site.url}}/machine_learning/LRS/)
+[LRS (Learning Rate Scheduler)]({{site.url}}/machine_learning/Learning_Rate_Scheduler/)
 
 [Optima (Local minima problem)]({{site.url}}/machine_learning/Optima/)
 

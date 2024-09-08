@@ -9,6 +9,8 @@ search: true
 use_tex: true
 ---
 
+> 데이터를 기준에 따라 분할하여 의사결정 규칙을 만들어가는 트리 구조의 모델로, 분류나 회귀 문제를 해결
+
 > 데이터를 분류하거나 회귀 분석을 위해 사용되는 트리 구조의 알고리즘으로, 트리의 각 노드에서 속성/특징에 대한 판단을 내려 가지를 분기하며, 리프 노드에서 최종 결정을 내리는 모델이다.
 >> Tree-Based methods. Predict 를 위해 여러 <span style='color:orange'>region</span> 으로 stratifying or <span style='color:orange'>segmenting</span> 하는 방법론. Regression 과 classification 모두 사용 가능하다.
 

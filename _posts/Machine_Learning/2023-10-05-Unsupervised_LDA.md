@@ -10,6 +10,8 @@ use_tex: true
 ---
 
 > 클래스 레이블 정보 없이 데이터셋의 판별 정보를 찾는 방법을 탐색한다. 
+
+
 > 이는 데이터의 구조를 이해하거나 차원을 축소하는 데 사용될 수 있다. 
 > 비지도 LDA 는 데이터의 내재된 구조를 발견하려고 시도하며, 이는 주로 데이터의 클러스터링을 통해 이루어진다.
 >> It is basement on classification in supervised learning.
