@@ -9,8 +9,6 @@ search: true
 use_tex: true
 ---
 
-# Fourier
-
 > is a transform that converts a function into a form that describes the frequencies present in the original function.
 >> 시간이나 공간에 대한 함수를 시간 또는 공간 주파수 성분으로 분해하는 변환
 
@@ -155,6 +153,45 @@ Fourier Series 의 계산을 'Harmonic Analysis' 라고 칭한다.
   - $f(t)$에 $\Delta T$ 간격의 impulse train 과 동일한 sampling 함수를 곱한다.
   - $\tilde{f}(t)=f(t)s_{\Delta T}(t)=\sum_{n=-\infty}^{\infty}f(t)\delta (t-n\Delta T)$
   - $\tilde{f}(t)$: Sampled function
+  - 각 구성 요소: 임펄스 위치에서 $f(t)$의 값에 의해 가중된 임펄스
+  
+
+- 샘플링 된 순서에서의 임의의 샘플
+  - $f_{k}=\int_{-\infty}^{\infty} f(t)\delta (t-k\Delta T)dt=f(k\Delta T)$
+
+<br>
+
+## Fourier transform of the impulse train
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/edb9ac0d-e207-4790-b596-54d2b3d1cfdf">{: .align-center}
+
+$\therefore \tilde{F}(\mu )=\frac{1}{\Delta T}\sum_{n=-\infty}^{\infty}F(\mu -\frac{n}{\Delta T})$
+
+- 무한한 주기를 가진 원래 연속 함수의 변환 복사본의 시퀀스
+- 복사본 간격: $1/\Delta T$값에 의해 결정
+- <img width="800" alt="image" src="https://github.com/user-attachments/assets/6ed38ec8-6c15-4a28-8d55-e1db90bfa39c">{: .align-center}
+
+## Sampling Theorem
+- Consider a band limited function. $-\mu max, \mu max$
+- Higher $\Delta T: F(\mu)$ 의 주기가 병합
+- Lower $\Delta T$: 주기 사이의 명확한 분리
+- sufficient separation is guaranteed if <span style='color:#ff7777'>$\frac{1}{2\Delta}>\mu_{max} or \frac{1}{\Delta T}>2\mu_{max}$</span>
+  - Continuous, band-limited function can be recovered completely
+    if the samples are acquired at a rate exceeding
+    twice the highest frequency content of the function
+  - <img width="800" alt="image" src="https://github.com/user-attachments/assets/1aa303b1-65c8-462e-ac26-0ab7ad8a6d2a">{: .align-center}
+
+  - $\therefore \frac{1}{\Delta T} > 2\mu_{max}$
+
+<br>
+
+### Nyquist Rate
+- A sampling rate exactly equal to twice the highest frequency
+- $\frac{1}{\Delta T} = 2\mu_{max}$
+
+
+Recover $F(\mu)$ from $\tilde{F}(\mu)$ with a function is sampled at a rate
+higher than the Nyquist Rate
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/87276b4a-304c-4cc9-b518-f1556ae494f1">{: .align-center}
 
 <br>
 
