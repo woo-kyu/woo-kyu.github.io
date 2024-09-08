@@ -151,7 +151,10 @@ Fourier Series 의 계산을 'Harmonic Analysis' 라고 칭한다.
 # Sampling
 
 - 연속 함수를 <span style='color:#ff8888'> 이산 값의 일련의 시퀸스</span>로 변환
-- 연속 함수 $f(t)$ 를 일정한 $\delta T$로 샘플링
+- 연속 함수 $f(t)$ 를 일정한 $\Delta T$로 샘플링
+  - $f(t)$에 $\Delta T$ 간격의 impulse train 과 동일한 sampling 함수를 곱한다.
+  - $\tilde{f}(t)=f(t)s_{\Delta T}(t)=\sum_{n=-\infty}^{\infty}f(t)\delta (t-n\Delta T)$
+  - $\tilde{f}(t)$: Sampled function
 
 <br>
 
