@@ -17,9 +17,13 @@ use_tex: true
 
 <hr>
 
-## Filtering fundamentals
+## Frequency Domain
 
-- $g(x,y)=\textrm{Real}\left\{\Im^{-1}[H(\mu ,\nu )F(\mu ,\nu)] \right\}$
+> Fre
+
+### Filtering fundamentals
+
+- $g(x,y)=\textrm{Real} \left\ {\Im^{-1}[H(\mu ,\nu )F(\mu ,\nu)] \right\}$
   - $\Im^{-1}$: IDFT
   - $F(\mu ,\nu)$: DFT of the input image $f(x,y)$
   - $H(\mu ,\nu)$: Filter transfer function
@@ -37,7 +41,7 @@ use_tex: true
 
 <br>
 
-## Frequency Domain Filtering Steps
+### Frequency Domain Filtering Steps
 
 1. Given an input image $f(x,y)$ of size M x N, obtain padding sizes $P = 2M$ and $Q = 2N$
 2. Form a padding image $f_{p}(x,y)$ of size P x Q (zero, mirror, or replicate padding)
@@ -52,4 +56,4 @@ use_tex: true
 
 <br>
 
-##
+###
