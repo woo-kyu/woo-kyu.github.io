@@ -17,9 +17,9 @@ use_tex: true
 
 <hr>
 
-## Frequency Domain
+## Frequency Domain Filter
 
-> Fre
+Frequency Domain Filter
 
 ### Filtering fundamentals
 
