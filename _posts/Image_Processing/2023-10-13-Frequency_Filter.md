@@ -31,7 +31,7 @@ use_tex: true
   - $H(\mu ,\nu )F(\mu ,\nu)$: Elementwise multiplication
 
 - 저 주파수: 이미지에서 천천히 변하는 <span style='color:#ff7777'> intensity 구성 요소</span>
-- 고 주파수: Intensity의 <span style='color:#ff7777'> 급격한 변화</span> 
+- 고 주파수: Intensity 의 <span style='color:#ff7777'> 급격한 변화</span> 
   - e.g., edge, noise
 
 - $H(\mu, \nu)$
@@ -56,4 +56,8 @@ use_tex: true
 
 <br>
 
-###
+### Smoothing using low-pass
+
+- Attenuate high frequency via low-pass filtering
+- Ideal LPF: cut off all frequencies outside a circle of radius
+- $H(\mu ,\un) = $ \left\{\begin{matrix} 1 : \textrm{ if } D(\mu ,\nu) \leq D_0 \\ 0 : \textrm{ if } D(\mu ,\nu) >  D_0 \end{matrix}\right.
