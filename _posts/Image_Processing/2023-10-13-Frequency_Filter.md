@@ -60,4 +60,4 @@ use_tex: true
 
 - Attenuate high frequency via low-pass filtering
 - Ideal LPF: cut off all frequencies outside a circle of radius
-- $H(\mu ,\un) = $ \left\{\begin{matrix} 1 : \textrm{ if } D(\mu ,\nu) \leq D_0 \\ 0 : \textrm{ if } D(\mu ,\nu) >  D_0 \end{matrix}\right.
+- $H(\mu ,\nu) = 1 : \textrm{ if } D(\mu ,\nu) \leq D_0 \\, 0 : \textrm{ if } D(\mu ,\nu) >  D_0 $
