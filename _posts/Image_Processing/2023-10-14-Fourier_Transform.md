@@ -446,11 +446,6 @@ Fourier Series 의 계산을 'Harmonic Analysis' 라고 칭한다.
 <img width="1229" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/21ea2eb7-b18d-449b-a469-c7f0b0690ba8">{: .align-center}
 
 
-<br>
-
-
-## Advanced Fourier Transform
-[Advanced of Fourier Transform]({{site.url}}/imageprocessing/Advanced Fourier Transform/)
 
 
 <br>

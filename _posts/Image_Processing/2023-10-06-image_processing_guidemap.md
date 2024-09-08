@@ -46,6 +46,8 @@ use_tex: false
 
 ### 4. Filtering in Frequency Domain
 
+[Fourier Transform]({{site.url}}/image_processing/Fourier_Transform/)
+
 
 
 
@@ -55,9 +57,8 @@ use_tex: false
 
 
 ### 6. Fourier Transform
-[Fourier Transform]({{site.url}}/image_processing/Fourier_Transform/)
 
-[Advanced of Fourier Transform]({{site.url}}/image_processing/Advanced_Fourier/)
+
 
 ### 7. Restoration Color
 [Restoration Color]({{site.url}}/image_processing/Restoration_Color/)
