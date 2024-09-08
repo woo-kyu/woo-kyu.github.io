@@ -23,7 +23,7 @@ use_tex: true
 
 ### Filtering fundamentals
 
-- $g(x,y)=\textrm{Real} \left\{ \Im^{-1}[H(\mu ,\nu )F(\mu ,\nu)] \right\}$
+- $g(x,y)=\textrm{Real} \{ \Im^{-1}[H(\mu ,\nu )F(\mu ,\nu)] \}$
   - $\Im^{-1}$: IDFT
   - $F(\mu ,\nu)$: DFT of the input image $f(x,y)$
   - $H(\mu ,\nu)$: Filter transfer function
@@ -60,4 +60,4 @@ use_tex: true
 
 - Attenuate high frequency via low-pass filtering
 - Ideal LPF: cut off all frequencies outside a circle of radius
-- $H(\mu ,\nu) = 1 : \textrm{ if } D(\mu ,\nu) \leq D_0 \\, 0 : \textrm{ if } D(\mu ,\nu) >  D_0 $
+- $H(\mu ,\nu) = 1 : \textrm{ if } D(\mu ,\nu) \leq D_0 \\ , 0 : \textrm{ if } D(\mu ,\nu) >  D_0 $
