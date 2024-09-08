@@ -88,11 +88,21 @@ use_tex: true
 
 ### Smoothing Linear Filters
 
+> 급격한 전환을 줄이며 불필요한 가장자리 블러 효과를 가지고 있다. 블러 및 잡음 갑소에 사용
+
 <img width="1316" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/6ea62eeb-cacd-42d9-943c-e33a896c14ec">{: .align-center}
 
 <img width="1430" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/e62c1ae4-ede4-4ec6-b161-88c7d26d9712">{: .align-center}
 
 <img width="1308" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/5a36d891-6ecc-42f4-98c2-37c5eba45dac">{: .align-center}
+
+<br>
+
+### Order-Statistic (Nonlinear) filter
+- 순서 통계 필터는 순서화를 기반으로 하는 비선형 공간 필터
+- Salt and Pepper Noise (Impulse Noise) 를 완화하기 위한 Median Filter
+  <img width="1000" alt="image" src="https://github.com/user-attachments/assets/2dcae3c1-980e-4065-87c0-eb9552363d11">{: .align-center}
+
 
 
 

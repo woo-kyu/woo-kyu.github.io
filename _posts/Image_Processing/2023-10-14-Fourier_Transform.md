@@ -9,8 +9,12 @@ search: true
 use_tex: true
 ---
 
+# Fourier
+
 > is a transform that converts a function into a form that describes the frequencies present in the original function.
 >> 시간이나 공간에 대한 함수를 시간 또는 공간 주파수 성분으로 분해하는 변환
+
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/0c971003-988e-4b02-a5c4-eb51c56a93e3">{: .align-center}
 
 <img width="500" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/70b2169a-26fd-49b9-b9d4-f14400a621b0">{: .align-center}
 
@@ -32,6 +36,8 @@ use_tex: true
 Fourier Series 의 계산을 'Harmonic Analysis' 라고 칭한다.
 이는 임의의 periodic 함수를 간단한 항들로 분해하고 이 항들을 개별적으로 해결한 뒤,
 원 문제의 해결책 또는 원하는 정확도로의 근사치를 얻기 위해 이들을 재결합 하는 데 매우 유용하다.
+
+즉, 어떤 주기적 함수든 <span style='color:#ff7777'>서로 다른 주파수의 $sin$ 및 $cos$ 의 합으로 표현</span>할 수 있다.
 
 <br>
 
@@ -142,6 +148,12 @@ Fourier Series 의 계산을 'Harmonic Analysis' 라고 칭한다.
 
 <br>
 
+# Sampling
+
+- 연속 함수를 <span style='color:#ff8888'> 이산 값의 일련의 시퀸스</span>로 변환
+- 연속 함수 $f(t)$ 를 일정한 $\delta T$로 샘플링
+
+<br>
 
 # Fourier Transform
 > 푸리에 급수를 일반화한 형태로, L이 무한대로 가는 극한에서 복소 푸리에 급수의 일반화이다.

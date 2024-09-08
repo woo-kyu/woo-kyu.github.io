@@ -25,15 +25,17 @@ use_tex: false
 
 <br>
 
-### 3. Filter
-[Filter]({{site.url}}/image_processing/Filter/)
+### 3. Filtering in Spatial Domain
 
-<br>
-
-### 4. Filtering in Spatial Domain
-[Spatial Filtering]({{site.url}}/image_processing/Spatial_Filtering/)
+[Filter and Transformation in Spatial Domain]({{site.url}}/image_processing/Filter_n_Transformation/)
 
 [Histogram Processing]({{site.url}}/image_processing/Histogram/)
+
+[Spatial Filtering]({{site.url}}/image_processing/Spatial_Filtering/)
+
+[Mechanics of Linear Spatial Filtering]({{site.url}}/image_processing/Filtering_mechanics)
+
+[Spatial Correlation & Convolution]({{site.url}}/image_processing/Filtering_Correlation_Convolution)
 
 [Smoothing]({{site.url}}/image_processing/Filtering_Smoooooothing)
 
@@ -42,7 +44,7 @@ use_tex: false
 
 <br>
 
-### 5. Filtering in Frequency Domain
+### 4. Filtering in Frequency Domain
 
 
 
@@ -69,8 +71,6 @@ use_tex: false
 
 #### Lower case
 
-[Mechanics of Linear Spatial Filtering]({{site.url}}/image_processing/Filtering_mechanics)
 
-[Spatial Correlation & Convolution]({{site.url}}/image_processing/Filtering_Correlation_Convolution)
 
 

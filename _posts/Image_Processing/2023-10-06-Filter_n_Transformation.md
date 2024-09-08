@@ -1,7 +1,7 @@
 ---
 layout: single
-title: Filter
-toc_label: Filter
+title: Filter and Transformation in Spatial Domain
+toc_label: Filter and Transformation in Spatial Domain
 categories: Image_Processing
 tags: [Image Processing]
 author_profile: false
@@ -178,6 +178,7 @@ use_tex: true
 
 ## [Histogram Processing]({{site.url}}/image_processing/Histogram/)
 
+> Image Histogram
 
 
 ---

@@ -95,7 +95,7 @@ use_tex: true
 
 <br>
 
-## Laplacian
+## Laplacian Filter
 - 라플라시안은 2차 도함수(미분 연산자)를 기반으로 한다.
   - <span style='color:#fff9ff'>Second-order derivatives</span> for image sharpening
 - 이미지의 두 번째 공간 도함수의 합으로 정의

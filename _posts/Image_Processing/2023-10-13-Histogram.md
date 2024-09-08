@@ -114,6 +114,12 @@ use_tex: true
 
 <img width="800" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/2d2a238c-9d91-4720-96ba-a4a0bf929d50">{: .align-center}
 
+<img width="1000" alt="image" src="https://github.com/user-attachments/assets/50c698b8-d1f8-4d58-8789-5e842a2a3958">{: .align-center}
+
+<img width="1000" alt="image" src="https://github.com/user-attachments/assets/04390410-e288-44e1-a8f8-52a0a8d5606c">{: .align-center}
+
+<img width="1000" alt="image" src="https://github.com/user-attachments/assets/d8589719-aacb-459d-a0ea-9984665e2f2a">{: .align-center}
+
 <br>
 
 # Histogram Matching (Specification)
