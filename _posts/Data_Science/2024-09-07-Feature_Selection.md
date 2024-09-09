@@ -2,7 +2,7 @@
 layout: single
 title: Feature Selection
 toc_label: Feature Selection
-categories: Feature_Selection
+categories: Data_Science
 tags: [Data Science]
 author_profile: false
 search: true
