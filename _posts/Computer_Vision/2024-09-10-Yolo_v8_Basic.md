@@ -208,7 +208,7 @@ bottomLeftOrigin: True일 경우, 텍스트의 좌표 시스템이 아래쪽에�
 
 <img width="800" alt="untitle" src="https://github.com/user-attachments/assets/7b4d8f8a-cb19-4ce0-beef-36cb41af3a7f">{: .align-center}
 
-<img width="800" alt="untitle" src="https://github.com/user-attachments/assets/acb352a4-a851-43db-a978-740fd9383c05">{: .align-center}
+<img width="800" alt="untitle" src="https://github.com/user-attachments/assets/0611b109-d5f9-4d77-bcc2-f436017f31a7">{: .align-center}
 
 
 
