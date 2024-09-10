@@ -18,7 +18,7 @@ use_tex: false
 
 ## Yolo
 
-- [Yolo V8 Basic]({{site.url}}/computer_vision/Yolo_v8_Basic/)
+- [Yolo v8 Basic]({{site.url}}/computer_vision/Yolo_v8_Basic/)
 
 
 

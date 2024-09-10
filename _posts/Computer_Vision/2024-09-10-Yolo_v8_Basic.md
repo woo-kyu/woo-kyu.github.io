@@ -11,24 +11,33 @@ use_tex: true
 
 > Yolo V8 Basic
 
-# Windows
+<br>
+
+# Install (Dependency)
+
+## Windows
+
+
 
 <br>
 
-## Install (Dependency)
+## Mac
 
 ```python
 pip install ultralytics
 pip install opencv-python
 ```
+<br>
+
+## Linux
 
 <br>
 
-## Real-time Detection
+# Real-time Detection
 
 <br>
 
-### Pure Codes
+## Pure Codes
 
 ```python
 import ultralytics
@@ -75,17 +84,7 @@ cv2.destroyAllWindows()
 
 <br>
 
-#### Codes Explain
-
-```python
-// Library Import
-import ultralytics
-import cv2
-from ultraytics import YOLO
-
-ultralytics.checks()
-```
-
+### Codes Explain
 
 ```python
 //pre-train 된 yolov8 nano 모델을 사용
@@ -142,9 +141,9 @@ cv2.destroyAllWindows()
 ```
 <br>
 
-#### Core
+### Core Fn
 
-##### cv2.read
+#### cv2.read
 ```python
 ret, frame = video(object).read()
 
@@ -203,7 +202,7 @@ bottomLeftOrigin: True일 경우, 텍스트의 좌표 시스템이 아래쪽에�
 ```
 <br>
 
-### Results
+## Results
 
 <img width="800" alt="untitle" src="https://github.com/user-attachments/assets/a5d9f8b6-87b4-48c8-9594-8a0bb5edf94e">{: .align-center}
 
