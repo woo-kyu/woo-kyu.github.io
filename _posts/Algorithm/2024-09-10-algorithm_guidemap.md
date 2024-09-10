@@ -13,4 +13,4 @@ use_tex: false
 
 # 백준
 
-[1000번, A+B]([Introduction]({{site.url}}/Algorithm/BK_no1000/))
+[1000번, A+B]({{site.url}}/Algorithm/BK_no1000/)

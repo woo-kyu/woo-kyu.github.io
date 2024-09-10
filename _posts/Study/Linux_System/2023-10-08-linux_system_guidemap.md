@@ -1,7 +1,7 @@
 ---
 layout: single
-title: Linux Programing Map
-toc_label: Linux Programing Map
+title: Linux System Map
+toc_label: Linux System Map
 categories: Linux_System
 tags: [Linux System, Uni, Map]
 author_profile: false
