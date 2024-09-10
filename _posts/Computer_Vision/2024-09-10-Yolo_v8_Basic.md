@@ -40,6 +40,7 @@ ultralytics.checks()
 model = YOLO('yolov8n.pt')
 
 video = cv2.VideoCapture(0)
+// video = cv2.VideoCapture('path_to_your_video.mp4')
 
 if not video.isOpened():
     print("Cant open cam")
