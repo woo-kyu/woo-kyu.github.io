@@ -11,5 +11,13 @@ use_tex: false
 
 > Python Experiment 
 
-## Numpy
+# Python Function
+
+[Numpy_basic]([Introduction]({{site.url}}/Python/Python_FN_map/))
+
+<br>
+
+# Numpy
 [Numpy_basic]([Introduction]({{site.url}}/Python/Numpy_Basic/))
+
+ 

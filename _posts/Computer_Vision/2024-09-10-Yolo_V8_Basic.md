@@ -160,10 +160,9 @@ x1, y1, x2, y2 = map(int, box.xyxy[0])
 
 x1, y1: 바운딩 박스의 좌측 상단 모서리 좌표
 x2, y2: 바운딩 박스의 우측 하단 모서리 좌표
-
-[map()]([Introduction]({{site.url}}/python/Numpy_Basic/))
-
 ```
+
+- map
 
 <br>
 
