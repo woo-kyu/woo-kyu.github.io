@@ -95,6 +95,9 @@ model = YOLO('yolov8n.pt')
 // 비디오 객체 선언
 video = cv2.VideoCapture(0) 
 
+// 로컬 저장된 영상을 사용
+// video = cv2.VideoCapture('path_to_your_video.mp4')
+
 // Error 처리
 if not video.isOpened(): 
     print("Cant open cam")
@@ -160,13 +163,50 @@ x1, y1, x2, y2 = map(int, box.xyxy[0])
 
 x1, y1: 바운딩 박스의 좌측 상단 모서리 좌표
 x2, y2: 바운딩 박스의 우측 하단 모서리 좌표
-```
 
-- map
+map: box.xyxy[0]의 값을 int로 변환하여 각각 반환
+```
 
 <br>
 
+#### cv2.rectangle
+
+```python
+cv2.rectangle(img, pt1, pt2, color, thickness=None, lineType=None, shift=None)
+
+img: 이미지
+pt1: 바운딩 박스 좌측 상단 모서리 좌표 
+pt2: 바운딩 박스 우측 하단 모서리 좌표
+color: 바운딩 박스 색상 (B, G, R)
+thickness: 두께
+linetype: 선 유형. cv2.LINE_8 (실선, 기본값), cv2.LINE_AA(안티 앨러이싱) ...
+shift: 좌표를 소수점으로 처리 가능. 기본값은 0
+
+```
+
+<br>
+
+#### cv2.putText
+```python
+cv2.putText(img, text, org, fontFace, fontScale, color, thickness=None, lineType=None, bottomLeftOrigin=None)
+
+img: 이미지
+text: 표시할 텍스트 문자열. 문자열 형식으로 텍스트를 전달
+org: 텍스트가 시작될 좌표 (x, y)
+fontFace: 텍스트에 사용할 글꼴 유형. (cv2.FONT_HERSHEY_[SIMPLEX] or [PLAIN, DUPLEX...])
+fontScale: 글꼴 크기 비율. 실수 값
+color: 텍스트의 색상. BGR 형식의 튜플로 지정
+thickness: 텍스트의 두께
+lineType: 선의 유형
+bottomLeftOrigin: True일 경우, 텍스트의 좌표 시스템이 아래쪽에서 시작
+```
+<br>
+
 ### Results
+
+<img width="800" alt="untitle" src="https://github.com/user-attachments/assets/a5d9f8b6-87b4-48c8-9594-8a0bb5edf94e">{: .align-center}
+
+<img width="800" alt="untitle" src="https://github.com/user-attachments/assets/7b4d8f8a-cb19-4ce0-beef-36cb41af3a7f">{: .align-center}
 
 
 
