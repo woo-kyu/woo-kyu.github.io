@@ -204,9 +204,9 @@ bottomLeftOrigin: True일 경우, 텍스트의 좌표 시스템이 아래쪽에�
 
 ## Results
 
-<img width="800" alt="untitle" src="https:#github.com/user-attachments/assets/a5d9f8b6-87b4-48c8-9594-8a0bb5edf94e">{: .align-center}
+<img width="800" alt="untitle" src="https://github.com/user-attachments/assets/a5d9f8b6-87b4-48c8-9594-8a0bb5edf94e">{: .align-center}
 
-<img width="800" alt="untitle" src="https:#github.com/user-attachments/assets/7b4d8f8a-cb19-4ce0-beef-36cb41af3a7f">{: .align-center}
+<img width="800" alt="untitle" src="https://github.com/user-attachments/assets/7b4d8f8a-cb19-4ce0-beef-36cb41af3a7f">{: .align-center}
 
 <img width="800" alt="untitle" src="https://github.com/user-attachments/assets/acb352a4-a851-43db-a978-740fd9383c05">{: .align-center}
 
