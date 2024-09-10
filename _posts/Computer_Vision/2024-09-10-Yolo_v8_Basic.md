@@ -49,7 +49,7 @@ ultralytics.checks()
 model = YOLO('yolov8n.pt')
 
 video = cv2.VideoCapture(0)
-// video = cv2.VideoCapture('path_to_your_video.mp4')
+# video = cv2.VideoCapture('path_to_your_video.mp4')
 
 if not video.isOpened():
     print("Cant open cam")
@@ -87,18 +87,18 @@ cv2.destroyAllWindows()
 ### Codes Explain
 
 ```python
-//pre-train 된 yolov8 nano 모델을 사용
+# pre-train 된 yolov8 nano 모델을 사용
 model = YOLO('yolov8n.pt') 
 ```
 
 ```python
-// 비디오 객체 선언
+# 비디오 객체 선언
 video = cv2.VideoCapture(0) 
 
-// 로컬 저장된 영상을 사용
-// video = cv2.VideoCapture('path_to_your_video.mp4')
+# 로컬 저장된 영상을 사용
+# video = cv2.VideoCapture('path_to_your_video.mp4')
 
-// Error 처리
+# Error 처리
 if not video.isOpened(): 
     print("Cant open cam")
     exit()
@@ -107,29 +107,29 @@ if not video.isOpened():
 ```python
 while True:
     
-    // 비디오 객체 생성
+    # 비디오 객체 생성
     ret, frame = video.read() 
-    if not ret: // 에러 처리
+    if not ret: # 에러 처리
         print("Cant bring frame")
         break
     
     
-    // 각 프레임 별 이미지    
+    # 각 프레임 별 이미지    
     result = model(frame) 
     
     
-    // 감지된 객체 처리
+    # 감지된 객체 처리
     for result in result: 
-    // 매 프레임 별 동작. 하나의 프레임에 여러개의 감지된 객체가 생성될 수 있으므로 반복
+    # 매 프레임 별 동작. 하나의 프레임에 여러개의 감지된 객체가 생성될 수 있으므로 반복
     
-        for box in result.boxes: // 객 객체의 경계 상자
-            x1, y1, x2, y2 = map(int, box.xyxy[0]) // 좌표 추출
-            conf = box.conf[0] // confidence
-            cls = box.cls[0] // class
+        for box in result.boxes: # 객 객체의 경계 상자
+            x1, y1, x2, y2 = map(int, box.xyxy[0]) # 좌표 추출
+            conf = box.conf[0] # confidence
+            cls = box.cls[0] # class
             
-            cv2.rectangle(frame, (x1, y1), (x2, y2), (0,255,0), 2) // 객체 경계 박스 그리기
-            label = f"{model.names[int(cls)]} {conf:.2f}" // 라벨 지정
-            cv2.putText(frame, label, (x1, y1 - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2) // 텍스트 표시
+            cv2.rectangle(frame, (x1, y1), (x2, y2), (0,255,0), 2) # 객체 경계 박스 그리기
+            label = f"{model.names[int(cls)]} {conf:.2f}" # 라벨 지정
+            cv2.putText(frame, label, (x1, y1 - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2) # 텍스트 표시
     
     cv2.imshow("Temp", frame)
     
@@ -204,9 +204,11 @@ bottomLeftOrigin: True일 경우, 텍스트의 좌표 시스템이 아래쪽에�
 
 ## Results
 
-<img width="800" alt="untitle" src="https://github.com/user-attachments/assets/a5d9f8b6-87b4-48c8-9594-8a0bb5edf94e">{: .align-center}
+<img width="800" alt="untitle" src="https:#github.com/user-attachments/assets/a5d9f8b6-87b4-48c8-9594-8a0bb5edf94e">{: .align-center}
 
-<img width="800" alt="untitle" src="https://github.com/user-attachments/assets/7b4d8f8a-cb19-4ce0-beef-36cb41af3a7f">{: .align-center}
+<img width="800" alt="untitle" src="https:#github.com/user-attachments/assets/7b4d8f8a-cb19-4ce0-beef-36cb41af3a7f">{: .align-center}
+
+<img width="800" alt="untitle" src="https://github.com/user-attachments/assets/acb352a4-a851-43db-a978-740fd9383c05">{: .align-center}
 
 
 
