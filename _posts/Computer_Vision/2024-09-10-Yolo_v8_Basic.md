@@ -21,15 +21,12 @@ use_tex: true
 
 <br>
 
-## Mac
+## Mac / Linux
 
 ```python
 pip install ultralytics
 pip install opencv-python
 ```
-<br>
-
-## Linux
 
 <br>
 
