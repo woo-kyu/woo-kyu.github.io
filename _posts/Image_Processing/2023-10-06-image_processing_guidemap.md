@@ -48,6 +48,9 @@ use_tex: false
 
 [Fourier Transform]({{site.url}}/image_processing/Fourier_Transform/)
 
+[Filter in Frequency Spatial]({{site.url}}/image_processing/Friquency_Filter/)
+작성중
+
 
 
 
