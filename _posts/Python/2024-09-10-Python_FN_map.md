@@ -78,32 +78,6 @@ print(taxed_citizens)
 
 ## Exmaple case 2
 
-```python
-print(sum(map(int,input().split())))
-```
-
-- print() : 출력문
-- sum() : int문의 합계
-- map() : 여러 요소의 하나의 함수를 대응
-
-map(function, iterable).
-첫 번째 매개변수로 함수가,
-두 번째 매개변수로 반복 가능한 자료형 (list, tuple...) 지정
-map 함수의 반환값은 map 객체임으로 해당 자료형을 list 또는 tuple로 변환해야 한다.
-
-따라서, map의 첫 매개변수로 int를,
-두 번째 매개변수로 input() 함수를 통해 입력값을 받고,
-이 입력값들을 split() 으로 나누었다.
-
-split() 함수도 두 가지의 option을 받는데,
-첫 번째는 나누는 기준 char,
-두 번째는 나누는 횟수의 최댓값 (최대값 이상은 나누지 않고 반환)이 있다.
-이 option factor을 지정해 주지 않으면 ' ' (띄워쓰기, space)를 기준으로 split하여 반환해 준다.
-
-따라서 위 코드는
-input으로 인자를 받은 뒤,
-split() = space를 기준으로 인자를 자르고,
-이 인자들을 int형으로 반환한 뒤
-이 각 인자들을 sum하여 print문으로 출력하는 코드이다.
+[BK 1000, A+B]([Introduction]({{site.url}}/Algorithm/BK_no1000/))
 
 
