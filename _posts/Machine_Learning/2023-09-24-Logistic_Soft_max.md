@@ -9,7 +9,7 @@ search: true
 use_tex: true
 ---
 
-> Logistic Regression: 이진 분류 문제에서 시그모이드 함수를 사용해 클래스 확률을 예측, 
+> Logistic Regression: 이진 분류 문제에서 sigmoid 함수를 사용해 클래스 확률을 예측, 
 > Softmax Regression: 다중 클래스 분류에서 각 클래스에 대한 확률을 계산하여 가장 높은 확률의 클래스를 선택
 
 > 로지스틱 회귀의 목적은 일반적인 회귀 분석의 목표와 동일하게 종속 변수와 독립 변수간의 관계를 구체적인 함수로 나타내어 향후 예측 모델에 사용하는 것이다. 

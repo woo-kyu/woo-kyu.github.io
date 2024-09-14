@@ -1,0 +1,35 @@
+---
+layout: single
+title: CNN Paper Review
+toc_label: CNN Paper Review
+categories: Deep_Learning
+tags: [Computer Vision, Deep_Learning, YOLO, Paper Review]
+author_profile: false
+search: true
+use_tex: true
+---
+
+> Convolution Neural Network
+
+# [Original paper](https://arxiv.org/pdf/1511.08458)
+
+<br>
+
+# Introduce
+
+> Convolutional Neural Network(CNN)은 이미지 내의 객체를 효율적으로 탐지하고 분류하는 데 가장 널리 사용되는 기술로, 
+> 계층적인 특징 추출 방식을 통해 시각적 패턴을 자동으로 학습하고 인식할 수 있다.
+
+# Proposed Method
+
+<br>
+
+## 1. ReLU (Activatie Function)
+
+> 
+
+
+
+
+
+

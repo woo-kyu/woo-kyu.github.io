@@ -18,18 +18,12 @@ use_tex: false
 
 ## Yolo
 
-- [Yolo v8 Basic]({{site.url}}/computer_vision/Yolo_v8_Basic/)
+- [YOLO v8 Basic]({{site.url}}/computer_vision/yolo_v8_Basic/)
 
 
 
 <br>
 
-# Image Processing Basic Experiment
 
-- [Edge Detection]({{site.url}}/Computer_Vision/Edge_detection/)
-
-- [Pixel_Histogram]({{site.url}}/Computer_Vision/Pixel_Histogram/)
-
-- [Threshold_Interpolation]({{site.url}}/Computer_Vision/Threshold_Interpolation/)
 
 <br>

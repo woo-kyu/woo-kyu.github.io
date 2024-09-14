@@ -52,7 +52,7 @@ Common parameters
 <br><br>
 
 
-# Types of L.R.
+# Types of Learning Rate
 
 ## LambdaLR
 

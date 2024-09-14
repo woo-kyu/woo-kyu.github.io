@@ -1,9 +1,9 @@
 ---
 layout: single
-title: Volo v8 Basic
-toc_label: Volo_v8_Basic
+title: VOLO v8 Basic
+toc_label: VOLO v8 Basic
 categories: Computer_Vision
-tags: [Map, Computer Vision, YOLO]
+tags: [Computer Vision, YOLO]
 author_profile: false
 search: true
 use_tex: true

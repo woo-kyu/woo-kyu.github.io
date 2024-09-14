@@ -2,7 +2,7 @@
 layout: single
 title: Edge Detection
 toc_label: Edge Detection
-categories: Computer_Vision
+categories: Image_Processing
 tags: [Image Processing]
 author_profile: false
 search: true

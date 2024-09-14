@@ -13,7 +13,19 @@ use_tex: false
 
 > Imaging Processing Map
 
-# Image Processing 이론
+<br>
+
+# Image Processing Basic Experiment
+
+- [Edge Detection]({{site.url}}/image_processing/Edge_detection/)
+
+- [Pixel_Histogram]({{site.url}}/image_processing/Pixel_Histogram/)
+
+- [Threshold_Interpolation]({{site.url}}/image_processing/Threshold_Interpolation/)
+
+<br>
+
+# Image Processing Theory
 
 ### 1. Basic
 [Introduction]({{site.url}}/image_processing/Image_Processing_basic)

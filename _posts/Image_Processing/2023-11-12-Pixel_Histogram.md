@@ -2,7 +2,7 @@
 layout: single
 title: Pixel Histogram
 toc_label: Pixel Histogram
-categories: Computer_Vision
+categories: Image_Processing
 tags: [Image Processing]
 author_profile: false
 search: true
