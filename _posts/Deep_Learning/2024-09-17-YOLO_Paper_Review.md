@@ -1,0 +1,103 @@
+---
+layout: single
+title: VOLO Paper Review
+toc_label: VOLO Paper Review
+categories: Deep_Learning
+tags: [Computer Vision, Deep Learning, YOLO, Paper Review]
+author_profile: false
+search: true
+use_tex: true
+---
+
+> You Only Look Once
+
+<br>
+
+# Overview
+
+<hr>
+<hr>
+
+> YOLO 는 기존 객체 탐지 알고리즘과 달리, 한 번의 신경망 평가로 전체 이미지를 처리합니다.
+> 기존에는 각 파이프라인이 이미지로부터 특징을 추출하고, 분류를 하는것이 일반적이지만,
+> YOLO 는 객체 탐지를 단일 회귀 문제로 풀이함으로써 탐지 시간이 매우 단축되었습니다.
+
+<br>
+
+## 기존 알고리즘과의 차이
+
+<hr>
+
+<br>
+
+### Architect
+
+<br>
+
+- 기존 알고리즘
+
+기존 객체 탐지 알고리즘으로 대표되는 R-CNN, DPM 은 다단계 파이프라인을 사용한 기법입니다.
+일반적으로 이미지에서 특징을 추출하기 위해 Haar, SIFT, HOG, CNN Feature 과 같은 알고리즘을 통해 특징을 추출하고,
+분류기 또는 로컬라이저를 사용하여 특징 공간에서 객체를 식별하는 것입니다.
+
+이러한 기존 객체 탐지 알고리즘은 슬라이딩 윈도우 방식으로 실행되거나, 이미지의 특정 영역에서만 실행됩니다.
+
+<br>
+
+- YOLO
+
+그러나 새롭게 제안된 이 방식은 단일 회귀 문제로,
+단일 회귀 
+
+
+
+<br>
+
+# Inside
+
+<hr>
+<hr>
+<br>
+
+## Features
+
+<hr>
+
+### Fast
+
+- YOLO 는 Detection 을 단일 회귀 문제로 구성
+- Simple, Fast
+
+<br>
+
+### Context Information
+
+- 이미지에 대한 global 관점을 고려한다.
+  - YOLO reasons <span style="color:orange">globally</span> about image when making prediction
+- 전체 이미지를 고려하기 때문에, 객체의 외형 뿐만 아니라 클래스에 대한 Context 정보를 암묵적으로 인코딩 한다.
+  - YOLO sees the entire image during training and test time. 
+  - So it implicitly encodes contextual information about classes as well as their appearance.
+
+<br>
+
+### learns Generalizable Representations
+
+> 객체의 일반화 가능한 표현을 학습한다.
+
+- 학습된 데이터를 기반으로 다양한 도메인에서도 객체를 잘 탐지할 수 있다는 것을 의미
+
+<br> 
+
+##
+
+
+<br>
+
+# Original Paper
+
+<hr>
+<hr>
+
+[Original Paper](https://arxiv.org/pdf/1511.08458)
+
+<br>
