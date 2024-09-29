@@ -238,9 +238,62 @@ use_tex: ture
 
 #### Private
 
-<img width="800" alt="img" src="https://github.com/user-attachments/assets/ff43e86f-6975-46fb-9c18-8fd17690c53b">{: .align-center}
+> 개인 및 협업 팀 단위로 라벨링을 수행합니다.
 
+<br>
 
+##### 팀 결성
+
+> > 프라이빗 팀 결성 선행 작업이 요구됩니다.
+> [SageMaker 레이블 지정 인력 관리]({{site.url}}/aws/SageMaker_Labaeling_Workforces/)
+
+<img width="800" alt="img" src="https://github.com/user-attachments/assets/c4220fe3-c826-43b4-9b75-3e7e6e89896a">{: .align-center}
+
+<img width="800" alt="img" src="https://github.com/user-attachments/assets/d8f483df-2ffa-4f3e-8aee-a17c018602db">{: .align-center}
+
+- 프라이빗 팀을 선택합니다.
+
+<br>
+
+##### 작업 단위 지정
+
+<img width="800" alt="img" src="https://github.com/user-attachments/assets/ee1fd622-fa98-4af4-b33c-c85d044a9ae4">{: .align-center}
+
+- 테스크 작업 시간: 작업자당 단일 작업에서 부여할 수 있는 최대 시간입니다. 8시간이 최대 입니다.
+- 테스크 만료 시간: 작업자 당 얼마의 기간동안 수행할 수 있는지 지정할 수 있습니다.
+
+- Tip: 개별 팀의 경우 많은 시간을 부여해 두는것이 좋습니다.
+
+<br>
+
+##### 오토 레이블링
+
+> 레이블링 된 데이터를 바탕으로 모델을 학습시키고, 그 모델을 활용하여 나머지 데이터를 Auto Labeling 합니다.
+> 
+> [Automate Data Labeling](https://docs.aws.amazon.com/sagemaker/latest/dg/sms-automated-labeling.html)
+
+<img width="800" alt="img" src="https://github.com/user-attachments/assets/6e6c67a9-f976-4812-a7bd-4b5cd5d63c56">{: .align-center}
+
+- 데이터 세트의 일부를 오토 라벨링 할 수 있도록 합니다.
+- 컴퓨팅 리소스(AWS EC2)를 소모하며 작업하게 됩니다.
+
+- 오토 레이블링 발동 조건은 다음과 같습니다.
+  - 최소 1,250 개의 데이터 객체가 있어야 Auto Labeling 을 시작할 수 있다.
+  - 5,000 개 이상의 데이터 객체를 제공하는 것이 권장된다.
+  - 전체 데이터 객체 중 아래 비율만큼 수동으로 레이블링 해주어야 합니다.
+    - 전체 데이터 세트가 5,000개 이상일 경우: **전체 데이터의 10%**
+    - 전체 데이터 세트가 5,000개 미만일 경우: **전체 데이터의 20%**
+    - E.g., 2000개의 데이터 객체가 있을 때, 200개의 수동 라벨링 작업이 요구 됩니다.
+
+<br>
+
+##### 객체당 작업자 수
+
+<img width="800" alt="img" src="https://github.com/user-attachments/assets/7bcd79f9-0f6f-4895-8b99-2511eaeed6e8">{: .align-center}
+
+- 하나의 데이터 객체를 몇 명에서 작업하는 지 지정합니다.
+- 반복 작업으로 데이터의 정확도를 높일 수 있습니다.
+- 선택하지 않으면, 데이터 세트를 여러 작업자가 나뉘어 작업합니다.
 
 <br>
 
@@ -248,15 +301,57 @@ use_tex: ture
 
 > AWS 의 클라우드 소싱 플랫폼으로, 작업 인력을 고용하여 라벨링을 수행할 수 있습니다.
 
-<img width="800" alt="img" src="https://github.com/user-attachments/assets/7097755f-77d4-4f88-850d-2039e4abaf69">{: .align-center}
+<img width="800" alt="img" src="https://github.com/user-attachments/assets/037d4a7b-b198-46de-b3bc-17d1ead97da8">{: .align-center}
 
-- 테스크 작업 시간: 작업자당 단일 작업에서 부여할 수 있는 최대 시간입니다. 8시간이 최대 입니다.
-- 테스크 만료 시간: 작업자 당 얼마의 기간동안 수행할 수 있는지 지정할 수 있습니다.
+<img width="700" alt="img" src="https://github.com/user-attachments/assets/768af09f-c125-4d66-a334-82421f11fd2d">{: .align-center}
+
 - 작업당 가격: 레이블링에 비용을 제시합니다. 제시된 금액은 작업 난이도 및 단위 작업당 걸리는 시간, 품질 및 긴급성을 고려하여 지정할 수 있습니다.
   - 다시말해, 이 가격을 제시하여 작업자를 모집하는 공고의 개념입니다. 작업자들은 여러 기준을 고려한 뒤 참여 의사를 밝힐 수 있습니다.
 - 데이터 레이블 지정 자동화를 통해 오토 라벨링 작업이 가능하도록 합니다.
 
 <br>
 
+<img width="800" alt="img" src="https://github.com/user-attachments/assets/b67b95d3-1fb2-4fcd-9d67-c34d3ce01ca3">{: .align-center}
+
+- 성인 콘텐츠를 포함하는 경우 체크 해제
+
+<br>
 
 
+
+### VPC 구성
+
+> VPC 구성은 일반적으로 사용하지 않습니다.
+
+<img width="800" alt="img" src="https://github.com/user-attachments/assets/d87569ea-4d3c-43d4-aa79-64622b120f28">{: .align-center}
+
+- VPC 를 사용하면 작업이 Public 네트워크에 노출되지 않습니다.
+
+<br>
+
+### 레이블 지정 도구
+
+> 아래 예시는 의미 체계 분할(Segmentation) 레이블링을 기준으로 제작하였습니다.
+
+- 사람 및 장애물을 감지하는 모델을 만들기 위한 레이블링 작업 예시입니다.
+
+<img width="800" alt="img" src="https://github.com/user-attachments/assets/aed8a173-cb7a-4e89-89e5-832907a2ae1b">{: .align-center}
+
+- 위와 같이 레이블과 간단한 지침박스를 지정합니다.
+- 레이블은 작업 생성 후 변경할 수 없습니다.
+- 한글보다 영어 사용을 권장합니다.
+
+<img width="800" alt="img" src="https://github.com/user-attachments/assets/178d593d-f29d-46a4-9af0-3b332c9a594b">{: .align-center}
+
+- 더 상사한 지침서를 추가 지침을 통해 지정할 수 있습니다.
+
+<br>
+
+<img width="800" alt="img" src="https://github.com/user-attachments/assets/776599b4-a0e4-4ff9-bf6b-cffc9daf48e0">{: .align-center}
+- 미리보기를 통해 실제 작업 환경을 볼 수 있습니다.
+
+## 레이블 작업 생성 완료
+
+<img width="800" alt="img" src="https://github.com/user-attachments/assets/706d0759-7313-4f4b-9a2c-22f377505bd5">{: .align-center}
+
+> 위와 같은 결과가 나타나면 레이블 작업 생성이 완료된 것입니다.
