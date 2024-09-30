@@ -358,7 +358,21 @@ use_tex: ture
 > 위와 같은 결과가 나타나면 레이블 작업 생성이 완료된 것입니다.
 
 > 레이블링 작업 생성이 완료되었을 경우 레이블 지정 인력 관리에서 구성한 워크 스페이스 URL 로 접속 가능합니다.
-> 
-> > 아래 'SageMaker 레이블 지정 인력 관리' 도큐먼트 의 '레이블 작업 생성 후 (작업 하달 후)' 문서를 확인 하세요.
-> >
-> > [SageMaker 레이블 지정 인력 관리]({{site.url}}/aws/SageMaker_Labaeling_Workforces/)
+
+
+<br>
+
+이전에 할당한 프라이빗 팀 대시보드에 접속하여 보면,
+
+<img width="800" alt="img" src="https://github.com/user-attachments/assets/4b3115aa-fb56-48cb-aeef-2c9913949157">{: .align-center}
+
+레이블 지정 작업에 작업이 성공적으로 추가된 것을 확인할 수 있습니다.
+
+> 작업이 조직원들에게 공개되기까지 수 분이 소요될 수 있습니다.
+
+
+> 이후, 라벨링 작업에 관한 내용은 아래 도큐먼트에서 확인 할 수 있습니다.
+>
+> [SageMaker Labeling Workspace]({{site.url}}/aws/SageMaker_Labaeling_Workspace/)
+
+

@@ -91,12 +91,12 @@ use_tex: ture
 
 <br>
 
-# 팀에 작업자 추가 (관리자)
+# 팀에 작업자 할당 (관리자)
 
 <hr>
 <hr>
 
-> 조직원을 개별 작업 팀에 지정합니다.
+> 조직원을 개별 작업 팀에 할당합니다.
 
 <img width="600" alt="img" src="https://github.com/user-attachments/assets/bfcdca17-f484-4dfe-bb70-2a0a67a29460">{: .align-center}
 
@@ -107,6 +107,10 @@ use_tex: ture
 <img width="600" alt="img" src="https://github.com/user-attachments/assets/c9ee9eaf-c0c4-4e8b-923b-820c579d67c5">{: .align-center}
 
 - 팀에 작업자가 추가된 것을 확인할 수 있습니다.
+
+> 이제, 관리자는 라벨링 워크 스페이스 생성을 진행할 수 있습니다.
+> 
+> [SageMaker Ground_Truth_Create_Job]({{site.url}}/aws/SageMaker Ground_Truth_Create_Job/)
 
 
 # 팀 초대 수락 (조직원)
@@ -146,18 +150,3 @@ use_tex: ture
 - Cognito 상태가 Force_change_password 에서 Confirmed 로 변경된 것을 확인할 수 있습니다.
 
 <br>
-
-# 레이블 작업 생성 후 (작업 하달 후)
-
-<hr>
-<hr>
-
-<img width="800" alt="img" src="https://github.com/user-attachments/assets/4b3115aa-fb56-48cb-aeef-2c9913949157">{: .align-center}
-
-- 레이블 지정 작업에 작업이 성공적으로 추가된 것을 확인할 수 있습니다.
-
-## 작업 시작
-
-> 작업이 조직원들에게 공개되기까지 수 분이 소요될 수 있습니다.
-
-- 워크 스페이스 공간에 
