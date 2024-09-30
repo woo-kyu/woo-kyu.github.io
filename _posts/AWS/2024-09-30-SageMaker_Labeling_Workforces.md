@@ -7,6 +7,8 @@ tags: [AWS, SageMaker]
 author_profile: false
 search: true
 use_tex: ture
+header.teaser: "https://github.com/user-attachments/assets/9ff51dfe-c3f6-4e1b-8360-0aeba858d014"
+
 ---
 
 > SageMaker Labeling Workforces
