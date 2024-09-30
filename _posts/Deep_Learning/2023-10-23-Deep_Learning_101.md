@@ -6,7 +6,7 @@ categories: 'Deep_Learning'
 tags: [Map, Deep Learning]
 author_profile: false
 search: true
-use_tex: ture
+use_tex: true
 ---
 
 > Deep Learning

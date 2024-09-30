@@ -6,7 +6,7 @@ categories: 'AWS'
 tags: [AWS, S3]
 author_profile: false
 search: true
-use_tex: ture
+use_tex: true
 ---
 
 > S3 File Management

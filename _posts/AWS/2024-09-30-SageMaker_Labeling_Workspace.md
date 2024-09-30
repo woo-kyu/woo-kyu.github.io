@@ -6,7 +6,7 @@ categories: 'AWS'
 tags: [AWS, SageMaker]
 author_profile: false
 search: true
-use_tex: ture
+use_tex: true
 ---
 
 > SageMaker Labeling Workspace

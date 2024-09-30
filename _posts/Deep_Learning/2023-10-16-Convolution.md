@@ -6,6 +6,6 @@ categories: 'Deep_Learning'
 tags: [Deep Learning]
 author_profile: false
 search: ture
-use_tex: ture
+use_tex: true
 ---
 
