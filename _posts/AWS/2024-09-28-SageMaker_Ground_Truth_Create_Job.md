@@ -23,6 +23,7 @@ use_tex: ture
 > 그 중, Ground Truth Job을 통해 데이터 라벨링을 진행할 수 있습니다.
 > 
 > > 선행 작업 필요: 이 작업을 실행하기 전에, S3 버킷에 라벨링 작업을 진행 할 데이터를 업로드해야 합니다.
+> 
 > > 선행 작업 필요: 클라우드 아웃소싱 및 공급 업체를 통한 라벨링 작업이 아닌 경우, 레이블 지정 인력(팀)을 결성해야 합니다.
 
 <br>
@@ -155,7 +156,7 @@ use_tex: ture
 
 > IAM 에 등록된 Role 을 가져옵니다.
 
-<img width="800" alt="img" src="https://github.com/user-attachments/assets/83c1415c-81c3-469b-9731-01c8609d294f">{: .align-center}\
+<img width="800" alt="img" src="https://github.com/user-attachments/assets/83c1415c-81c3-469b-9731-01c8609d294f">{: .align-center}
 
 - Enter a custom IAM role ARN 을 선택합니다.
 
@@ -270,7 +271,7 @@ use_tex: ture
 
 > 레이블링 된 데이터를 바탕으로 모델을 학습시키고, 그 모델을 활용하여 나머지 데이터를 Auto Labeling 합니다.
 > 
-> [Automate Data Labeling](https://docs.aws.amazon.com/sagemaker/latest/dg/sms-automated-labeling.html)
+> [AWS Docu: Automate Data Labeling](https://docs.aws.amazon.com/sagemaker/latest/dg/sms-automated-labeling.html)
 
 <img width="800" alt="img" src="https://github.com/user-attachments/assets/6e6c67a9-f976-4812-a7bd-4b5cd5d63c56">{: .align-center}
 
@@ -355,3 +356,9 @@ use_tex: ture
 <img width="800" alt="img" src="https://github.com/user-attachments/assets/706d0759-7313-4f4b-9a2c-22f377505bd5">{: .align-center}
 
 > 위와 같은 결과가 나타나면 레이블 작업 생성이 완료된 것입니다.
+
+> 레이블링 작업 생성이 완료되었을 경우 레이블 지정 인력 관리에서 구성한 워크 스페이스 URL 로 접속 가능합니다.
+> 
+> > 아래 'SageMaker 레이블 지정 인력 관리' 도큐먼트 의 '레이블 작업 생성 후 (작업 하달 후)' 문서를 확인 하세요.
+> >
+> > [SageMaker 레이블 지정 인력 관리]({{site.url}}/aws/SageMaker_Labaeling_Workforces/)
