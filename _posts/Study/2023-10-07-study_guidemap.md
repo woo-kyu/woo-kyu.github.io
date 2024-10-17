@@ -18,16 +18,5 @@ use_tex: false
 
 ## Linux System Programing
 
-[Linux System Programing]({{site.url}}/linux_programing/lp_guidemap)
+[Linux System Programing]({{site.url}}/linux_system/linux_system_guidemap)
 
-<br>
-
-## Image Processing
-
-[Image Processing]({{site.url}}/image_processing/ip_guidemap)
-
-<br>
-
-## Mobile Programing: Kotlin
-
-[Mobile Programing: Kotlin]({{site.url}}/android/mobile_programing_map)

@@ -19,11 +19,17 @@ use_tex: false
 
 ### 2. File System
 
-[File System]({{site.url}}/linux_system/File_System)
+[File System]({{site.url}}/linux_system/Linux_File_System)
 
 ### 3. Buffered I/O
 
-[Buffered I/O]({{site.url}}/linux_system/Buffered_Io)
+[Buffered I/O]({{site.url}}/linux_system/Linux_Buffered_Io)
 
 ### 4. Process Management
-[Process Management]({{site.url}}/linux_system/Process_Management)
+[Process Management]({{site.url}}/linux_system/Linux_Process_Management)
+
+### 5. Threading
+[Threading]({{site.url}}/linux_system/Linux_Threading)
+
+### 6. Linux Users
+[Linux Users]({{site.url}}/linux_system/Linux Users)
