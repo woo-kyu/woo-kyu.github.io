@@ -61,3 +61,37 @@ Frequency Domain Filter
 - Attenuate high frequency via low-pass filtering
 - Ideal LPF: cut off all frequencies outside a circle of radius
 - $H(\mu ,\nu) = 1 : \textrm{ if } D(\mu ,\nu) \leq D_0 \\ , 0 : \textrm{ if } D(\mu ,\nu) >  D_0 $
+  - $D_{0}$: Cut-off Frequency
+  - $D(u,v)$: (u,v) 지점 사이의 거리 in the frequency domain and the center
+
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/07cbb8f2-315a-4d39-8056-3c6362abd423">{: .align-center}
+
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/1396ad07-b592-4955-820c-77db0176e54c">{: .align-center}
+
+<br>
+
+#### Ideal LPF
+
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/42aaaa66-9cdb-4835-b43b-4200213a606c">{: .align-center}
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/cfffd470-37b6-4267-99e9-92534cc2873c">{: .align-center}
+
+<br>
+
+#### Gaussian LPF
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/2048891f-dfff-4c8d-be68-a9975117b527">{: .align-center}
+
+<br>
+
+#### Butterworth LPF
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/9716de47-d573-4b58-a81b-19d992bd4764">{: .align-center}
+
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/ffa11d3d-d063-4104-8706-bd741b9ab1a3">{: .align-center}
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/b99eedbe-95b4-4e24-aadf-b62ed39dc626">{: .align-center}
+
+<br>
+
+### Sharpening using high-pass
+
+
+
+
