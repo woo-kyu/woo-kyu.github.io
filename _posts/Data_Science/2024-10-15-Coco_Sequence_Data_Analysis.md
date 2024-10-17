@@ -1,7 +1,7 @@
 ---
 layout: single
-title: "Data Science: Coco Sequence Data Analysis"
-toc_label: "DS: Coco Sequence Data Analysis"
+title: "Coco Sequence Data Analysis"
+toc_label: "Coco Sequence Data Analysis"
 categories: Data_Science
 tags: [Data Science, Python, PyQt]
 author_profile: false

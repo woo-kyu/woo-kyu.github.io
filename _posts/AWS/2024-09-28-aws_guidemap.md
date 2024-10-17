@@ -66,6 +66,5 @@ use_tex: false
 
 <br>
 
-## 
 
 <br>

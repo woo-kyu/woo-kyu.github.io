@@ -31,7 +31,7 @@ use_tex: true
 - [S3 버킷 생성]({{site.url}}/aws/S3_Create_Bucket/)
 - [S3 버킷에 데이터 업로드]({{site.url}}/aws/S3_file_Management/)
 
-- [SageMaker 레이블 지정 인력 관리]({{site.url}}/aws/SageMaker_Labaeling_Workforces/)
+- [SageMaker 레이블 지정 인력 관리]({{site.url}}/aws/SageMaker_Labeling_Workforces/)
 
 <br>
 
@@ -373,6 +373,6 @@ use_tex: true
 
 > 이후, 라벨링 작업에 관한 내용은 아래 도큐먼트에서 확인 할 수 있습니다.
 >
-> [SageMaker Labeling Workspace]({{site.url}}/aws/SageMaker_Labaeling_Workspace/)
+> [SageMaker Labeling Workspace]({{site.url}}/aws/SageMaker_Labeling_Workspace/)
 
 
