@@ -9,8 +9,9 @@ search: false
 use_tex: false
 ---
 
-> Computer Vision Experiment
+> Deep Learning - Computer Vision Experiment
 
+> Deep Learning - Computer Vision 실습
 
 # Computer Vision Experiment
 
@@ -24,6 +25,8 @@ use_tex: false
 
 <br>
 
+## CNN
 
+- [End to End Learning Algorithm with CNN]({{site.url}}/computer_vision/End2End_CNN/)
 
 <br>
