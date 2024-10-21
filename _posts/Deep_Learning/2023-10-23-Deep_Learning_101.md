@@ -26,13 +26,15 @@ use_tex: true
 
 ## Related Paper
 
-- [End to End learning for self driving cars]({{site.url}}/deep_learning/End2End_Learning_for_Self_Dirving_Cars_Paper_Review/)
+- [End to End learning for self driving cars]({{site.url}}/deep_learning/End2End_Learning_for_Self_Dirving_Cars)
 
-- [YOLO]({{site.url}}/deep_learning/YOLO_Paper_Review/)
+- [YOLO]({{site.url}}/deep_learning/YOLO/)
 
-- [CNN]({{site.url}}/deep_learning/CNN_Paper_Review/)
+- [YOLOv10]({{site.url}}/deep_learning/YOLO_v10/)
 
-- [ResNet]({{site.url}}/deep_learning/ResNet_Paper_Review/)
+- [CNN]({{site.url}}/deep_learning/CNN/)
+
+- [ResNet]({{site.url}}/deep_learning/ResNet/)
 
 
 <br>
