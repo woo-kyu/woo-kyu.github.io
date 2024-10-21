@@ -22,32 +22,32 @@ use_tex: true
 - 복잡한 패턴을 이해하기 위해서는 층이 깊어질 수 밖에 없다.
 - 그러나,  네트워크의 깊이가 깊을수록 Gradient vanishing(기울기 소실)과 Gradient explosion(기울기 폭발) 문제 가진다.
 - 이러한 문제는 모델이 학습을 잘 하지 못하는 결과를 초래한다.
-- 이 문제를 해결하기 위해 Residual[^1] learning(잔차 학습) 기법을 사용했다.
+- 이 문제를 해결하기 위해 **Residual[^1] learning(잔차 학습)** 기법을 사용했다.
 
 <br>
 
 
-# Paper
+# 문제 제시
 
 <hr>
 <hr>
-
-## 문제 제시
 
 - 기존 Convolution Neural Network(CNN)은, 레이어가 깊어질수록 더 많은 특징을 추출, 학습할 수 있다.
   - = 네트워크의 깊이가 깊어질 수록 더 많은 특징 레벨을 추출할 수 있다.
 
+<br>
 
 - 그러나, 단순히 레이어만 깊게 쌓는 것은 여러 문제를 야기하게 된다.
 - 대표적으로, Gradient Vanishing, Gradient Explosion 문제 등이 발생한다.
 - 이러한 문제는 VGG 네트워크에서 제안한: normalized initialization, intermediate normalization layers 기법을 통해 일부 해결되었다.
   - To start converging for stochastic gradient descent(SGD) with back-propagation
     - SGD 와 역전파 기법을 통해 네트워크가 성공적으로 converging(수렴, 학습) 할 수 있도록 한다.
-    - 중간 정규화 레이어: Batch normalization 과 같은 기법을 사용하여 네트워크의 중간에서 데이터를 정규화
-    - Normalized initialization(정규화된 초기화): 신경망의 가중치를 적절히 초기화하여, 네트워크의 학습 초기에 기울기 소실 문제를 줄이는 방법
+  - 중간 정규화 레이어: Batch normalization 과 같은 기법을 사용하여 네트워크의 중간에서 데이터를 정규화
+  - Normalized initialization(정규화된 초기화): 신경망의 가중치를 적절히 초기화하여, 네트워크의 학습 초기에 기울기 소실 문제를 줄이는 방법
 
+<br>
 
-- 그럼에도 불구하고, 더 깊은 레이어를 사용할 때 수렴(학습)이 가능은 하지만, degradation problem has been exposed. (성능 저하 문제가 발생한다.)
+- 이러한 기법을 사용함에도 불구하고, 더 깊은 레이어를 사용할 때 수렴(학습)이 가능은 하지만, degradation problem has been exposed. (성능 저하 문제가 발생한다.)
 - 네트워크 깊이가 증가함에 따라 정확도가 saturated(포화 상태)에 이르렀다가(더이상 증가하지 않는 시점), 감소하게 된다.
 - 이러한 성능 저하 문제는 Over-fitting 문제가 아니며,
 - 적절한 깊이를 가진 모델에 더 많은 레이어를 추가할 때, leads to higher training error.
@@ -55,16 +55,23 @@ use_tex: true
 <img width="600" alt="ut" src="https://github.com/user-attachments/assets/8ceadc64-77f6-4d33-9041-f637b335da73">{: .align-center}
 
 - Figure 1. Plain network 에서, 레이어가 깊어질 수록 오류율이 커지는 모습을 볼 수 있다.
-- Identity mapping[^2] (항등 함수) 기법을 추가한 더 깊은 네트워크는 레이어가 깊어질 수록 Identity mapping 을 수행하고, 다른 층들은 학습된 shallower model 을 복사하는 알고리즘을 수행하지만,
+- Identity mapping (항등 함수) 기법을 추가한 더 깊은 네트워크는 레이어가 깊어질 수록 Identity mapping 을 수행하고, 다른 층들은 학습된 shallower model 을 복사하는 알고리즘을 수행하지만,
 - 여전히 학습 오류의 발생은 이해할 수 없습니다.
 
 <br>
 
-## 해결책 제시- Residual Learning
+# 개선 방법 제안
+
+<hr>
+<hr>
+
+## Residual Learning
 
 이 논문에서는 이러한 문제의 해결 방법으로 Residual Learning(잔차 학습) 기법을 제시한다.
 
 - 명시적으로 residual mapping 을 정의하여 학습하는 것.
+
+<br>
 
 - $H(x)$ 는 의도한, optimal function 으로, 신경망이 여러 개의 비선형 레이어들을 통해 점진적으로 근사해야 하는 목표 함수이다.
   - 일반적인 Neural network 의 역할은 여러개의 non-linear 한 layer 를 이용해서 점진적으로, 복잡한 함수를 근사(학습)하는 것이 목표이다.
@@ -73,6 +80,8 @@ use_tex: true
 - 이는 네트워크가 전체 목표 함수를 학습하는 것이 아니라, 입력과 출력 사이의 차이(잔차) 만 학습하는 것이다.
 - 이 구조는 결과적으로, residual function $F(x)$ 를 학습하여 최종 출력으로 $F(x)+x$ 형태가 된다.
 - 이는 $H(x)$를 학습하는 것 보다 더 효율적이다.
+
+<br>
 
 ### Additional Explain
 
@@ -83,12 +92,50 @@ use_tex: true
 - 이 표현의 의미는, **잔차 함수 $F(x) = H(x) - x$** 를 학습함으로써, 네트워크는 **$x$** 로 부터 어떤 변화(잔차)를 학습하게 된다는 것이다.
   - 네트워크는 입력 **$x$** 와 **목표 출력 $H(x)$** 사이의 잔차를 학습하는 것
 - 최종적으로, 네트워크는 **잔차 $F(x)$** 를 학습한 후, **$x$** 에 이를 더해 $F(x)+x$ 형태로 최종 출력을 얻는다.
-  - 여기에서 **$F(x)$** 는 **$H(x)-x$**로 부터 계산된 것이므로, 결과적으로 **H(x)** 를 얻는것과 같다.
+  - 여기에서 **$F(x)$** 는 **$H(x)-x$**로 부터 계산된 것이므로, 결과적으로 **$H(x)$** 를 얻는것과 같다.
 
 <br>
 
+## Identity Mapping By Shortcuts
 
 
+### Identity Mapping
+
+> 입력값을 그대로 출력하는 함수, 항등함수 $f(x) = x$
+
+> Deep Learning; 레이어를 거치면서 입력이 변형되지 않고 그대로 출력되는 경우.
+>
+> 즉, 네트워크의 특정 층이나 shortcut connection 을 통해 입력 데이터를 그대로 다음 층으로 전달하는 것
+
+> **Residual Learning**
+>
+>잔차 학습에서는 네트워크의 각 층이 복잡한 합수를 직접 학습하는 대신, 잔차(변화의 차이)를 학습하도록 설계.
+
+- 이때 Identity mapping 는 중요한 역할을 수행하는데, optimal function 이 identity mapping 일 경우, 네트워크는 입력을 그대로 출력하게 만들어야 한다.
+- 항등 함수를 학습하는 것이 목표라면, 네트워크가 여러 비선형 층을 통해 복잡한 변형을 학습하는 것 보다, residual 를 0으로 만드는 것이 더 쉽기 때문.
+
+
+<br>
+
+#### Identity mapping 의 역할
+
+##### Shortcut connection
+
+- 단축 연결
+- Residual Network 에서 단축 연결을 사용해 입력을 다음 레이어로 그대로 전달하는 경우, 이 연결이 항등 함수를 수행하게 된다.
+- 입력값이 변형되지 않고 다음 레이어로 전달되므로, 네트워크가 쉽게 최적화 할 수 있게 만든다.
+
+<br>
+
+##### 최적화 단순화
+
+- 네트워크가 항등 함수를 학습할 때, 여러 층을 통과하며 복잡한 변환을 학습하는 것 보다, residual 를 0으로 만들어 항등 함수에 가깝게 만드는 것이 더 쉽다.
+
+<br>
+
+$y=F(x,\{W_{i}\})+x$
+
+숏컷
 
 
 ## Footnote
@@ -106,49 +153,3 @@ use_tex: true
   - 잔차는 예측한 가정이 관측값을 얼마나 잘 반영하고 있는지에 대한 의미.
 
 <br>
-
-### 2: Identity Mapping
-
-> 입력값을 그대로 출력하는 함수, 항등함수
- 
-> In Deep Learning; 레이어를 거치면서 입력이 변형되지 않고 그대로 출력되는 경우.
->
-> 즉, 네트워크의 특정 층이나 shortcut connection 을 통해 입력 데이터를 그대로 다음 층으로 전달하는 것
-
-> **Residual Learning**
->
->잔차 학습에서는 네트워크의 각 층이 복잡한 합수를 직접 학습하는 대신, 잔차(변화의 차이)를 학습하도록 설계. 
-
-- 이때 Identity mapping 는 중요한 역할을 수행하는데, optimal function 이 identity mapping 일 경우, 네트워크는 입력을 그대로 출력하게 만들어야 한다. 
-- 항등 함수를 학습하는 것이 목표라면, 네트워크가 여러 비선형 층을 통해 복잡한 변형을 학습하는 것 보다, residual 를 0으로 만드는 것이 더 쉽기 때문.
-
-
-$f(x) = x$
-
-#### Identity mapping 의 역할
-
-##### Shortcut connection
-
-- 단축 연결
-- Residual Network 에서 단축 연결을 사용해 입력을 다음 레이어로 그대로 전달하는 경우, 이 연결이 항등 함수를 수행하게 된다. 
-- 입력값이 변형되지 않고 다음 레이어로 전달되므로, 네트워크가 쉽게 최적화 할 수 있게 만든다.
-
-<br>
-
-##### 최적화 단순화
-
-- 네트워크가 항등 함수를 학습할 때, 여러 층을 통과하며 복잡한 변환을 학습하는 것 보다, residual 를 0으로 만들어 항등 함수에 가깝게 만드는 것이 더 쉽다.
-
-<br>
-
-
-<br>
-
-### Fisher Vectors
-
-
-<br>
-
-[^1]: Residual(잔차)
-[^2]: VLAD
-[^3]: Fisher Vectors
