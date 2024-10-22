@@ -43,21 +43,33 @@ use_tex: true
 
 Lp Norm 의 정의:
 
-- <img width="232" alt="image" src="https://github.com/user-attachments/assets/ff174c0b-306f-4e52-a8e4-1cbfb5ddd242">{: .align-center}
+<img width="232" alt="image" src="https://github.com/user-attachments/assets/ff174c0b-306f-4e52-a8e4-1cbfb5ddd242">{: .align-center}
   - $w_i$: weight vector $w$ 의 각 요소
   - $p$:  Norm 의 차수. 다른 값에 따라 다른 규제 기법을 만든다.
   - $n$: 벡터의 차원 수
   - $1\leq p \leq \infty$
 
+### Loss + Lp Norm
+
+<img width="291" alt="image" src="https://github.com/user-attachments/assets/2b8567c7-6e47-4a0e-a572-e2b23e23d876">{: .align-center}
+
+- $\lambda$: 규제의 강도를 조절하는 hyper-parameter.
+  - 이 값을 크게하면 규제 효과가 강해진다.
+- $\textrm{||} w \textrm{||}_p$ weight vector 에 대한 Lp Norm.
+
+
 <br>
 
-- 2차원 벡터 공간에서 L1 Norm 은 마름모꼴, L2 Norm 은 원을 나타내며, $p$ 가 무한대로 갈수록 정사각형의 형태를 가진다.
+- $p$ 값이 커질수록 weight 분포도는 균일해지며, 반대로 $p$ 값이 작아질수록 특정 weight 에 대한 패널티가 강화, 희소성이 증가할 수 있다. 
 
-<img width="800" alt="untitle" src="https://github.com/user-attachments/assets/c5491d93-5a0f-4735-b1a9-e44938699e82">{: .align-center}
+<br>
 
-<img width="800" alt="untitle" src="https://github.com/user-attachments/assets/f2530057-91a3-40e2-8b10-ae35bf7f5177">{: .align-center}
+### L$\infty$ Norm
 
-- 위 형태의 특수성에서 보는 것 처럼, <span style='color:#orange'> $p$ 가 1,2,$\infty$ 일 때의 norm 인 L1 Norm, L2 Norm, L$infty$ Norm 을 많이 사용</span>한다.
+- 가장 큰 weight 에만 패털티를 부여하는 형태로, weight vector 의 최대 절대값으로 정의
+
+<img width="180" alt="image" src="https://github.com/user-attachments/assets/95042732-71c5-40d5-8557-bd0473a2146d">{: .align-center}
+
 
 <br>
 
@@ -117,10 +129,18 @@ Loss function 에 weight 절대값을 더하는 방식으로 구현
 
 <br>
 
-### L1 Regularization 주의사항
+### 주의 사항
 
 - 데이터의 피처가 서로 강하게 상관관계가 있을 경우, L1 규제는 불안정한 결과를 가져올 수 있다. 
 - I.e., 중요한 피처를 놓칠수 있다.
+
+<br>
+
+### 응용
+
+- 피처 선택이 중요한 고차원 데이터셋(예: 유전자 데이터, 텍스트 데이터 등). 
+- 해석 가능한 모델이 필요할 때, 즉 중요한 피처가 무엇인지 알고자 하는 경우. 
+- 모델을 간소화하고 불필요한 피처를 제거하여 일반화 성능을 향상시키고자 할 때.
 
 <br>
 
@@ -141,6 +161,83 @@ Loss function 에 weight 절대값을 더하는 방식으로 구현
 - L2 Regularization 은 <span style='color:#orange'>실제 값과 예측 값 오차들의 제곱의 합</span>
 
 <img width="700" alt="untitle" src="https://github.com/user-attachments/assets/61a2f4b2-c765-4a4d-82d7-d3946b7a5f81">{: .align-center}
+
+<br>
+
+### Loss + L2 Regularization
+
+<img width="303" alt="image" src="https://github.com/user-attachments/assets/903eaa28-102f-465c-98f1-e8d61533c43c">{: .align-center}
+
+<br>
+
+### L2 Regularization 특징
+
+#### 가중치 축소
+
+- L2 규제는 모든 가중치의 크기를 줄인다.
+- 이는 <span style='color:#orange'>특정 가중치만 0으로 만드는 것이 아니라, 모든 가중치를 일정하게 줄여서</span> 모델이 더 일반화될 수 있도록 한다.
+- 결과적으로 모델은 학습 데이터에 덜 민감하게 반응하며, 새로운 데이터에 대해 더 나은 예측 성능을 가진다.
+
+<br>
+
+#### 안정적인 학습
+
+- L2 규제는 모델의 가중치가 지나치게 커지지 않도록 제어하여, 학습 과정을 더 안정적으로 유도한다.
+- 이는 가중치가 너무 커질 때 발생하는 불안정성을 줄이고, 모델이 극단적인 예측을 피하도록 한다. 
+- 과적합을 방지하면서도 모델이 적절한 복잡도를 유지하도록 하는 효과가 있다.
+
+<Br>
+
+#### 피처 선택 없이 모든 피처 사용
+
+- L2 규제는 모든 피처에 대한 가중치를 줄이는 역할을 하기 때문에, 피처 선택(feature selection) 기능을 수행하지는 않는다.
+  - '0' 으로 만들지는 않기 때문
+- 즉, L2 규제는 L1 규제와 달리 특정 가중치를 0으로 만들지 않으며, 대신 모든 피처를 사용하지만 각 피처의 가중치 크기를 작게 만든다. 
+- 따라서 모든 피처가 유용할 때, L2 규제가 적합 
+- 반면, 피처 선택이 필요한 상황에서는 L1 규제가 더 적합할 수 있다.
+
+<br>
+
+### 주의 사항
+
+- feature select 기능이 없기 때문에, 고차원 데이터에서 불필요한 데이터가 많을 경우 효과적이지 않을 수 있다.
+
+<br>
+
+### 응용
+
+- 모든 피처가 유용한 상황에서 과적합을 방지하고자 할 때. 
+- 모델의 가중치가 지나치게 커지지 않도록 제어하여 안정적인 학습을 이루고자 할 때. 
+- 신경망 모델에서 과적합을 방지하기 위한 정규화 기법으로 자주 사용됩니다. 
+- 선형 회귀에서 과적합을 방지하고 모델이 더 잘 일반화되도록 돕습니다.
+
+<br>
+
+## L1 Lasso Regularization vs. L2 Ridge Regularization
+
+| **특징**                | **L1 규제 (Lasso)**                               | **L2 규제 (Ridge)**                         |
+|-------------------------|---------------------------------------------------|---------------------------------------------|
+| **규제 방식**           | 가중치의 **절대값**을 패널티로 부여               | 가중치의 **제곱합**을 패널티로 부여         |
+| **피처 선택**           | 일부 가중치를 0으로 만들어 **피처 선택 수행**     | 모든 피처의 가중치를 작게 줄임, **피처 선택 없음** |
+| **희소성**              | 희소 모델 생성 (가중치가 0인 피처 존재)           | **희소성 없음**, 모든 피처에 가중치 할당   |
+| **규제 효과**           | 중요한 피처만 남기고 불필요한 피처 제거           | 모든 가중치의 크기를 균일하게 줄임         |
+| **활용 예**             | **고차원 데이터**에서 피처 선택 필요 시 적합      | 모든 피처가 중요할 때 가중치 크기 조절    |
+| **해석 가능성**         | 가중치가 0이 되어 **모델의 해석 가능성** 높음      | 가중치가 모두 0이 아니므로 해석 가능성 낮음 |
+| **성능**                | 불필요한 피처를 제거하여 **단순한 모델 생성**      | **모든 피처의 기여를 고려**한 예측 수행   |
+| **문제 해결 방식**      | **희소성**을 통해 피처 수를 줄여 과적합 방지      | **가중치 축소**를 통해 과적합 방지        |
+
+
+<img width="800" alt="untitle" src="https://github.com/user-attachments/assets/c5491d93-5a0f-4735-b1a9-e44938699e82">{: .align-center}
+
+<img width="800" alt="untitle" src="https://github.com/user-attachments/assets/f2530057-91a3-40e2-8b10-ae35bf7f5177">{: .align-center}
+
+- 2차원 벡터 공간에서 L1 Norm 은 마름모꼴, L2 Norm 은 원을 나타내며, $p$ 가 무한대로 갈수록 정사각형의 형태를 가진다.
+- 위 형태의 특수성에서 보는 것 처럼, <span style='color:#orange'> $p$ 가 1,2,$\infty$ 일 때의 norm 인 L1 Norm, L2 Norm, L$infty$ Norm 을 많이 사용</span>한다.
+
+
+<br>
+
+##
 
 
 
