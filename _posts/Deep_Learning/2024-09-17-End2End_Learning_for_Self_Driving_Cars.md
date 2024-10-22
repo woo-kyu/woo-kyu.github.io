@@ -17,8 +17,6 @@ use_tex: true
 <hr>
 <hr>
 
-[Original Paper](https://arxiv.org/pdf/1604.07316)
-
 
 > 전통적인 자율주행 자동차의 주행 알고리즘은 여러가지의 인지 및 판단 모듈의 결합으로 이루어져 있습니다.
 > 
