@@ -19,9 +19,9 @@ use_tex: true
 <hr>
 <Hr>
 
-> Weight Regularization 이란, <span style='color:#orange'>모델의 loss function 값이 너무 작아지지 않도록 특정한 값(함수)를 추가</span> 하는 것 
+> Weight Regularization 이란, <span style='color:#ff7fff'>모델의 loss function 값이 너무 작아지지 않도록 특정한 값(함수)를 추가</span> 하는 것 
 > 
-> 이를 통해 <span style='color:#orange'>특정한 weight 값이 과도하게 커져서 일부 특징에 의존하는 현상을 방지하고, 데이터의 일반적인 특징(일반화, Generalization) 을 잘 반영</span> 할 수 있도록 한다.
+> 이를 통해 <span style='color:#ff7fff'>특정한 weight 값이 과도하게 커져서 일부 특징에 의존하는 현상을 방지하고, 데이터의 일반적인 특징(일반화, Generalization) 을 잘 반영</span> 할 수 있도록 한다.
 
 <br>
 
@@ -34,9 +34,9 @@ use_tex: true
 
 > Weight Regularization (가중치 규제) 에서 중요한 개념으로, 모델의 weight 를 통제한다.
 
-**<span style='color:#orange'>Lp Norm 은 weight vector 의 크기를 측정하는 방법 중 하나로, p 값에 따라 다양한 규제 기법이 만들어진다.</span>**
+**<span style='color:#ff7fff'>Lp Norm 은 weight vector 의 크기를 측정하는 방법 중 하나로, p 값에 따라 다양한 규제 기법이 만들어진다.</span>**
 
-- Norm 이란, 유한 차원의 벡터 공간에서 <span style='color:#orange'>벡터의 절대적인 크기(Magnitude) 또는 벡터 간 거리</span>를 나타낸다.
+- Norm 이란, 유한 차원의 벡터 공간에서 <span style='color:#ff7fff'>벡터의 절대적인 크기(Magnitude) 또는 벡터 간 거리</span>를 나타낸다.
 - Norm 은 특정한 속성을 만족하며, 측정 가능한 긴으의 공간 Lp space 혹은 Lebesgue space(르베그 공간) 에서의 norm 을 LP Norm(P-norm) 이라고 한다.
 
 <br>
@@ -55,7 +55,6 @@ Lp Norm 의 정의:
 
 - $\lambda$: 규제의 강도를 조절하는 hyper-parameter.
   - 이 값을 크게하면 규제 효과가 강해진다.
-- $\textrm{||} w \textrm{||}_p$ weight vector 에 대한 Lp Norm.
 
 
 <br>
@@ -86,7 +85,7 @@ Lp Norm 의 정의:
 Loss function 에 weight 절대값을 더하는 방식으로 구현
 - 실제 값과 예측 값 오차들의 절대값들에 대한 합 
 - 가중치의 절대값을 규제하여, 특정 가중치가 0이 되는 경향을 가지게 만듦
-- <span style='color:#orange'>I.e., 일부 불필요한 피처들의 가중치를 완전히 0으로 만들어 feature select 의 역할을 할 수 있다.</span>
+- <span style='color:#ff7fff'>I.e., 일부 불필요한 피처들의 가중치를 완전히 0으로 만들어 feature select 의 역할을 할 수 있다.</span>
 - L1 Regularization 은 모델이 더 **희소(sparse)** 한 weight 를 가지도록 만들어, 불필요한 feature 를 제거하는 데 유리하다.
 
 <br>
@@ -109,8 +108,8 @@ Loss function 에 weight 절대값을 더하는 방식으로 구현
 
 #### Sparsity (희소성)
 - L1 규제의 가장 큰 특징은 일부 가중치를 완전히 0으로 만드는 경향이 있다는 점이다. 
-- 이는 모델이 학습 과정에서 <span style='color:#orange'>중요하지 않은 피처들의 가중치를 0</span>으로 만들어, **피처 선택(feature selection)을 자동으로 수행**하게 된다. 
-- 따라서 L1 규제는 <span style='color:#orange'>피처 수가 많은 고차원 데이터에서 매우 유용</span> 하며, 중요한 피처만 남겨 모델을 간소화할 수 있다. 
+- 이는 모델이 학습 과정에서 <span style='color:#ff7fff'>중요하지 않은 피처들의 가중치를 0</span>으로 만들어, **피처 선택(feature selection)을 자동으로 수행**하게 된다. 
+- 따라서 L1 규제는 <span style='color:#ff7fff'>피처 수가 많은 고차원 데이터에서 매우 유용</span> 하며, 중요한 피처만 남겨 모델을 간소화할 수 있다. 
 - 결과적으로 모델이 더 해석 가능해지고, 불필요한 피처를 사용하지 않으므로 일반화 성능이 향상된다.
 
 <br>
@@ -151,14 +150,14 @@ Loss function 에 weight 절대값을 더하는 방식으로 구현
 <img width="200" alt="image" src="https://github.com/user-attachments/assets/14f4723d-30b9-41e8-91fc-7313856d253a">{: .align-center}
 
 - Weight 벡터의 각 요소의 제곱합을 통해 가중치 크기를 측정
-- Weight 의 <span style='color:#orange'>제곱합을 규제</span>하여 모든 가중치를 작게 만드는 경향을 가짐. 
+- Weight 의 <span style='color:#ff7fff'>제곱합을 규제</span>하여 모든 가중치를 작게 만드는 경향을 가짐. 
 - 특정 weight 를 완전히 0으로 만들지는 않지만, 가중치의 크기를 줄여 과적합을 방지 
 - L2 규제는 모델의 **weight 가 과도하게 커지는 것을 방지**하고, 매끄럽고 안정적인 가중치 분포를 유지
 
 <img width="800" alt="untitle" src="https://github.com/user-attachments/assets/38607372-eb3a-4cc8-99e8-c90a1c47fdce">{: .align-center}
 
 - **Euclidean distance(유클리드 거리)** 라고도 부르며, 두 점 사이의 최단 거리를 측정할 때 사용.
-- L2 Regularization 은 <span style='color:#orange'>실제 값과 예측 값 오차들의 제곱의 합</span>
+- L2 Regularization 은 <span style='color:#ff7fff'>실제 값과 예측 값 오차들의 제곱의 합</span>
 
 <img width="700" alt="untitle" src="https://github.com/user-attachments/assets/61a2f4b2-c765-4a4d-82d7-d3946b7a5f81">{: .align-center}
 
@@ -175,7 +174,7 @@ Loss function 에 weight 절대값을 더하는 방식으로 구현
 #### 가중치 축소
 
 - L2 규제는 모든 가중치의 크기를 줄인다.
-- 이는 <span style='color:#orange'>특정 가중치만 0으로 만드는 것이 아니라, 모든 가중치를 일정하게 줄여서</span> 모델이 더 일반화될 수 있도록 한다.
+- 이는 <span style='color:#ff7fff'>특정 가중치만 0으로 만드는 것이 아니라, 모든 가중치를 일정하게 줄여서</span> 모델이 더 일반화될 수 있도록 한다.
 - 결과적으로 모델은 학습 데이터에 덜 민감하게 반응하며, 새로운 데이터에 대해 더 나은 예측 성능을 가진다.
 
 <br>
@@ -226,13 +225,14 @@ Loss function 에 weight 절대값을 더하는 방식으로 구현
 | **성능**                | 불필요한 피처를 제거하여 **단순한 모델 생성**      | **모든 피처의 기여를 고려**한 예측 수행   |
 | **문제 해결 방식**      | **희소성**을 통해 피처 수를 줄여 과적합 방지      | **가중치 축소**를 통해 과적합 방지        |
 
+<br>
 
 <img width="800" alt="untitle" src="https://github.com/user-attachments/assets/c5491d93-5a0f-4735-b1a9-e44938699e82">{: .align-center}
 
 <img width="800" alt="untitle" src="https://github.com/user-attachments/assets/f2530057-91a3-40e2-8b10-ae35bf7f5177">{: .align-center}
 
 - 2차원 벡터 공간에서 L1 Norm 은 마름모꼴, L2 Norm 은 원을 나타내며, $p$ 가 무한대로 갈수록 정사각형의 형태를 가진다.
-- 위 형태의 특수성에서 보는 것 처럼, <span style='color:#orange'> $p$ 가 1,2,$\infty$ 일 때의 norm 인 L1 Norm, L2 Norm, L$infty$ Norm 을 많이 사용</span>한다.
+- 위 형태의 특수성에서 보는 것 처럼, <span style='color:#ff7fff'> $p$ 가 1,2,$\infty$ 일 때의 norm 인 L1 Norm, L2 Norm, L$infty$ Norm 을 많이 사용</span>한다.
 
 <br>
 
@@ -240,11 +240,11 @@ Loss function 에 weight 절대값을 더하는 방식으로 구현
 
 - L1 Norm 은 다른 점으로 이동하는 여러 방법(feature, weight) 중 특정 방법을 0으로 처리하는 것이 가능하여 중요한 가중치만 남길 수 있는 feature selection 이 가능하다.
   - 또한, 오차의 절댓값을 사용하기 때문에 L2 Norm 대비 outlier 에 좀더 robust 하다.
-- 그러나, <span style='color:#orange'>0 에서 미분이 불가능해 Gradient-Based Learning 모델에 사용시 주의가 필요</span>하며, 
+- 그러나, <span style='color:#ff7fff'>0 에서 미분이 불가능해 Gradient-Based Learning 모델에 사용시 주의가 필요</span>하며, 
   - 편미분 시 weight 의 부호만 남기 때문에, weight 의 크기에 따라 규제의 크기가 변하지 않으므로 Regularization 효과가 L2 대비 떨어진다.
-  - Gradient-Based Learning 모델에서 <span style='color:#orange'>부드럽게 변화하지 않는 문제가 발생할 수 있으며, 서브그래디언트(subgradient) 방법을 사용해야 할 수 있음.</span>
-- L2 Norm은 오차의 제곱을 사용하기 때문에 <span style='color:#orange'>outlier 에 대해 L1 보다 더 민감하게 작용</span>한다.
-- 따라서, weight 의 부호 뿐만 아니라, 그 크기만큼 패널티를 줄 수 있어 특정 weight 가 너무 커지는 것을 방지하는 <span style='color:#orange'>weight decay 가 가능</span>하다.
+  - Gradient-Based Learning 모델에서 <span style='color:#ff7fff'>부드럽게 변화하지 않는 문제가 발생할 수 있으며, 서브그래디언트(subgradient) 방법을 사용해야 할 수 있음.</span>
+- L2 Norm은 오차의 제곱을 사용하기 때문에 <span style='color:#ff7fff'>outlier 에 대해 L1 보다 더 민감하게 작용</span>한다.
+- 따라서, weight 의 부호 뿐만 아니라, 그 크기만큼 패널티를 줄 수 있어 특정 weight 가 너무 커지는 것을 방지하는 <span style='color:#ff7fff'>weight decay 가 가능</span>하다.
 
 <img width="1000" alt="untitle" src="https://github.com/user-attachments/assets/c7ae4af5-f14e-4015-b8db-e4be6c273281">{: .align-center}
 
