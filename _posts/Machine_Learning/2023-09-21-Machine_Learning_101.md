@@ -38,6 +38,7 @@ header.overlay_image: "https://github.com/user-attachments/assets/9baa36a5-91d4-
 - [Linear and Non-linear Regression]({{site.url}}/machine_learning/Regression/)
 - [Gradient Descent]({{site.url}}/machine_learning/Gradient_Descent/)
 - [Bias and Variance Trade-off]({{site.url}}/machine_learning/Bias_and_Variance_Trade_Off/)
+- [Over and Under-fitting]({{site.url}}/machine_learning/Over_Under_Fitting)
 
 <br>
 

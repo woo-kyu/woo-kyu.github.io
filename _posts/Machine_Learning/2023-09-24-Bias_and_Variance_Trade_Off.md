@@ -16,7 +16,16 @@ use_tex: true
 > 높은 편향은 모델이 너무 단순하여 데이터를 잘못 해석하는 반면, 높은 분산은 모델이 너무 복잡하여 특정 데이터에 과적합이 발생한다.
 > 이러한 편향과 분산을 적절히 관리하는 것을 이야기한다.
 
+> 이 문서에서 다루는 내용은 Bias-Variance Trade Off 에 대한 내용으로, 이론적 관점에서 모델의 오류 원인을 설명합니다.
+> 실제 모델의 성능을 평가하는 경험적 관점에서의 Over / Under-fitting 에 대한 내용은 아래 페이지를 참조하세요.
+>
+> [Over and Under-fitting]({{site.url}}/machine_learning/Over_Under_Fitting)
+
+
 # Complexity of model
+
+<hr>
+<Hr>
 
 - more than parameter of model, linear to non-linear model 로 갈 수록 complexity 는 증가.
 - model 이 complex 할 수록, learning data 를 더 완벽하게 하게 learning 한다.
@@ -27,6 +36,9 @@ use_tex: true
   <br><br>
 # What is different to Over / Under-fitting?
 
+<hr>
+<hr>
+
 ![Over fitted classification and regression models memorize the training data too well in comparison with correctly fitted models.](https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/3f7d5785-d0b8-44bd-b2fe-e62b35622a4f){: .align-center}
 
 
@@ -36,6 +48,9 @@ Over-fitted classification and regression models memorize the training data too 
 <br>
 
 # Over-fitting
+
+<hr>
+<Hr>
 
 > Over-fitting is a machine learning behavior that occurs when the model is so closely aligned to the training data that it does not know how to respond to new data.
 >

@@ -43,20 +43,28 @@ Loss function 에 대한 differentiate value 가 0이 되는 방향으로 parame
 - To differentiate a function f(x) means to obtain the instantaneous rate of change of the function (함수 f(x)를 미분한다는 것은 함수 f(x)의 순간 변화율을 구한다는 것)
 - If Function’s value is minimum, differentiate value is 0(Instantaneous rate of change, Gradient)
 
-## Mean Squared Error, MSE (평균 제곱 오차)
+### Mean Squared Error, MSE (평균 제곱 오차)
 
 - Typical loss function in a regression problem
 - Mean of the square of the error
 - <span style="color:orange">$L = \frac{1}{N}\sum_{i=1}^{N}(y_{i}-\hat{y}_{i})^2$
 
-## Least Square Method (최소 제곱법)
+### Least Square Method (최소 제곱법)
 
 - Minimize errors in data by obtaining optimal parameters
 - $L =\sum_{i=1}^{N}(y_{i}-(ax_{i}+b))^2$ (a = gradient, b = intercept)
 - $\left\|Y -WX \right\|^2$ 행렬에 대한 편미분 →  $W = (X^{T}X)^{-1}X^{T}Y$
 - 더 복잡한 (다중 선형, 다항 회귀, 비선형 함수) 함수의 경우, 최소 제곱 법으로 해결이 어려움
 
+[참조: Loss(Cost) Function]({{site.url}}/deep_learning/Loss_Function/)
+
+
+<br>
+
 # Learning rate, $\eta$
+
+<hr>
+<hr>
 
 > is a kind of parameter.
 
