@@ -114,7 +114,7 @@ use_tex: true
 
 ### 더 복잡한 모델 사용
 
-> Underfitting 은 주로 모델이 너무 단순해서 발생하기 때문에, <span style='color:#orange'>더 복잡한 모델</span>을 사용하는 것이 일반적인 해결책이다.
+- Underfitting 은 주로 모델이 너무 단순해서 발생하기 때문에, <span style='color:#orange'>더 복잡한 모델</span>을 사용하는 것이 일반적인 해결책이다.
 - E.g., 선형 모델 대신 비 선형 모델 (MLP, DNN) 를 사용
 - 더 많은 레이어 또는 더 많은 뉴런을 가진 Neural network 를 사용하면 복잡한 패턴을 학습할 수 있다.
 
@@ -122,14 +122,14 @@ use_tex: true
 
 ### 모델의 파라미터 수 증가
 
-> 모델의 파라미터 수를 늘리면 복잡한 패턴을 더 잘 학습할 수 있다. 
+- 모델의 파라미터 수를 늘리면 복잡한 패턴을 더 잘 학습할 수 있다. 
 - E.g., 신경망에서는 더 많은 뉴런이나 레이어를 추가하는 것 또는 CNN 에서 더 많은 필터를 사용하거나 더 많은 convolution layer 를 사용하는 것
 
 <br>
 
 ### 더 많은 Feature 사용
 
-> 더 많은 입력 Feature를  모델에 제공하여 성능을 향상시킬 수 있다. 
+- 더 많은 입력 Feature를  모델에 제공하여 성능을 향상시킬 수 있다. 
   - Feature 가 부족하면 모델이 충분한 정보를 학습할 수 없다. 
 - Feature Engineering 을 통해 새로운 피처를 생성하거나, 기존의 피처를 결합해 새로운 피처를 만들어낼 수 있다.
 - Feature scaling (Regularization 또는 Normalization)을 적용하여 데이터의 범위 차이로 인해 학습이 어려워지는 문제를 해결할 수도 있다.
@@ -138,14 +138,14 @@ use_tex: true
 
 ### 더 많은 데이터 확보
 
-> 데이터가 부족하면 모델이 충분한 패턴을 학습할 수 없으므로 더 많은 데이터를 확보한다. 
+- 데이터가 부족하면 모델이 충분한 패턴을 학습할 수 없으므로 더 많은 데이터를 확보한다. 
 - 데이터 증강(Data Augmentation) 기법을 사용하여 기존 데이터를 변형시켜 새로운 데이터를 생성할 수 있다.
 
 <br>
 
 ### 학습 스케일 증대
 
-> 학습 시간을 더 늘리면 모델이 데이터에서 더 많은 패턴을 학습할 수 있다. 
+- 학습 시간을 더 늘리면 모델이 데이터에서 더 많은 패턴을 학습할 수 있다. 
 - 학습 시간을 늘리기 위해 에포크 수를 증가시키거나 **학습률(Learning Rate)**을 조절한다.. 
 - 그러나, 학습률이 너무 크면 모델이 최적의 값에 도달하기 전에 학습을 멈출 수 있기 때문에, 이를 적절히 조정하여 모델이 충분히 학습할 수 있도록 한다.
 
@@ -153,7 +153,7 @@ use_tex: true
 
 ### Normalization 기법 사용
 
-> 정규화 기법을 과도하게 적용하면 모델이 지나치게 단순화되어 과소적합이 발생할 수 있다. 
+- 정규화 기법을 과도하게 적용하면 모델이 지나치게 단순화되어 과소적합이 발생할 수 있다. 
 - 적절한 정규화 수준을 선택
 - L2 정규화(Ridge)나 드롭아웃(Dropout) 등 과적합 방지 기법을 너무 강하게 적용한 경우, 이를 줄여 모델이 데이터를 더 잘 학습할 수 있도록 한다. 
   - 드롭아웃의 비율을 줄이거나, L2 패널티 값을 줄이는 등의 방법으로 정규화의 강도를 조절
@@ -162,7 +162,7 @@ use_tex: true
 
 ### Non-linear activation function
 
-> 신경망 모델을 사용하는 경우, 비선형 활성화 함수를 사용해야 한다. 
+- 신경망 모델을 사용하는 경우, 비선형 활성화 함수를 사용해야 한다. 
 - 선형 활성화 함수를 사용하면 모델이 비선형 데이터를 학습하지 못해 과소적합이 발생할 수 있다. 
   - ReLU, Leaky ReLU, Sigmoid, Tanh와 같은 비선형 활성화 함수를 사용하면 복잡한 비선형 패턴을 학습할 수 있다.
 
@@ -170,14 +170,14 @@ use_tex: true
 
 ### Loss function
 
-> 적절한 loss function 을 사용하는 것은 중요하다.
+- 적절한 loss function 을 사용하는 것은 중요하다.
 - 회귀 문제에서는 평균 제곱 오차(MSE), 이진 분류에서는 이진 크로스 엔트로피(Binary Cross-Entropy), 다중 클래스 분류에서는 범주형 크로스 엔트로피(Categorical Cross-Entropy) 등 문제에 맞는 손실 함수를 사용하는 것이 중요함
 
 <br>
 
 ### Learning Rate
 
-> **학습률(Learning Rate)**을 조정. 
+- **학습률(Learning Rate)**을 조정. 
 - 학습률이 너무 크면 모델이 충분히 학습되지 않고, 너무 작으면 학습이 지나치게 느리게 진행된다.
 - 적절한 학습률을 찾기 위해 학습률 스케줄링(Learning Rate Scheduling) 기법을 사용하거나, 적응형 학습률 기법(예: Adam, RMSprop)을 사용
 
@@ -201,14 +201,14 @@ use_tex: true
 
 ### 학습 스케일 증대
 
-> 과적합은 모델이 학습 데이터에 너무 특화될 때 발생하므로, 더 많은 데이터를 사용하면 모델이 더 일반화된 패턴을 학습할 가능성이 커진다.
+- 과적합은 모델이 학습 데이터에 너무 특화될 때 발생하므로, 더 많은 데이터를 사용하면 모델이 더 일반화된 패턴을 학습할 가능성이 커진다.
 - 데이터 증강(Data Augmentation) 을 통해 더 다양한 학습 데이터를 학습에 사용해야 한다.
 
 <br>
 
 ### Batch Normalization (BN)
 
-> Batch Normalization 은 신경망에서 각 레이어의 입력 값을 정규화하는 방법으로, 데이터가 레이어를 통과할 때마다 활성화 값이 정규화 됨.
+- Batch Normalization 은 신경망에서 각 레이어의 입력 값을 정규화하는 방법으로, 데이터가 레이어를 통과할 때마다 활성화 값이 정규화 됨.
 - 이는 학습을 안정적으로 만들고, 학습 속도를 높여준다. 
 - 배치(batch) 단위로 정규화를 수행한다. 
   - 학습 과정에서 미니 배치의 평균과 분산을 계산한 뒤, 해당 배치의 값을 정규화한다.
@@ -225,20 +225,20 @@ use_tex: true
 
 ### 모델의 복잡도 줄이기
 
-> 모델이 너무 복잡하기 때문에 조금 더 얕은 신경망을 사용하거나, 불필요한 feature 를 제거.
+- 모델이 너무 복잡하기 때문에 조금 더 얕은 신경망을 사용하거나, 불필요한 feature 를 제거.
 
 <br>
 
 ### 차원 축소와 피처 선택
 
-> Dimension Reduction: **주성분 분석(PCA)**와 같은 방법으로 데이터의 차원을 줄이는 것.
+- Dimension Reduction: **주성분 분석(PCA)**와 같은 방법으로 데이터의 차원을 줄이는 것.
 - Feature select: 피처 선택: 유용하지 않은 피처를 제거하고, 중요한 피처만 선택
 
 <br>
 
 ### Drop-Out
 
-> **드롭아웃(Dropout)**은 신경망 학습 시 임의로 뉴런들을 비활성화하는 기법. 
+- **드롭아웃(Dropout)**은 신경망 학습 시 임의로 뉴런들을 비활성화하는 기법. 
 - 이는 모델이 특정 뉴런에 지나치게 의존하지 않도록 하며, 다양한 패턴을 학습하도록 한다. 
 - 훈련 시 각 레이어의 뉴런을 일정 확률로 비활성화하고, 테스트 시에는 모든 뉴런을 사용하여 예측을 수행 
 - 드롭아웃 비율은 보통 0.2~0.4 사이로 설정
@@ -247,7 +247,7 @@ use_tex: true
 
 ### Early Stopping
 
-> **조기 종료(Early Stopping)**는 학습 과정에서 검증 데이터의 성능이 더 이상 개선되지 않을 때 학습을 멈추는 방법 
+- **조기 종료(Early Stopping)**는 학습 과정에서 검증 데이터의 성능이 더 이상 개선되지 않을 때 학습을 멈추는 방법 
 - 학습이 진행될수록 모델이 훈련 데이터에 맞추어 성능이 좋아질 수 있지만, 검증 데이터에 대해서는 성능이 떨어질 수 있다. 
 - 이를 방지하기 위해 검증 데이터의 성능이 향상되지 않는 시점에서 학습을 중단함
 
@@ -255,7 +255,7 @@ use_tex: true
 
 ### Cross Validation
 
-> 교차 검증은 모델이 데이터의 특정 부분에 지나치게 맞추지 않도록 데이터를 여러 번 나누어 훈련과 검증을 반복하는 방법 
+- 교차 검증은 모델이 데이터의 특정 부분에 지나치게 맞추지 않도록 데이터를 여러 번 나누어 훈련과 검증을 반복하는 방법 
 - 일반적으로 k-fold cross-validation 를 많이 사용하며, 데이터를 k개의 부분으로 나누어 각각의 부분을 한 번씩 검증 데이터로 사용하고 나머지를 훈련 데이터로 사용한다. 
 - 이를 통해 모델이 데이터의 일부에 지나치게 특화되는 것을 방지하고, 더 일반화된 성능을 평가할 수 있다.
 
@@ -265,45 +265,4 @@ use_tex: true
 
 > 가중치 규제
 
-- Weight Regularization 이란, <span style='color:#orange'>모델의 loss function 값이 너무 작아지지 않도록 특정한 값(함수)를 추가</span> 하는 것
-
--  이를 통해 <span style='color:#green'>특정한 weight 값이 과도하게 커져서 일부 특징에 의존하는 현상을 방지하고, 데이터의 일반적인 특징(일반화, Generalization) 을 잘 반영</span> 할 수 있도록 한다.
-
-#### Lp Norm
-
-> Weight Regularization (가중치 규제) 에서 중요한 개념으로, 모델의 weight 를 통제한다.
-
-**<span style='color:#orange'>Lp Norm 은 weight vector 의 크기를 측정하는 방법 중 하나로, p 값에 따라 다양한 규제 기법이 만들어진다.</span>**
-
-- Norm 이란, 유한 차원의 벡터 공간에서 <span style='color:#orange'>벡터의 절대적인 크기(Magnitude) 또는 벡터 간 거리</span>를 나타낸다.
-- Norm 은 특정한 속성을 만족하며, 측정 가능한 긴으의 공간 Lp space 혹은 Lebesgue space(르베그 공간) 에서의 norm 을 LP Norm(P-norm) 이라고 한다.
-
-<br>
-
-Lp Norm 의 정의:
-
-- <img width="232" alt="image" src="https://github.com/user-attachments/assets/ff174c0b-306f-4e52-a8e4-1cbfb5ddd242">{: .align-center}
-  - $w_i$: weight vector $w$ 의 각 요소
-  - $p$:  Norm 의 차수. 다른 값에 따라 다른 규제 기법을 만든다.
-  - $n$: 벡터의 차원 수
-  - $1\beq p \beq \infty$
-
-<br>
-
-- 2차원 벡터 공간에서 L1 Norm 은 마름모꼴, L2 Norm 은 원을 나타내며, $p$ 가 무한대로 갈수록 정사각형의 형태를 가진다.
-
-<img width="1000" alt="untitle" src="https://github.com/user-attachments/assets/c5491d93-5a0f-4735-b1a9-e44938699e82">{: .align-center}
-
-<img width="1000" alt="untitle" src="https://github.com/user-attachments/assets/f2530057-91a3-40e2-8b10-ae35bf7f5177">{: .align-center}
-
-- 위 형태의 특수성에서 보는 것 처럼, <span style='color:#orange'> $p$ 가 1,2,$\infty$ 일 때의 norm 인 L1 Norm, L2 Norm, L$infty$ Norm 을 많이 사용</span>한다.
-
-<br>
-
-#### L1 Norm
-
-
-
-
-
-참조 또는 인용 [Blog](https://seongyun-dev.tistory.com/52)
+[Weight Regularization]({{site.url}}/machine_learning/Weight_Regularization/)
