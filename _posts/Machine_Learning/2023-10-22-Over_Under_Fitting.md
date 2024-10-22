@@ -276,7 +276,7 @@ use_tex: true
 **<span style='color:#orange'>Lp Norm 은 weight vector 의 크기를 측정하는 방법 중 하나로, p 값에 따라 다양한 규제 기법이 만들어진다.</span>**
 
 Lp Norm 의 정의:
-- $\|\|w\|\|_{p}=\sum_{i=1}^{n} \|w_{i}\|^{p})^{1/p}$
+- $w_{p}=\sum_{i=1}^{n} w_{i}^{p})^{1/p}$
   - $w_i$: weight vector $w$ 의 각 요소
   - $p$:  Norm 을 정의하는 지수로, 다른 값에 따라 다른 규제 기법을 만든다.
 
