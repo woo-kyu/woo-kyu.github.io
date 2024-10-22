@@ -27,7 +27,7 @@ use_tex: true
 
 ### Bias-Variance Trade-off
 
-- 이론적 관점에서 모델의 오류 원인을 설명
+- <span style='color:#orange'>이론적 관점</span>에서 모델의 오류 원인을 설명
 - Bias(편향): 모델이 얼마나 <span style='color:#orange'>단순화</span> 되어있는지
   - 너무 단순하면 데이터를 잘 설명하지 못하고 **과소적합(Underfitting)** 이 발생한다.
 - Variance(분산): 모델이 얼마나 복잡하고 데이터에 민감한 지 나타낸다.
@@ -276,7 +276,7 @@ use_tex: true
 **<span style='color:#orange'>Lp Norm 은 weight vector 의 크기를 측정하는 방법 중 하나로, p 값에 따라 다양한 규제 기법이 만들어진다.</span>**
 
 Lp Norm 의 정의:
-- $ ||w||_{p}=\sum_{i=1}^{n} |w_{i}|^{p})^{1/p} $
+- $\|\|w\|\|_{p}=\sum_{i=1}^{n} \|w_{i}\|^{p})^{1/p}$
   - $w_i$: weight vector $w$ 의 각 요소
   - $p$:  Norm 을 정의하는 지수로, 다른 값에 따라 다른 규제 기법을 만든다.
 
