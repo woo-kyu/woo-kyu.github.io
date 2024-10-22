@@ -275,8 +275,35 @@ use_tex: true
 
 **<span style='color:#orange'>Lp Norm 은 weight vector 의 크기를 측정하는 방법 중 하나로, p 값에 따라 다양한 규제 기법이 만들어진다.</span>**
 
-Lp Norm 의 정의:
-- || $w$ || $_{p} =(\sum_{i=1}^{n} w_{i} ^{p})^{1/p}$
-  - $w_i$: weight vector $w$ 의 각 요소
-  - $p$:  Norm 을 정의하는 지수로, 다른 값에 따라 다른 규제 기법을 만든다.
+- Norm 이란, 유한 차원의 벡터 공간에서 <span style='color:#orange'>벡터의 절대적인 크기(Magnitude) 또는 벡터 간 거리</span>를 나타낸다.
+- Norm 은 특정한 속성을 만족하며, 측정 가능한 긴으의 공간 Lp space 혹은 Lebesgue space(르베그 공간) 에서의 norm 을 LP Norm(P-norm) 이라고 한다.
 
+<br>
+
+Lp Norm 의 정의:
+
+- <img width="232" alt="image" src="https://github.com/user-attachments/assets/ff174c0b-306f-4e52-a8e4-1cbfb5ddd242">{: .align-center}
+  - $w_i$: weight vector $w$ 의 각 요소
+  - $p$:  Norm 의 차수. 다른 값에 따라 다른 규제 기법을 만든다.
+  - $n$: 벡터의 차원 수
+  - $1\beq p \beq \infty$
+
+<br>
+
+- 2차원 벡터 공간에서 L1 Norm 은 마름모꼴, L2 Norm 은 원을 나타내며, $p$ 가 무한대로 갈수록 정사각형의 형태를 가진다.
+
+<img width="1000" alt="untitle" src="https://github.com/user-attachments/assets/c5491d93-5a0f-4735-b1a9-e44938699e82">{: .align-center}
+
+<img width="1000" alt="untitle" src="https://github.com/user-attachments/assets/f2530057-91a3-40e2-8b10-ae35bf7f5177">{: .align-center}
+
+- 위 형태의 특수성에서 보는 것 처럼, <span style='color:#orange'> $p$ 가 1,2,$\infty$ 일 때의 norm 인 L1 Norm, L2 Norm, L$infty$ Norm 을 많이 사용</span>한다.
+
+<br>
+
+#### L1 Norm
+
+
+
+
+
+참조 또는 인용 [Blog](https://seongyun-dev.tistory.com/52)

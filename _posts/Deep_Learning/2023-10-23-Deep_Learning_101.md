@@ -16,7 +16,7 @@ use_tex: true
 <hr>
 <hr>
 
-<img width="1187" alt="image" src="https://github.com/user-attachments/assets/0f596466-c5d1-4e10-b7b2-a99e944a9ca5">
+<img width="1187" alt="image" src="https://github.com/user-attachments/assets/0f596466-c5d1-4e10-b7b2-a99e944a9ca5">{: .align-center}
 
 > AI: 인간의 학습, 추론, 지각능력 등을 활용한 문제 해결 및 의사 결정과 같은 작업을 수행하기 위해 인간의 지능을 모방하는 시스템을 말한다.
 > 
@@ -38,8 +38,8 @@ use_tex: true
 
 > Perceptron (Node, Neuron)
 
-<img width="680" alt="image" src="https://github.com/user-attachments/assets/a60e6f28-0c31-4c3b-a0e3-4031f058a14c">
-<img width="991" alt="image" src="https://github.com/user-attachments/assets/f3d54711-f139-4461-94a9-78132dc6fd00">
+<img width="680" alt="image" src="https://github.com/user-attachments/assets/a60e6f28-0c31-4c3b-a0e3-4031f058a14c">{: .align-center}
+<img width="991" alt="image" src="https://github.com/user-attachments/assets/f3d54711-f139-4461-94a9-78132dc6fd00">{: .align-center}
 
 인공지능은 위와 같은 Frame work 구조를 가지고 있다.
 
@@ -61,7 +61,7 @@ use_tex: true
 - $\hat{y}$: Predicted value
 - $y$: Reality value
 
-<img width="654" alt="image" src="https://github.com/user-attachments/assets/c9289be4-ef3d-4218-a027-ecfc09128361">
+<img width="654" alt="image" src="https://github.com/user-attachments/assets/c9289be4-ef3d-4218-a027-ecfc09128361">{: .align-center}
 
 
 ## Parts
