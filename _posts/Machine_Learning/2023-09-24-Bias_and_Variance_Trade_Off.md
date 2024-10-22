@@ -175,7 +175,7 @@ Bata_hat (optimum) value → replace (0,0)
 
 ## Ridge (L2) Regression
 
-- $L=\sum_{i=1}^{n}(y_{i}-(\beta_{0}+\sum_{j=1}^{D}\beta_{j}x_{ij}))^2+$ {<span style='color:orange'>$\lambda\sum_{j=1}^{D}\beta_{j}^2$</span>}
+- $ L=\sum_{i=1}^{n} (y_{i}-( \beta_{0} + \sum_{j=1}^{D} \beta_{j} x_{ij}))^2+$ {<span style='color:orange'>$ \lambda \sum_{j=1}^{D} \beta_{j}^2$</span>}
 - MSE Loss 를 줄이지 못하면, Term of penalty, y의 loss value 가 더 크게 작용함
 - $\lambda$(Lambda) is part of parameter that controls the effects of regularization. (like loss function, $w$)
 - Regularized expression is expressed by sum of <span style='color:orange'>squares</span>
