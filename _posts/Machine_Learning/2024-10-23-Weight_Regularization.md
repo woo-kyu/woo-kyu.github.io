@@ -105,7 +105,7 @@ Loss function 에 weight 절대값을 더하는 방식으로 구현
 
 <br>
 
-### L1 Regularization 특징
+### 특징
 
 #### Sparsity (희소성)
 - L1 규제의 가장 큰 특징은 일부 가중치를 완전히 0으로 만드는 경향이 있다는 점이다. 
@@ -170,7 +170,7 @@ Loss function 에 weight 절대값을 더하는 방식으로 구현
 
 <br>
 
-### L2 Regularization 특징
+### 특징
 
 #### 가중치 축소
 
@@ -234,10 +234,41 @@ Loss function 에 weight 절대값을 더하는 방식으로 구현
 - 2차원 벡터 공간에서 L1 Norm 은 마름모꼴, L2 Norm 은 원을 나타내며, $p$ 가 무한대로 갈수록 정사각형의 형태를 가진다.
 - 위 형태의 특수성에서 보는 것 처럼, <span style='color:#orange'> $p$ 가 1,2,$\infty$ 일 때의 norm 인 L1 Norm, L2 Norm, L$infty$ Norm 을 많이 사용</span>한다.
 
+<br>
+
+### Geometry 관점
+
+- L1 Norm 은 다른 점으로 이동하는 여러 방법(feature, weight) 중 특정 방법을 0으로 처리하는 것이 가능하여 중요한 가중치만 남길 수 있는 feature selection 이 가능하다.
+  - 또한, 오차의 절댓값을 사용하기 때문에 L2 Norm 대비 outlier 에 좀더 robust 하다.
+- 그러나, <span style='color:#orange'>0 에서 미분이 불가능해 Gradient-Based Learning 모델에 사용시 주의가 필요</span>하며, 
+  - 편미분 시 weight 의 부호만 남기 때문에, weight 의 크기에 따라 규제의 크기가 변하지 않으므로 Regularization 효과가 L2 대비 떨어진다.
+  - Gradient-Based Learning 모델에서 <span style='color:#orange'>부드럽게 변화하지 않는 문제가 발생할 수 있으며, 서브그래디언트(subgradient) 방법을 사용해야 할 수 있음.</span>
+- L2 Norm은 오차의 제곱을 사용하기 때문에 <span style='color:#orange'>outlier 에 대해 L1 보다 더 민감하게 작용</span>한다.
+- 따라서, weight 의 부호 뿐만 아니라, 그 크기만큼 패널티를 줄 수 있어 특정 weight 가 너무 커지는 것을 방지하는 <span style='color:#orange'>weight decay 가 가능</span>하다.
+
+<img width="1000" alt="untitle" src="https://github.com/user-attachments/assets/c7ae4af5-f14e-4015-b8db-e4be6c273281">{: .align-center}
+
+<img width="1000" alt="untitle" src="https://github.com/user-attachments/assets/67430282-43e1-4e8d-9084-e53fc9508b0c">{: .align-center}
 
 <br>
 
-##
+## Elastic Net
+
+> Elastic Net은 **L1 규제(Lasso)**와 **L2 규제(Ridge)**를 결합한 혼합 규제 기법
+> 
+> Elastic Net은 두 규제의 장점을 모두 취하는 방식으로, **희소성(sparsity)**을 유지하면서도 안정성을 확보할 수 있는 방법이다. 
+> 
+> L1 규제는 가중치 절대값을 패널티로 적용해 피처 선택을 촉진하고, L2 규제는 가중치 제곱합을 패널티로 적용해 모든 피처의 가중치 크기를 균등하게 줄이는 역할을 수행
+
+<br>
+
+### Elastic Loss Function
+
+<img width="425" alt="image" src="https://github.com/user-attachments/assets/87671e1c-0f9f-4091-bdad-47db51c889f3">{: .align-center}
+
+- Original Loss: 원래의 loss function (E.g., MSE)
+
+<br>
 
 
 
