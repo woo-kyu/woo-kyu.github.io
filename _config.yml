@@ -250,7 +250,18 @@ whitelist:
   - jekyll-feed
   - jekyll-include-cache
   - jekyll-redirect-from
+  - jekyll-lunr-js-search
 
+# Lunr.js 플러그인 설정
+lunr_search:
+  exclude: # 인덱스에서 제외할 페이지
+    - index.html
+    - search.html
+  fields: # 인덱스할 필드 지정
+    - title
+    - content
+  strips: # 인덱스 생성 시 제거할 부분 (HTML 태그 등)
+    - html
 
 # Archives
 #  Type

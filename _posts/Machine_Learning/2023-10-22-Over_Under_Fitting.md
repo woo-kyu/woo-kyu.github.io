@@ -27,8 +27,8 @@ use_tex: true
 
 ### Bias-Variance Trade-off
 
-- <span style='color:#orange'>이론적 관점</span>에서 모델의 오류 원인을 설명
-- Bias(편향): 모델이 얼마나 <span style='color:#orange'>단순화</span> 되어있는지
+- <span style='color:#ff7fff'>이론적 관점</span>에서 모델의 오류 원인을 설명
+- Bias(편향): 모델이 얼마나 <span style='color:#ff7fff'>단순화</span> 되어있는지
   - 너무 단순하면 데이터를 잘 설명하지 못하고 **과소적합(Underfitting)** 이 발생한다.
 - Variance(분산): 모델이 얼마나 복잡하고 데이터에 민감한 지 나타낸다.
   - 너무 민감하면 데이터의 노이즈까지 학습, **과적합(Overfitting)** 을 야기한다.
@@ -40,8 +40,8 @@ use_tex: true
 ### Over / Under fitting
 
 - 실제 모델의 성능을 평가하는 경험적 관점에서 설명
-- Overfitting(과대적합): 모델이 <span style='color:#orange'>학습 데이터에 너무 잘 맞추어</span> 새로운 데이터에 일반화하지 못하는 현상.
-- Underfitting(과소적합): 모델이 <span style='color:#orange'>충분한 패턴을 학습하지 못 한</span> 상태로, 너무 **단순** 해서 학습 데이터조차 잘 설명하지 못하는 경우.
+- Overfitting(과대적합): 모델이 <span style='color:#ff7fff'>학습 데이터에 너무 잘 맞추어</span> 새로운 데이터에 일반화하지 못하는 현상.
+- Underfitting(과소적합): 모델이 <span style='color:#ff7fff'>충분한 패턴을 학습하지 못 한</span> 상태로, 너무 **단순** 해서 학습 데이터조차 잘 설명하지 못하는 경우.
 - **목표** : 모델이 훈련 데이터와 테스트 데이터 모두에서 균형잡힌 성능을 내도록, 과적합과 과소적합을 방지하는 것.
 - I.e., 모델의 실제 성능을 평가하면서 데이터에 너무 민감하거나, 패턴을 제대로 학습하지 못하는 지 확인하고, 이를 해결하는 방법에 중점을 둔다.
 
@@ -62,7 +62,7 @@ use_tex: true
 
 - 실제 모델의 성능을 기반으로 문제를 해결한다.
 - Overfitting 방지: 
-  - <span style='color:#orange'>Drop-out, Regularization, Cross-validation 등</span> 과 같은 방법을 적용하며, 모델이 데이터에 과도하게 적응하지 않도록 한다.
+  - <span style='color:#ff7fff'>Drop-out, Regularization, Cross-validation 등</span> 과 같은 방법을 적용하며, 모델이 데이터에 과도하게 적응하지 않도록 한다.
 - Underfitting 방지:
   - 더 복잡한 모델을 사용하거나, 학습 시간과 학습 데이터의 양을 늘려 **충분한 학습**이 이루어지도록 조정.
 
@@ -114,7 +114,7 @@ use_tex: true
 
 ### 더 복잡한 모델 사용
 
-- Underfitting 은 주로 모델이 너무 단순해서 발생하기 때문에, <span style='color:#orange'>더 복잡한 모델</span>을 사용하는 것이 일반적인 해결책이다.
+- Underfitting 은 주로 모델이 너무 단순해서 발생하기 때문에, <span style='color:#ff7fff'>더 복잡한 모델</span>을 사용하는 것이 일반적인 해결책이다.
 - E.g., 선형 모델 대신 비 선형 모델 (MLP, DNN) 를 사용
 - 더 많은 레이어 또는 더 많은 뉴런을 가진 Neural network 를 사용하면 복잡한 패턴을 학습할 수 있다.
 

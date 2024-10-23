@@ -41,6 +41,17 @@ use_tex: true
 
 <br>
 
+## E.g., Regularization Method 
+
+- Regularization method 는 regression 계수가 $\beta$ 에 가질 수 있는 값에 제약 조건을 부여하는 방법
+
+
+
+<br>
+
+
+<br>
+
 Lp Norm 의 정의:
 
 <img width="232" alt="image" src="https://github.com/user-attachments/assets/ff174c0b-306f-4e52-a8e4-1cbfb5ddd242">{: .align-center}
