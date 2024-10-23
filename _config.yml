@@ -251,9 +251,6 @@ whitelist:
   - jekyll-feed
   - jekyll-include-cache
   - jekyll-redirect-from
-  - jekyll-lunr-js-search
-
-
 
 
 lunr_search:

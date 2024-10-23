@@ -16,7 +16,7 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.0'  # 원하는 Ruby 버전 설정
+          ruby-version: '3.0'  # Ruby 버전 설정 (원하는 버전으로 수정 가능)
 
       - name: Install dependencies
         run: |
