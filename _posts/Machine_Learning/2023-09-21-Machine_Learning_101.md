@@ -129,6 +129,11 @@ header.overlay_image: "https://github.com/user-attachments/assets/9baa36a5-91d4-
 - learnable parameter within model
 - ex) $w_{0}, w_{1}, ... w_{D}$
 
+### Weight Regularization
+
+[Weight Regularization]({{site.url}}/machine_learning/Weight_Regularization/)
+- L1 Lasso Regularization, L2 Ridge Regularization, Elastic Net
+
 <br>
 
 ## Hyper-parameter
@@ -157,24 +162,7 @@ header.overlay_image: "https://github.com/user-attachments/assets/9baa36a5-91d4-
 
 ---
 
-## LOOCV
-
-- Selected one random data in training data-sets
-- Select and Verify each every single data where in training data-sets
-- If data-sets are very enormous, that give rise to highly cost of calculate
-
-<img width="746" alt="ml101" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/be731ec5-4675-4113-8b4d-dc23ad19742c">
-
-<br>
-
-## K-fold
-
-- Improve Loocv’s drawback
-- Validate by dividing into ‘K’ part
-
-<img width="746" alt="ml101" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/4cea453a-6d92-4ed6-92af-cf1b970f1218">
-
-
+[Data for Machine Learning]({{site.url}}/machine_learning/Data_for_Machine_Learning/)
 
 
 
@@ -234,4 +222,8 @@ header.overlay_image: "https://github.com/user-attachments/assets/9baa36a5-91d4-
 
 [Hierarchial Clustering]({{site.url}}/machine_learning/Hierarchical_Clustering)
 
+[Weight Regularization]({{site.url}}/machine_learning/Weight_Regularization/)
 
+[Over and Under-fitting]({{site.url}}/machine_learning/Over_Under_Fitting)
+
+[Data for Machine Learning]({{site.url}}/machine_learning/Data_for_Machine_Learning/)
