@@ -237,7 +237,7 @@ timezone: Asia/Seoul
 # 기존의 github-pages 사용 중지
 plugins:
   - jekyll-include-cache   # 캐싱 기능을 위한 플러그인
-  - jekyll-lunr-js-search  # 검색 기능을 위한 플러그인
+#  - jekyll-lunr-js-search  # 검색 기능을 위한 플러그인
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist

@@ -10,14 +10,10 @@
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
 -->
 <html lang="{{ site.locale | slice: 0,2 | default: "en" }}" class="no-js">
-<head>
-  {% include head.html %}
-  {% include head/custom.html %}
-
-  <!-- Lunr.js 라이브러리 추가 -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"></script>
-</head>
-
+  <head>
+    {% include head.html %}
+    {% include head/custom.html %}
+  </head>
 
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
     {% include_cached skip-links.html %}
@@ -42,44 +38,5 @@
 
     {% include scripts.html %}
 
-    <!-- 검색 기능을 위한 JavaScript -->
-    <script>
-      // JSON 파일 로드 및 검색 인덱스 구축
-      fetch('/search.json')
-        .then(response => response.json())
-        .then(data => {
-          // Lunr.js 인덱스 생성
-          var idx = lunr(function () {
-            this.ref('url');  // URL을 참조로 설정
-            this.field('title');  // 검색할 필드: 제목
-            this.field('content');  // 검색할 필드: 본문 내용
-
-            data.forEach(function (doc) {
-              this.add(doc);
-            }, this);
-          });
-
-          // 검색창에서 입력 시 검색 기능 동작
-          document.getElementById('search-input').addEventListener('input', function () {
-            var query = this.value;
-            var results = idx.search(query);
-
-            // 검색 결과 목록 업데이트
-            var resultsList = document.getElementById('results');
-            resultsList.innerHTML = '';  // 기존 결과 비우기
-
-            results.forEach(function (result) {
-              var item = data.find(doc => doc.url === result.ref);
-              var li = document.createElement('li');
-              var a = document.createElement('a');
-              a.href = item.url;
-              a.textContent = item.title;
-              li.appendChild(a);
-              resultsList.appendChild(li);
-            });
-          });
-        });
-    </script>
-
-    </body>
+  </body>
 </html>
