@@ -1,11 +1,16 @@
+
 source "https://rubygems.org"
 
-# Jekyll 버전을 명시하여 GitHub Actions에서 사이트 빌드를 관리
+# Jekyll 버전 명시
 gem "jekyll", "~> 4.0"
 
-# Jekyll 플러그인 및 의존성 설정
+# 필요한 플러그인 추가
 gem "webrick", "~> 1.8"
 gem "kramdown", "~> 2.4"
-
-# 검색 기능을 위한 Lunr.js 플러그인
+gem 'jekyll-paginate'
+gem 'jekyll-sitemap'
+gem 'jekyll-gist'
+gem 'jekyll-feed'
+gem 'jekyll-include-cache'
+gem 'jekyll-redirect-from'
 gem 'jekyll-lunr-js-search'
