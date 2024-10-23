@@ -234,14 +234,17 @@ timezone: Asia/Seoul
 
 
 # Plugins (previously gems:)
-plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jekyll-include-cache
-  - jekyll-redirect-from
-  - jekyll-lunr-js-search
+# 기존의 github-pages 사용 중지
+plugins: []
+
+#plugins:
+#  - jekyll-paginate
+#  - jekyll-sitemap
+#  - jekyll-gist
+#  - jekyll-feed
+#  - jekyll-include-cache
+#  - jekyll-redirect-from
+#  - jekyll-lunr-js-search
 
 # mimic GitHub Pages with --safe
 whitelist:
