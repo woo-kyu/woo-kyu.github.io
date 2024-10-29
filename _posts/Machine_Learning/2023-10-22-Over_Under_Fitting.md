@@ -247,6 +247,8 @@ use_tex: true
 
 ### Early Stopping
 
+<img width="1000" alt="untitle" src="https://github.com/user-attachments/assets/2226647c-09e3-4176-89e5-557ccb1c126d">{: .align-center}
+
 - **조기 종료(Early Stopping)**는 학습 과정에서 검증 데이터의 성능이 더 이상 개선되지 않을 때 학습을 멈추는 방법 
 - 학습이 진행될수록 모델이 훈련 데이터에 맞추어 성능이 좋아질 수 있지만, 검증 데이터에 대해서는 성능이 떨어질 수 있다. 
 - 이를 방지하기 위해 검증 데이터의 성능이 향상되지 않는 시점에서 학습을 중단함

@@ -227,6 +227,8 @@ Loss function 에 weight 절대값을 더하는 방식으로 구현
 
 ## L1 Lasso Regularization vs. L2 Ridge Regularization
 
+> 제곱 오차 (L2)를 사용하면 연산이 더 쉽지만, 절대 오차 (L1)을 사용하면 이상치에 더 강하다.
+
 | **특징**                | **L1 규제 (Lasso)**                               | **L2 규제 (Ridge)**                         |
 |-------------------------|---------------------------------------------------|---------------------------------------------|
 | **규제 방식**           | 가중치의 **절대값**을 패널티로 부여               | 가중치의 **제곱합**을 패널티로 부여         |
@@ -289,4 +291,4 @@ Loss function 에 weight 절대값을 더하는 방식으로 구현
 
 
 
-참조 또는 인용 [Blog](https://seongyun-dev.tistory.com/52)
+참조 또는 인용 [Blog](https://seongyun-dev.tistory.com/52), [Blog](https://www.comet.com/site/blog/5-regression-loss-functions-all-machine-learners-should-know/)

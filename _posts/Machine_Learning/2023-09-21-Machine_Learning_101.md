@@ -36,7 +36,11 @@ header.overlay_image: "https://github.com/user-attachments/assets/9baa36a5-91d4-
 ## Regression
 
 - [Linear and Non-linear Regression]({{site.url}}/machine_learning/Regression/)
+  - [Partial Least Squares (PLS)]({{site.url}}/machine_learning/PLS)
+    - 작성 예정
 - [Gradient Descent]({{site.url}}/machine_learning/Gradient_Descent/)
+  - [LRS (Learning Rate Scheduler)]({{site.url}}/machine_learning/Learning_Rate_Scheduler/)
+  - [Optima (Local minima problem)]({{site.url}}/machine_learning/Optima/)
 - [Bias and Variance Trade-off]({{site.url}}/machine_learning/Bias_and_Variance_Trade_Off/)
 - [Over and Under-fitting]({{site.url}}/machine_learning/Over_Under_Fitting)
 
@@ -47,21 +51,21 @@ header.overlay_image: "https://github.com/user-attachments/assets/9baa36a5-91d4-
 - [Logistic and Soft-max Regression]({{site.url}}/machine_learning/Logistic_Soft_max)
 - [Support Vector Machine (SVM)]({{site.url}}/machine_learning/SVM)
 - [Dicison Tree]({{site.url}}/machine_learning/Dicision_Tree)
-- [Linear Discriminant Analysis (LDA)]({{site.url}}/machine_learning/LDA)
+- [Linear Discriminant Analysis (LDA, Supervised)]({{site.url}}/machine_learning/LDA)
 
 <br>
 
-## [Ensemble (Complex)]({{site.url}}/machine_learning/Ensemble)
+## [Ensemble (Complex, Super/Unsupervised)]({{site.url}}/machine_learning/Ensemble)
 
 - [Bagging]({{site.url}}/machine_learning/Bagging)
 - [Boosting]({{site.url}}/machine_learning/Boosting)
 
 <br>
 
-## Regression vs. Classification
+### Regression vs. Classification
 
 
-### Regression (회귀)
+#### Regression (회귀)
 
 - Input (Feature) : Real number (실수형),  Discrete value(범주형) etc..,
 - <span style='color:orange'>Output (Predict) : Real number (실수형, 이산값)</span>
@@ -69,7 +73,7 @@ header.overlay_image: "https://github.com/user-attachments/assets/9baa36a5-91d4-
 
 <br>
 
-### Classification (분류)
+#### Classification (분류)
 
 - Input (Feature) : Real number (실수형),  Discrete value(범주형) etc..
 - <span style='color:orange'>Output (Predict) : Discrete value (범주형)</span>
@@ -152,15 +156,6 @@ header.overlay_image: "https://github.com/user-attachments/assets/9baa36a5-91d4-
 
 - Feature (attribute) : information = X
 - Label : results = y (predict : y_hat)
-
-
-<br>
-
-# Use verified data-sets
-
----
-
----
 
 [Data for Machine Learning]({{site.url}}/machine_learning/Data_for_Machine_Learning/)
 
