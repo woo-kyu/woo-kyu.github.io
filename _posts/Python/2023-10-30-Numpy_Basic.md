@@ -1,8 +1,8 @@
 ---
 layout: single
-title: Numpy - Pandas Basic
-toc_label: Numpy - Pandas basic
-categories: Python
+title: Numpy Basic
+toc_label: Numpy basic
+categories: [Python]
 tags: [Python, Numpy]
 author_profile: false
 search: true
