@@ -159,7 +159,7 @@ You can change that input data’s feature or, higher model’s complexity then 
 
 # Regularized loss function
 
-- more higher models complexity is following to increasing models parameters
+- More higher models complexity is following to increasing models parameters
 - If models complexity is higher, that will be lead to results that over-fitting
 - So, If models complexity is pretty high, do learn significant parameters in the data-sets
 - It means, make 0 what unnecessary parameter

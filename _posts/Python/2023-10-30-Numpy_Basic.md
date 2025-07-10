@@ -9,27 +9,68 @@ search: true
 use_tex: true
 ---
 
-> Numpy Basic
+> Numpy
+
+
+
+<br>
+<br>
+
 
 # Numpy
 
+---
+
+---
+
+
+<br>
+
+## Basic
+
+<br>
+
+### Basic Attribute
+
 ```python
-import numpy as np
+print('Data type:\t{}'.format(np_array.dtype)
+print('Array Shape:\t{}'.format(np_array.shape)
+```
 
-//배열
-arr_object = np.array(seq_data) // 시퀸스 데이터를 인자로 받아 배열 객체 생성
 
-arr_object = np.arange(start, stop, step) // 범위 지정 배열 생성
-arr_object = np.linspace(start, stop, num) // 데이터 갯수 지정 배열 생성
+<br>
 
-arr_zero = np.zeros((m,n)) // 0 으로 채워진 m x n 행렬 행성
-arr_one = np.ones((m,n)) // 1로 채워진 m x n 행렬 생성
-arr_eye = np.eye(n) // 단위 행렬
+### Random Integers
 
-rand_num = np.random.rand([d0,d1,...,dn) // 랜덤 배열 난수 생성
-rand_num = np.random.randint(low, high, size) // 사이즈 지정 랜덤 난수 생성
+```python
+random.randint(a,b)
 
-// 연산
+rand_num = np.random.randint(low, high, size)
+```
+Return a random integer N such that <span style='color:orange'>A <= N <= b.</span>
+
+- randint will be return integers from low(inclusive) to high(exclusive).
+- return random integers from the "discrete uniform" distribution of the specified dtype in the
+"half-open" interval [low, high]. if high is none, rhen results from [0, low].
+
+- Example 1
+
+```python
+num_dims = 2
+num = 10
+x_range = (1,11)
+y_range = (0,51)
+
+matrix = np.random.randint(low=(x_range[0], y_range[0]), high=(x_range[1], y_range[1]), size=(num, num_dims))
+```
+
+
+
+<br>
+
+### Calculate
+
+```python
 sum(): 합계
 mean(): 평균
 std(): 표준편차
@@ -38,67 +79,175 @@ min() max() : 최소 최대값
 cumsum() 누적합
 cumprod() 누적곱
 
-// 행렬
+```
+
+<br>
+
+### Matrix 
+
+```python
+
 A.dot(B), or np.dat(A,B): 행렬 곱 (matrix product)
 A.transpose(), or np.transpose(A): 전치 행렬 (Transpose matrix)
 np.linalg.inv(A): 역행렬 (Inverse matrix)
 np.linalg.det(A): 행렬식 (Determinant)
-
-
-```
-
-
-
-<br>
-
-# Pandas
-
-```python
-import pandas as pd
-
-// 구조적 데이터 생성
-s = pd.Series(seq_data) // series 형식 데이터 생성
-s = pd.Series(seq_data, index = index_seq) // 데이터에 인덱스 추가
-s = pd.Series(dict_data) // 데이터와 인덱스를 함께 입력
-
-pd.data_range(start=None, periods=None, freq='0') // 날짜 자동 생성
-// freq 옵션: D: 하루주기, 2D: 이틀 주기, B: 평일 기준 주기, M: 월말날짜 기준 주기 etc..
-
-df = pd.Dataframe(data [, index = index_data, columns = colums_data]) //라벨이 있는 2차원 데이터 생성. index: 행, col: 열
-// E.g.
-ln : table_data = {'year' : [2020, 2021, 2023], 'size' : [0, 20, 30], 'result' : ['N', 'Y', 'Y']}
-
-
-// 데이터 연산
-// Pandas 의 Series() 와 DataFrame() 으로 생성한 데이터끼리 사칙 연산 가능
-
-DataFrame_data.head([n]) // 데이터 표에서 원하는 데이터만을 선택: 첫 일부분 선택
-DataFrame_data.tail([n]) // 뒤 일부분 선택
-DataFrame_data[start:end] // 연속된 구간의 행 데이터 선택
-
-DataFrame_data.loc[index_name] or [start index name : end index name] # 인덱스 지정하여 행 선택
-
-DataFrame_data[column_name] or [column_name][start index name(pos) : end index name(pos)] # 열을 선택, 범위를 지정해 원하는 데이터 선택
-
-DataFrame_data.loc[index name, column name]
-DataFrame_data[column name][index name(pos)] // 하나의 원소만 선택
-
-DataFrame_data.T // 전치
-
-DataFrame_data1.append(DataFrame_data2 [,ignore_index = True]) // Columns 가 같은 두 데이터를 세로 방향(index 증가 방향) 으로 합
-DataFrame_data1.join(DataFrame_data2) // 가로 방향 합치기
-
-DataFrame_left_data.marge(DataFrame_right_data, how = merge_method, on = key_label) // 특정 열을 기준으로 공통된 값. how = option
-
-
-
 ```
 
 <br>
 
-# Matplotlib
+
+### Index Slicing
+
 ```python
-
-
-
+print('First row:\t\t\t{}\n'.format(np_array[0])) 
+print('First row:\t\t\t{}\n'.format(np_array[0, :]))
+print('First column:\t\t\t{}\n'.format(np_array[:, 0]))
+print('3rd row 2nd column element:\t{}\n'.format(np_array[2, 1]))
+print('2nd row onwards and 2nd column onwards :\n{}\n'.format(np_array[1:, 1:]))
+print('Last 2 rows and last 2 columns:\n{}\n'.format(np_array[-2:, -2:]))
+print('Array with 3rd, 1st, and 4th row:\n{}\n'.format(np_array[[2, 0, 3]]))
+print('Array with 1st and 3rd col:\n{}\n'.format(np_array[:, [0, 2]]))
 ```
+
+- Output
+First row: `[1 2 3]`
+
+First row: `[1 2 3]`
+
+First column: `[ 1  4  7 10]`
+
+3rd row 2nd column element:	8
+
+2nd row onwards and 2nd column onwards : \
+`[[ 5  6]` \
+`[ 8  9]` \
+`[11 12]]`
+
+Last 2 rows and last 2 columns: \
+`[[ 8  9]` \
+`[11 12]]`
+
+Array with 3rd, 1st, and 4th row: \
+`[[ 7  8  9]` \
+` [ 1  2  3]` \
+`[10 11 12]]`
+
+Array with 1st and 3rd col: \
+`[[ 1  3]` \
+`[ 4  6]` \
+`[ 7  9]` \
+`[10 12]]`
+
+<br>
+
+### Array
+
+```python
+arr_object = np.array(seq_data)
+```
+np.array(`[start, ]stop, [step, ] dtpye=None`)
+Return evenly spaced values in <span style='color:orange'>`[start, stop]`</span>.
+
+```python
+arr_eye = np.eye(n) // 단위 행렬
+```
+
+<br>
+
+#### Sequence Array : Arrange
+
+```python
+arr_object = np.arange(start, stop, step) // 범위 지정 배열 생성
+```
+
+- Output Array: \
+  `[0 1 2 3 4 5 6 7 8 9]`
+
+<br>
+
+#### Sequence Array : Lin space
+
+```python
+np.linspace(start, stop, num=50, endpoint=True, retstep=False, dtype=None, axis=0)
+```
+Returns num evenly spaced samples, calculated over the interval [start, stop].
+
+Note that lin-space allows you to specify the number of values and infers the step size, while arange allows you to specify the steps size and infers the number of points. linspace also allows you to speficiy whether or not the endpoint is included.
+
+- Example
+
+```python
+linespace = np.linspace(0, 5, 7, dtype=np.float32)   # 7 elements between 0 and 5
+```
+
+- Output Array: \
+  `[0.        0.8333333 1.6666666 2.5       3.3333333 4.1666665 5.       ]`
+  
+
+<br>
+
+#### Zero Array
+
+```python
+arr_zero = np.zeros((m,n))
+```
+
+- Output Array: \
+  `[[0. 0. 0.]` \
+  `[0. 0. 0.]]`
+
+<br>
+
+#### Ones Array
+
+```python
+arr_one = np.ones((m,n))
+```
+
+- Output Array: \
+  `[[1 1]` \
+  `[1 1]` \
+  `[1 1]]`
+
+<br>
+
+#### Constant Array
+
+```python
+array = np.full((3, 3), 3.14)
+```
+
+- Output Array: \
+  `[[3.14 3.14 3.14]` \
+  `[3.14 3.14 3.14]` \
+  `[3.14 3.14 3.14]]`
+
+<br>
+
+#### Identity Array
+
+```python
+identity = np.eye(5, dtype=np.float32)  # Identity matrix of shape 5x5
+```
+
+- Output Array: \
+`[[1. 0. 0. 0. 0.]` \
+`[0. 1. 0. 0. 0.]` \
+`[0. 0. 1. 0. 0.]` \
+`[0. 0. 0. 1. 0.]` \
+`[0. 0. 0. 0. 1.]]`
+
+<br>
+
+
+### Random Integers Array
+
+```python
+rand_int = np.random.randint(5, 10, (2,3)) # Random integer array of shape 2x3, values lies in [5, 10).
+```
+
+- Output Array: \
+  `[[6 7 5]` \
+  `[9 6 6]]`
+
+
