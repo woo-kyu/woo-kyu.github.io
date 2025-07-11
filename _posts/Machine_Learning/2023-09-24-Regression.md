@@ -30,17 +30,60 @@ use_tex: true
 <br><br>
 # Linear Regression
 
-- Simple Linear Regression (단순 선형 회귀)
+---
+
+---
+
+## Simple Linear Regression (단순 선형 회귀)
   - Feature (attribute) 의 variety 가 한 개인 데이터에 대한 regression model
   - $y = m_{0}+w_{1}x$
 
+<br>
 
-- Multiple Linear Regression (다중 선형 회귀)
+<img width="795" height="594" alt="Image" src="https://github.com/user-attachments/assets/2e61392c-c339-43dd-8c57-c05afb73862a">{: .align-center}
+
+
+
+### Mechanism 
+
+W = weight of each neural network
+X = Input
+B = Bios
+Y = Out put
+
+Let's said,
+
+```python
+W = [[w11, w12, w13],   # weight of 1st neural 
+     [w21, w22, w23]]   # weight of 2nd neural 
+
+X = [x1, x2, x3]        # Input values
+B = [b1, b2]            # Bias of each neural
+```
+
+The formula of each neural.
+
+- 1st Neural output
+
+  $Y_1 = w_{11}x_1 + x_{12}x_2 + w_{13}x_3 + b_1$
+
+- 2nd Neural output
+  $Y_2 = w_{21}x_1 + w_{22}x_2 + w_{23}x_3 + b_2$
+
+Therefore,
+
+<img width="278" height="54" alt="Image" src="https://github.com/user-attachments/assets/67e2cb4f-255f-4acd-8a85-8f9ef7eb08bb" />{: .align-center}
+
+
+<br>
+
+## Multiple Linear Regression (다중 선형 회귀)
   - Feature (attribute) 의 variety 가 여러 개인 데이터에 대한 regression model
   - $y=w_{0}+w_{1}x_{1}+...+w_{D}x_{D}$
 
-  
-- Polynomial Regression (다항 회귀)
+<br>  
+
+## Polynomial Regression (다항 회귀)
   - Independent variable (feature)의 dimension 을 높인 regression model
   - $y=w_{0}+w_{1}x+w_{2}x^{2}+w_{m}x^{m}$
 

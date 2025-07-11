@@ -1,7 +1,7 @@
 ---
 layout: single
-title: "Bias and Variance Trade-off"
-toc_label: Bias and Variance Trade-off
+title: "Bias and Variance Trade-off and Loss Function"
+toc_label: Bias and Variance Trade-off and Loss Function
 categories: Machine_Learning
 tag: [Machine Learning]
 author_profile: false
@@ -171,6 +171,8 @@ You can change that input data’s feature or, higher model’s complexity then 
 Regularization : $\hat{\beta}$ 의 위치를 (0,0)으로 repositioning
 
 Scarcity of parameter : Lasso (L1) > Ridge (L2)
+
+[Loss Funcition]({{site.url}}/deep_learning/Loss_Function/)
 
 <br>
 

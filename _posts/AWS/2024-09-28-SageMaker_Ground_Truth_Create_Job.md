@@ -3,7 +3,7 @@ layout: single
 title: SageMaker Ground Truth (Labeling)
 toc_label: SageMaker Ground Truth (Labeling)
 categories: 'AWS'
-tags: [AWS, SageMaker]
+tags: [AWS SageMaker]
 author_profile: false
 search: true
 use_tex: true

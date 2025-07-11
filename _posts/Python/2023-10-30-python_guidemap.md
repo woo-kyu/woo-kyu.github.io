@@ -13,11 +13,47 @@ use_tex: false
 
 # Python Function
 
-[Numpy_basic]([Introduction]({{site.url}}/Python/Python_FN_map/))
+[Python Basic Functions]({{site.url}}/Python/Python_FN_map/)
 
 <br>
 
 # Numpy
-[Numpy_basic]([Introduction]({{site.url}}/Python/Numpy_Basic/))
+
+---
+---
+
+[Basic]({{site.url}}/Python/Numpy_Basic/)
+
+[Mathematical]({{site.url}}/Python/Numpy_Mathematic/)
+
+[Combine]({{site.url}}/Python/Numpy_Combine/)
+
+[Dimension]({{site.url}}/Python/Numpy_Dimension/)
+
+[Element Wise Operations]({{site.url}}/Python/Numpy_Element_Wise/)
+
+<br>
+
+## Numpy Practical
+
+[ReLU]({{site.url}}/Python/Numpy_ReLU/)
+
+[Softmax]({{site.url}}/Python/Numpy_Softmax/)
+
+[Combination]({{site.url}}/Python/Numpy_Combination/)
+
+
+
+
+
+
+
+
+
+<br>
+
+# Pandas
+[Pandas Basic]({{site.url}}/Python/Pandas_Basic/)
+
 
  

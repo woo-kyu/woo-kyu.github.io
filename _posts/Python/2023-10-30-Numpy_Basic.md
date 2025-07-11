@@ -3,7 +3,7 @@ layout: single
 title: Numpy Basic
 toc_label: Numpy basic
 categories: [Python]
-tags: [Python, Numpy]
+tags: [Numpy]
 author_profile: false
 search: true
 use_tex: true
@@ -33,10 +33,12 @@ use_tex: true
 ### Basic Attribute
 
 ```python
-print('Data type:\t{}'.format(np_array.dtype)
-print('Array Shape:\t{}'.format(np_array.shape)
+print('Data type:\t{}'.format(np_array.dtype))
+print('Array Shape:\t{}'.format(np_array.shape))
 ```
-
+- Output \
+  Data type: int32 \
+  Array shape: (4, 3)
 
 <br>
 
@@ -64,22 +66,19 @@ y_range = (0,51)
 matrix = np.random.randint(low=(x_range[0], y_range[0]), high=(x_range[1], y_range[1]), size=(num, num_dims))
 ```
 
+- Output array: \
+ `([[10, 44],` \
+  `[ 0, 30],` \
+  `[ 9, 44],` \
+  `[ 4, 25],` \
+  `[ 2, 31],` \
+  `[ 0, 34],` \
+  `[ 6, 38],` \
+  `[ 8, 34],` \
+  `[10, 12],` \
+  `[ 3, 10]])`
 
 
-<br>
-
-### Calculate
-
-```python
-sum(): 합계
-mean(): 평균
-std(): 표준편차
-var(): 분산
-min() max() : 최소 최대값
-cumsum() 누적합
-cumprod() 누적곱
-
-```
 
 <br>
 
@@ -148,9 +147,11 @@ arr_object = np.array(seq_data)
 np.array(`[start, ]stop, [step, ] dtpye=None`)
 Return evenly spaced values in <span style='color:orange'>`[start, stop]`</span>.
 
-```python
-arr_eye = np.eye(n) // 단위 행렬
-```
+- Output Array: \
+  `[[ 1  2  3]` \
+  `[ 4  5  6]` \
+  `[ 7  8  9]` \
+  `[10 11 12]]`
 
 <br>
 
@@ -240,7 +241,10 @@ identity = np.eye(5, dtype=np.float32)  # Identity matrix of shape 5x5
 <br>
 
 
-### Random Integers Array
+#### Random Integers Array
+
+np.random.randint(low, high=None, size=None, dtype='l')
+Return random integer from the discrete uniform distribution in (low, high). If high is None, then return elements are in (0, low)
 
 ```python
 rand_int = np.random.randint(5, 10, (2,3)) # Random integer array of shape 2x3, values lies in [5, 10).
@@ -250,4 +254,68 @@ rand_int = np.random.randint(5, 10, (2,3)) # Random integer array of shape 2x3, 
   `[[6 7 5]` \
   `[9 6 6]]`
 
+<br>
+
+#### Random Array
+
+np.random.random(size=None)
+Return random floats in the half-open interval [0.0, 1.0).
+
+Results are from the continuous uniform distribution in [0.0, 1.0).
+
+```python
+random_array = np.random.random((5, 5))
+```
+
+- Output Array:\
+  `[[0.05895785 0.97584925 0.61851749 0.91807735 0.20773511]`\
+  `[0.41814773 0.69043864 0.46579991 0.96900877 0.361576  ]`\
+  `[0.55125011 0.26091529 0.4094983  0.98888228 0.24258659]`\
+  `[0.22430972 0.80618191 0.49751464 0.86630376 0.63467053]`\
+  `[0.362403   0.49147104 0.30757364 0.00550166 0.70009507]]`
+
+<br>
+
+#### Boolean Array
+
+```python
+bool_array = random_array > 0.5
+```
+
+- Output Array: \
+`[[False  True  True  True False]`\
+`[False  True False  True False]`\
+`[ True False False  True False]`\
+`[False  True False  True  True]`\
+`[False False False False  True]]`
+
+<br>
+
+The boolean array can be used to get value from the array. For example, 
+
+If we use a boolean array of the same shape as a numerical array, we will get those values for which the boolean array is True, and other values will be masked.
+
+Let's use the above boolen_array to get values from random_array.
+
+```python
+values = random_array[bool_array]
+```
+- Output Array:\
+  `[0.97584925 0.61851749 0.91807735 0.69043864 0.96900877 0.55125011`\
+  `0.98888228 0.80618191 0.86630376 0.63467053 0.70009507]`
+
+<br>
+
+### Data Type Conversion
+
+```python
+array.astype(np.uint8)
+array.astype(np.float8)
+```
+
+<br>
+<br>
+
+
+Referenced from OpenCV University
 

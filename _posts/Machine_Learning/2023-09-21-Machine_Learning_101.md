@@ -42,7 +42,9 @@ header.overlay_image: "https://github.com/user-attachments/assets/9baa36a5-91d4-
   - [LRS (Learning Rate Scheduler)]({{site.url}}/machine_learning/Learning_Rate_Scheduler/)
   - [Optima (Local minima problem)]({{site.url}}/machine_learning/Optima/)
 - [Bias and Variance Trade-off]({{site.url}}/machine_learning/Bias_and_Variance_Trade_Off/)
+  - [Loss Funcition]({{site.url}}/deep_learning/Loss_Function/)
 - [Over and Under-fitting]({{site.url}}/machine_learning/Over_Under_Fitting)
+- [Weight Regularization]({{site.url}}/machine_learning/Weight_Regularization/)
 
 <br>
 
@@ -133,7 +135,7 @@ header.overlay_image: "https://github.com/user-attachments/assets/9baa36a5-91d4-
 - learnable parameter within model
 - ex) $w_{0}, w_{1}, ... w_{D}$
 
-### Weight Regularization
+### Weight Regularization (L1 / L2 Regul'n)
 
 [Weight Regularization]({{site.url}}/machine_learning/Weight_Regularization/)
 - L1 Lasso Regularization, L2 Ridge Regularization, Elastic Net

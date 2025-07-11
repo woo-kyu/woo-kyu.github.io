@@ -3,7 +3,7 @@ layout: single
 title: S3 Create Bucket
 toc_label: S3 Create Bucket
 categories: 'AWS'
-tags: [AWS, S3]
+tags: [AWS S3]
 author_profile: false
 search: true
 use_tex: true

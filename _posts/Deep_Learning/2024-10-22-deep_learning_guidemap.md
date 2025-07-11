@@ -11,12 +11,24 @@ use_tex: false
 
 > Deep Learning
 
-# Basic
+# Basic / Theories
 
 <hr>
 <hr>
 
 - [Deep Learning 101]({{site.url}}/deep_learning/Deep_Learning_101/)
+
+- [Loss Funcition]({{site.url}}/deep_learning/Loss_Function/)
+
+- [Activation Funcition]({{site.url}}/deep_learning/Activation_Function/)
+
+- [Gradient Descent]({{site.url}}/machine_learning/Gradient_Descent/)
+
+    - [LRS (Learning Rate Scheduler)]({{site.url}}/machine_learning/Learning_Rate_Scheduler/)
+
+    - [Optima (Local minima problem)]({{site.url}}/machine_learning/Optima/)
+
+- [Weight Regularization (L1 / L2 Regulatization)]({{site.url}}/machine_learning/Weight_Regularization/)
 
 <br>
 

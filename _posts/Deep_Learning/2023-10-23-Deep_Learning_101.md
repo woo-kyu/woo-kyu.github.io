@@ -31,12 +31,29 @@ use_tex: true
 
 <br>
 
-# Architecture
+# Basic Architecture
 
 <hr>
 <hr>
 
-> Perceptron (Node, Neuron)
+## Concept of Tensor, Scalars and Vectors
+
+<br>
+
+### Tensor
+
+A tensor is an entity with a defined number of dimensions called an order.
+
+> Scalars can be considered as a rank-zero-tensor.
+
+> Vectors can be introduced as a rank-one-tender. \
+> Vectors belong to linear space(Vector space), which is, in simple terms, a set of possible vectors of a specific length.\
+> A vector consisting of real-valued scalars ($x \in \mathbb{R^n} $), where $y$ - vector value and $\mathbb{R^n}-n$ dimensional real number vector space. \
+> $y_i - i_{th}$ vector element (scalar):
+
+<br>
+
+### Perceptron (Node, Neuron)
 
 <img width="680" alt="image" src="https://github.com/user-attachments/assets/a60e6f28-0c31-4c3b-a0e3-4031f058a14c">{: .align-center}
 <img width="991" alt="image" src="https://github.com/user-attachments/assets/f3d54711-f139-4461-94a9-78132dc6fd00">{: .align-center}
@@ -48,23 +65,32 @@ use_tex: true
 
 <br>
 
-- Activation Function(Threshold Unit, $\sigma$): 비선형 함수
-  - 가중합을 통해 계산된 값은 활성화 함수에 전달되며, 이 함수는 비선형성을 도입하여 모델이 복잡한 패턴을 학습할 수 있도록 한다.
-  - Multi Layer Perceptron(MLP, 다층 레이어 퍼셉트론)에서는 ReLU, Sigmoid 등의 함수를 사용한다.
-- $x$ (Input Data): 여러 입력 값들. 
-  - 이를 $x_{1}, x_{2}, x_{3},...,x_{n}$으로 표현할 수 있다.
-  - 이 입력 값들은 데이터를 나타내며, 이미지의 픽셀 값이나 신호, 레이블 데이터일 수 있다.
-- $w$ (Weight): 각각의 입력 값에는 가중치 $w_{1},w_{2},w_{3},...,w_{n}$ 이 곱해진다.
-  - 가중치는 학습을 통해 조정되며, 특정 입력이 출력에 미치는 영향을 결정한다.
-- $b$ (Bias): 입력의 합에 추가되는 상수 값으로, 뉴런의 활성화 경계를 조정.
-  - 바이어스를 통해 모델은 더 유연한 결정 경계를 학습할 수 있다.
-- $\hat{y}$: Predicted value
-- $y$: Reality value
-
-<img width="654" alt="image" src="https://github.com/user-attachments/assets/c9289be4-ef3d-4218-a027-ecfc09128361">{: .align-center}
 
 
-## Parts
+
+
+
+
+
+
+
+
+
+## Activation Function(Threshold Unit, $\sigma$)
+
+> 
+
+
+## Loss Functon
+
+Reference \
+[Loss Funcition]({{site.url}}/deep_learning/Loss_Function/)
+
+
+
+
+
+# Parts
 
 loss Function
 
