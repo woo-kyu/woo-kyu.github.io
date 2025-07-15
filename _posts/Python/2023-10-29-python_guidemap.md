@@ -36,18 +36,24 @@ use_tex: false
 
 ## Numpy Practical
 
-[ReLU]({{site.url}}/Python/Numpy_ReLU/)
+[ReLU]({{site.url}}/Python/Python_ReLU/)
 
-[Softmax]({{site.url}}/Python/Numpy_Softmax/)
+[Softmax]({{site.url}}/Python/Python_Softmax/)
 
-[Combination]({{site.url}}/Python/Numpy_Combination/)
-
-
+[Combination]({{site.url}}/Python/Python_Linear_Combination/)
 
 
 
+<br>
+
+# Torch 
+
+---
+
+---
 
 
+[Torch Basic]({{site.url}}/Python/Torch_Basic/)
 
 
 <br>

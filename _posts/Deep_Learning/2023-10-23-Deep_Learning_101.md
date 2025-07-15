@@ -36,7 +36,7 @@ use_tex: true
 <hr>
 <hr>
 
-## Concept of Tensor, Scalars and Vectors
+## Concept
 
 <br>
 
@@ -44,18 +44,60 @@ use_tex: true
 
 A tensor is an entity with a defined number of dimensions called an order.
 
+<br>
+
+### Scalar
+
 > Scalars can be considered as a rank-zero-tensor.
+
+<br>
+
+### Vectors
 
 > Vectors can be introduced as a rank-one-tender. \
 > Vectors belong to linear space(Vector space), which is, in simple terms, a set of possible vectors of a specific length.\
 > A vector consisting of real-valued scalars ($x \in \mathbb{R^n} $), where $y$ - vector value and $\mathbb{R^n}-n$ dimensional real number vector space. \
 > $y_i - i_{th}$ vector element (scalar):
 
+
+$y = \begin{bmatrix}
+           x_{1} \\
+           x_{2} \\
+           \vdots \\
+           x_{n}
+         \end{bmatrix}
+$
+
+
+<br>
+
+### Matrices
+
+> Matrices can be considered a rank-two-tensor.
+
+A matrix of size m x n, where m,n $\in \mathbb{R}$ (rows and colums number accordingly)
+consisting of real-valued scalars can be denoted as $A \in \mathbb{R^{m x n}}$ is real-valued m x n dimensional vector space.
+
+$A = \begin{bmatrix}
+    x_{11}       & x_{12} & x_{13} & \dots & x_{1n} \\
+    x_{21}       & x_{22} & x_{23} & \dots & x_{2n} \\
+    \vdots & \vdots & \vdots & \ddots & \vdots \\
+    x_{m1}       & x_{m2} & x_{m3} & \dots & x_{mn}
+\end{bmatrix}$
+
+<br>
+
+#### Rank of Tensors (Dimension)
+
+![Rank of Tensors](/assets/images/post_images/Deep_Learning/Rank_of_Tensor.png){: .align-center width="400" }
+
+
 <br>
 
 ### Perceptron (Node, Neuron)
 
-<img width="680" alt="image" src="https://github.com/user-attachments/assets/a60e6f28-0c31-4c3b-a0e3-4031f058a14c">{: .align-center}
+![Basic Structure of Deep Learning](/assets/images/post_images/Deep_Learning/Basic_structure.PNG){: .align-center width="500" }
+
 <img width="991" alt="image" src="https://github.com/user-attachments/assets/f3d54711-f139-4461-94a9-78132dc6fd00">{: .align-center}
 
 인공지능은 위와 같은 Frame work 구조를 가지고 있다.

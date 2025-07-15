@@ -11,9 +11,14 @@ use_tex: true
 
 > Soft-max function by Numpy
 
-# Softmax
+# Numpy
 
-<img width="509" height="318" alt="Image" src="https://github.com/user-attachments/assets/526c53e9-f25f-4747-b5b7-afc4f11f3d5f">{: .align-center}
+---
+
+---
+
+
+<img width="509" height="318" alt="Image" src="![Softmax 함수](/assets/images/post_images/Python/softmax.png)" {: .align-center width="400"}
 
 
 Reference: \
@@ -43,6 +48,13 @@ exp(x) / sum(exp(x)) # Normalize by dividing by total sum
 exp(x - max(x)) / sum(...) # Prevent overflow and Maintain numerical stability
 ```
 
+<br>
+
+# Pytorch
+
+```python
+torch.softmax(tensor, dim=0)
+```
 
 
 
