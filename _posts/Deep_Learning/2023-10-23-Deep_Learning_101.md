@@ -89,14 +89,14 @@ $A = \begin{bmatrix}
 
 #### Rank of Tensors (Dimension)
 
-![Rank of Tensors](/assets/images/post_images/Deep_Learning/Rank_of_Tensor.png){: .align-center width="400" }
+![Rank of Tensors](/assets/images/post_images/Deep_Learning/Rank_of_Tensor.png){: .align-center}
 
 
 <br>
 
 ### Perceptron (Node, Neuron)
 
-![Basic Structure of Deep Learning](/assets/images/post_images/Deep_Learning/Basic_structure.PNG){: .align-center width="500" }
+![Basic Structure of Deep Learning](/assets/images/post_images/Deep_Learning/Basic_structure.PNG){: .align-center}
 
 <img width="991" alt="image" src="https://github.com/user-attachments/assets/f3d54711-f139-4461-94a9-78132dc6fd00">{: .align-center}
 
