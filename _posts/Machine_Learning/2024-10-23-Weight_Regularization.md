@@ -113,7 +113,7 @@ Loss function 에 weight 절대값을 더하는 방식으로 구현
 <img width="329" alt="image" src="https://github.com/user-attachments/assets/6f20c726-6d4e-458e-a917-d0f472a60487">{: .align-center}
 
 - $\lambda$: 규제 강도를 조절하는 hyper-parameter. 큰 값일수록 규제 강도가 강해짐
-- $\sum^{n}_{i=1} \textrm{abs} w_{i}$: L1 Norm. 가중치 절대값의 합
+- $\sum^{n}_{i=1} abs w_{i}$: L1 Norm. 가중치 절대값의 합
 
 <br>
 
