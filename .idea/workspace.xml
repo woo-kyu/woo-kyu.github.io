@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="170023d7-d6df-481b-8ab6-c7c404f888a6" name="Changes" comment="07092025 add pandas doc">
-      <change beforePath="$PROJECT_DIR$/_posts/Deep_Learning/2023-10-23-Deep_Learning_101.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/Deep_Learning/2023-10-23-Deep_Learning_101.md" afterDir="false" />
+    <list default="true" id="170023d7-d6df-481b-8ab6-c7c404f888a6" name="Changes" comment="07 14 2025">
+      <change afterPath="$PROJECT_DIR$/_posts/Python/2025-07-15-Matplotlib.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/Deep_Learning/2024-10-22-Loss_Function.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/Deep_Learning/2024-10-22-Loss_Function.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/Machine_Learning/2023-09-21-Machine_Learning_101.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/Machine_Learning/2023-09-21-Machine_Learning_101.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/Python/2025-07-11-Torch_Basic.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/Python/2025-07-11-Torch_Basic.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,6 +88,10 @@
       <workItem from="1752329930370" duration="15000" />
       <workItem from="1752330010743" duration="577000" />
       <workItem from="1752330710751" duration="1518000" />
+      <workItem from="1752542617558" duration="1063000" />
+      <workItem from="1752630982527" duration="20000" />
+      <workItem from="1752631013708" duration="75000" />
+      <workItem from="1752633477220" duration="2397000" />
     </task>
     <task id="LOCAL-00001" summary="07092025 add pandas doc">
       <option name="closed" value="true" />
@@ -101,7 +109,15 @@
       <option name="project" value="LOCAL" />
       <updated>1752114849087</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="07 14 2025">
+      <option name="closed" value="true" />
+      <created>1752542677606</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1752542677606</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,6 +125,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="07092025 add pandas doc" />
-    <option name="LAST_COMMIT_MESSAGE" value="07092025 add pandas doc" />
+    <MESSAGE value="07 14 2025" />
+    <option name="LAST_COMMIT_MESSAGE" value="07 14 2025" />
   </component>
 </project>

@@ -13,7 +13,7 @@ header.overlay_image: "https://github.com/user-attachments/assets/9baa36a5-91d4-
 ---
 
 
-> Machine Learning 은, 데이터를 통해 패턴을 학습하여 일부의 데이터만으로 예측하는 알고리즘의 집합
+> Machine Learning 은, 데이터를 통해 <span style='color:orange'>패턴을 학습하여 일부의 데이터만으로 예측</span>하는 알고리즘의 집합
 
 
 # Kind of Machine Learning Decided by Data
@@ -27,6 +27,10 @@ header.overlay_image: "https://github.com/user-attachments/assets/9baa36a5-91d4-
 
 <br>
 
+# Machine Learning Pipe Line
+
+
+
 # Supervised Learning
 
 ---
@@ -39,6 +43,7 @@ header.overlay_image: "https://github.com/user-attachments/assets/9baa36a5-91d4-
   - [Partial Least Squares (PLS)]({{site.url}}/machine_learning/PLS)
     - 작성 예정
 - [Gradient Descent]({{site.url}}/machine_learning/Gradient_Descent/)
+  - [Learning Rate]({{site.url}}/machine_learning/Learning_Rate/)
   - [LRS (Learning Rate Scheduler)]({{site.url}}/machine_learning/Learning_Rate_Scheduler/)
   - [Optima (Local minima problem)]({{site.url}}/machine_learning/Optima/)
 - [Bias and Variance Trade-off]({{site.url}}/machine_learning/Bias_and_Variance_Trade_Off/)
@@ -174,6 +179,8 @@ header.overlay_image: "https://github.com/user-attachments/assets/9baa36a5-91d4-
 [Linear and Non-linear Regression]({{site.url}}/machine_learning/Regression/)
 
 [Gradient Descent]({{site.url}}/machine_learning/Gradient_Descent/)
+
+[Learning Rate]({{site.url}}/machine_learning/Learning_Rate/)
 
 [LRS (Learning Rate Scheduler)]({{site.url}}/machine_learning/Learning_Rate_Scheduler/)
 
