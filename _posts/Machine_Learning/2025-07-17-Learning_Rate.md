@@ -74,3 +74,8 @@ for Local minima problem
 - 미분값의 반대 방향으로 parameter value 를 update
 - differentiate value 가 0에 수렴할 때 까지 epoch 만큼 반복
 
+<br>
+
+## Loss Function
+
+[Loss Funcition]({{site.url}}/deep_learning/Loss_Function/)
