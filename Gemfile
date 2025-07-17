@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 gemspec
-gem "minimal-mistakes-jekyll", "4.27.1"
+gem "minimal-mistakes-jekyll", "4.27.1" # added for v.4.27.1 update
 gem "webrick", "~> 1.8"
 gem 'kramdown', '~> 2.4'
 
