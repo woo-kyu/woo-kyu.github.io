@@ -1,7 +1,10 @@
 source "https://rubygems.org"
 gemspec
+gem "minimal-mistakes-jekyll", "4.27.1"
 gem "webrick", "~> 1.8"
 gem 'kramdown', '~> 2.4'
+
+
 
 #
 # source "https://rubygems.org"
