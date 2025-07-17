@@ -140,7 +140,7 @@ To do this we will fit a line that goes through the data points $(x_i,y_i)$.\
 The equation for such a line is
 
 
-$$y=mx+c$$
+$y=mx+c$
 
 <br>
 
@@ -148,7 +148,7 @@ We have a ser of data points $(x_i,y_i)$, and they should all satisfy the equati
 I.e.,
 
 
-$$y_i=mx_i+c$$
+$y_i=mx_i+c$
 
 
 <br>
