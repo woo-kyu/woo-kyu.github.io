@@ -46,6 +46,7 @@ header.overlay_image: "https://github.com/user-attachments/assets/9baa36a5-91d4-
   - [Learning Rate]({{site.url}}/machine_learning/Learning_Rate/)
   - [LRS (Learning Rate Scheduler)]({{site.url}}/machine_learning/Learning_Rate_Scheduler/)
   - [Optima (Local minima problem)]({{site.url}}/machine_learning/Optima/)
+  - [Deep Learning - Loss Funcition]({{site.url}}/deep_learning/Loss_Function/)
 - [Bias and Variance Trade-off]({{site.url}}/machine_learning/Bias_and_Variance_Trade_Off/)
   - [Loss Funcition]({{site.url}}/deep_learning/Loss_Function/)
 - [Over and Under-fitting]({{site.url}}/machine_learning/Over_Under_Fitting)

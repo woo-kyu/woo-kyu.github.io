@@ -158,7 +158,7 @@ even the best $m$ and $c$ we can fin will not perfectly fit the data.\
 So, we will have an `error` or `residual` given by 
 
 
-$$e_i= (y_i - m x_i - c)$$
+$e_i= (y_i - m x_i - c)$
 
 <br>
 
@@ -171,7 +171,7 @@ In addition, we want to minimize the squared error over all the data points.
 In other words, we want to minimize a function of the residual that tkaes the following form
 
 
-$$l_{sse}=\sum^{N}_{i=1}(y_i-mx_i-c)^2$$
+$l_{sse}=\sum^{N}_{i=1}(y_i-mx_i-c)^2$
 
 
 This function is called the <span style='color:orange'> Loss Function.
@@ -181,7 +181,7 @@ Another extenstion of this can be the `mean squared error` function\
 which is given by
 
 
-$$l_{mse}=\frac{1}{N}\sum^{N}_{i=1}(y_i-mx_i-c)^2$$
+$l_{mse}=\frac{1}{N}\sum^{N}_{i=1}(y_i-mx_i-c)^2$
 
 
 - Referenced with OpenCV
