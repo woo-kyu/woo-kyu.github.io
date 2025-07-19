@@ -42,7 +42,19 @@ use_tex: true
 
 <img width="795" height="594" alt="Image" src="https://github.com/user-attachments/assets/2e61392c-c339-43dd-8c57-c05afb73862a">{: .align-center}
 
+### Fundamental
 
+$\hat{y} = mx+c$ or $\hat{y} = w_i x + b$
+
+- $\hat{y}$: Predicted value
+- $x$: input variable
+- $m$ or $w_i$: Slope, 기울기
+- $c$ or $b$: Bias or intercept, 절편
+- 
+ 
+
+
+<br>
 
 ### Mechanism 
 

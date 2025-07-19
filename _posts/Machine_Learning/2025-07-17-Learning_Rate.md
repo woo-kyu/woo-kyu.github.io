@@ -52,6 +52,28 @@ Learning rate 의 volume 에 따른 진행과정
 
 <br>
 
+## Calculate
+
+from the MSE,
+$
+\frac{\partial l}{\partial c} = -2 \sum_{i=1}^{n} (y_i - m x_i - c)
+$
+
+To follow the slope of the curve,\
+we need to move `m` in the direction of negative gradient.\
+However, we need to control the rate at which we go down the slope\
+so that we do not overshoot the minimum.\
+
+So we use a parameter $\lambda$  called the `learning rate`
+
+$\begin{align}
+m_k &= m_{k-1} - \lambda \frac{\partial l}{\partial m} \\
+c_k &= c_{k-1} - \lambda \frac{\partial l}{\partial c} \\ 
+\end{align}$
+
+
+
+
 ## Learning Rate scheduler
 
 is a supplement learning rate

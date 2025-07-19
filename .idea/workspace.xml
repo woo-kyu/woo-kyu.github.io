@@ -5,11 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="170023d7-d6df-481b-8ab6-c7c404f888a6" name="Changes" comment="07 14 2025">
-      <change afterPath="$PROJECT_DIR$/_posts/Python/2025-07-15-Matplotlib.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_posts/Mathematics/2025-07-18-mathematics_guidemap.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_posts/Deep_Learning/2024-10-22-Loss_Function.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/Deep_Learning/2024-10-22-Loss_Function.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/Machine_Learning/2023-09-21-Machine_Learning_101.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/Machine_Learning/2023-09-21-Machine_Learning_101.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/Python/2025-07-11-Torch_Basic.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/Python/2025-07-11-Torch_Basic.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/ML_Experiment/2023-12-10-Xgboost.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/ML_Experiment/2023-12-27-Keras_Sequential.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/Machine_Learning/2023-09-24-Gradient_Descent.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/Machine_Learning/2023-09-24-Gradient_Descent.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/Machine_Learning/2023-09-24-Regression.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/Machine_Learning/2023-09-24-Regression.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/Machine_Learning/2025-07-17-Learning_Rate.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/Machine_Learning/2025-07-17-Learning_Rate.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/Python/2025-07-17-Python_Gradient_Descent.md" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,6 +96,7 @@
       <workItem from="1752630982527" duration="20000" />
       <workItem from="1752631013708" duration="75000" />
       <workItem from="1752633477220" duration="2397000" />
+      <workItem from="1752953121869" duration="656000" />
     </task>
     <task id="LOCAL-00001" summary="07092025 add pandas doc">
       <option name="closed" value="true" />

@@ -210,7 +210,7 @@ $l_{mse}=\frac{1}{N}\sum^{N}_{i=1}(y_i-mx_i-c)^2$
 
 <img width="1000" alt="untitle" src="https://github.com/user-attachments/assets/20e0f98c-7c16-45c0-87ea-fb58809cd102">{: .align-center}
 
-<img width="700" alt="untitle" src="https://github.com/user-attachments/assets/eba85472-cb48-400a-a8a8-32f2d9409bb7">{: .align-center}
+<img width="500" alt="untitle" src="https://github.com/user-attachments/assets/eba85472-cb48-400a-a8a8-32f2d9409bb7">{: .align-center}
 
 $n$ = Total number of data points
 $y_i$ = Desired outcome we want to achieve (실제 값)
@@ -239,7 +239,7 @@ $\hat y_i$ = Predicted outcome what we actually receive from the model (예측 �
 
 ### <span style='color:#ff7fff'>Root Mean Squared Error(RMSE)</span>
 
-<img width="700" alt="untitle" src="https://github.com/user-attachments/assets/da40089c-4f8f-456a-bb95-c7a5b666f9bf">{: .align-center}
+<img width="500" alt="untitle" src="https://github.com/user-attachments/assets/da40089c-4f8f-456a-bb95-c7a5b666f9bf">{: .align-center}
 
 
 

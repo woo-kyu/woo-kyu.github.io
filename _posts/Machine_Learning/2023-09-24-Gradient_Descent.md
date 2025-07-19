@@ -55,22 +55,20 @@ Loss function 에 대한 differentiate value 가 0이 되는 방향으로 parame
 - <span style="color:orange">$L = \frac{1}{N}\sum_{i=1}^{N}(y_{i}-\hat{y}_{i})^2$
 
 
-$$\frac{\partial l}{\partial m} = -2 \sum_{i=1}^{n} x_i (y_i - m x_i - c)$$
+$\frac{\partial{l}}{\partial{m}} = -2 \sum_{i=1}^{n} x_i (y_i - m x_i - c)$
 
-$$
-\frac{\partial l}{\partial c} = -2 \sum_{i=1}^{n} (y_i - m x_i - c)
-$$
+$\frac{\partial{l}}{\partial{c}} = -2 \sum_{i=1}^{n} (y_i - m x_i - c)$
 
 <br>
 
 
 #### Update
 
-$$m_k = m_{k-1} - \lambda \cdot \frac{\partial l}{\partial m}$$
+$m_k = m_{k-1} - \lambda \cdot \frac{\partial{l}}{\partial{m}}$
 
 
 
-$$c_k = c_{k-1} - \lambda \cdot \frac{\partial l}{\partial c}$$
+$c_k = c_{k-1} - \lambda \cdot \frac{\partial{l}}{\partial{c}}$
 
 
 <br>
