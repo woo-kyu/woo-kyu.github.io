@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="170023d7-d6df-481b-8ab6-c7c404f888a6" name="Changes" comment="07 19 2025 MSE">
-      <change afterPath="$PROJECT_DIR$/_posts/Mathematics/2025-07-19-Derivative.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/Machine_Learning/2023-09-24-Gradient_Descent.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/Machine_Learning/2023-09-24-Gradient_Descent.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/Mathematics/2025-07-18-mathematics_guidemap.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/Mathematics/2025-07-18-mathematics_guidemap.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/Mathematics/2025-07-19-Derivative.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/Mathematics/2025-07-19-Derivative.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +89,7 @@
       <workItem from="1752630982527" duration="20000" />
       <workItem from="1752631013708" duration="75000" />
       <workItem from="1752633477220" duration="2397000" />
-      <workItem from="1752953121869" duration="3650000" />
+      <workItem from="1752953121869" duration="4523000" />
     </task>
     <task id="LOCAL-00001" summary="07092025 add pandas doc">
       <option name="closed" value="true" />
@@ -141,7 +139,15 @@
       <option name="project" value="LOCAL" />
       <updated>1752954988584</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="07 19 2025 MSE">
+      <option name="closed" value="true" />
+      <created>1752957351290</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1752957351290</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

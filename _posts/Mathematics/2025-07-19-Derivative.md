@@ -71,13 +71,15 @@ $f(x) = x^2$, $g(x) = \sin{x}$
 ## Chain Rule
 
 > The Chain Rule is a method to find the derivative of a function inside another function.
+> 
+> Dif. outer function x Dif inner function
 
 <br>
 
 ### Chain Rule Formula (General)
 
 If, $f(x) = g(h(x))$
-Then, $f'(x) = g'(h(x)) \dcot h(x)$
+Then, $f'(x) = g'(h(x)) \cdot h(x)$
 
 <br>
 
@@ -86,6 +88,37 @@ Then, $f'(x) = g'(h(x)) \dcot h(x)$
 Lets said we have,
 
 $f(x) = \sin{x^{2}}$
+
+Here,
+- Outer function: $\sin{x}$
+- Inner function: $x^2$
+
+
+`Chain Rule said`,
+$\frac{d}{dx} f(x) = \frac{d}{du} \sin{(x)} \cdot \frac{du}{dx}$
+
+
+So, the answer is,
+
+$\frac{d}{dx} \sin{(x^2)} = \cos{(x^2)} \cdot 2x$
+
+<br>
+
+#### E.g.
+
+- $f(x) = \cos{(3x)}$
+  - = $\frac{d}{dx}( \cos{(3x)})$
+  - = $-\sin{(3x)} \cdot 3$
+  - = $3 \sin{(3x)}$
+
+
+- $f(x) = (5x^2 +1)^3$
+  - = $3(5x^2 +1)^2 \cdot 10x$
+  - $30x (5x^2 +1)^2$
+
+<br>
+
+
 
 
 
