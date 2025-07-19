@@ -2,7 +2,7 @@
 layout: single
 title: Mathematics GuideMap
 toc_label: Mathematics Guide Map
-categories: Python
+categories: Mathematics
 tags: [Map]
 author_profile: false
 search: false

@@ -63,7 +63,7 @@ $\frac{\partial{l}}{\partial{c}} = -2 \sum_{i=1}^{n} (y_i - m x_i - c)$
 
 #### Elaborate
 
-$MSE = \frac{1}{N} \sum^{N} (y_i - (m x_i +c)^)^2$
+$ MSE = \frac{1}{N} \sum^{N} (y_i - (m x_i +c))^2 $
 
 - $\hat{y} = m x_i + c$
 - error = $y - \hat{y}$

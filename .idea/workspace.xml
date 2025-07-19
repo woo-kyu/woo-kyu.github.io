@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="170023d7-d6df-481b-8ab6-c7c404f888a6" name="Changes" comment="07 14 2025" />
+    <list default="true" id="170023d7-d6df-481b-8ab6-c7c404f888a6" name="Changes" comment="07 19 2025 MSE">
+      <change afterPath="$PROJECT_DIR$/_posts/Mathematics/2025-07-19-Derivative.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/Machine_Learning/2023-09-24-Gradient_Descent.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/Machine_Learning/2023-09-24-Gradient_Descent.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/Mathematics/2025-07-18-mathematics_guidemap.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/Mathematics/2025-07-18-mathematics_guidemap.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -86,7 +91,7 @@
       <workItem from="1752630982527" duration="20000" />
       <workItem from="1752631013708" duration="75000" />
       <workItem from="1752633477220" duration="2397000" />
-      <workItem from="1752953121869" duration="1242000" />
+      <workItem from="1752953121869" duration="3650000" />
     </task>
     <task id="LOCAL-00001" summary="07092025 add pandas doc">
       <option name="closed" value="true" />
@@ -120,7 +125,23 @@
       <option name="project" value="LOCAL" />
       <updated>1752954206714</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="07 14 2025">
+      <option name="closed" value="true" />
+      <created>1752954436268</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1752954436268</updated>
+    </task>
+    <task id="LOCAL-00006" summary="07 19 2025 MSE">
+      <option name="closed" value="true" />
+      <created>1752954988584</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1752954988584</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,6 +150,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="07092025 add pandas doc" />
     <MESSAGE value="07 14 2025" />
-    <option name="LAST_COMMIT_MESSAGE" value="07 14 2025" />
+    <MESSAGE value="07 19 2025 MSE" />
+    <option name="LAST_COMMIT_MESSAGE" value="07 19 2025 MSE" />
   </component>
 </project>
