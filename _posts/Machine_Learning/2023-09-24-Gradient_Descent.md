@@ -55,9 +55,21 @@ Loss function 에 대한 differentiate value 가 0이 되는 방향으로 parame
 - <span style="color:orange">$L = \frac{1}{N}\sum_{i=1}^{N}(y_{i}-\hat{y}_{i})^2$
 
 
-$$\frac{\partial{l}}{\partial{m}} = -2 \sum_{i=1}^{n} x_i (y_i - m x_i - c)$$
+$\frac{\partial{l}}{\partial{m}} = -2 \sum_{i=1}^{n} x_i (y_i - m x_i - c)$
 
 $\frac{\partial{l}}{\partial{c}} = -2 \sum_{i=1}^{n} (y_i - m x_i - c)$
+
+<br>
+
+#### Elaborate
+
+$MSE = \frac{1}{N} \sum^{N} (y_i - (m x_i +c)^)^2$
+
+- $\hat{y} = m x_i + c$
+- error = $y - \hat{y}$
+- all errors = $\sum^{N}_{i=1} (y_i - \hat{y} - (m_i x + c))$
+- square of all errors = $\sum^{N}_{i=1} (y_i - \hat{y} - (m_i x + c))^2$
+- Mean Square of all errors = $\sum^{N}_{i=1} \frac{1}{N} (y_i - \hat{y} - (m_i x + c))^2$
 
 <br>
 
