@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="170023d7-d6df-481b-8ab6-c7c404f888a6" name="Changes" comment="07 19 2025 MSE">
+      <change afterPath="$PROJECT_DIR$/_posts/Mathematics/2025-07-19-Partial_Derivative.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_posts/Mathematics/2025-07-19-Derivative.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/Mathematics/2025-07-19-Derivative.md" afterDir="false" />
     </list>
@@ -89,7 +90,7 @@
       <workItem from="1752630982527" duration="20000" />
       <workItem from="1752631013708" duration="75000" />
       <workItem from="1752633477220" duration="2397000" />
-      <workItem from="1752953121869" duration="4523000" />
+      <workItem from="1752953121869" duration="6944000" />
     </task>
     <task id="LOCAL-00001" summary="07092025 add pandas doc">
       <option name="closed" value="true" />
@@ -147,7 +148,15 @@
       <option name="project" value="LOCAL" />
       <updated>1752957351290</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="07 19 2025 MSE">
+      <option name="closed" value="true" />
+      <created>1752958173259</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1752958173259</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

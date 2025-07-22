@@ -31,13 +31,8 @@ optimum solution(최적해)에 맞닿는 point 의 gradient(기울기)는 0이�
 
 Loss function 에 대한 differentiate value 가 0이 되는 방향으로 parameter 의  update 방향 결정
 
-# Gradient Descent
 
----
-
----
-
-## Instantaneous rate of change (순간 변화율)
+# Instantaneous rate of change (순간 변화율)
 
 - <span style="color:orange">co= differential coefficient(미분 계수)
 - X 의 값이 미세하게 변화 했을 때, y 의 변화율
@@ -48,7 +43,7 @@ Loss function 에 대한 differentiate value 가 0이 되는 방향으로 parame
 
 <br>
 
-### Mean Squared Error, MSE (평균 제곱 오차)
+## Mean Squared Error, MSE (평균 제곱 오차)
 
 - Typical loss function in a regression problem
 - Mean of the square of the error
@@ -61,20 +56,107 @@ $\frac{\partial{l}}{\partial{c}} = -2 \sum_{i=1}^{n} (y_i - m x_i - c)$
 
 <br>
 
-#### Elaborate
+### Elaborate
 
 $ MSE = \frac{1}{N} \sum^{N} (y_i - (m x_i +c))^2 $
 
 - $\hat{y} = m x_i + c$
-- error = $y - \hat{y}$
-- all errors = $\sum^{N}_{i=1} (y_i - \hat{y} - (m_i x + c))$
-- square of all errors = $\sum^{N}_{i=1} (y_i - \hat{y} - (m_i x + c))^2$
-- Mean Square of all errors = $\sum^{N}_{i=1} \frac{1}{N} (y_i - \hat{y} - (m_i x + c))^2$
+- error = $y - \hat{y}$ or \ $y - (m \cdot x + c)$
+- all errors = $\sum^{N}_{i=1} (y_i - \hat{y})$ = $\sum^{N}_{i=1} (y_i -(m x_i + c))$
+- square of all errors = $\sum^{N}_{i=1} (y_i - \hat{y})^2$ \ or $\sum^{N}_{i=1} (y_i -(m x_i + c))^2$
+- Mean Square of all errors = $\frac{1}{N} \sum^{N}_{i=1}  (y_i - \hat{y})^2$ \ or  $\frac{1}{N} \sum^{N}_{i=1}  (y_i - (m x_i + c))^2$
+
+
+
+
 
 <br>
 
+### Minimize MSE
 
-#### Update
+Calculate the loss function and then take partial derivatives w.r.t. $m$ and $c$ respecrively.
+
+$loss=\sum^{n}_{i=1} (y_i - (m x_i + c))^2$ \ or $\frac{1}{N} \sum^{n}_{i=1} e^2_i$
+
+<br>
+
+#### Differentiate the function with respect to m
+
+
+we need to differentiate the function with respect to m.
+
+$\frac{\partial L}{\partial m} = \frac{\partial }{\partial m}(\frac{1}{N}\sum^{N}_{i=1}(y_i - (mx_i + c))^2)$
+
+---
+
+first,
+
+let we differentiate inside the expression like $(y_i - (mx_i + c))^2$ with respect to m.
+
+
+S ubstitution the equation $(y_i - (mx_i + c))^2$ to letter `e`
+
+so, the formula will be change to
+
+$\frac{\partial L}{\partial m} = \frac{\partial }{\partial m}(\frac{1}{N}\sum^{N}_{i=1}(e)^2_i)$
+
+<br>
+
+Now, we can differentiate wirh respect to m, using chain rule.
+
+$\frac{\partial }{\partial m} (e_i^2) = 2e_i \cdot \frac{\partial e_i}{\partial m}$
+
+<br>
+
+but, 
+
+$e_i = y_i -(m x_i +c)$
+
+<br>
+
+Ergo,
+
+$\frac{\partial }{\partial m} (e_i^2) = 2e_i \cdot \frac{\partial}{\partial m}(y_i - (mx_i + c)^2)$
+
+- $\frac{\partial e_i}{\partial m}=-x_i$
+
+<br>
+
+Therfore,
+
+$\frac{\partial }{\partial m}(e^2_i)=2e_i \cdot (-x_i)$
+
+= $\frac{\partial }{\partial m}(e^2_i)=-2e_i x_i$
+
+---
+
+Now, We apply this to all of loss
+
+$\frac{\partial L}{\partial m}= \frac{1}{N} \sum^{N}_{i=1} (-2e_i x_i)$
+
+-> $\frac{\partial L}{\partial m}= \frac{-2}{N} \sum^{N}_{i=1}e_i x_i$
+
+<br>
+
+for here, due to $e_i = y_i - (mx_i + c)$
+
+we can subsitution:
+
+<span style='color:orange'> $\frac{\partial L}{\partial m} = \frac{-2}{N} \sum^{N}_{i=1} (y_i - (mx_i + c)) \cdot x_i $ </span>
+
+
+
+<Br>
+
+### Update
+
+To following the slope of the curve, we need to meve $m$ in the direction of negative gradient.
+
+However, we need to control the rate at which we go down the slope \
+so that we do not overshooting the minimum.
+
+So we use a parameter $\lambda$ called the [Learning Rate]({{site.url}}/machine_learning/Learning_Rate/)
+
 
 $m_k = m_{k-1} - \lambda \cdot \frac{\partial{l}}{\partial{m}}$
 
@@ -83,9 +165,10 @@ $m_k = m_{k-1} - \lambda \cdot \frac{\partial{l}}{\partial{m}}$
 $c_k = c_{k-1} - \lambda \cdot \frac{\partial{l}}{\partial{c}}$
 
 
+
 <br>
 
-### Least Square Method (최소 제곱법)
+## Least Square Method (최소 제곱법)
 
 - Minimize errors in data by obtaining optimal parameters
 - $L =\sum_{i=1}^{N}(y_{i}-(ax_{i}+b))^2$ (a = gradient, b = intercept)

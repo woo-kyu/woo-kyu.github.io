@@ -1,9 +1,9 @@
 ---
 layout: single
 title: "Derivative"
-toc_label: derivative
+toc_label: Derivative
 categories: Mathematics
-tag: [Derivative]
+tag: [Derivative, Chain Rule]
 author_profile: false
 search: true
 use_tex: true
@@ -22,15 +22,15 @@ use_tex: true
 
 ## Fundamental 
 
-$\frac{d}{dx}(x^n) = n x^{n-1}$
+$\frac{\partial}{\partial x}(x^n) = n x^{n-1}$
 
 <br>
 
 ### E.g.
 
-- $\frac{d}{dx}(x^3) = 3 x^{2}$
+- $\frac{\partial }{\partial x}(x^3) = 3 x^{2}$
 
-- $\frac{d}{dx}(x^4 -3x +7) = 4x^3 -3$
+- $\frac{\partial }{\partial x}(x^4 -3x +7) = 4x^3 -3$
 
 <br>
 
@@ -95,19 +95,19 @@ Here,
 
 
 `Chain Rule said`,
-$\frac{d}{dx} f(x) = \frac{d}{du} \sin{(x)} \cdot \frac{du}{dx}$
+$\frac{\partial}{\partial x} f(x) = \frac{\partial}{\partial u} \sin{(x)} \cdot \frac{\partial u}{\partial x}$
 
 
 So, the answer is,
 
-$\frac{d}{dx} \sin{(x^2)} = \cos{(x^2)} \cdot 2x$
+$\frac{\partial}{\partial x} \sin{(x^2)} = \cos{(x^2)} \cdot 2x$
 
 <br>
 
 #### E.g.
 
 - $f(x) = \cos{(3x)}$
-  - = $\frac{d}{dx}( \cos{(3x)})$
+  - = $\frac{\partial }{\partial x}( \cos{(3x)})$
   - = $-\sin{(3x)} \cdot 3$
   - = $3 \sin{(3x)}$
 
