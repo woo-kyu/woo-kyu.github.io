@@ -61,9 +61,9 @@ $\frac{\partial{l}}{\partial{c}} = -2 \sum_{i=1}^{n} (y_i - m x_i - c)$
 $ MSE = \frac{1}{N} \sum^{N} (y_i - (m x_i +c))^2 $
 
 - $\hat{y} = m x_i + c$
-- error = $y - \hat{y}$ or \ $y - (m \cdot x + c)$
-- all errors = $\sum^{N}_{i=1} (y_i - \hat{y})$ = $\sum^{N}_{i=1} (y_i -(m x_i + c))$
-- square of all errors = $\sum^{N}_{i=1} (y_i - \hat{y})^2$ \ or $\sum^{N}_{i=1} (y_i -(m x_i + c))^2$
+- error = $y - \hat{y}$ or $y - (m \cdot x + c)$
+- all errors = $\sum_{i=1}^{N} (y_i - \hat{y})$ = $\sum_{i=1}^{N} (y_i -(m x_i + c))$
+- square of all errors = $\sum_{i=1}^{N} (y_i - \hat{y})^2$ or $\sum_{i=1}^{N} (y_i -(m x_i + c))^2$
 - Mean Square of all errors = $\frac{1}{N} \sum^{N}_{i=1}  (y_i - \hat{y})^2$ \ or  $\frac{1}{N} \sum^{N}_{i=1}  (y_i - (m x_i + c))^2$
 
 
@@ -76,7 +76,7 @@ $ MSE = \frac{1}{N} \sum^{N} (y_i - (m x_i +c))^2 $
 
 Calculate the loss function and then take partial derivatives w.r.t. $m$ and $c$ respecrively.
 
-$loss=\sum^{n}_{i=1} (y_i - (m x_i + c))^2$ \ or $\frac{1}{N} \sum^{n}_{i=1} e^2_i$
+$loss= \sum_{i=1}^{n} (y_i - (m x_i + c))^2 $ or $\frac{1}{N} \sum^{n}_{i=1} e^2_i$
 
 <br>
 
