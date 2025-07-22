@@ -64,7 +64,7 @@ $ MSE = \frac{1}{N} \sum^{N} (y_i - (m x_i +c))^2 $
 - error = $y - \hat{y}$ or $y - (m \cdot x + c)$
 - all errors = $\sum_{i=1}^{N} (y_i - \hat{y})$ = $\sum_{i=1}^{N} (y_i -(m x_i + c))$
 - square of all errors = $\sum_{i=1}^{N} (y_i - \hat{y})^2$ or $\sum_{i=1}^{N} (y_i -(m x_i + c))^2$
-- Mean Square of all errors = $\frac{1}{N} \sum^{N}_{i=1}  (y_i - \hat{y})^2$ \ or  $\frac{1}{N} \sum^{N}_{i=1}  (y_i - (m x_i + c))^2$
+- Mean Square of all errors = $\frac{1}{N} \sum_{i=1}^{N}  (y_i - \hat{y})^2$ \ or  $\frac{1}{N} \sum_{i=1}^{N}  (y_i - (m x_i + c))^2$
 
 
 
