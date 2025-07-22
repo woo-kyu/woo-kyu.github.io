@@ -3,7 +3,7 @@ layout: single
 title: "Gradient Descent"
 toc_label: Gradient Descent
 categories: Machine_Learning
-tag: [Machine Learning]
+tag: [Machine Learning, SGD]
 author_profile: false
 search: true
 use_tex: true
@@ -126,7 +126,7 @@ Therfore,
 
 $\frac{\partial }{\partial m}(e^2_i)=2e_i \cdot (-x_i)$
 
-= $\frac{\partial }{\partial m}(e^2_i)=-2e_i x_i$
+$\therefore  \frac{\partial }{\partial m}(e^2_i)=-2e_i x_i$
 
 ---
 
@@ -136,15 +136,21 @@ $\frac{\partial L}{\partial m}= \frac{1}{N} \sum^{N}_{i=1} (-2e_i x_i)$
 
 -> $\frac{\partial L}{\partial m}= \frac{-2}{N} \sum^{N}_{i=1}e_i x_i$
 
+
+
 <br>
 
 for here, due to $e_i = y_i - (mx_i + c)$
 
 we can subsitution:
 
-<span style='color:orange'> $\frac{\partial L}{\partial m} = \frac{-2}{N} \sum^{N}_{i=1} (y_i - (mx_i + c)) \cdot x_i $ </span>
+<span style='color:orange'> $\therefore \frac{\partial L}{\partial m} = \frac{-2}{N} \sum^{N}_{i=1} (y_i - (mx_i + c)) \cdot x_i $ </span>
 
+<br>
 
+#### Differentiate the function with respect to c
+
+$\frac{\partial L}{\partial c}= \frac{-2}{N} \sum^{N}_{i=1}e_i $
 
 <Br>
 
