@@ -117,7 +117,7 @@ Gradient of c : 1.60
 <br>
 
 
-# Background
+## Background
 
 The function get `inputs` vlaues and ground truth value `lavels`, parameter `m`, `c` and some of the sample index `k`
 
@@ -140,6 +140,28 @@ $\frac{\partial L}{\partial m}=-\frac{2}{N} \sum_{i \in K} x_i(y_i-(mx_i + c))$
 
 ### Codes
 
+<br> 
+
+#### Resolve
+
+```python
+def gradient_wrt_m_and_c(inputs, labels, m, c, k):
+    x_k = inputs[k]
+    y_k = labels[k]
+
+    y_hat = m * x_k + c
+    error = y_k - y_hat
+
+    g_m = -2 * torch.sum(error * x_k)   # ✅ 평균 없이
+    g_c = -2 * torch.sum(error)
+
+    return g_m.item(), g_c.item()
+```
+
+<br>
+
+#### test output
+
 ```python
 X = torch.tensor([-0.0374,  2.6822, -4.1152])
 Y = torch.tensor([ 5.1765, 14.1513, -8.2802])
@@ -154,6 +176,9 @@ print('Gradient of c : {0:.2f}'.format(gc))
 ```
 
 <br>
+
+
+
 
 
 

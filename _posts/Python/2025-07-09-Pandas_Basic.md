@@ -13,6 +13,7 @@ use_tex: true
 # Pandas
 
 ```python
+
 import pandas as pd
 
 // 구조적 데이터 생성
@@ -49,4 +50,4 @@ DataFrame_data1.join(DataFrame_data2) // 가로 방향 합치기
 
 DataFrame_left_data.marge(DataFrame_right_data, how = merge_method, on = key_label) // 특정 열을 기준으로 공통된 값. how = option
 
-
+```

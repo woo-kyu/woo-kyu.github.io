@@ -233,4 +233,6 @@ array_info(cliped_array)
 `[0.2        0.399099   0.46209346]]`\
 
 <br>
+
+
 <br>
