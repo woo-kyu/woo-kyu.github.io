@@ -23,10 +23,11 @@ author_profile: false
       <h1 id="page-title" class="page__title">{{ page.title }}</h1>
     {% endunless %}
 
-    {% assign sorted_posts = page.posts | sort: "title" %}
-    {% for post in sorted_posts %}
+    {% assign posts_in_category = site.categories[page.category] | sort: "title" %}
+    {% for post in posts_in_category %}
       {% include archive-single.html %}
     {% endfor %}
+
   </div>
 </div>
 
