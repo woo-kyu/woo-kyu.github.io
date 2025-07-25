@@ -2,7 +2,7 @@
 layout: single
 title: Spatial Correlation & Convolution
 toc_label: Spatial Correlation & Convolution
-categories: Image_Processing
+categories: Image-Processing
 tags: [Image Processing]
 author_profile: false
 search: true

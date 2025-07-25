@@ -2,8 +2,8 @@
 layout: single
 title: "keras_Conv2D"
 toc_label: keras_Conv2D
-categories: ML_Experiment
-tag: [ML, ML_Experiment]
+categories:  ML-Experiment
+tag: [Machine Learning]
 author_profile: false
 search: true
 use_tex: true

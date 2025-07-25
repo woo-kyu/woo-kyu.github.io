@@ -2,7 +2,7 @@
 layout: single
 title: "Clustering"
 toc_label: Clustering
-categories: Machine_Learning
+categories: Machine-Learning
 tag: [Machine Learning]
 author_profile: false
 search: true

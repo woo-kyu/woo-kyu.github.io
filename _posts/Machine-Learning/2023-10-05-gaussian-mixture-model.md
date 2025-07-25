@@ -2,7 +2,8 @@
 layout: single
 title: "Gaussian Mixture Model (GMM)"
 toc_label: Gaussian Mixture Model
-categories: Machine_Learning
+categories: Machine-Learning
+
 tag: [Machine Learning]
 author_profile: false
 search: true

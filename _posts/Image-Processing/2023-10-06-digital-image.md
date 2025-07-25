@@ -2,7 +2,7 @@
 layout: single
 title: Digital Image
 toc_label: Digital Image
-categories: Image_Processing
+categories: Image-Processing
 tags: [Image Processing]
 author_profile: false
 search: true

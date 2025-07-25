@@ -2,7 +2,7 @@
 layout: single
 title: "DBSCAN (Density-Based Spatial Clustering of Applications with Noise)"
 toc_label: DBSCAN
-categories: Machine_Learning
+categories: Machine-Learning
 tag: [Machine Learning]
 author_profile: false
 search: true

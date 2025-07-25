@@ -2,7 +2,7 @@
 layout: single
 title: Activation Function
 toc_label: Activation Function
-categories: 'Deep_Learning'
+categories: 'Deep-Learning'
 tags: [Deep Learning]
 author_profile: false
 search: true

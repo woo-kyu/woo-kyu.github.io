@@ -2,8 +2,8 @@
 layout: single
 title: "keras_Dense"
 toc_label: keras_Dense
-categories: ML_Experiment
-tag: [Machine Learning, ML_Experiment, Keras]
+categories:  ML-Experiment
+tag: [Machine Learning, Keras]
 author_profile: false
 search: true
 use_tex: true

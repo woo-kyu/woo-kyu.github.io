@@ -2,8 +2,8 @@
 layout: single
 title: "keras_Flatten"
 toc_label: keras_Flatten
-categories: ML_Experiment
-tag: [ML, ML_Experiment, Keras]
+categories:  ML-Experiment
+tag: [Machine Learning, Keras]
 author_profile: false
 search: true
 use_tex: true

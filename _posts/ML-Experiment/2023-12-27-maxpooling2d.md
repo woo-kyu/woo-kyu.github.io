@@ -2,8 +2,8 @@
 layout: single
 title: "MaxPooling2D"
 toc_label: MaxPooling2D
-categories: ML_Experiment
-tag: [ML, ML_Experiment, Keras]
+categories:  ML-Experiment
+tag: [Machine Learning, Keras]
 author_profile: false
 search: true
 use_tex: true

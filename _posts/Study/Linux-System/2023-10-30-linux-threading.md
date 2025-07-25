@@ -2,7 +2,7 @@
 layout: single
 title: Threading
 toc_label: Threading
-categories: Linux_System
+categories: Linux-System
 tags: [Linux System, Uni]
 author_profile: false
 search: true

@@ -2,7 +2,7 @@
 layout: single
 title: Threshold Interpolation
 toc_label: Threshold Interpolation
-categories: Image_Processing
+categories: Image-Processing
 tags: [Image Processing]
 author_profile: false
 search: true

@@ -2,7 +2,7 @@
 layout: single
 title: "Bias and Variance Trade-off and Loss Function"
 toc_label: Bias and Variance Trade-off and Loss Function
-categories: Machine_Learning
+categories: Machine-Learning
 tag: [Machine Learning]
 author_profile: false
 search: true

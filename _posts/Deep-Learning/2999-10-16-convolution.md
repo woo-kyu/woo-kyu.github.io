@@ -2,7 +2,7 @@
 layout: single
 title: Convolution
 toc_label: Convolution
-categories: 'Deep_Learning'
+categories: 'Deep-Learning'
 tags: [Deep Learning]
 author_profile: false
 search: ture

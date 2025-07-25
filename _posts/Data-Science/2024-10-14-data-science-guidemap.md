@@ -2,7 +2,7 @@
 layout: single
 title: Data Science GuideMap
 toc_label: Data Science Map
-categories: Data_Science
+categories: Data-Science
 tags: [Map, Data Science]
 author_profile: false
 search: false

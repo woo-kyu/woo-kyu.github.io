@@ -2,7 +2,7 @@
 layout: single
 title: "Partial Least Squares (PLS, 부분 최소 제곱법)"
 toc_label: Partial Least Squares (PLS, 부분 최소 제곱법)
-categories: Machine_Learning
+categories: Machine-Learning
 tag: [Machine Learning]
 author_profile: false
 search: true

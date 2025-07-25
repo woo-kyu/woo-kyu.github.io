@@ -2,7 +2,7 @@
 layout: single
 title: "Logistic and Soft-max Regression"
 toc_label: Logistic and Soft-max Regression
-categories: Machine_Learning
+categories: Machine-Learning
 tag: [Machine Learning, Logistic, Soft-max ]
 author_profile: false
 search: true

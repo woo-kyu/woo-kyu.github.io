@@ -2,7 +2,7 @@
 layout: single
 title: "Machine Learning 101"
 toc_label: Machine Learning 101
-categories: Machine_Learning
+categories: Machine-Learning
 tags: [Map, Machine Learning, Basic]
 author_profile: false
 search: true
@@ -40,7 +40,7 @@ header.overlay_image: "https://github.com/user-attachments/assets/9baa36a5-91d4-
 ## Regression
 
 - [Linear and Non-linear Regression]({{site.url}}/machine-learning/regression)
-  - [Partial Least Squares (PLS)]({{site.url}}/machine-learning/pls)
+  - [Partial Least Squares (PLS)]({{site.url}}/machine-learning/partial-least-squares)
     - 작성 예정
 - [Gradient Descent]({{site.url}}/machine-learning/gradient-descent)
   - [Learning Rate]({{site.url}}/machine-learning/learning-rate)
@@ -52,7 +52,7 @@ header.overlay_image: "https://github.com/user-attachments/assets/9baa36a5-91d4-
   
 - [Bias and Variance Trade-off]({{site.url}}/machine-learning/bias-and-variance-trade-off)
   - [Loss Funcition]({{site.url}}/deep-learning/loss-function)
-- [Over and Under-fitting]({{site.url}}/machine-learning/over-under-fitting)
+- [Over and Under-fitting]({{site.url}}/machine-learning/over-and-under-fitting)
 - [Weight Regularization]({{site.url}}/machine-learning/weight-regularization)
 
 <br>
@@ -60,9 +60,9 @@ header.overlay_image: "https://github.com/user-attachments/assets/9baa36a5-91d4-
 ## Classification
 
 - [Logistic and Soft-max Regression]({{site.url}}/machine-learning/logistic-soft-max)
-- [Support Vector Machine (SVM)]({{site.url}}/machine-learning/svm)
+- [Support Vector Machine (SVM)]({{site.url}}/machine-learning/svm-support-vector-machine)
 - [Dicison Tree]({{site.url}}/machine-learning/dicision-tree)
-- [Linear Discriminant Analysis (LDA, Supervised)]({{site.url}}/machine-learning/lda)
+- [Linear Discriminant Analysis (LDA, Supervised)]({{site.url}}/machine-learning/lda-linear-discriminant-analysis)
 
 <br>
 
@@ -105,11 +105,11 @@ header.overlay_image: "https://github.com/user-attachments/assets/9baa36a5-91d4-
 
 ### Kind of Feature Extraction in DR
 
-- [Singular Value Decompostion (SVD)]({{site.url}}/machine-learning/svd)
-- [Principal Component Analysis (PCA)]({{site.url}}/machine-learning/pca)
+- [Singular Value Decompostion (SVD)]({{site.url}}/machine-learning/svd-singular-value-decomposition)
+- [Principal Component Analysis (PCA)]({{site.url}}/machine-learning/pca-principal-component-analysis)
 - [Linear Discriminant Analysis (LDA)]({{site.url}}/machine-learning/unsupervised-lda)
 - [t-SNE]({{site.url}}/machine-learning/t-sne)
-- [UMAP]({{site.url}}/machine-learning/umap)
+- [UMAP]({{site.url}}/machine-learning/umap-uniform-manifold-approximation-and-projection)
 
 <br>
 
@@ -126,7 +126,7 @@ header.overlay_image: "https://github.com/user-attachments/assets/9baa36a5-91d4-
 
 - [K-Means]({{site.url}}/machine-learning/k-means)
 - [Mean Shift]({{site.url}}/machine-learning/mean-shift)
-- [DBSCAN]({{site.url}}/machine-learning/dbscan)
+- [density-based-spatial-clustering-of-applications-with-noise]({{site.url}}/machine-learning/density-based-spatial-clustering-of-applications-with-noise)
 
 ### [Hierarchial Clustering]({{site.url}}/machine-learning/hierarchical-clustering)
 
@@ -194,11 +194,11 @@ header.overlay_image: "https://github.com/user-attachments/assets/9baa36a5-91d4-
 
 [Logistic and Soft-max Regression]({{site.url}}/machine-learning/logistic-soft-max)
 
-[Support Vector Machine (SVM)]({{site.url}}/machine-learning/svm)
+[Support Vector Machine (SVM)]({{site.url}}/machine-learning/svm-support-vector-machine)
 
 [Dicison Tree]({{site.url}}/machine-learning/dicision-tree)
 
-[Linear Discriminant Analysis (LDA)]({{site.url}}/machine-learning/lda)
+[Linear Discriminant Analysis (LDA)]({{site.url}}/machine-learning/lda-linear-discriminant-analysis)
 
 [Ensemble (Complex)]({{site.url}}/machine-learning/ensemble)
 
@@ -208,15 +208,15 @@ header.overlay_image: "https://github.com/user-attachments/assets/9baa36a5-91d4-
 
 [Dimension Reduction]({{site.url}}/machine-learning/dimension-reduction)
 
-[Singular Value Decompostion (SVD)]({{site.url}}/machine-learning/svd)
+[Singular Value Decompostion (SVD)]({{site.url}}/machine-learning/svd-singular-value-decomposition)
 
-[Principal Component Analysis (PCA)]({{site.url}}/machine-learning/pca)
+[Principal Component Analysis (PCA)]({{site.url}}/machine-learning/pca-principal-component-analysis)
 
-[Linear Discriminant Analysis (LDA)]({{site.url}}/machine-learning/unsupervised-lda)
+[Unsupervised Linear Discriminant Analysis (LDA)]({{site.url}}/machine-learning/unsupervised-lda)
 
 [t-SNE]({{site.url}}/machine-learning/t-sne)
 
-[UMAP]({{site.url}}/machine-learning/umap)
+[UMAP]({{site.url}}/machine-learning/umap-uniform-manifold-approximation-and-projection)
 
 [Clustering]({{site.url}}/machine-learning/clustering)
 
@@ -226,12 +226,12 @@ header.overlay_image: "https://github.com/user-attachments/assets/9baa36a5-91d4-
 
 [Mean Shift]({{site.url}}/machine-learning/mean-shift)
 
-[DBSCAN]({{site.url}}/machine-learning/dbscan)
+[DBSCAN]({{site.url}}/machine-learning/density-based-spatial-clustering-of-applications-with-noise)
 
 [Hierarchial Clustering]({{site.url}}/machine-learning/hierarchical-clustering)
 
 [Weight Regularization]({{site.url}}/machine-learning/weight-regularization)
 
-[Over and Under-fitting]({{site.url}}/machine-learning/over-under-fitting)
+[Over and Under-fitting]({{site.url}}/machine-learning/over-and-under-fitting)
 
 [Data for Machine Learning]({{site.url}}/machine-learning/data-for-machine-learning)

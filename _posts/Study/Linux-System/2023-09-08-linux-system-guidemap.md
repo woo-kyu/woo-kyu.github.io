@@ -2,7 +2,7 @@
 layout: single
 title: Linux System Map
 toc_label: Linux System Map
-categories: Linux_System
+categories: Linux-System
 tags: [Linux System, Uni, Map]
 author_profile: false
 search: true

@@ -2,7 +2,7 @@
 layout: single
 title: File System
 toc_label: File System
-categories: Linux_System
+categories: Linux-System
 tags: [Linux System, Uni]
 author_profile: false
 search: true

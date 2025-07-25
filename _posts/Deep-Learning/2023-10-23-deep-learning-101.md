@@ -2,7 +2,7 @@
 layout: single
 title: Deep Learning 101
 toc_label: Deep Learning 101
-categories: 'Deep_Learning'
+categories: 'Deep-Learning'
 tags: [Deep Learning]
 author_profile: false
 search: true

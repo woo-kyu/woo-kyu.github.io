@@ -2,7 +2,7 @@
 layout: single
 title: "Support Vector Machine (SVM)"
 toc_label: Support Vector Machine
-categories: Machine_Learning
+categories: Machine-Learning
 tag: [Machine Learning]
 author_profile: false
 search: true

@@ -2,7 +2,7 @@
 layout: single
 title: Filter in Frequency domain
 toc_label: Filter in Frequency domain
-categories: Image_Processing
+categories: Image-Processing
 tags: [Image Processing]
 author_profile: false
 search: true

@@ -2,8 +2,8 @@
 layout: single
 title: "keras_Sequential"
 toc_label: keras_Sequential
-categories: ML_Experiment
-tag: [ML, ML_Experiment, keras]
+categories:  ML-Experiment
+tag: [Machine Learning, keras]
 author_profile: false
 search: true
 use_tex: true

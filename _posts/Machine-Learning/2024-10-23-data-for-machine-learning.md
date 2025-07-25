@@ -2,7 +2,7 @@
 layout: single
 title: "Data for Machine Learning"
 toc_label: Data for Machine Learning
-categories: Machine_Learning
+categories: Machine-Learning
 tag: [Machine Learning]
 author_profile: false
 search: true

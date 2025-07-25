@@ -2,7 +2,7 @@
 layout: single
 title: "Unsupervised LDA"
 toc_label: Unsupervised LDA
-categories: Machine_Learning
+categories: Machine-Learning
 tag: [Machine Learning]
 author_profile: false
 search: true

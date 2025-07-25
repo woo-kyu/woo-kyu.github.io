@@ -2,7 +2,7 @@
 layout: single
 title: "Morphology: Hit or Miss Transform"
 toc_label: Hit or Miss Transform
-categories: Image_Processing
+categories: Image-Processing
 tags: [Image Processing]
 author_profile: false
 search: true

@@ -2,8 +2,8 @@
 layout: single
 title: Gradient Descent
 toc_label: Gradient Descent
-categories: [Python]
-tags: [Python]
+categories: [ ML-Experiment]
+tags: [Python, Machine Learning]
 author_profile: false
 search: true
 use_tex: true

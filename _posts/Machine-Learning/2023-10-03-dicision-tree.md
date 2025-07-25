@@ -2,7 +2,7 @@
 layout: single
 title: "The Decision Tree"
 toc_label: The Decision Tree
-categories: Machine_Learning
+categories: Machine-Learning
 tag: [Machine Learning]
 author_profile: false
 search: true

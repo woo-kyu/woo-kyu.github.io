@@ -2,7 +2,7 @@
 layout: single
 title: Filter and Transformation in Spatial Domain
 toc_label: Filter and Transformation in Spatial Domain
-categories: Image_Processing
+categories: Image-Processing
 tags: [Image Processing]
 author_profile: false
 search: true

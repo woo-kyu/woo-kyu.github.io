@@ -2,7 +2,7 @@
 layout: single
 title: Cost Function
 toc_label: Cost Function
-categories: 'Deep_Learning'
+categories: 'Deep-Learning'
 tags: [Deep Learning]
 author_profile: false
 search: true

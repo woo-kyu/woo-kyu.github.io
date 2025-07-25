@@ -2,7 +2,7 @@
 layout: single
 title: Sharpening
 toc_label: Sharpening
-categories: Image_Processing
+categories: Image-Processing
 tags: [Image Processing]
 author_profile: false
 search: true

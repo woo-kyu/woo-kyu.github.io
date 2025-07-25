@@ -2,7 +2,7 @@
 layout: single
 title: Loss Function
 toc_label: Loss Function
-categories: 'Deep_Learning'
+categories: 'Deep-Learning'
 tags: [Deep Learning]
 author_profile: false
 search: true

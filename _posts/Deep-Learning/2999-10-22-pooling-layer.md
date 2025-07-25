@@ -2,7 +2,7 @@
 layout: single
 title: Pooling Layer 
 toc_label: Pooling Layer
-categories: 'Deep_Learning'
+categories: 'Deep-Learning'
 tags: [Deep Learning]
 author_profile: false
 search: true

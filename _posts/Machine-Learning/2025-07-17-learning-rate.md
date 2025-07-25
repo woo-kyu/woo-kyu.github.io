@@ -2,7 +2,7 @@
 layout: single
 title: "Learning Rate"
 toc_label: Learning Rate
-categories: Machine_Learning
+categories: Machine-Learning
 tag: [Machine Learning]
 author_profile: false
 search: true

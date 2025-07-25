@@ -2,7 +2,7 @@
 layout: single
 title: Fourier Transform
 toc_label: Fourier Transform
-categories: Image_Processing
+categories: Image-Processing
 tags: [Image Processing, Sensor Data Processing]
 author_profile: false
 search: true

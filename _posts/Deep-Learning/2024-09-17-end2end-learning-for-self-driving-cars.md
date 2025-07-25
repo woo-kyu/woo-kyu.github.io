@@ -2,7 +2,7 @@
 layout: single
 title: End-to-End Learning for Self Driving Cars Paper Review
 toc_label: E2E Learning Paper Review
-categories: Deep_Learning
+categories: Deep-Learning
 tags: [Computer Vision, Deep Learning, YOLO, Paper Review]
 author_profile: false
 search: true

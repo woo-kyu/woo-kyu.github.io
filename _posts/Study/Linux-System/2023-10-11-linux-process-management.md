@@ -2,7 +2,7 @@
 layout: single
 title: Process Management
 toc_label: Process Management
-categories: Linux_System
+categories: Linux-System
 tags: [Linux System, Uni]
 author_profile: false
 search: true

@@ -2,7 +2,7 @@
 layout: single
 title: Low-Level Linux System 101
 toc_label: Low-Level Linux System 101
-categories: Linux_System
+categories: Linux-System
 tags: [Linux System, Basic, Uni]
 author_profile: false
 search: true

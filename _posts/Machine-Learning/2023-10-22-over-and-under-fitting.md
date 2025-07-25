@@ -2,7 +2,7 @@
 layout: single
 title: "Over and Under fitting"
 toc_label: Over and Under fitting
-categories: Machine_Learning
+categories: Machine-Learning
 tag: [Machine Learning]
 author_profile: false
 search: true

@@ -2,7 +2,7 @@
 layout: single
 title: Mechanics of Linear Spatial Filtering
 toc_label: Mechanics of Linear Spatial Filtering
-categories: Image_Processing
+categories: Image-Processing
 tags: [Image Processing]
 author_profile: false
 search: true

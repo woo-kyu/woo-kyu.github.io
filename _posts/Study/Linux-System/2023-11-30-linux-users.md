@@ -2,7 +2,7 @@
 layout: single
 title: Users and Group
 toc_label: Users and Group
-categories: Linux_System
+categories: Linux-System
 tags: [Linux System, Uni]
 author_profile: false
 search: true

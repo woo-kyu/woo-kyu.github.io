@@ -2,7 +2,7 @@
 layout: single
 title: "Linear and Non-linear Regression"
 toc_label: Linear and Non-linear Regression
-categories: Machine_Learning
+categories: Machine-Learning
 tag: [Machine Learning]
 author_profile: false
 search: true

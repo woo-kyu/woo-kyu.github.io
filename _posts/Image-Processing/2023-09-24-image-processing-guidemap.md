@@ -2,7 +2,7 @@
 layout: single
 title: Image Processing GuideMap
 toc_label: Image Processing Guide Map
-categories: Image_Processing
+categories: Image-Processing
 tags: [Map]
 author_profile: false
 search: false
@@ -39,7 +39,7 @@ use_tex: false
 
 ### 3. Filtering in Spatial Domain
 
-[Filter and Transformation in Spatial Domain]({{site.url}}/image-processing/filter-n-transformation)
+[Filter and Transformation in Spatial Domain]({{site.url}}/image-processing/filter-and-transformation)
 
 [Histogram Processing]({{site.url}}/image-processing/histogram)
 

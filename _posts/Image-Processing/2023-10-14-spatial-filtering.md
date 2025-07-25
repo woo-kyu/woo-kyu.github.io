@@ -2,7 +2,7 @@
 layout: single
 title: Spatial Filtering
 toc_label: Filtering
-categories: Image_Processing
+categories: Image-Processing
 tags: [Image Processing]
 author_profile: false
 search: true

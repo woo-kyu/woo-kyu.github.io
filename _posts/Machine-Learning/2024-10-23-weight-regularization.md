@@ -2,7 +2,7 @@
 layout: single
 title: "Weight Regularization"
 toc_label: Weight Regularization
-categories: Machine_Learning
+categories: Machine-Learning
 tag: [Machine Learning]
 author_profile: false
 search: true

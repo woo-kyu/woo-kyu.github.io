@@ -2,7 +2,7 @@
 layout: single
 title: "Mean Shift"
 toc_label: Mean Shift
-categories: Machine_Learning
+categories: Machine-Learning
 tag: [Machine Learning]
 author_profile: false
 search: true

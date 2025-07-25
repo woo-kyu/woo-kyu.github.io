@@ -2,7 +2,7 @@
 layout: single
 title: Computer Vision Guide Map
 toc_label: Computer Vision
-categories: Computer_Vision
+categories: Computer-Vision
 tags: [Map, Image Processing]
 author_profile: false
 search: false

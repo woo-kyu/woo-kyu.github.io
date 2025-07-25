@@ -2,7 +2,7 @@
 layout: single
 title: Image Features
 toc_label: Image Features
-categories: Image_Processing
+categories: Image-Processing
 tags: [Image Processing]
 author_profile: false
 search: true

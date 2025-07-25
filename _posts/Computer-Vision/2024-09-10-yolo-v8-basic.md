@@ -2,7 +2,7 @@
 layout: single
 title: VOLO v8 Basic
 toc_label: VOLO v8 Basic
-categories: Computer_Vision
+categories: Computer-Vision
 tags: [Computer Vision, YOLO]
 author_profile: false
 search: true

@@ -2,7 +2,7 @@
 layout: single
 title: "UMAP (Uniform Manifold Approximation and Projection)"
 toc_label: UMAP
-categories: Machine_Learning
+categories: Machine-Learning
 tag: [Machine Learning]
 author_profile: false
 search: true

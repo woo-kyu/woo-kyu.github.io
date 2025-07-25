@@ -2,7 +2,7 @@
 layout: single
 title: "Dimension Reduction (차원 축소)"
 toc_label: Dimension Reduction
-categories: Machine_Learning
+categories: Machine-Learning
 tag: [Machine Learning]
 author_profile: false
 search: true
