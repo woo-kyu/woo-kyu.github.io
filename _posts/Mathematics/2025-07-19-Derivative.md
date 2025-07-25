@@ -17,6 +17,8 @@ use_tex: true
 
 ---
 
+> Derivative(n), Differentiate(v)
+
 <br>
 
 
