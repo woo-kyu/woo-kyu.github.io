@@ -9,3 +9,6 @@ search: false
 use_tex: false
 ---
 
+> Mathematics
+
+[Ordinary Least Squares and the Normal Equations]({{site.url}}/mathematics/ordinary-least-squares-and-normal-equations)
