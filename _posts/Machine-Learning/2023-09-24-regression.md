@@ -84,7 +84,13 @@ The formula of each neural.
 
 Therefore,
 
-<img width="278" height="54" alt="Image" src="https://github.com/user-attachments/assets/67e2cb4f-255f-4acd-8a85-8f9ef7eb08bb" />{: .align-center}
+$
+\mathbf{Y} =
+\begin{bmatrix}
+w_{11}x_{1} + w_{12}x_{2} + w_{13}x_{3} + b_{1} \\
+w_{21}x_{1} + w_{22}x_{2} + w_{23}x_{3} + b_{2}
+\end{bmatrix}
+$
 
 
 <br>

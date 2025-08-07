@@ -5,9 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="170023d7-d6df-481b-8ab6-c7c404f888a6" name="Changes" comment="07 19 2025 MSE">
-      <change afterPath="$PROJECT_DIR$/_posts/Mathematics/2025-07-19-Partial_Derivative.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/Mathematics/2025-07-19-Derivative.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/Mathematics/2025-07-19-Derivative.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/Deep-Learning/2023-10-22-deep-learning-guidemap.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/Deep-Learning/2023-10-22-deep-learning-guidemap.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/Deep-Learning/2024-08-30-rnn-101.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/Deep-Learning/2999-08-30-rnn-101.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/Deep-Learning/2024-10-22-activation-function.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/Deep-Learning/2024-10-22-activation-function.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/Machine-Learning/2023-09-24-regression.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/Machine-Learning/2023-09-24-regression.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/Mathematics/2025-07-24-ordinary-least-squares-and-normal-equations.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/Mathematics/2025-07-24-ordinary-least-squares-and-normal-equations.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/fix_link_failures.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,6 +95,8 @@
       <workItem from="1752631013708" duration="75000" />
       <workItem from="1752633477220" duration="2397000" />
       <workItem from="1752953121869" duration="6944000" />
+      <workItem from="1753650346735" duration="1045000" />
+      <workItem from="1754168566257" duration="1258000" />
     </task>
     <task id="LOCAL-00001" summary="07092025 add pandas doc">
       <option name="closed" value="true" />

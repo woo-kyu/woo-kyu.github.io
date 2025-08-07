@@ -41,7 +41,7 @@ use_tex: false
 
 ## Related Paper
 
-- [End to End learning for self driving cars]({{site.url}}/deep-learning/end2end-learning-for-self-dirving-cars)
+- [End to End learning for self driving cars]({{site.url}}/deep-learning/end2end-learning-for-self-driving-cars)
 
 - [YOLO]({{site.url}}/deep-learning/yolo)
 
