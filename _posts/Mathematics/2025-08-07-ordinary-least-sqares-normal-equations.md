@@ -1,4 +1,4 @@
- ---
+---
 layout: single
 title: Ordinary Least Squares and the Normal Equations
 toc_label: Ordinary Least Squares and the Normal Equations
