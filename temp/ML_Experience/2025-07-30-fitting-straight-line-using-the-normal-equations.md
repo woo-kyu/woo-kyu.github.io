@@ -11,10 +11,12 @@ use_tex: true
 
 > Fitting a Straight Line using the Normal Equations 
 
+> Reference: OpenCV University
+
 
 <br>
 
-# Base Code
+# Fitting a Straight Line using the Normal Equations
 
 ---
 
@@ -40,11 +42,8 @@ block_plot = False
 
 <br>
 
-# Create Convenience Functions
+## Create Convenience Functions
 
----
-
----
 
 ```python
 import random
