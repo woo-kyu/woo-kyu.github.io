@@ -18,11 +18,30 @@ use_tex: false
 
 - [Deep Learning 101]({{site.url}}/deep-learning/deep-learning-101)
 
+# Loss Function
+
 - [Loss Funcition]({{site.url}}/deep-learning/loss-function)
+- [Classification Loss Funcition]({{site.url}}/deep-learning/classification-loss-function)
+- [Regression Loss Funcition]({{site.url}}/deep-learning/classification-loss-function)
+- [Sequence Loss Funcition]({{site.url}}/deep-learning/classification-loss-function)
+- [Generative Loss Funcition]({{site.url}}/deep-learning/classification-loss-function)
+- [Advanced Loss Funcition]({{site.url}}/deep-learning/classification-loss-function)
+
+<br>
+
+# Cost Function
 
 - [Cost Funcition]({{site.url}}/deep-learning/cost-function)
 
+<br>
+
+# Activation Function
+
 - [Activation Funcition]({{site.url}}/deep-learning/activation-function)
+
+<br>
+
+# Gradient Descent
 
 - [Gradient Descent]({{site.url}}/machine-learning/gradient-descent)
 
@@ -34,12 +53,14 @@ use_tex: false
 
 <br>
 
-# CNN
+# The Models of Deep Learning
+
+## CNN
 
 <hr>
 <hr>
 
-## Related Paper
+### Related Paper
 
 - [End to End learning for self driving cars]({{site.url}}/deep-learning/end2end-learning-for-self-driving-cars)
 
@@ -54,12 +75,12 @@ use_tex: false
 
 <br>
 
-# RNN
+## RNN
 
 <hr>
 <hr>
 
-## Related Paper
+### Related Paper
 
 - [RNN 101]({{site.url}}/deep-learning/rnn-101)
 

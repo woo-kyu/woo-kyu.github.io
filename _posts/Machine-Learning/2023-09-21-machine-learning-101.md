@@ -42,16 +42,16 @@ header.overlay_image: "https://github.com/user-attachments/assets/9baa36a5-91d4-
 - [Linear and Non-linear Regression]({{site.url}}/machine-learning/regression)
   - [Partial Least Squares (PLS)]({{site.url}}/machine-learning/partial-least-squares)
     - 작성 예정
+- [Loss Funcition - Regression]({{site.url}}/deep-learning/regression-loss-function)
 - [Gradient Descent]({{site.url}}/machine-learning/gradient-descent)
   - [Learning Rate]({{site.url}}/machine-learning/learning-rate)
   - [LRS (Learning Rate Scheduler)]({{site.url}}/machine-learning/learning-rate-scheduler)
   - [Optima (Local minima problem)]({{site.url}}/machine-learning/optima)
     - Adam, RMSProp, SGD ...
-  - [Deep Learning - Loss Funcition]({{site.url}}/deep-learning/loss-function)
   - [Cost Funcition]({{site.url}}/deep-learning/cost-function)
   
 - [Bias and Variance Trade-off]({{site.url}}/machine-learning/bias-and-variance-trade-off)
-  - [Loss Funcition]({{site.url}}/deep-learning/loss-function)
+  - [Lasso (L1) and Ridge(L2) Regression]({{site.url}}/machine-learning/lasso-ridge-regression)
 - [Over and Under-fitting]({{site.url}}/machine-learning/over-and-under-fitting)
 - [Weight Regularization]({{site.url}}/machine-learning/weight-regularization)
 
@@ -59,6 +59,7 @@ header.overlay_image: "https://github.com/user-attachments/assets/9baa36a5-91d4-
 
 ## Classification
 
+- [Loss Funcition - Classification ]({{site.url}}/deep-learning/classification-loss-function)
 - [Logistic and Soft-max Regression]({{site.url}}/machine-learning/logistic-softmax)
 - [Support Vector Machine (SVM)]({{site.url}}/machine-learning/svm-support-vector-machine)
 - [Dicison Tree]({{site.url}}/machine-learning/dicision-tree)
