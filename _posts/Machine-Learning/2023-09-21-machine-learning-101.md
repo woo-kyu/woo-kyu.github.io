@@ -59,7 +59,7 @@ header.overlay_image: "https://github.com/user-attachments/assets/9baa36a5-91d4-
 
 ## Classification
 
-- [Logistic and Soft-max Regression]({{site.url}}/machine-learning/logistic-soft-max)
+- [Logistic and Soft-max Regression]({{site.url}}/machine-learning/logistic-softmax)
 - [Support Vector Machine (SVM)]({{site.url}}/machine-learning/svm-support-vector-machine)
 - [Dicison Tree]({{site.url}}/machine-learning/dicision-tree)
 - [Linear Discriminant Analysis (LDA, Supervised)]({{site.url}}/machine-learning/lda-linear-discriminant-analysis)

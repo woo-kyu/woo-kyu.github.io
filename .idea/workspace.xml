@@ -5,7 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="170023d7-d6df-481b-8ab6-c7c404f888a6" name="Changes" comment="07 19 2025 MSE">
-      <change beforePath="$PROJECT_DIR$/_posts/ML-Experiment/2025-07-30-fitting-straight-line-using-the-normal-equations.md" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/_posts/ML-Experiment/jupyter/data-processing-basic.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_posts/ML-Experiment/jupyter/fitting-non-linear-regression.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/Data-Science/2024-10-15-coco-sequence-data-analysis.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/Data-Science/2024-10-15-coco-sequence-data-analysis.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/ML-Experiment/jupyter/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/ML-Experiment/jupyter/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/ML-Experiment/jupyter/fitting-straight-line-using-pytorch.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/ML-Experiment/jupyter/fitting-straight-line-using-the-normal-equations.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/ML-Experiment/jupyter/fitting-straight-line-using-the-normal-equations.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/Machine-Learning/2023-09-24-regression.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/Machine-Learning/2023-09-24-regression.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/Machine-Learning/2024-10-23-data-for-machine-learning.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/Machine-Learning/2024-10-23-data-for-machine-learning.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,30 +49,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "X:/woo-kyu.github.io",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.general",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;X:/woo-kyu.github.io&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.general&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-2e738b810fe0-05660e73b189-com.jetbrains.pycharm.ds.sharedIndexes.bundled-DS-251.26927.91" />
+        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-WS-251.26927.40" />
       </set>
     </attachedChunks>
   </component>
@@ -91,6 +99,8 @@
       <workItem from="1752953121869" duration="6944000" />
       <workItem from="1753650346735" duration="1045000" />
       <workItem from="1754168566257" duration="1258000" />
+      <workItem from="1756492620600" duration="92000" />
+      <workItem from="1756492714766" duration="203000" />
     </task>
     <task id="LOCAL-00001" summary="07092025 add pandas doc">
       <option name="closed" value="true" />

@@ -40,7 +40,8 @@ use_tex: true
 
 <br>
 
-<img width="795" height="594" alt="Image" src="https://github.com/user-attachments/assets/2e61392c-c339-43dd-8c57-c05afb73862a">{: .align-center}
+![Linear Regression](/assets/images/post_images/Machine_Learning/Linear-Regression.png){: .align-center}
+
 
 ### Fundamental
 
