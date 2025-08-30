@@ -3,7 +3,7 @@ layout: single
 title: "Learning Rate Scheduler (LRS)"
 toc_label: Learning Rate Scheduler
 categories: Machine-Learning
-tag: [Machine Learning]
+tag: [Machine Learning, Lambda]
 author_profile: false
 search: true
 use_tex: true

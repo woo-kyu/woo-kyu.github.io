@@ -51,9 +51,8 @@ header.overlay_image: "https://github.com/user-attachments/assets/9baa36a5-91d4-
   - [Cost Funcition]({{site.url}}/deep-learning/cost-function)
   
 - [Bias and Variance Trade-off]({{site.url}}/machine-learning/bias-and-variance-trade-off)
-  - [Lasso (L1) and Ridge(L2) Regression]({{site.url}}/machine-learning/lasso-ridge-regression)
 - [Over and Under-fitting]({{site.url}}/machine-learning/over-and-under-fitting)
-- [Weight Regularization]({{site.url}}/machine-learning/weight-regularization)
+- [Weight Regularization (L1, L2 Regression)]({{site.url}}/machine-learning/weight-regularization)
 
 <br>
 

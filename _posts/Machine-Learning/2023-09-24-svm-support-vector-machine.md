@@ -3,7 +3,7 @@ layout: single
 title: "Support Vector Machine (SVM)"
 toc_label: Support Vector Machine
 categories: Machine-Learning
-tag: [Machine Learning]
+tag: [Machine Learning, SVM, KKT, Soft Margin]
 author_profile: false
 search: true
 use_tex: true
@@ -90,20 +90,20 @@ constraint 이 있는 optimization problem 을, Lagrange multiplier term 을 추
 - $L(x,u,v)=-u^Tb-v^Th=g(u,v)$
 <br>
 
-### Duality gap
+### Duality Gap
 
 - $f^* \geq \underset{x}{\textrm{min}} ~L(x,u,v)=g(u,v)$
 - $g(u,v)$를 maximize 하는 것은 primal problem 의 optimum value 으로  approaching 하는 것
 - between u, v 의 gap 이 existence 하면 <span style='color:orange'>week dual</span>, non-existence 하면 <span style='color:orange'>strong dual</span> ($f^*=g(u,v)$)
 <br>
 
-### Lagrange Dual problem
+### Lagrange Dual Problem
 
 - change minimize to maximize problem. (dual (max) ↔  primal (min))
 - $\underset{u,v}{\textrm{max}}-u^Tb-v^Th, \textrm{ subject to }-A^Tu-G^Tv=c, v\geq0$
 <br>
 
-## Slater’s conditions
+## Slater’s Conditions
 
 - $\underset{x}{\textrm{min}}f(x)$
 - $\textrm{subject to }h_i\le 0, ~i=1,...,m. ~I_j=0,~j=1,...,r.$

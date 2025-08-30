@@ -3,7 +3,7 @@ layout: single
 title: Classification Loss Function
 toc_label: Classification Loss Function
 categories: 'Deep-Learning'
-tags: [Deep Learning]
+tags: [Deep Learning, BCE]
 author_profile: false
 search: true
 use_tex: true
@@ -64,11 +64,51 @@ Information Entropy 는 하나의 확률 분포가 갖는 불확실성 (독특�
 
 ## Binary Classification
 
-### Binary Cross-Entropy (BCE)
+FYR: [Logistic and Soft-max Regression]({{site.url}}/machine-learning/logistic-softmax)
 
-Logistic regression 문제에서 주로 사용. 실제 클래스와 예측 확률 분포 간의 차이를 계산
+> Logistic regression 문제에서 주로 사용. 실제 클래스와 예측 확률 분포 간의 차이를 계산
+
+Learn the weights that maximize the probability of the correct label given by:
+
+$P(y|x; \theta)=(y')^y(1-y')^{1-y}$
+
+Take a log of both sides og the above equation
+It will not affect the optimization (maximizing the probability will also maximize the log og the probability)
+
+$\ln[p(y|x;\theta)] = y \ln(y')+(1-y) \ln(1-y')$
+
+
+In order to turn this into a loss function that we can minimize, we can take the negative log of the above probability that leads us to the `Binary Cross Enorpy Loss Function` shown below:
+
+$J(y')= -y\ln(y') - (1-y) \ln(1-y')$
+
+An recall that with $z=\theta^T x$, the predicted value for a givn input sample is:
+
+$y' =\sigma(z)=\frac{1}{1+e^{-z}}$
+
+And therefore, if
+- $\sigma(z) > 0.5$ then input belongs to the positive class or class `1`
+- $\sigma(z) < 0.5$ then input belongs to the negative class or class `0`
+
+A few numerical eamples are shown below that indicate the loss based on the true class $y$ and the predicted value $y'$.
+
+Noticed  that when the activation function output $y'$ is close to the true label the loss is very small.
+
+| y | y'  | Loss  | Pred. Class | Notes                                 |
+|---|-----|-------|-------------|---------------------------------------|
+| 1 | .90 | 0.046 | 1           | y' > 0.5, assigned to class 1         |
+| 1 | .10 | 1.000 | 0           | y' < 0.5, assigned to class 0         |
+| 0 | .01 | 0.004 | 0           | y' < 0.5, assigned to class 0         |
+| 0 | .99 | 1.301 | 1           | y' > 0.5, assigned to class 1         |
+
+
+### Binary Cross-Entropy Loss(BCE)
+
+
 
 <br>
+
+
 
 ### Hinge Loss
 

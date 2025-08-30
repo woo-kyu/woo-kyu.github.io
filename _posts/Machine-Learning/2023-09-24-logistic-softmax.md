@@ -3,7 +3,7 @@ layout: single
 title: "Logistic and Soft-max Regression"
 toc_label: Logistic and Soft-max Regression
 categories: Machine-Learning
-tag: [Machine Learning, Logistic, Soft-max ]
+tag: [Machine Learning, Likelihood, MLE, SGD]
 author_profile: false
 search: true
 use_tex: true
@@ -18,6 +18,9 @@ use_tex: true
 > 다항 로지스틱 회귀에서 쓰이고, 인공신경망에서 확률분포를 얻기 위한 마지막 활성함수로 많이 사용된다.
 
 # Sigmoid vs. Soft-max function
+
+![Sigmoid vs soft max](/assets/images/post_images/Machine_Learning/sigmoid-softmax.png){: .align-center}
+
 
 ## Sigmoid function
 
@@ -95,6 +98,45 @@ use_tex: true
   - $w^{T}X>0$ : Classify 1
   - $w^{T}X<0$ : Classify 0
 <br><br>
+
+## Detail
+
+Learn the weights that maximize the probability of the correct label given by:
+
+$P(y|x; \theta)=(y')^y(1-y')^{1-y}$
+
+Take a log of both sides og the above equation
+It will not affect the optimization (maximizing the probability will also maximize the log og the probability)
+
+$\ln[p(y|x;\theta)] = y \ln(y')+(1-y) \ln(1-y')$
+
+
+In order to turn this into a loss function that we can minimize, we can take the negative log of the above probability that leads us to the `Binary Cross Enorpy Loss Function` shown below:
+
+$J(y')= -y\ln(y') - (1-y) \ln(1-y')$
+
+An recall that with $z=\theta^T x$, the predicted value for a givn input sample is:
+
+$y' =\sigma(z)=\frac{1}{1+e^{-z}}$
+
+And therefore, if
+- $\sigma(z) > 0.5$ then input belongs to the positive class or class `1`
+- $\sigma(z) < 0.5$ then input belongs to the negative class or class `0`
+
+A few numerical eamples are shown below that indicate the loss based on the true class $y$ and the predicted value $y'$.
+
+Noticed  that when the activation function output $y'$ is close to the true label the loss is very small.
+
+| y | y'  | Loss  | Pred. Class | Notes                                 |
+|---|-----|-------|-------------|---------------------------------------|
+| 1 | .90 | 0.046 | 1           | y' > 0.5, assigned to class 1         |
+| 1 | .10 | 1.000 | 0           | y' < 0.5, assigned to class 0         |
+| 0 | .01 | 0.004 | 0           | y' < 0.5, assigned to class 0         |
+| 0 | .99 | 1.301 | 1           | y' > 0.5, assigned to class 1         |
+
+<br>
+
+Related Document: [Classification Loss Funcition]({{site.url}}/deep-learning/classification-loss-function)
 
 # Bayes’ theorem
 

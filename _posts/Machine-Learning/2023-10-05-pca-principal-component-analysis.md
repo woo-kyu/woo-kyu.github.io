@@ -3,7 +3,7 @@ layout: single
 title: "Principal Component Analysis (PCA, 주성분 분석)"
 toc_label: Principal Component Analysis
 categories: Machine-Learning
-tag: [Machine Learning]
+tag: [Machine Learning, PCA, ]
 author_profile: false
 search: true
 use_tex: true

@@ -3,7 +3,7 @@ layout: single
 title: "Clustering"
 toc_label: Clustering
 categories: Machine-Learning
-tag: [Machine Learning]
+tag: [Machine Learning, Parametric]
 author_profile: false
 search: true
 use_tex: true

@@ -3,7 +3,7 @@ layout: single
 title: "Singular Value Decomposition (SVD, 특이값 분해)"
 toc_label: Singular Value Decomposition
 categories: Machine-Learning
-tag: [Machine Learning]
+tag: [Machine Learning, SVD, ]
 author_profile: false
 search: true
 use_tex: true

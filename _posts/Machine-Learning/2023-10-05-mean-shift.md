@@ -3,7 +3,7 @@ layout: single
 title: "Mean Shift"
 toc_label: Mean Shift
 categories: Machine-Learning
-tag: [Machine Learning]
+tag: [Machine Learning, Histogram, Kernel Density Estimation]
 author_profile: false
 search: true
 use_tex: true

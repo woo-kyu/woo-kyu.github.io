@@ -3,7 +3,7 @@ layout: single
 title: "Linear Discriminant Analysis (LDA)"
 toc_label: Linear Discriminant Analysis
 categories: Machine-Learning
-tag: [Machine Learning]
+tag: [Machine Learning, Bayes, Discriminant Function]
 author_profile: false
 search: true
 use_tex: true

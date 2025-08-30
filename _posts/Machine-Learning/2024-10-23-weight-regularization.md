@@ -1,9 +1,9 @@
 ---
 layout: single
-title: "Weight Regularization"
+title: "Weight Regularization (L1, L2)"
 toc_label: Weight Regularization
 categories: Machine-Learning
-tag: [Machine Learning]
+tag: [Machine Learning, L1 Lasso, L2 Ridge]
 author_profile: false
 search: true
 use_tex: true

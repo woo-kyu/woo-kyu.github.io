@@ -3,7 +3,7 @@ layout: single
 title: "Gradient Descent"
 toc_label: Gradient Descent
 categories: Machine-Learning
-tag: [Machine Learning, SGD]
+tag: [Machine Learning, SGD, MSE]
 author_profile: false
 search: true
 use_tex: true

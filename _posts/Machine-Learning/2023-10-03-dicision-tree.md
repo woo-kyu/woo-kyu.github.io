@@ -3,7 +3,7 @@ layout: single
 title: "The Decision Tree"
 toc_label: The Decision Tree
 categories: Machine-Learning
-tag: [Machine Learning]
+tag: [Machine Learning, Greedy, Cost Complexity, Cross Entropy]
 author_profile: false
 search: true
 use_tex: true
