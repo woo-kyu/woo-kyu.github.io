@@ -1,9 +1,9 @@
 ---
 layout: single
-title: VDI :pgi
-toc_label: VDI Project Map
+title: VDI Logic and Architecture KR
+toc_label: VDI Logic and Architecture KR
 categories: VDI Project
-tags: [Map]
+tags: [VDI]
 author_profile: false
 search: false
 use_tex: false
