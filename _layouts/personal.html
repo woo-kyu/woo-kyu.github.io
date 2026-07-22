@@ -1,314 +1,39 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>wo_okyu</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <style>
-    body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-    .w3-row-padding img {margin-bottom: 12px}
-    /* Set the width of the sidebar to 120px */
-    .w3-sidebar {width: 120px;background: #222;}
-    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-    #main {margin-left: 120px}
-    /* Remove margins from "page content" on small screens */
-    @media only screen and (max-width: 900px) {#main {margin-left: 0}}
-  </style>
-</head>
-<body class="w3-black">
+<!doctype html>
+<html lang="{{ site.locale | slice: 0,2 | default: 'en' }}" class="no-js">
+  <head>
+    {% include head.html %}
+    {% include head/custom.html %}
+  </head>
+  <body class="layout--personal">
+    {% include_cached skip-links.html %}
+    {% include_cached masthead.html %}
+    <main class="home">
+      <section class="home__hero">
+        <p class="home__eyebrow">WOOKYU JANG · ENGINEERING NOTES</p>
+        <h1>Ideas, systems,<br>and the work behind them.</h1>
+        <p class="home__intro">A personal archive for studying machine learning, computer vision, software, and the small experiments that connect them.</p>
+        <div class="home__actions">
+          <a class="btn btn--primary" href="{{ '/categories/' | relative_url }}">Explore notes <span>→</span></a>
+          <a class="home__text-link" href="#topics">Browse by topic</a>
+        </div>
+      </section>
 
+      <section id="topics" class="home__section">
+        <div class="section-heading"><p>01 / TOPICS</p><h2>Start where your curiosity is.</h2></div>
+        <div class="topic-grid">
+          <a href="{{ '/machine-learning/machine-learning-101/' | relative_url }}" class="topic-card"><span>01</span><h3>Machine<br>Learning</h3><p>Models, optimization, and fundamentals.</p><b>Explore ↗</b></a>
+          <a href="{{ '/computer-vision/computer-vision-guidemap/' | relative_url }}" class="topic-card"><span>02</span><h3>Computer<br>Vision</h3><p>Seeing, understanding, and image systems.</p><b>Explore ↗</b></a>
+          <a href="{{ '/deep-learning/deep-learning-guidemap/' | relative_url }}" class="topic-card"><span>03</span><h3>Deep<br>Learning</h3><p>Neural networks from first principles.</p><b>Explore ↗</b></a>
+          <a href="{{ '/categories/' | relative_url }}" class="topic-card topic-card--accent"><span>04</span><h3>More<br>notes</h3><p>Algorithms, AWS, Python, data, and more.</p><b>View all ↗</b></a>
+        </div>
+      </section>
 
-<!-- 왼쪽 아이콘 바 -->
-<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-  <!-- Avatar image in top left corner -->
-  <img width="568" alt="image" src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/6c1e46d4-ec0b-4313-82a1-6d169d96bcd6" style="width:100%">
-  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
-    <i class="fa fa-home w3-xxlarge"></i>
-    <p>HOME</p>
-  </a>
-  <a href="categories/" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-eye w3-xxlarge"></i>
-    <p> ENTRANCE </p>
-  </a>
-  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-user w3-xxlarge"></i>
-    <p>ABOUT ME</p>
-  </a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-envelope w3-xxlarge"></i>
-    <p> CONTACT </p>
-  </a>
-</nav>
-
-
-<!-- 작은 사이즈 화면 왼쪽 바 -->
-<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-    <a href="categories/" class="w3-bar-item w3-button" style="width:25% !important">ENTRANCE</a>
-    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT ME</a>
-    <a href="https://www.instagram.com/wo_okyu/" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
-  </div>
-</div>
-
-<!-- Page Content -->
-<div class="w3-padding-large" id="main">
-  <!-- Header/Home -->
-  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-<!--    <h1 class="w3-jumbo"><span class="w3-hide-small">뿌꾸 화장실</span></h1>-->
-    <h2>Notes</h2>
-
-    <h4><a href="categories/"> 전체 게시글 보기 </a></h4>
-
-    <br>
-    <hr>
-    <br>
-
-    <!-- 머신러닝 이론 -->
-    <h2 style="font-weight:bold;">Machine Learning</h2>
-    <h5><a href="machine-learning/machine-learning-101/"> Machine Learning Basic Theory </a></h5>
-
-    <br>
-    <br>
-    <br>
-
-    <!-- Computer Vision (인공지능) -->
-    <h2 style="font-weight:bold;">Computer Vision</h2>
-    <h5><a href="computer-vision/computer-vision-guidemap/"> Computer Vision </a></h5>
-    <h5><a href="image-processing/image-processing-guidemap/"> Image Processing </a></h5>
-
-    <br>
-    <br>
-    <br>
-
-    <!-- DL -->
-    <h2 style="font-weight:bold;">Deep Learning</h2>
-    <h5><a href="deep-learning/deep-learning-guidemap/"> Deep Learning Basic Theory </a></h5>
-
-    <br>
-    <br>
-    <br>
-
-<!--    <h2 style="font-weight:bold;">Autonomous Driving</h2>-->
-<!--    <h5><a href="deep_learning/Deep_Learning_101/"> Autonomous Driving </a></h5>-->
-
-
-    <br>
-    <br>
-    <br>
-
-    <h2 style="font-weight:bold;">Activity</h2>
-    <h5><a href="ml-experiment/ml-experiment-guidemap/"> Autonomous Driving </a></h5>
-
-
-    <br>
-    <br>
-    <br>
-    <br>
-
-
-    <hr>
-
-    <h3 style="font-weight:bold;"> All That Jazz </h3>
-    <h5><a href="algorithm/algorithm-guidemap/"> Algorithm </a></h5>
-    <h5><a href="aws/aws-guidemap/"> AWS </a></h5>
-    <h5><a href="python/python-guidemap/"> Python </a></h5>
-    <h5><a href="linux-system/linux-system-guidemap/"> Linux System </a></h5>
-    <h5><a href="data-science/data-science-guidemap/"> Data Science </a></h5>
-
-
-
-    <br>
-    <br>
-    <br>
-    <hr>
-
-<!--    -->
-
-
-<!--    <br>-->
-<!--    <br>-->
-<!--    <hr>-->
-
-<!--    <h4 style="font-weight:bold;"> Site-Map </h4>-->
-<!--    <h5><a href="categories"> Categories View </a></h5>-->
-<!--    -->
-
-<!--    <br>-->
-<!--    <a href="categories-grid/">-->
-<!--      <img src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/5b5e6dc8-5656-4451-a039-94646f7e3e98" alt="뿌엥" class="w3-image" width="600" height="900">-->
-<!--    </a>-->
-<!--    <br>-->
-<!--    <br>-->
-<!--    <a href="categories-grid/">-->
-<!--      <img src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/36c2f793-d83e-4105-9f5f-870ecd1b23c4" alt="뿌" class="w3-image" width="600" height="900">-->
-<!--    </a>-->
-<!--  </header>-->
-
-  <!-- About Section -->
-    <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about" style="padding-left: 120px;">
-      <h3>WOOKYU</h3>
-      <h5>Republic of Korea</h5>
-      <h5>Bachelor's Degree in Computer Science</h5>
-      <h5>Bachelor's Degree in Business Administration</h5>
-      <h5>Field: Autonomous Driving, Computer Vision, DL, ML</h5>
-
-    </div><br>
-
-
-    <!--      <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">-->
-<!--        <div class="w3-quarter w3-section">-->
-<!--          <span class="w3-xlarge">11+</span><br>-->
-<!--          츄르 보유량-->
-<!--        </div>-->
-<!--        <div class="w3-quarter w3-section">-->
-<!--          <span class="w3-xlarge">55+</span><br>-->
-<!--          이불에 토 한 횟수-->
-<!--        </div>-->
-<!--        <div class="w3-quarter w3-section">-->
-<!--          <span class="w3-xlarge">89+</span><br>-->
-<!--          ㅇㅅㅇ-->
-<!--        </div>-->
-<!--        <div class="w3-quarter w3-section">-->
-<!--          <span class="w3-xlarge">150+</span><br>-->
-<!--          ㅇㅂㅇ-->
-<!--        </div>-->
-<!--      </div>-->
-
-  <!--    <button class="w3-button w3-light-grey w3-padding-large w3-section">-->
-  <!--      <i class="fa fa-download"></i> Download 뿌꾸사진-->
-  <!--    </button>-->
-
-<!--    &lt;!&ndash; Grid for pricing tables &ndash;&gt;-->
-<!--    <h3 class="w3-padding-16 w3-text-light-grey">도네이션</h3>-->
-<!--    <div class="w3-row-padding" style="margin:0 -16px">-->
-<!--      <div class="w3-half w3-margin-bottom">-->
-<!--        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">-->
-<!--          <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>-->
-<!--          <li class="w3-padding-16">츄르 사주기</li>-->
-<!--          <li class="w3-padding-16">똥 치우기 체험</li>-->
-<!--          <li class="w3-padding-16">놀아주기 체험</li>-->
-<!--          <li class="w3-padding-16">집사 맛있는 거 사주기</li>-->
-<!--          <li class="w3-padding-16">-->
-<!--            <h2>$ 10</h2>-->
-<!--            <span class="w3-opacity">per month</span>-->
-<!--          </li>-->
-<!--          <li class="w3-light-grey w3-padding-24">-->
-<!--            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>-->
-<!--          </li>-->
-<!--        </ul>-->
-<!--      </div>-->
-
-<!--      <div class="w3-half">-->
-<!--        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">-->
-<!--          <li class="w3-dark-grey w3-xlarge w3-padding-32">Pro</li>-->
-<!--          <li class="w3-padding-16">주인 간식 사주기</li>-->
-<!--          <li class="w3-padding-16">주인 밥 사주기</li>-->
-<!--          <li class="w3-padding-16">집 청소해주기</li>-->
-<!--          <li class="w3-padding-16">주인 용돈주기</li>-->
-<!--          <li class="w3-padding-16">-->
-<!--            <h2>$ 25</h2>-->
-<!--            <span class="w3-opacity">per month</span>-->
-<!--          </li>-->
-<!--          <li class="w3-light-grey w3-padding-24">-->
-<!--            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>-->
-<!--          </li>-->
-<!--        </ul>-->
-<!--      </div>-->
-<!--      &lt;!&ndash; End Grid/Pricing tables &ndash;&gt;-->
-<!--    </div>-->
-
-<!--    &lt;!&ndash; Testimonials &ndash;&gt;-->
-<!--    <h3 class="w3-padding-24 w3-text-light-grey">My Reputation</h3>-->
-<!--    <img src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/6c1e46d4-ec0b-4313-82a1-6d169d96bcd6" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">-->
-<!--    <p><span class="w3-large w3-margin-right">Chris Fox.</span> CEO at Mighty Schools.</p>-->
-<!--    <p>John Doe saved us from a web disaster.</p><br>-->
-
-<!--    <img src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/6c1e46d4-ec0b-4313-82a1-6d169d96bcd6" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">-->
-<!--    <p><span class="w3-large w3-margin-right">Rebecca Flex.</span> CEO at Company.</p>-->
-<!--    <p>No one is better than John Doe.</p>-->
-<!--    &lt;!&ndash; End About Section &ndash;&gt;-->
-<!--  </div>-->
-
-<!--  &lt;!&ndash; Portfolio Section &ndash;&gt;-->
-<!--  <div class="w3-padding-64 w3-content" id="photos">-->
-<!--    <h2 class="w3-text-light-grey">My Photos</h2>-->
-<!--    <hr style="width:200px" class="w3-opacity">-->
-
-<!--    &lt;!&ndash; Grid for photos &ndash;&gt;-->
-<!--    <div class="w3-row-padding" style="margin:0 -16px">-->
-<!--      <div class="w3-half">-->
-<!--        <img src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/6c1e46d4-ec0b-4313-82a1-6d169d96bcd6" style="width:100%">-->
-<!--        <img src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/6c1e46d4-ec0b-4313-82a1-6d169d96bcd6" style="width:100%">-->
-<!--        <img src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/6c1e46d4-ec0b-4313-82a1-6d169d96bcd6" style="width:100%">-->
-<!--      </div>-->
-
-<!--      <div class="w3-half">-->
-<!--        <img src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/6c1e46d4-ec0b-4313-82a1-6d169d96bcd6" style="width:100%">-->
-<!--        <img src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/6c1e46d4-ec0b-4313-82a1-6d169d96bcd6" style="width:100%">-->
-<!--        <img src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/6c1e46d4-ec0b-4313-82a1-6d169d96bcd6" style="width:100%">-->
-<!--        <img src="https://github.com/woo-kyu/woo-kyu.github.io/assets/102133610/6c1e46d4-ec0b-4313-82a1-6d169d96bcd6" style="width:100%">-->
-<!--      </div>-->
-<!--      &lt;!&ndash; End photo grid &ndash;&gt;-->
-<!--    </div>-->
-<!--    &lt;!&ndash; End Portfolio Section &ndash;&gt;-->
-<!--  </div>-->
-
-<!--  &lt;!&ndash; Contact Section &ndash;&gt;-->
-<!--  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">-->
-<!--    <h2 class="w3-text-light-grey">Contact Me</h2>-->
-<!--    <hr style="width:200px" class="w3-opacity">-->
-
-<!--    <div class="w3-section">-->
-<!--      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Chicago, US</p>-->
-<!--      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>-->
-<!--      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>-->
-<!--    </div><br>-->
-<!--    <p>Let's get in touch. Send me a message:</p>-->
-
-<!--    <form action="/action_page.php" target="_blank">-->
-<!--      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>-->
-<!--      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>-->
-<!--      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>-->
-<!--      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>-->
-<!--      <p>-->
-<!--        <button class="w3-button w3-light-grey w3-padding-large" type="submit">-->
-<!--          <i class="fa fa-paper-plane"></i> SEND MESSAGE-->
-<!--        </button>-->
-<!--      </p>-->
-<!--    </form>-->
-    <!-- End Contact Section -->
-<!--  </div>-->
-
-  <!-- Footer -->
-
-  <b>Contact</b>
-
-  <br>
-
-  E-mail : wookyu93@gmail.com
-  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
-    <a href="https://www.instagram.com/wo_okyu" target="_blank">
-      <i class="fa fa-instagram w3-hover-opacity"></i>
-    </a>
-    <!--    <a href="wookyu93@gmail.com" target="_blank">-->
-    <!--      <i class="fa fa-envelope"></i>-->
-    <!--    </a>-->
-
-
-    <!--    <i class="fa fa-snapchat w3-hover-opacity"></i>-->
-<!--    <i class="fa fa-pinterest-p w3-hover-opacity"></i>-->
-<!--    <i class="fa fa-twitter w3-hover-opacity"></i>-->
-<!--    <i class="fa fa-linkedin w3-hover-opacity"></i>-->
-<!--    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>-->
-    <!-- End footer -->
-  </footer>
-
-  <!-- END PAGE CONTENT -->
-</div>
-
-</body>
+      <section class="home__section home__about">
+        <div class="section-heading"><p>02 / ABOUT</p><h2>Learning in public,<br>one useful note at a time.</h2></div>
+        <div><p>I'm Wookyu, an engineer interested in autonomous driving, computer vision, machine learning, and the practical details that make ideas work.</p><a class="home__text-link" href="https://www.instagram.com/wo_okyu/" target="_blank" rel="noopener">Say hello on Instagram ↗</a></div>
+      </section>
+    </main>
+    <div id="footer" class="page__footer"><footer>{% include_cached footer.html %}</footer></div>
+    {% include scripts.html %}
+  </body>
 </html>
