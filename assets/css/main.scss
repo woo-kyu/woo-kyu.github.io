@@ -11,7 +11,7 @@ search: false
 
 /* KYU Note — editorial blog refresh */
 
-:root { --ink:#1f2933; --muted:#66717c; --line:#dfe5ea; --paper:#fafbfc; --surface:#fff; --accent:#2b6cb0; --accent-dark:#1f4f7a; --tint:#eef4fa; --toc:#f4f7fa; }
+:root { --ink:#1f2933; --muted:#66717c; --line:#dbe5df; --paper:#fafcfb; --surface:#fff; --accent:#356b59; --accent-dark:#1f4d3f; --tint:#eef5f1; --toc:#f3f7f5; }
 html { scroll-behavior:smooth; }
 body { background:var(--paper); color:var(--ink); font-family:'Noto Sans KR','IBM Plex Sans',Arial,sans-serif; }
 a { color:var(--accent-dark); text-decoration-thickness:1px; text-underline-offset:3px; }
@@ -51,12 +51,12 @@ a { color:var(--accent-dark); text-decoration-thickness:1px; text-underline-offs
 .grid__item .archive__item { height:100%; }
 .taxonomy__index { display:flex; flex-wrap:wrap; gap:.6rem; }
 .taxonomy__index li { margin:0; }
-.taxonomy__index a { align-items:center; background:var(--tint); border:1px solid #dbe8f4; border-radius:999px; color:#294b69; display:inline-flex; padding:.5rem .75rem; text-decoration:none; }
+.taxonomy__index a { align-items:center; background:var(--tint); border:1px solid #d9e8df; border-radius:999px; color:#315c4d; display:inline-flex; padding:.5rem .75rem; text-decoration:none; }
 .taxonomy__count { align-items:center; background:transparent; border:0; border-radius:0; color:var(--accent-dark) !important; display:inline-flex; font-size:.78em; font-weight:700; justify-content:center; line-height:1; margin-left:.35rem; min-width:0; padding:0; }
 .toc { background:var(--toc) !important; border:1px solid var(--line); border-radius:12px; color:var(--ink) !important; }
 .toc .nav__title { background:var(--accent-dark) !important; color:#fff !important; }
-.toc__menu a { color:#3c5368 !important; }
-.toc__menu a:hover,.toc__menu .active a { background:#e4eef7 !important; color:#173b5c !important; }
+.toc__menu a { color:#3d5d51 !important; }
+.toc__menu a:hover,.toc__menu .active a { background:#e2efe8 !important; color:#183e32 !important; }
 .search-input,#search { background:#fff; border:1px solid var(--line); border-radius:12px; box-shadow:none; padding:1rem 1.1rem; }
 .page__footer { background:#24313d; color:#f2f5f7; margin-top:0; }
 .page__footer footer { max-width:1320px; padding:3.5rem 3rem; }
@@ -84,7 +84,7 @@ a { color:var(--accent-dark); text-decoration-thickness:1px; text-underline-offs
 .topic-card h3 { font-size:1.65rem; letter-spacing:-.055em; line-height:.98; margin:auto 0 .6rem; }
 .topic-card p { color:var(--muted); font-size:.86rem; line-height:1.55; margin:0 0 1.3rem; }
 .topic-card b { color:var(--accent-dark); font-size:.75rem; }
-.topic-card--accent { background:var(--tint); border-color:#dbe8f4; }
+.topic-card--accent { background:var(--tint); border-color:#d9e8df; }
 .home__about { display:grid; gap:4rem; grid-template-columns:1.25fr .75fr; }
 .home__about .section-heading { margin:0; }
 .home__about>div:last-child { align-self:end; color:var(--muted); font-size:1.08rem; line-height:1.7; }
