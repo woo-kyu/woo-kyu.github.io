@@ -35,7 +35,7 @@ a { color:var(--accent-dark); text-decoration-thickness:1px; text-underline-offs
 .sidebar { display:none !important; }
 .archive { box-sizing:border-box; float:none !important; margin-left:auto !important; margin-right:auto !important; max-width:1120px; width:100% !important; }
 .page__title,.page__title a { color:var(--ink) !important; font-family:'Noto Sans KR','IBM Plex Sans',sans-serif; font-size:clamp(2rem,3.2vw,3.25rem); font-weight:800; letter-spacing:-.055em; line-height:1.2; }
-.page__content { color:var(--ink); font-size:1rem; line-height:1.85; }
+.page__content { color:var(--ink); font-size:1.08rem; line-height:1.9; }
 .page__content h2,.page__content h3,.page__content h4,.page__content h5,.page__content h6 { color:var(--ink); font-family:'Noto Sans KR','IBM Plex Sans',sans-serif; font-weight:800; letter-spacing:-.045em; line-height:1.3; margin-top:2.4em; }
 .page__content h2 { font-size:1.8em; border:0; }
 .page__content h3 { font-size:1.35em; }
@@ -93,4 +93,4 @@ a { color:var(--accent-dark); text-decoration-thickness:1px; text-underline-offs
 .home__about .section-heading { margin:0; }
 .home__about>div:last-child { align-self:end; color:var(--muted); font-size:1.08rem; line-height:1.7; }
 @media (max-width:900px) { .masthead__inner-wrap,#main,.home,.page__footer footer { padding-left:1.25rem; padding-right:1.25rem; } #main { padding-top:2rem; } .page { padding:1.5rem !important; } .topic-grid { grid-template-columns:repeat(2,1fr); } .home__about { grid-template-columns:1fr; gap:1rem; } }
-@media (max-width:600px) { .home__hero { min-height:auto; padding:5rem 0; } .home__actions { align-items:flex-start; flex-direction:column; } .topic-grid { grid-template-columns:1fr; } .topic-card { min-height:220px; } .page,.archive { border-radius:12px; } .page__title { font-size:2rem; } .page__content { font-size:1rem; } }
+@media (max-width:600px) { .home__hero { min-height:auto; padding:5rem 0; } .home__actions { align-items:flex-start; flex-direction:column; } .topic-grid { grid-template-columns:1fr; } .topic-card { min-height:220px; } .page,.archive { border-radius:12px; } .page__title { font-size:2rem; } .page__content { font-size:1.04rem; line-height:1.85; } }
